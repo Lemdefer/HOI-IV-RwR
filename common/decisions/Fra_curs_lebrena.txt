@@ -1,0 +1,560 @@
+FRA_curs_lebrena_category = {
+
+
+	vosem_chasov_work_decision = {
+		icon = eng_trade_unions_support
+		
+
+
+		activation = {
+        	has_country_flag = FRA_curs_lebrena_activate
+    	}
+
+		available = {
+			always = no
+		}
+
+		is_good = yes
+		priority = 1
+
+		fire_only_once = yes
+
+		visible = {
+			hidden_trigger = {
+				limit = { check_variable = { reshenia1_lebrena = 0 } }
+			}
+		}
+		cancel_if_not_visible = yes
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = fra_has_cancelled_one_reform
+			}
+		}
+		
+
+		days_mission_timeout = 730
+		
+		timeout_effect = {
+			
+		add_stability = -0.15
+		
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.15
+		}	
+		}
+	}
+	
+	vosem_chasov_work_n_decision = {
+		icon = eng_trade_unions_support
+
+		activation = {
+        	has_country_flag = FRA_curs_lebrena_activate
+    	}
+
+		available = {
+			has_country_flag = FRA_curs_lebrena_activate
+		}
+
+		is_good = yes
+
+		cost = 35
+
+		priority = 1
+
+		fire_only_once = yes
+
+		visible = {
+			always = yes					
+		}
+		
+		days_remove = 35
+		
+		complete_effect = {
+		
+		set_country_flag = fra_has_cancelled_one_reform
+		
+		add_to_variable = { curs_lebrena = 1 }
+			
+			if = {
+				limit = { check_variable = { curs_lebrena = 1 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena0_idea
+				add_idea = FRA_curs_lebena1_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 2 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena1_idea
+				add_idea = FRA_curs_lebena2_idea
+				}
+			}
+			
+			if = {
+				limit = { check_variable = { curs_lebrena = 3 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena2_idea
+				add_idea = FRA_curs_lebena3_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 4 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena3_idea
+				add_idea = FRA_curs_lebena4_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 5 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena4_idea
+				add_idea = FRA_curs_lebena5_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 6 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena5_idea
+				add_idea = FRA_curs_lebena6_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 7 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena6_idea
+				add_idea = FRA_curs_lebena7_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 8 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena7_idea
+				add_idea = FRA_curs_lebena8_idea
+				}
+			}	
+		}
+
+	}
+	
+
+	bolshe_peperivov_decision = {
+		icon = eng_trade_unions_support
+		
+
+
+		activation = {
+        	has_country_flag = FRA_curs_lebrena_activate
+    	}
+
+		available = {
+			always = no
+		}
+
+		is_good = yes
+		priority = 1
+
+		fire_only_once = yes
+
+		visible = {
+			hidden_trigger = {
+				limit = { check_variable = { reshenia1_lebrena = 0 } }
+			}
+		}
+		cancel_if_not_visible = yes
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = fra_has_cancelled_two_reform
+			}
+		}
+		
+
+		days_mission_timeout = 730
+		
+		timeout_effect = {
+			
+		add_stability = -0.15	
+		
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.15
+		}	
+		}
+	}
+	
+	bolshe_peperivov_n_decision = {
+		icon = eng_trade_unions_support
+
+		activation = {
+        	has_country_flag = FRA_curs_lebrena_activate
+    	}
+
+		available = {
+			has_country_flag = FRA_curs_lebrena_activate
+		}
+
+		is_good = yes
+
+		cost = 35
+
+		priority = 1
+
+		fire_only_once = yes
+
+		visible = {
+			always = yes					
+		}
+		
+		days_remove = 35
+		
+		complete_effect = {
+		
+		set_country_flag = fra_has_cancelled_two_reform
+		
+		add_to_variable = { curs_lebrena = 1 }
+			
+			if = {
+				limit = { check_variable = { curs_lebrena = 1 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena0_idea
+				add_idea = FRA_curs_lebena1_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 2 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena1_idea
+				add_idea = FRA_curs_lebena2_idea
+				}
+			}
+			
+			if = {
+				limit = { check_variable = { curs_lebrena = 3 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena2_idea
+				add_idea = FRA_curs_lebena3_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 4 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena3_idea
+				add_idea = FRA_curs_lebena4_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 5 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena4_idea
+				add_idea = FRA_curs_lebena5_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 6 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena5_idea
+				add_idea = FRA_curs_lebena6_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 7 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena6_idea
+				add_idea = FRA_curs_lebena7_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 8 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena7_idea
+				add_idea = FRA_curs_lebena8_idea
+				}
+			}	
+		}
+
+	}
+	
+	
+	
+	
+	
+	
+
+
+
+	strahovanie_rabochih_decision = {
+		icon = eng_trade_unions_support
+		
+		activation = {
+        	has_country_flag = FRA_curs_lebrena_activate
+    	}
+
+		available = {
+			always = no
+		}
+
+		is_good = yes
+		priority = 1
+
+		fire_only_once = yes
+
+		visible = {
+			hidden_trigger = {
+				limit = { check_variable = { reshenia1_lebrena = 0 } }
+			}
+		}
+		cancel_if_not_visible = yes
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = fra_has_cancelled_three_reform
+			}
+		}
+		
+
+		days_mission_timeout = 730
+		
+		timeout_effect = {
+			
+		add_stability = -0.15	
+
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.15
+		}		
+			
+		}
+	}
+	
+	strahovanie_rabochih_n_decision = {
+		icon = eng_trade_unions_support
+
+		activation = {
+        	has_country_flag = FRA_curs_lebrena_activate
+    	}
+
+		available = {
+			has_country_flag = FRA_curs_lebrena_activate
+		}
+
+		is_good = yes
+
+		cost = 35
+
+		priority = 1
+
+		fire_only_once = yes
+
+		visible = {
+			always = yes					
+		}
+		
+		days_remove = 35
+		
+		complete_effect = {
+		
+		set_country_flag = fra_has_cancelled_three_reform
+		
+		add_to_variable = { curs_lebrena = 1 }
+			
+			if = {
+				limit = { check_variable = { curs_lebrena = 1 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena0_idea
+				add_idea = FRA_curs_lebena1_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 2 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena1_idea
+				add_idea = FRA_curs_lebena2_idea
+				}
+			}
+			
+			if = {
+				limit = { check_variable = { curs_lebrena = 3 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena2_idea
+				add_idea = FRA_curs_lebena3_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 4 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena3_idea
+				add_idea = FRA_curs_lebena4_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 5 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena4_idea
+				add_idea = FRA_curs_lebena5_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 6 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena5_idea
+				add_idea = FRA_curs_lebena6_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 7 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena6_idea
+				add_idea = FRA_curs_lebena7_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 8 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena7_idea
+				add_idea = FRA_curs_lebena8_idea
+				}
+			}		
+		}
+
+	}
+	
+	
+	
+	
+	
+	modernization_proizvodstva_decision = {
+		icon = eng_trade_unions_support
+		
+		activation = {
+        	has_country_flag = FRA_curs_lebrena_activate
+    	}
+
+		available = {
+			always = no
+		}
+
+		is_good = yes
+		priority = 1
+
+		fire_only_once = yes
+
+		visible = {
+			hidden_trigger = {
+				limit = { check_variable = { reshenia1_lebrena = 0 } }
+			}
+		}
+		cancel_if_not_visible = yes
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = fra_has_cancelled_four_reform
+			}
+		}
+		
+
+		days_mission_timeout = 730
+		
+		timeout_effect = {
+			
+		add_stability = -0.15		
+		
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.15
+		}
+			
+		}
+	}
+	
+	
+	modernization_proizvodstva_n_decision = {
+		icon = eng_trade_unions_support
+
+		activation = {
+        	has_country_flag = FRA_curs_lebrena_activate
+    	}
+
+		available = {
+			has_country_flag = FRA_curs_lebrena_activate
+		}
+
+		is_good = yes
+
+		cost = 35
+
+		priority = 1
+
+		fire_only_once = yes
+
+		visible = {
+			always = yes					
+		}
+		
+		days_remove = 35
+		
+		complete_effect = {
+		
+		set_country_flag = fra_has_cancelled_four_reform
+		
+		add_to_variable = { curs_lebrena = 1 }
+			
+			if = {
+				limit = { check_variable = { curs_lebrena = 1 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena0_idea
+				add_idea = FRA_curs_lebena1_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 2 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena1_idea
+				add_idea = FRA_curs_lebena2_idea
+				}
+			}
+			
+			if = {
+				limit = { check_variable = { curs_lebrena = 3 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena2_idea
+				add_idea = FRA_curs_lebena3_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 4 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena3_idea
+				add_idea = FRA_curs_lebena4_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 5 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena4_idea
+				add_idea = FRA_curs_lebena5_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 6 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena5_idea
+				add_idea = FRA_curs_lebena6_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 7 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena6_idea
+				add_idea = FRA_curs_lebena7_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 8 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena7_idea
+				add_idea = FRA_curs_lebena8_idea
+				}
+			}		
+		}
+
+	}
+
+}

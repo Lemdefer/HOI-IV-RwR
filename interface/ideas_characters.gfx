@@ -931,6 +931,11 @@ spriteTypes = {
 		name = "GFX_idea_HUN_miklos_horthy"
 		texturefile = "gfx/interface/ideas/idea_HUN_miklos_horthy.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_HUN_Palka"
+		texturefile = "gfx/interface/ideas/Palka.png"
+	}
 
 	### ICE
 

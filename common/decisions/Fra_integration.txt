@@ -1,0 +1,190 @@
+FRA_integration_category = {
+
+	africa_integration_decision = {
+		icon = eng_trade_unions_support
+
+		available = {
+		NOT = {	has_country_flag = FRA_idet_integration }
+
+			557 = { compliance > 80 }
+			272 = { compliance > 80 }
+			780 = { compliance > 80 }	
+			556 = { compliance > 80 }
+			779 = { compliance > 80 }
+			778 = { compliance > 80 }
+			781 = { compliance > 80 }
+			777 = { compliance > 80 }
+			776 = { compliance > 80 }
+			774 = { compliance > 80 }	
+			773 = { compliance > 80 }
+			660 = { compliance > 80 }
+			772 = { compliance > 80 }
+			539 = { compliance > 80 }
+		
+		}
+
+		is_good = yes
+
+		cost = 200
+
+		priority = 1
+
+		fire_only_once = yes
+		
+		modifier = {
+			consumer_goods_factor = 0.2		
+			political_power_gain = -0.2
+			}	
+
+		visible = {
+			always = yes					
+		}
+		
+		days_remove = 365
+		
+		complete_effect = {
+		add_state_core = 557
+		add_state_core = 272
+		add_state_core = 780
+		add_state_core = 556
+		add_state_core = 779
+		add_state_core = 778
+		add_state_core = 781
+		add_state_core = 777		
+		add_state_core = 776
+		add_state_core = 774
+		add_state_core = 773
+		add_state_core = 660
+		add_state_core = 772
+		add_state_core = 539	
+		
+		set_country_flag = FRA_idet_integration
+		
+		}
+		
+		remove_effect = {
+		
+		clr_country_flag = FRA_idet_integration
+		
+		}
+	}
+	arab_integration_decision = {
+		icon = eng_trade_unions_support
+
+
+
+		available = {
+			NOT = { has_country_flag = FRA_idet_integration }
+			
+			462 = { compliance > 80 }
+			461 = { compliance > 80 }
+			513 = { compliance > 80 }
+			459 = { compliance > 80 }	
+			460 = { compliance > 80 }
+			458 = { compliance > 80 }
+			665 = { compliance > 80 }
+			
+		}
+
+		is_good = yes
+
+		cost = 200
+
+		priority = 1
+
+		fire_only_once = yes
+		
+		modifier = {
+			consumer_goods_factor = 0.2	
+			political_power_gain = -0.2			
+			}	
+
+		visible = {
+			always = yes					
+		}
+		
+		days_remove = 365
+		
+		complete_effect = {
+		add_state_core = 462
+		add_state_core = 461
+		add_state_core = 513
+		add_state_core = 459
+		add_state_core = 460
+		add_state_core = 458
+		add_state_core = 665
+		
+		set_country_flag = FRA_idet_integration
+		
+		}
+		
+		remove_effect = {
+		
+		clr_country_flag = FRA_idet_integration
+		
+		}
+	}
+	asian_integration_decision = {
+		icon = eng_trade_unions_support
+
+
+
+		available = {
+			NOT = { has_country_flag = FRA_idet_integration }
+			
+			286 = { compliance > 80 }
+			741 = { compliance > 80 }
+			670 = { compliance > 80 }
+			671 = { compliance > 80 }			
+		}
+
+		is_good = yes
+
+		cost = 200
+
+		priority = 1
+
+		fire_only_once = yes
+		
+		modifier = {
+			consumer_goods_factor = 0.2
+			political_power_gain = -0.2
+			}	
+
+		visible = {
+			always = yes					
+		}
+		
+		days_remove = 365
+		
+		complete_effect = {
+		add_state_core = 286
+		add_state_core = 741
+		add_state_core = 670
+		add_state_core = 671
+		
+		set_country_flag = FRA_idet_integration
+		
+		}
+		
+		remove_effect = {
+		
+		clr_country_flag = FRA_idet_integration
+		
+		}
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

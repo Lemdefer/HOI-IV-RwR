@@ -52,5 +52,11 @@ on_actions = {
 		}
 	}
 	
+#	on_startup = {
+#		effect = {   
+#			set_variable = { curs_lebrena = 0 } 
+#		}
+#	}
+	
 	
 }

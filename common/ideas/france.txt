@@ -425,7 +425,7 @@ ideas = {
 			modifier = {
 			
 			consumer_goods_factor = -0.1
-			monthly_population = 0.015
+			monthly_population = 0.05
 			stability_factor = 0.05		
 
 			}
@@ -709,18 +709,322 @@ ideas = {
 		}
 		
 		
+				
+		FRA_domination_of_liberty_misly_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.1
+				
+				
+			}	
+		}
+		
+					
+		FRA_curs_lebena0_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {
+				
+			}	
+		}
+				
+		FRA_curs_lebena1_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {
+				
+			}	
+		}
+		
+		FRA_curs_lebena2_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05 
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05 	
+			}	
+		}
+		FRA_curs_lebena3_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {
+				stability_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05 
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05 	
+			}	
+		}
+		FRA_curs_lebena4_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = -0.02
+				production_factory_max_efficiency_factor = 0.05 
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05 	
+			}	
+		}
+		
+		FRA_curs_lebena5_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = -0.02
+				production_factory_max_efficiency_factor = 0.05 
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.05 	
+			}	
+		}
+		
+		FRA_curs_lebena6_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {
+				political_power_factor = 0.10
+				research_speed_factor = 0.10	
+				stability_factor = 0.1
+				political_power_gain = -0.02
+				production_factory_max_efficiency_factor = 0.05 
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.05 	
+			}	
+		}
+		
+		FRA_curs_lebena7_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {
+				consumer_goods_factor = -0.05				
+				political_power_factor = 0.10
+				research_speed_factor = 0.10	
+				political_power_gain = -0.02
+				production_factory_max_efficiency_factor = 0.05 
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.1 	
+				
+			}	
+		}
+		
+		FRA_curs_lebena8_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {
+				consumer_goods_factor = -0.1				
+				political_power_factor = 0.10
+				research_speed_factor = 0.10	
+				political_power_gain = -0.02
+				production_factory_max_efficiency_factor = 0.15 
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.25 					
+			}	
+		}
 		
 		
 		
 		
 		
+		FRA_obogoshiaetes_idea = { 
+
+			#picture = 
 		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {
+			production_factory_max_efficiency_factor = 0.20						
+			}	
+		}
 		
+		FRA_perestroika_idea = { 
+
+			#picture = 
 		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {
+			political_power_factor = -0.20					
+			}	
+		}
 		
+		FRA_perestroikaend_idea = { 
+
+			#picture = 
 		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {			
+			war_support_factor = 0.05
+			stability_factor = 0.15	
+			political_power_gain = 0.1		
+			}	
+		}
 		
+		FRA_obrazes_liberal_demokraty_idea = { 
+
+			#picture = 
 		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {			
+			war_support_factor = 0.05
+			stability_factor = 0.1	
+			political_power_gain = 0.2			
+			consumer_goods_factor = -0.1				
+			political_power_factor = 0.10
+			research_speed_factor = 0.10	
+			production_factory_max_efficiency_factor = 0.15 
+			industrial_capacity_factory = 0.15
+			production_speed_buildings_factor = 0.25 	
+			}	
+		}
+		
+	
 		
 		
 		

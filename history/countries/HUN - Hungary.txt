@@ -158,6 +158,8 @@ set_popularities = {
 	neutrality = 7
 }
 
+recruit_character = HUN_pal_maleter
+
 create_country_leader = {
 	name = "Denes Berinkey" 
 	desc = ""
@@ -268,3 +270,5 @@ create_field_marshal = {
 	planning_skill = 2
 	logistics_skill = 2
 }
+
+recruit_character = HUN_pal_maleter

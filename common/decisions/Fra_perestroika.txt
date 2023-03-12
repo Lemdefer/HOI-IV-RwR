@@ -1,0 +1,192 @@
+FRA_reconstruction_category = {
+
+
+	perestroit_national_sobranie_decision = {
+		icon = eng_trade_unions_support
+
+		activation = {
+        	has_country_flag = FRA_reconstruction_activate
+    	}
+
+		available = {
+			has_country_flag = FRA_reconstruction_activate
+		}
+
+		is_good = yes
+
+		cost = 50
+
+		priority = 1
+
+		fire_only_once = yes
+		
+		modifier = {
+			political_power_gain = 0.05			
+			}	
+
+		visible = {
+			always = yes					
+		}
+		
+		days_remove = 90
+		
+		complete_effect = {
+		
+			add_to_variable = { peresroikareforms = 1 }
+		
+			
+		}
+	}
+	rasshirit_polnomochia_local_samoupravlenia_decision = {
+		icon = eng_trade_unions_support
+
+		activation = {
+        	has_country_flag = FRA_reconstruction_activate
+    	}
+
+		available = {
+			has_country_flag = FRA_reconstruction_activate
+		}
+
+		is_good = yes
+
+		cost = 50
+
+		priority = 1
+
+		fire_only_once = yes
+		
+		modifier = {
+			political_power_gain = 0.05			
+			}	
+
+		visible = {
+			always = yes					
+		}
+		
+		days_remove = 90
+		
+		complete_effect = {
+		
+		add_to_variable = { peresroikareforms = 1 }
+			
+		}
+	}
+	sytem_of_ogranichenia_decision = {
+		icon = eng_trade_unions_support
+
+		activation = {
+        	has_country_flag = FRA_reconstruction_activate
+    	}
+
+		available = {
+			has_country_flag = FRA_reconstruction_activate
+		}
+
+		is_good = yes
+
+		cost = 50
+
+		priority = 1
+
+		fire_only_once = yes
+
+		visible = {
+			always = yes					
+		}
+		
+		days_remove = 90
+		
+		complete_effect = {
+		
+		war_support_factor = 0.05
+		add_stability = 0.15	
+		
+		add_to_variable = { peresroikareforms = 1 }
+			
+		}
+	}
+	set_three_party_system_decision = {
+		icon = eng_trade_unions_support
+
+		activation = {
+        	has_country_flag = FRA_reconstruction_activate
+    	}
+
+		available = {
+			has_country_flag = FRA_reconstruction_activate
+		}
+
+		is_good = yes
+
+		cost = 50
+
+		priority = 1
+
+		fire_only_once = yes
+
+		visible = {
+			always = yes					
+		}
+		
+		days_remove = 90
+		
+		complete_effect = {
+		
+		set_popularities = {
+		liberalisms = 55
+		socdem = 20
+		democratic = 25
+		}
+		
+		add_to_variable = { peresroikareforms = 1 }
+			
+		}
+	}
+	zavershit_perestroiku_decision = {
+		icon = eng_trade_unions_support
+
+		available = {
+			 check_variable = { peresroikareforms = 4 }
+		}
+		
+#		allowed = {
+#		if = {
+#				limit = { check_variable = { peresroikareforms = 4 }}
+#			}	
+#		
+#		}
+
+		is_good = yes
+
+		cost = 100
+
+		priority = 1
+
+		fire_only_once = yes
+
+		visible = {
+			always = yes					
+		}
+		
+		days_remove = 90
+		
+		complete_effect = {
+		
+		swap_ideas = {
+				remove_idea = FRA_perestroika_idea
+				add_idea = FRA_perestroikaend_idea
+				}
+			
+		}
+	}
+
+
+
+
+
+
+
+
+
+}

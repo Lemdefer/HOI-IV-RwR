@@ -64,6 +64,32 @@ characters={
 			id=-1
 		}
 	}
+	
+	HUN_pal_maleter={
+		name=HUN_pal_maleter
+		portraits={
+			army={
+				large=GFX_Portrait_hungary_Palka
+				small="GFX_idea_HUN_Palka"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = pal_maleter
+			ledger = army
+			allowed = {
+				original_tag = HUN
+			}
+			traits = {
+				army_armored_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+	}
+		
 
 	HUN_matyas_rakosi={
 		name=HUN_matyas_rakosi

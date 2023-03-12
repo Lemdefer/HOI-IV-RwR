@@ -16,3 +16,34 @@ FRA_prosba_naroda_category = {
 		has_country_flag = FRA_congress_investment
 	}
 }
+
+
+FRA_curs_lebrena_category = {
+	icon = GFX_decision_category_border_conflicts
+	priority = 1000
+	visible = {
+		original_tag = FRA
+		has_country_flag = FRA_curs_lebrena_activate
+	}
+}
+
+
+FRA_reconstruction_category = {
+	icon = GFX_decision_category_border_conflicts
+	priority = 1000
+	visible = {
+		original_tag = FRA
+		has_country_flag = FRA_reconstruction_activate
+	}
+}
+
+FRA_integration_category = {
+	icon = GFX_decision_category_border_conflicts
+	priority = 1000
+	visible = {
+		original_tag = FRA
+		has_country_flag = FRA_integration_activate
+	}
+}
+
+

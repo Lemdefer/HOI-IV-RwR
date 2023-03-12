@@ -1756,6 +1756,12 @@
 		}
 
 		completion_reward = {
+		
+		add_stability = 0.1
+		add_political_power = 100
+		set_variable = { curs_lebrena = 0 } 
+		
+		add_ideas = FRA_curs_lebena0_idea
 			
 		}
 	}
@@ -1773,13 +1779,143 @@
 			focus = FRA_lebron_democratic_bloc
 		}
 
-		cost = 5
+		cost = 6
 
 		available = {
 
 		}
 
 		completion_reward = {
+		
+		add_political_power = 50
+		
+		add_ideas = FRA_domination_of_liberty_misly_idea		
+		
+		RUS = {
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.05
+		}
+		}
+		SPR = {
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.05
+		}
+		}
+		BEL = {
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.05
+		}
+		}
+		RHI = {
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.05
+		}
+		}
+		LUX = {
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+		}
+		}
+		ENG = {
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+		}
+		}
+		HOL = {
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+		}
+		}
+		GER = {
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+		}
+		}
+		DEN = {
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+		}
+		}
+		NOR = {
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+		}
+		}
+		SWE = {
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+		}
+		}
+		CZE = {
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+		}
+		}
+		SWI = {
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+		}
+		}
+		ALB = {
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+		}
+		}
+		GRE = {
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+		}
+		}
+		YUG = {
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+		}
+		}
+		ROM = {
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+		}
+		}
+		HUN = {
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+		}
+		}
+		AUS = {
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+		}
+		}
+		SLO = {
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+		}
+		}		
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.05
+		}
+		
 			
 		}
 	}
@@ -1803,8 +1939,72 @@
 
 		}
 
-		completion_reward = {
+		completion_reward = {	
+		
+			add_political_power = 50
 			
+			custom_effect_tooltip = FRA_modernization_of_curs_tt
+			
+			add_to_variable = { curs_lebrena = 1 }
+			
+			if = {
+				limit = { check_variable = { curs_lebrena = 1 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena0_idea
+				add_idea = FRA_curs_lebena1_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 2 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena1_idea
+				add_idea = FRA_curs_lebena2_idea
+				}
+			}
+			
+			if = {
+				limit = { check_variable = { curs_lebrena = 3 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena2_idea
+				add_idea = FRA_curs_lebena3_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 4 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena3_idea
+				add_idea = FRA_curs_lebena4_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 5 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena4_idea
+				add_idea = FRA_curs_lebena5_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 6 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena5_idea
+				add_idea = FRA_curs_lebena6_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 7 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena6_idea
+				add_idea = FRA_curs_lebena7_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 8 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena7_idea
+				add_idea = FRA_curs_lebena8_idea
+				}
+			}
+
 		}
 	}
 
@@ -1828,6 +2028,79 @@
 		}
 
 		completion_reward = {
+		
+			add_to_variable = { curs_lebrena = 1 }
+			
+			custom_effect_tooltip = FRA_modernization_of_curs_tt
+			
+			
+			if = {
+				limit = { check_variable = { curs_lebrena = 1 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena0_idea
+				add_idea = FRA_curs_lebena1_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 2 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena1_idea
+				add_idea = FRA_curs_lebena2_idea
+				}
+			}
+			
+			if = {
+				limit = { check_variable = { curs_lebrena = 3 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena2_idea
+				add_idea = FRA_curs_lebena3_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 4 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena3_idea
+				add_idea = FRA_curs_lebena4_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 5 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena4_idea
+				add_idea = FRA_curs_lebena5_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 6 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena5_idea
+				add_idea = FRA_curs_lebena6_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 7 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena6_idea
+				add_idea = FRA_curs_lebena7_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 8 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena7_idea
+				add_idea = FRA_curs_lebena8_idea
+				}
+			}
+		
+			
+			
+			set_country_flag = FRA_curs_lebrena_activate
+			
+			set_variable = { reshenia1_lebrena = 0 } 
+			
+		
+		
+		
 			
 		}
 	}
@@ -1852,7 +2125,68 @@
 		}
 
 		completion_reward = {
+		
+		add_to_variable = { curs_lebrena = 1 }
+		
+			custom_effect_tooltip = FRA_modernization_of_curs_tt
+		
+		if = {
+				limit = { check_variable = { curs_lebrena = 1 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena0_idea
+				add_idea = FRA_curs_lebena1_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 2 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena1_idea
+				add_idea = FRA_curs_lebena2_idea
+				}
+			}
 			
+			if = {
+				limit = { check_variable = { curs_lebrena = 3 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena2_idea
+				add_idea = FRA_curs_lebena3_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 4 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena3_idea
+				add_idea = FRA_curs_lebena4_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 5 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena4_idea
+				add_idea = FRA_curs_lebena5_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 6 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena5_idea
+				add_idea = FRA_curs_lebena6_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 7 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena6_idea
+				add_idea = FRA_curs_lebena7_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 8 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena7_idea
+				add_idea = FRA_curs_lebena8_idea
+				}
+			}		
 		}
 	}
 
@@ -1876,6 +2210,68 @@
 		}
 
 		completion_reward = {
+		
+		custom_effect_tooltip = FRA_modernization_of_curs_tt
+		
+		add_to_variable = { curs_lebrena = 1 }
+		
+		if = {
+				limit = { check_variable = { curs_lebrena = 1 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena0_idea
+				add_idea = FRA_curs_lebena1_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 2 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena1_idea
+				add_idea = FRA_curs_lebena2_idea
+				}
+			}
+			
+			if = {
+				limit = { check_variable = { curs_lebrena = 3 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena2_idea
+				add_idea = FRA_curs_lebena3_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 4 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena3_idea
+				add_idea = FRA_curs_lebena4_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 5 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena4_idea
+				add_idea = FRA_curs_lebena5_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 6 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena5_idea
+				add_idea = FRA_curs_lebena6_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 7 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena6_idea
+				add_idea = FRA_curs_lebena7_idea
+				}
+			}
+			if = {
+				limit = { check_variable = { curs_lebrena = 8 }}
+				swap_ideas = {
+				remove_idea = FRA_curs_lebena7_idea
+				add_idea = FRA_curs_lebena8_idea
+				}
+			}
 			
 		}
 	}
@@ -1893,16 +2289,26 @@
 			focus = FRA_bankers_and_their_demands
 		}
 
-		cost = 5
+		cost = 6
 
 		available = {
 
 		}
 
 		completion_reward = {
-			
+		
+		add_political_power = 200
+		
+		add_ideas = free_trade
+		
+		add_timed_idea = {
+    			idea = FRA_obogoshiaetes_idea
+    			days = 180
+			}			
 		}
+	
 	}
+	
 
 	#Перестройка Франции
 	focus = {
@@ -1930,6 +2336,16 @@
 		}
 
 		completion_reward = {
+		
+		set_country_flag = FRA_reconstruction_activate
+		
+		add_ideas = FRA_perestroika_idea
+		
+		
+		set_variable = { peresroikareforms = 0 } 
+		
+		
+		
 			
 		}
 	}
@@ -1954,6 +2370,12 @@
 		}
 
 		completion_reward = {
+		
+		set_country_flag = FRA_integration_activate
+		
+		custom_effect_tooltip = FRA_integration_tt
+		
+		
 			
 		}
 	}
@@ -1978,7 +2400,13 @@
 		}
 
 		completion_reward = {
-			
+				
+		set_autonomy = {
+			target = RHI
+			autonomy_state = autonomy_dominion
+			end_wars = no
+			end_civil_wars = no
+		}		
 		}
 	}
 
@@ -2002,6 +2430,40 @@
 		}
 
 		completion_reward = {
+		
+		add_manpower = 200000
+		
+		16 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+		16 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+		}
+		
 			
 		}
 	}
@@ -2032,6 +2494,18 @@
 		}
 
 		completion_reward = {
+		
+		add_political_power = 200
+		
+		
+		remove_ideas = FRA_curs_lebena8_idea
+		remove_ideas = FRA_domination_of_liberty_misly_idea
+		remove_ideas = FRA_perestroikaend_idea
+		
+		add_ideas = FRA_obrazes_liberal_demokraty_idea
+		
+		add_stability = 0.1
+		add_war_support = 0.15
 			
 		}
 	}
