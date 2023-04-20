@@ -1,0 +1,667 @@
+FRA_benelux_mechanika_category = {
+
+	benelux_vliyanie_mission = {
+		icon = eng_trade_unions_support
+		
+		activation = {
+        	has_global_flag = FRA_benelux_mechanikan_activate
+    	}
+
+		available = {
+			always = no
+		}
+
+		is_good = yes
+		priority = 1
+		fire_only_once = yes
+
+		days_mission_timeout = 210
+		
+		timeout_effect = {
+		clr_global_flag = FRA_benelux_mechanikan_activate
+		if = {
+		limit = { NOT = { OR = {
+			BEL = {has_government = socdem}
+			HOL = {has_government = socdem}
+				}
+		}
+		}
+		ENG = { country_event = { days = 1 id =  england.112 }}
+		FRA = { country_event = { days = 1 id =  FRA.22 }}
+		}
+		
+		}
+	}
+
+########## решения для франции
+########## бельгиz
+	suport_work_org_bel = {
+		icon = eng_trade_unions_support
+		
+		allowed = {
+			original_tag = FRA
+		}
+
+		available = {
+			original_tag = FRA
+		}
+
+		visible = {
+			original_tag = FRA
+		}
+
+		is_good = yes
+		cost = 10
+		priority = 1
+
+		days_remove = 50
+		days_re_enable = 15
+		
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		
+		complete_effect = {
+		
+		ENG = { add_to_variable = { solidarnist_rabochi_bel = 0.20 }}
+		FRA = { add_to_variable = { solidarnist_rabochi_bel = 0.20 }}
+		custom_effect_tooltip = belgia1
+			
+		}
+	}
+	
+	provesti_sovmestn_action_bel = {
+		icon = eng_trade_unions_support
+		
+		available = {
+			has_global_flag = FRA_benelux_mechanikan_activate
+		}
+		visible = {
+			original_tag = FRA
+		}
+
+		is_good = yes
+		cost = 10
+		priority = 1
+
+		days_remove = 80
+		days_re_enable = 20
+		
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		
+		complete_effect = {
+		
+		ENG = { add_to_variable = { solidarnist_rabochi_bel = 0.25 }}
+		FRA = { add_to_variable = { solidarnist_rabochi_bel = 0.25 }}
+		custom_effect_tooltip = belgia2	
+		}
+	}
+	otoslat_provokators_bel = {
+		icon = eng_trade_unions_support
+		
+		available = {
+			has_global_flag = FRA_benelux_mechanikan_activate
+		}
+		visible = {
+			original_tag = FRA
+		}
+
+		is_good = yes
+		cost = 25
+		priority = 1
+
+		days_remove = 35
+		days_re_enable = 20
+		
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		
+		complete_effect = {
+		
+		ENG = { add_to_variable = { solidarnist_rabochi_bel = 0.15 }}
+		FRA = { add_to_variable = { solidarnist_rabochi_bel = 0.15 }} 
+		custom_effect_tooltip = belgia3	
+		}
+	}
+	organisate_masses_bel = {
+		icon = eng_trade_unions_support
+		
+		available = {
+			has_global_flag = FRA_benelux_mechanikan_activate
+		}
+		visible = {
+			original_tag = FRA
+		}
+
+		is_good = yes
+		cost = 80
+		priority = 1
+
+		days_remove = 100
+		days_re_enable = 25
+		
+		modifier = {
+			consumer_goods_factor = 0.2
+		}
+		
+		complete_effect = {
+		
+		ENG = { add_to_variable = { solidarnist_rabochi_bel = 0.35 }}
+		FRA = { add_to_variable = { solidarnist_rabochi_bel = 0.35 }} 
+		custom_effect_tooltip = belgia4	
+		}
+	}
+########## нидерланды
+suport_work_org_hol = {
+		icon = eng_trade_unions_support
+		
+		available = {
+			has_global_flag = FRA_benelux_mechanikan_activate
+		}
+		visible = {
+			original_tag = FRA
+		}
+
+		is_good = yes
+		cost = 10
+		priority = 1
+
+		days_remove = 50
+		days_re_enable = 15
+		
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		
+		complete_effect = {
+		
+		ENG = { add_to_variable = { solidarnist_rabochi_hed = 0.10 }}	
+		FRA = { add_to_variable = { solidarnist_rabochi_hed = 0.10 }}	
+		custom_effect_tooltip = holand1	
+		}
+	}
+	provesti_sovmestn_action_hol = {
+		icon = eng_trade_unions_support
+		
+		available = {
+			has_global_flag = FRA_benelux_mechanikan_activate
+		}
+		visible = {
+			original_tag = FRA
+		}
+
+		is_good = yes
+		cost = 10
+		priority = 1
+
+		days_remove = 80
+		days_re_enable = 20
+		
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		
+		complete_effect = {
+		
+		ENG = { add_to_variable = { solidarnist_rabochi_hed = 0.15 }}	
+		FRA = { add_to_variable = { solidarnist_rabochi_hed = 0.15 }}	
+		custom_effect_tooltip = holand2	
+		}
+	}
+	otoslat_provokators_hol = {
+		icon = eng_trade_unions_support
+		
+		available = {
+			has_global_flag = FRA_benelux_mechanikan_activate
+		}
+		visible = {
+			original_tag = FRA
+		}
+
+		is_good = yes
+		cost = 25
+		priority = 1
+
+		days_remove = 35
+		days_re_enable = 20
+		
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		
+		complete_effect = {
+		
+		ENG = { add_to_variable = { solidarnist_rabochi_hed = 0.05 }}	
+		FRA = { add_to_variable = { solidarnist_rabochi_hed = 0.05 }}	 
+		custom_effect_tooltip = holand3	
+		}
+	}
+	organisate_masses_hol = {
+		icon = eng_trade_unions_support
+		
+		available = {
+			has_global_flag = FRA_benelux_mechanikan_activate
+		}
+		visible = {
+			original_tag = FRA
+		}
+
+		is_good = yes
+		cost = 80
+		priority = 1
+
+		days_remove = 100
+		days_re_enable = 25
+		
+		modifier = {
+			consumer_goods_factor = 0.2
+		}
+		
+		complete_effect = {
+		
+		ENG = { add_to_variable = { solidarnist_rabochi_hed = 0.25 }}	
+		FRA = { add_to_variable = { solidarnist_rabochi_hed = 0.25 }}	
+		custom_effect_tooltip = holand4	
+		}
+	}
+
+
+########## решения для британии
+
+########## бельгиz
+	corolevski_priem_bel = {
+		icon = eng_trade_unions_support
+		
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			original_tag = ENG
+		}
+
+		visible = {
+			original_tag = ENG
+		}
+
+		is_good = yes
+		cost = 10
+		priority = 1
+
+		days_remove = 50
+		days_re_enable = 15
+		
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		
+		complete_effect = {
+		
+		FRA = { add_to_variable = { solidarnist_rabochi_bel = -0.20 }}
+		ENG = { add_to_variable = { solidarnist_rabochi_bel = -0.20 }}
+		custom_effect_tooltip = belgia11
+			
+		}
+	}
+	
+	help_finanses_bel = {
+		icon = eng_trade_unions_support
+		
+		available = {
+			has_global_flag = FRA_benelux_mechanikan_activate
+		}
+		visible = {
+			original_tag = ENG
+		}
+
+		is_good = yes
+		cost = 10
+		priority = 1
+
+		days_remove = 80
+		days_re_enable = 20
+		
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		
+		complete_effect = {
+		
+		FRA = { add_to_variable = { solidarnist_rabochi_bel = -0.25 }}
+		ENG = { add_to_variable = { solidarnist_rabochi_bel = -0.25 }}
+		custom_effect_tooltip = belgia21	
+		}
+	}
+	patriotic_press_bel = {
+		icon = eng_trade_unions_support
+		
+		available = {
+			has_global_flag = FRA_benelux_mechanikan_activate
+		}
+		visible = {
+			original_tag = ENG
+		}
+
+		is_good = yes
+		cost = 25
+		priority = 1
+
+		days_remove = 35
+		days_re_enable = 20
+		
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		
+		complete_effect = {
+		
+		FRA = { add_to_variable = { solidarnist_rabochi_bel = -0.15 }}
+		ENG = { add_to_variable = { solidarnist_rabochi_bel = -0.15 }}	 
+		custom_effect_tooltip = belgia31	
+		}
+	}
+########## нидерланды
+corolevski_priem_hol = {
+		icon = eng_trade_unions_support
+		
+		available = {
+			has_global_flag = FRA_benelux_mechanikan_activate
+		}
+		visible = {
+			original_tag = ENG
+		}
+
+		is_good = yes
+		cost = 10
+		priority = 1
+
+		days_remove = 50
+		days_re_enable = 15
+		
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		
+		complete_effect = {
+		
+		FRA = { add_to_variable = { solidarnist_rabochi_hed = -0.10 }} 
+		ENG = { add_to_variable = { solidarnist_rabochi_hed = -0.10 }} 
+		custom_effect_tooltip = holand11	
+		}
+	}
+	help_finanses_hol = {
+		icon = eng_trade_unions_support
+		
+		available = {
+			has_global_flag = FRA_benelux_mechanikan_activate
+		}
+		visible = {
+			original_tag = ENG
+		}
+
+		is_good = yes
+		cost = 10
+		priority = 1
+
+		days_remove = 80
+		days_re_enable = 20
+		
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		
+		complete_effect = {
+		
+		FRA = { add_to_variable = { solidarnist_rabochi_hed = -0.15 }} 
+		ENG = { add_to_variable = { solidarnist_rabochi_hed = -0.15 }}  
+		custom_effect_tooltip = holand21	
+		}
+	}
+	patriotic_press_hol = {
+		icon = eng_trade_unions_support
+		
+		available = {
+			has_global_flag = FRA_benelux_mechanikan_activate
+		}
+		visible = {
+			original_tag = ENG
+		}
+
+		is_good = yes
+		cost = 25
+		priority = 1
+
+		days_remove = 35
+		days_re_enable = 20
+		
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		
+		complete_effect = {
+		
+		FRA = { add_to_variable = { solidarnist_rabochi_hed = -0.05 }} 
+		ENG = { add_to_variable = { solidarnist_rabochi_hed = -0.05 }}  
+		custom_effect_tooltip = holand31
+		}
+	}
+
+############ прочии миссии/решения
+
+	pismo_v_reinland = {
+		icon = eng_trade_unions_support		
+		available = {
+			has_global_flag = FRA_benelux_mechanikan_activate
+		}
+		visible = {
+			original_tag = FRA
+		}
+		is_good = yes
+		cost = 10
+		priority = 1
+		complete_effect = {
+		RHI = {  country_event = { days = 1 id = FRA.23 } }	
+		}
+	}
+
+
+	bel_revolt_mission = {
+		icon = eng_trade_unions_support
+		
+		activation = {
+        	check_variable = { solidarnist_rabochi_bel > 0.99 }
+    	}
+
+		available = {
+			always = no
+		}
+
+		is_good = no
+		priority = 1
+		fire_only_once = yes
+
+		days_mission_timeout = 1
+		
+		timeout_effect = {
+		set_global_flag = red_storm_in_benelux
+		BEL = {
+			start_civil_war = {
+			ruling_party = socdem
+			ideology = ROOT
+			size = 0.8
+			capital = 34
+			states = {
+				34
+			}
+			keep_political_leader = yes
+			keep_political_party_members = yes
+		}
+		}		
+		}
+	}
+	hol_revolt_mission = {
+		icon = eng_trade_unions_support
+		
+		activation = {
+        	check_variable = { solidarnist_rabochi_hed > 0.99 }
+    	}
+
+		available = {
+			always = no
+		}
+
+		is_good = no
+		priority = 1
+		fire_only_once = yes
+
+		days_mission_timeout = 1
+		
+		timeout_effect = {
+		set_global_flag = red_storm_in_benelux
+		HOL = {
+			start_civil_war = {
+			ruling_party = socdem
+			ideology = ROOT
+			size = 0.8
+			capital = 35
+			states = {
+				35 36
+			}
+			keep_political_leader = yes
+			keep_political_party_members = yes
+		}
+		}		
+		}
+	}
+	
+	bel_alianse_mission = {
+		icon = eng_trade_unions_support
+		
+		activation = {
+        	check_variable = { solidarnist_rabochi_bel > 0.60 }
+    	}
+
+		available = {
+			always = no
+		}
+
+		is_good = no
+		priority = 1
+		fire_only_once = yes
+
+		days_mission_timeout = 1
+		
+		timeout_effect = {
+			set_global_flag = agresive_for
+			random_list = {
+			40 = {}
+			60 = {
+			ENG = { add_to_faction = BEL }
+			}			
+			}
+		}
+	}
+	hol_alianse_mission = {
+		icon = eng_trade_unions_support
+		
+		activation = {
+        	check_variable = { solidarnist_rabochi_hed > 0.60 }
+    	}
+
+		available = {
+			always = no
+		}
+
+		is_good = no
+		priority = 1
+		fire_only_once = yes
+
+		days_mission_timeout = 1
+		
+		timeout_effect = {
+			set_global_flag = agresive_for
+			random_list = {
+			40 = {}
+			60 = {
+			ENG = { add_to_faction = HOL }
+			}			
+			}
+		}
+	}
+	Triumph_belg_mission = {
+		icon = eng_trade_unions_support
+		
+		activation = {
+        	BEL = {has_government = socdem}
+    	}
+
+		available = {
+			always = no
+		}
+
+		is_good = no
+		priority = 1
+		fire_only_once = yes
+
+		days_mission_timeout = 1
+		
+		timeout_effect = {
+		FRA = { country_event = { days = 1 id =  FRA.18 }}	
+			
+		}
+	}
+	Triumph_hol_mission = {
+		icon = eng_trade_unions_support
+		
+		activation = {
+			HOL = {has_government = socdem}
+    	}
+
+		available = {
+			always = no
+		}
+
+		is_good = no
+		priority = 1
+		fire_only_once = yes
+
+		days_mission_timeout = 1
+		
+		timeout_effect = {
+		FRA = { country_event = { days = 1 id =  FRA.19 }}
+		}
+	}
+	####################################################!!!!!!!!!!!
+	O_nou_luxemborg_mission = {
+		icon = eng_trade_unions_support
+		
+		activation = {
+			BEL = {has_government = socdem}
+    	}
+
+		available = {
+			always = no
+		}
+
+		is_good = no
+		priority = 1
+		fire_only_once = yes
+
+		days_mission_timeout = 1
+		
+		timeout_effect = {
+		
+		}
+	}
+
+
+
+
+
+
+
+
+}

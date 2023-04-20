@@ -27,13 +27,32 @@ set_popularities = {
 add_ideas = {
 	FRA_frezed_army_reforms_idea
 	FRA_army_corruption_idea
+	FRA_national_raskol_idea
 }
+send_embargo = RUS
 
+add_opinion_modifier  = {
+    target = RUS
+    modifier = krah_russkoi_diplomatii
+}
 set_autonomy = {
     target = RHI
     autonomy_state = autonomy_integrated_puppet
     freedom_level = 0.5
 }
+
+set_party_name = {
+    ideology = fascism
+    long_name = Fire_kresti
+    name = Fire_kresti
+}
+set_party_name = {
+    ideology = paternalism
+    long_name = French_action
+    name = French_action
+}
+
+
 
 # Starting tech
 set_technology = {

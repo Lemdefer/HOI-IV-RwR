@@ -1,0 +1,16 @@
+scripted_gui = { 
+    benelux_mechanika= {
+        context_type = decision_category
+		window_name = "benelux_mechanika"
+		
+		visible = {
+		       
+		}
+		effects = {
+		
+		}
+		triggers = {
+		
+		}
+    }
+}

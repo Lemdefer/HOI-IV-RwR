@@ -1,0 +1,194 @@
+FRA_perevorot_national_coalition_category = {
+
+
+	army_crisis_mission = {
+		icon = eng_trade_unions_support
+		
+		activation = {
+        	has_country_flag = FRA_perevorot_national_coalition_activate
+    	}
+
+		available = {
+			always = no
+		}
+
+		is_good = yes
+		priority = 1
+		fire_only_once = yes
+
+		days_mission_timeout = 100
+		
+		cancel_trigger = {
+			has_country_flag = FRA_perevorot_national_coalition_predotvrashen
+		}
+		
+		timeout_effect = {
+		
+		
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			last_election = "1930.12.17"
+			election_frequency = 48
+			long_name = FRA_conserv_part
+			name = FRA_conserv
+		}
+		
+			
+		}
+	}
+	podkupit_mladsh_oficer = {
+		icon = eng_trade_unions_support
+		
+		available = {
+			has_country_flag = FRA_perevorot_national_coalition_activate
+		}
+
+		is_good = yes
+		cost = 10
+		priority = 1
+
+		days_remove = 20
+		days_re_enable = 10
+		
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = army_crisis_mission
+				days = 15
+			}
+		}
+
+	}
+	scared_generals = {
+		icon = eng_trade_unions_support
+
+		available = {
+			has_country_flag = FRA_perevorot_national_coalition_activate
+		}
+
+		is_good = yes
+		cost = 50
+		priority = 1
+		
+	
+		complete_effect = {
+		add_days_mission_timeout = {
+			mission = army_crisis_mission
+			days = 15
+		}
+		}
+
+	
+	}
+	gold_to_loyalists = {
+		icon = eng_trade_unions_support
+
+		available = {
+			has_country_flag = FRA_perevorot_national_coalition_activate
+		}
+		visible = {
+			has_country_flag = nowie_reshenia_dlya_army_cryzis
+		}
+
+		is_good = yes
+		cost = 20
+		priority = 1
+		fire_only_once = yes
+		days_remove = 25
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		
+		complete_effect = {
+		add_to_variable = { army_crysys = 1 }
+		}
+
+	
+	}
+	compromat_to_pritkie = {
+		icon = eng_trade_unions_support
+
+		available = {
+			has_country_flag = FRA_perevorot_national_coalition_activate
+		}
+		visible = {
+			has_country_flag = nowie_reshenia_dlya_army_cryzis
+		}
+
+		is_good = yes
+		cost = 40
+		priority = 1
+		fire_only_once = yes
+		days_remove = 25
+		
+		complete_effect = {
+		add_war_support = -0.05
+		add_to_variable = { army_crysys = 1 }
+		}
+
+	
+	}
+	promise_big_preference  = {
+		icon = eng_trade_unions_support
+
+		available = {
+			has_country_flag = FRA_perevorot_national_coalition_activate
+		}
+		visible = {
+			has_country_flag = nowie_reshenia_dlya_army_cryzis
+		}
+
+		is_good = yes
+		cost = 60
+		priority = 1
+		fire_only_once = yes
+		days_remove = 25
+		
+		complete_effect = {
+		add_stability = -0.05
+		add_to_variable = { army_crysys = 1 }
+		}
+
+	
+	}
+	cancel_army_crisis_mission = {
+		icon = eng_trade_unions_support
+		
+		activation = {
+        	check_variable = { army_crysys = 3}
+    	}
+		visible = {
+			always = no
+		}
+
+		available = {
+			always = no
+		}
+
+		is_good = no
+		priority = 1
+		fire_only_once = yes
+
+		days_mission_timeout = 1
+		
+		timeout_effect = {
+		set_country_flag = FRA_perevorot_national_coalition_predotvrashen
+		clr_country_flag = FRA_perevorot_national_coalition_activate
+			
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+	

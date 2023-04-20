@@ -590,6 +590,1087 @@ country_event = {
 		
 	}
 }
+#«Марсельский съезд по профсоюзам».
+country_event = {
+	id = FRA.13
+	title = FRA.13.t
+	desc = FRA.13.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.13.a
+		add_stability = 0.05
+		add_political_power = -20
+		add_popularity = {
+			ideology = socdem 
+			popularity = -0.03
+		}
+		add_popularity = {
+			ideology = libsoc 
+			popularity = -0.03
+		}
+		add_popularity = {
+			ideology = democratic 
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = liberalisms  
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = communism   
+			popularity = 0.02
+		}
+		
+	}			
+	option = {
+		name = FRA.13.b 
+		add_political_power = 60
+		add_popularity = {
+			ideology = democratic  
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = socdem   
+			popularity = 0.02
+		}
+		
+	}
+	option = {
+		name = FRA.13.c 
+		add_political_power = -40
+		add_popularity = {
+			ideology = socdem   
+			popularity = 0.05
+		}
+		
+	}
+	option = {
+		name = FRA.13.e 
+		add_stability = -0.05
+		add_political_power = -20
+		add_popularity = {
+			ideology = socdem 
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = libsoc 
+			popularity = 0.05
+		}
+		add_to_variable = { podderjka_radikalov = 1 }
+	}
+}
+
+#«Остановить армейские брожения!».
+country_event = {
+	id = FRA.14
+	title = FRA.14.t
+	desc = FRA.14.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.14.a
+		add_popularity = {
+			ideology = socdem 
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = fascism 
+			popularity = -0.03
+		}
+		add_popularity = {
+			ideology = democratic 
+			popularity = -0.03
+		}
+		set_country_flag = nowie_reshenia_dlya_army_cryzis
+		
+	}
+	option = {
+		name = FRA.14.b
+		
+		add_political_power = -20
+		add_popularity = {
+			ideology = socdem 
+			popularity = 0.02
+		}
+		add_timed_idea = {
+		idea = FRA_gren_soldats_idea
+		days = 210
+		}
+		hidden_effect = {
+		random_list = {
+		10 = { FRA_jean_de_lattre_de_tassigny = { remove_unit_leader_role = yes } }
+		10 = { FRA_alphonse_juin = { remove_unit_leader_role = yes } }
+		10 = { FRA_maurice_gamelin = { remove_unit_leader_role = yes } }
+		10 = { FRA_maxime_weygand = { remove_unit_leader_role = yes } }
+		10 = { FRA_alphonse_georges = { remove_unit_leader_role = yes } }
+		10 = { FRA_antoinemariebenoit_besson = { remove_unit_leader_role = yes } }
+		10 = { FRA_philippe_leclerc = { remove_unit_leader_role = yes } }
+		10 = { FRA_henri_giraud = { remove_unit_leader_role = yes } }
+		10 = { FRA_charles_huntziger = { remove_unit_leader_role = yes } }
+		10 = { FRA_gastonhenri_billotte = { remove_unit_leader_role = yes } }
+		}
+		}
+		custom_effect_tooltip = generali_v_otstavku
+		add_to_variable = { army_crysys = 3 }
+		
+		
+	}
+	option = {
+		name = FRA.14.c
+		add_political_power = -40
+		add_popularity = {
+			ideology = socdem 
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = libsoc 
+			popularity = 0.03
+		}
+		add_stability = -0.1
+		add_to_variable = { army_crysys = 3 }
+		custom_effect_tooltip = krizis_stop
+		country_event = { days = 25 id = FRA.143 } 
+		country_event = { days = 45 id = FRA.141 } 
+		country_event = { days = 65 id = FRA.142 } 
+		add_to_variable = { podderjka_radikalov = 1 }
+		
+	}
+}
+
+#Террор в провинции.
+country_event = {
+	id = FRA.141
+	title = FRA.141.t
+	desc = FRA.141.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.141.a
+		add_political_power = -20
+		add_stability = -0.15
+		add_manpower = -245
+		add_popularity = {
+			ideology = socdem 
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = libsoc 
+			popularity = 0.03
+		}
+		
+		
+	}
+}
+
+#Бои в Эльзасе. 
+country_event = {
+	id = FRA.142
+	title = FRA.142.t
+	desc = FRA.142.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.142.a
+		news_event = {
+			id = news.4
+			days = 1
+		}
+		set_global_flag = boy_in_elsass
+		add_political_power = -40
+		add_stability = -0.10
+		add_manpower = -2167
+	}
+}
+
+#Парижский трибунал. 
+country_event = {
+	id = FRA.143
+	title = FRA.143.t
+	desc = FRA.143.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.143.a
+		add_stability = -0.05
+		add_war_support = -0.05
+		hidden_effect = {
+		random_list = {
+		10 = { FRA_jean_de_lattre_de_tassigny = { remove_unit_leader_role = yes } }
+		10 = { FRA_alphonse_juin = { remove_unit_leader_role = yes } }
+		10 = { FRA_maurice_gamelin = { remove_unit_leader_role = yes } }
+		10 = { FRA_maxime_weygand = { remove_unit_leader_role = yes } }
+		10 = { FRA_alphonse_georges = { remove_unit_leader_role = yes } }
+		10 = { FRA_antoinemariebenoit_besson = { remove_unit_leader_role = yes } }
+		10 = { FRA_philippe_leclerc = { remove_unit_leader_role = yes } }
+		10 = { FRA_henri_giraud = { remove_unit_leader_role = yes } }
+		10 = { FRA_charles_huntziger = { remove_unit_leader_role = yes } }
+		10 = { FRA_gastonhenri_billotte = { remove_unit_leader_role = yes } }
+		}
+		}
+		custom_effect_tooltip = generali_osujdeni
+	}
+}
+
+#«Нантский секретный комитет». 
+country_event = {
+	id = FRA.15
+	title = FRA.15.t
+	desc = FRA.15.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.15.a
+		ai_chance = { factor = 100 }
+		add_political_power = -20
+		add_popularity = {
+			ideology = socdem 
+			popularity = 0.05
+		}
+	}
+	option = {
+		name = FRA.15.b
+		ai_chance = { factor = 0 }
+		add_stability = -0.05
+		add_popularity = {
+			ideology = socdem 
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = libsoc 
+			popularity = 0.03
+		}
+		add_to_variable = { podderjka_radikalov = 1 }
+	}
+}
+
+#Переформирование Ф.О.Р. 
+country_event = {
+	id = FRA.16
+	title = FRA.16.t
+	desc = FRA.16.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.16.a
+		add_political_power = -20
+		add_stability = -0.05
+		add_popularity = {
+			ideology = socdem 
+			popularity = 0.02
+		}
+	}
+	option = {
+		name = FRA.16.b
+		add_political_power = -40
+		add_stability = -0.1
+		add_popularity = {
+			ideology = socdem 
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = libsoc 
+			popularity = -0.05
+		}
+	}
+	option = {
+		name = FRA.16.c
+		add_political_power = -60
+		add_stability = -0.15
+		add_popularity = {
+			ideology = fascism 
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = democratic 
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = liberalisms 
+			popularity = 0.03
+		}
+		custom_effect_tooltip = podderjivali_li_vi_radikalov_tt
+		set_global_flag = french_revolution
+#		news_event = {
+#			id = news.5
+#			days = 1
+#		}
+hidden_effect = {
+		if = {
+		limit = { check_variable = { podderjka_radikalov = 3} }
+		
+		create_dynamic_country = {
+			original_tag = FRR
+			copy_tag = FRA
+			transfer_state = 15
+			transfer_state = 30
+			transfer_state = 18
+			transfer_state = 24
+		}
+		FRR = {
+				division_template = { 
+						name = "franse revolt novobranci"
+						division_names_group = FRR_CAM_01
+						is_locked = yes
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }							
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 2 }							
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 1 y = 3 }
+							infantry = { x = 2 y = 3 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+						priority = 0
+					}
+				24 = {
+				
+						create_unit = {
+							division = "division_template = \"franse revolt novobranci\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+							owner = FRR
+							count = 5
+						}					
+				}
+				18 = {
+				
+						create_unit = {
+							division = "division_template = \"franse revolt novobranci\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+							owner = FRR
+							count = 5
+						}					
+				}
+				15 = {
+				
+						create_unit = {
+							division = "division_template = \"franse revolt novobranci\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+							owner = FRR
+							count = 5
+						}				
+				}
+				30 = {
+				
+						create_unit = {
+							division = "division_template = \"franse revolt novobranci\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+							owner = FRR
+							count = 5
+						}
+				}
+				
+				set_politics = {
+				ruling_party = socdem
+				elections_allowed = no
+				last_election = "1925.12.17"
+				election_frequency = 48
+				long_name = FRR_socdem_party
+				name = FRR_socdem
+				}
+				
+				set_popularities = {
+					socdem = 50
+					libsoc = 50
+				}
+				
+				set_cosmetic_tag = FRR_socdem_revolt
+				
+				
+		}
+		
+		
+		FRR = {
+			declare_war_on = {
+			target = FRA
+			type = annex_everything
+			}
+		}
+			
+		}	
+		
+		}
+		}
+	option = {
+		name = FRA.16.e
+		add_political_power = -80
+		add_stability = -0.15
+		add_manpower = -523
+		add_popularity = {
+			ideology = socdem 
+			popularity = -0.5
+		}
+		add_popularity = {
+			ideology = libsoc 
+			popularity = -0.5
+		}
+		custom_effect_tooltip = podderjivali_li_vi_radikalov_tt
+		set_global_flag = french_revolution
+#		news_event = {
+#			id = news.5
+#			days = 1
+#		}
+hidden_effect = {
+		if = {
+		limit = { check_variable = { podderjka_radikalov = 3} }
+		
+		create_dynamic_country = {
+			original_tag = FRR
+			copy_tag = FRA
+			transfer_state = 15
+			transfer_state = 30
+			transfer_state = 18
+			transfer_state = 24
+		}
+		FRR = {
+				division_template = { 
+						name = "franse revolt novobranci"
+						division_names_group = FRR_CAM_01
+						is_locked = yes
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }							
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 2 }							
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 1 y = 3 }
+							infantry = { x = 2 y = 3 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+						priority = 0
+					}
+		
+				24 = {
+				
+						create_unit = {
+							division = "division_template = \"franse revolt novobranci\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+							owner = FRR
+							count = 5
+						}					
+				}
+				18 = {
+				
+						create_unit = {
+							division = "division_template = \"franse revolt novobranci\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+							owner = FRR
+							count = 5
+						}					
+				}
+				15 = {
+				
+						create_unit = {
+							division = "division_template = \"franse revolt novobranci\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+							owner = FRR
+							count = 5
+						}				
+				}
+				30 = {
+				
+						create_unit = {
+							division = "division_template = \"franse revolt novobranci\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+							owner = FRR
+							count = 5
+						}
+				}
+				
+				set_politics = {
+				ruling_party = socdem
+				elections_allowed = no
+				last_election = "1925.12.17"
+				election_frequency = 48
+				long_name = FRR_socdem_party
+				name = FRR_socdem
+				}
+				
+				set_popularities = {
+					socdem = 50
+					libsoc = 50
+				}
+				
+				set_cosmetic_tag = FRR_socdem_revolt 				
+		}		
+		FRR = {
+			declare_war_on = {
+			target = FRA
+			type = annex_everything
+			}
+		}			
+		}		
+		}
+	}
+}
+
+#«Новые господа»
+country_event = {
+	id = FRA.17
+	title = FRA.17.t
+	desc = FRA.17.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.17.a
+		add_political_power = -20
+		add_stability = -0.05
+	}
+}
+
+
+country_event = {
+	id = FRA.18
+	title = FRA.18.t
+	desc = FRA.18.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.18.a
+		FRA = { add_to_faction = BEL }
+	
+	}
+}
+
+country_event = {
+	id = FRA.19
+	title = FRA.19.t
+	desc = FRA.19.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.19.a
+		FRA = { add_to_faction = HOL }
+	}
+}
+
+country_event = {
+	id = FRA.20
+	title = FRA.20.t
+	desc = FRA.20.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.20.a		
+		ENG = { add_to_faction = BEL }		
+	}
+}
+
+country_event = {
+	id = FRA.21
+	title = FRA.21.t
+	desc = FRA.21.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.21.a
+		ENG = { add_to_faction = HOL }		
+	}
+}
+
+country_event = {
+	id = FRA.22
+	title = FRA.22.t
+	desc = FRA.22.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.22.a
+	}
+}
+country_event = {
+	id = FRA.23
+	title = FRA.23.t
+	desc = FRA.23.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.23.a
+	}
+	option = {
+		name = FRA.23.b
+	}
+	option = {
+		name = FRA.23.c
+	}
+}
+
+country_event = {
+	id = FRA.24
+	title = FRA.24.t
+	desc = FRA.24.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.24.a
+	}
+}
+
+
+######################нац коалиция
+
+country_event = {
+	id = FRA.25
+	title = FRA.25.t
+	desc = FRA.25.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.25.a
+	}
+}
+
+country_event = {
+	id = FRA.26
+	title = FRA.26.t
+	desc = FRA.26.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.26.a
+	}
+}
+#контр переворот лебрена
+country_event = {
+	id = FRA.27
+	title = FRA.27.t
+	desc = FRA.27.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.27.a
+			
+		drop_cosmetic_tag = yes
+		
+		set_politics = {
+		ruling_party = liberalisms
+		elections_allowed = no
+		last_election = "1935.12.17"
+		election_frequency = 48
+		long_name = French_liberals
+		name = French_liberals
+		}
+			
+		
+		
+	}
+}
+
+country_event = {
+	id = FRA.28
+	title = FRA.28.t
+	desc = FRA.28.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.28.a
+	}
+}
+
+
+
+# СПОРЫ О ДОКТРИНЕ РОКА
+country_event = {
+	id = FRA.29
+	title = FRA.29.t
+	desc = FRA.29.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.29.a
+		set_global_flag = doktrina_roka
+		add_manpower = 400000
+		add_political_power = -40
+		add_popularity = {
+		ideology = fascism 
+		popularity = -0.07	
+		}	
+		add_ideas = { FRA_vse_v_armii_idea }
+	}
+	option = {
+		name = FRA.29.b
+		set_global_flag = doktrina_roka
+		add_manpower = 100000
+		add_political_power = -20
+		add_popularity = {
+		ideology = fascism 
+		popularity = -0.03
+		}
+		add_ideas = { FRA_vse_v_armii_lite_idea }		
+	}
+	option = {
+		name = FRA.29.c
+		add_political_power = 20
+		add_stability = 0.05
+	}
+}
+
+
+
+# «Первым среди равных будет…»
+country_event = {
+	id = FRA.30
+	title = FRA.30.t
+	desc = FRA.30.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.30.a
+	}
+	option = {
+		name = FRA.30.b	
+	}
+	option = {
+		name = FRA.30.c
+	}
+}
+
+
+
+#«Цена порядка». 
+country_event = {
+	id = FRA.31
+	title = FRA.31.t
+	desc = FRA.31.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.31.a
+		add_political_power = -40
+		add_manpower = -2437
+	}
+}
+
+#Последствия дебоша
+country_event = {
+	id = FRA.32
+	title = FRA.32.t
+	desc = FRA.32.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.32.a	
+		add_manpower = -2375
+		add_political_power = -20
+		add_ideas = { FRA_polnie_haos_idea }		
+	}
+}
+
+#«Судьба Рока»
+country_event = {
+	id = FRA.33
+	title = FRA.33.t
+	desc = FRA.33.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.33.a	
+		add_stability = -0.05
+		add_political_power = -20
+		add_popularity = {
+		ideology = fascism 
+		popularity = -0.05
+		}	
+	}
+	option = {
+		name = FRA.33.b	
+		add_manpower = -1
+		add_stability = -0.07
+		add_political_power = -40
+		
+		random_list = {
+		30 = {
+		FRA = { country_event = { days = 7 id = FRA.35 } }	
+		}
+		70 = {
+		FRA = { country_event = { days = 7 id = FRA.36 } }	
+		}
+		}
+	}
+	option = {
+		name = FRA.33.c	
+		add_political_power = -60
+		
+		random_list = {
+		60 = {
+		FRA = { country_event = { days = 5 id = FRA.37 } }	
+		}
+		40 = {
+		FRA = { country_event = { days = 5 id = FRA.38 } }	
+		}
+		}
+		
+		
+	}
+}
+
+#«Наш дорогой Жан». 
+country_event = {
+	id = FRA.34
+	title = FRA.34.t
+	desc = FRA.34.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.34.a
+		add_popularity = {
+		ideology = paternalism   
+		popularity = -0.05
+		}
+		add_manpower = -23
+		add_stability = 0.03
+		add_political_power = 20
+	}
+	option = {
+		name = FRA.34.b
+		add_political_power = -10
+	}
+	option = {
+		name = FRA.34.c
+		add_political_power = -30
+		add_stability = -0.03
+		FRA = { country_event = { days = 40 id = FRA.40 } }		
+	}
+}
+
+
+
+#«Развал среди военных». 
+country_event = {
+	id = FRA.35
+	title = FRA.35.t
+	desc = FRA.35.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.35.a
+		add_stability = 0.07
+		add_war_support = 0.05
+		add_popularity = {
+		ideology = paternalism   
+		popularity = 0.05
+		}
+		add_popularity = {
+		ideology = fascism 
+		popularity = -0.2
+		}	
+	}
+}
+#«Последний переворот». 
+country_event = {
+	id = FRA.36
+	title = FRA.36.t
+	desc = FRA.36.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.36.a
+		add_popularity = {
+		ideology = paternalism   
+		popularity = -1.46
+		}
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_political_power = 20
+		add_manpower = -4360
+			
+		drop_cosmetic_tag = yes
+		
+		set_global_flag = counter_perevorot_inv_france
+		
+		FRA = { country_event = { days = 1 id = FRA.39 } }	
+	}
+}
+#«Нас отвергли!»
+country_event = {
+	id = FRA.37
+	title = FRA.37.t
+	desc = FRA.37.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.37.a
+		add_popularity = {
+		ideology = paternalism   
+		popularity = -0.03
+		}
+		add_stability = -0.03
+		add_war_support = -0.03
+		add_political_power = -60
+	}
+}
+#«Рок знает цену жизни»
+country_event = {
+	id = FRA.38
+	title = FRA.38.t
+	desc = FRA.38.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.38.a
+		add_political_power = -20
+	}
+	option = {
+		name = FRA.38.b
+		add_popularity = {
+		ideology = fascism 
+		popularity = 0.05
+		}	
+		add_political_power = -20
+		add_stability = 0.05
+		add_war_support = 0.07
+		
+		#############################################добавить рока генералом потом
+		
+		
+	}
+}
+#«Наш новый президент»
+country_event = {
+	id = FRA.39
+	title = FRA.39.t
+	desc = FRA.39.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.39.a
+		
+		set_politics = {
+		ruling_party = democratic
+		elections_allowed = no
+		last_election = "1935.12.17"
+		election_frequency = 48
+		long_name = FRA_Consrvnaya_party
+		name = FRA_Consrvnaya_party
+		}
+		complete_national_focus = FRA_the_absolute_triumph_of_paul_doumer
+	}
+	option = {
+		name = FRA.39.b
+		
+		set_politics = {
+		ruling_party = liberalisms
+		elections_allowed = no
+		last_election = "1935.12.17"
+		election_frequency = 48
+		long_name = FRA_liberalinaya_party
+		name = FRA_liberalinaya_party
+		}
+		complete_national_focus = FRA_lebron_democratic_bloc
+	}
+}
+
+
+#«Съезд Монархистов». 
+country_event = {
+	id = FRA.40
+	title = FRA.40.t
+	desc = FRA.40.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.40.a
+		add_political_power = -20
+	}
+	option = {
+		name = FRA.40.b
+		############################################ жан король франции
+		
+	}
+	option = {
+		name = FRA.40.c
+		FRA = { country_event = { days = 7 id = FRA.41 } }		
+	}
+}
+
+
+
+
+#«Парижский сговор»)
+country_event = {
+	id = FRA.41
+	title = FRA.41.t
+	desc = FRA.41.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.41.a
+	}
+}
+
+
+
 
 
 
@@ -609,8 +1690,180 @@ country_event = {
 	}
 }
 
+#ивент для России
+country_event = {
+	id = FRA.850
+	title = FRA.850.t
+	desc = FRA.850.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.850.a
+	}
+}
 
+#ивент для Испании(вета поля думера)
+country_event = {
+	id = FRA.851
+	title = FRA.851.t
+	desc = FRA.851.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.851.a
+		add_opinion_modifier = {
+			target = FRA
+			modifier = itogi_madridskogo_congressa1
+		}
+		FRA = {
+		add_opinion_modifier = {
+			target = SPR
+			modifier = itogi_madridskogo_congressa1
+		}
+		}
+		custom_effect_tooltip = spain_claims1_tt
+		hidden_effect = {
+		180 = { add_claim_by = SPR }
+		112 = { add_claim_by = SPR }
+		181 = { add_claim_by = SPR }
+		795 = { add_claim_by = SPR }
+		179 = { add_claim_by = SPR }
+		698 = { add_claim_by = SPR }
+		697 = { add_claim_by = SPR }
+		702 = { add_claim_by = SPR }
+		296 = { add_claim_by = SPR }
+		796 = { add_claim_by = SPR }
+		540 = { add_claim_by = SPR }
+		544 = { add_claim_by = SPR }
+		321 = { add_claim_by = SPR }
+		721 = { add_claim_by = SPR }
+		729 = { add_claim_by = SPR }
+		
+		545 = { add_claim_by = SPR }
+		771 = { add_claim_by = SPR }
+		770 = { add_claim_by = SPR }
+		720 = { add_claim_by = SPR }
+		299 = { add_claim_by = SPR }
+		687 = { add_claim_by = SPR }
+		691 = { add_claim_by = SPR }
+		689 = { add_claim_by = SPR }
+		308 = { add_claim_by = SPR }
+		692 = { add_claim_by = SPR }	
+		}
+		give_guarantee = FRA		
+		FRA = {
+		give_guarantee = SPR
+		}	
+		create_faction = French_command
+		FRA = { set_faction_leader = yes }
+		FRA = { add_to_faction = SPR }			
+	}
+	option = {
+		name = FRA.851.b
+		add_opinion_modifier = {
+			target = FRA
+			modifier = itogi_madridskogo_congressa2
+		}
+		FRA = {
+		add_opinion_modifier = {
+			target = SPR
+			modifier = itogi_madridskogo_congressa2
+		}
+		}
+		custom_effect_tooltip = spain_claims2_tt
+		hidden_effect = {
+		180 = { add_claim_by = SPR }
+		112 = { add_claim_by = SPR }
+		181 = { add_claim_by = SPR }
+		795 = { add_claim_by = SPR }
+		179 = { add_claim_by = SPR }
+		698 = { add_claim_by = SPR }
+		697 = { add_claim_by = SPR }
+		702 = { add_claim_by = SPR }
+		296 = { add_claim_by = SPR }
+		796 = { add_claim_by = SPR }
+		540 = { add_claim_by = SPR }
+		544 = { add_claim_by = SPR }
+		321 = { add_claim_by = SPR }
+		721 = { add_claim_by = SPR }
+		729 = { add_claim_by = SPR }
+		
+		545 = { add_claim_by = SPR }
+		771 = { add_claim_by = SPR }
+		770 = { add_claim_by = SPR }
+		720 = { add_claim_by = SPR }
+		299 = { add_claim_by = SPR }
+		687 = { add_claim_by = SPR }
+		691 = { add_claim_by = SPR }
+		689 = { add_claim_by = SPR }
+		308 = { add_claim_by = SPR }
+		692 = { add_claim_by = SPR }
 
+		SPR = { transfer_state = 462 }
+		SPR = { transfer_state = 461 }
+		}
+		give_guarantee = FRA		
+		FRA = {
+		give_guarantee = SPR
+		}	
+		create_faction = French_command
+		FRA = { set_faction_leader = yes }
+		FRA = { add_to_faction = SPR }
+		
+		FRA = { puppet = SPR }
+		
+	}
+	option = {
+		name = FRA.851.c
+		
+		add_opinion_modifier = {
+			target = FRA
+			modifier = itogi_madridskogo_congressa3
+		}
+		FRA = {
+		add_opinion_modifier = {
+			target = SPR
+			modifier = itogi_madridskogo_congressa3
+		}
+		}
+		FRA = {  country_event = { days = 1 id = FRA.852 } }	
+		
+	}
+}
+
+#ивент для Франции если испания отказывает
+country_event = {
+	id = FRA.852
+	title = FRA.852.t
+	desc = FRA.852.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.852.a
+		add_political_power = -100
+		add_opinion_modifier = {
+			target = SPR
+			modifier = ne_davim_na_ispaniu
+		}
+		SPR = {
+		add_opinion_modifier = {
+			target = FRA
+			modifier = ne_davim_na_ispaniu
+		}
+		}	
+	}
+	option = {
+		name = FRA.852.b
+		set_country_flag = FRA_spania_otkaz_activate	
+		custom_effect_tooltip = spanish_perevoerot_tt		
+	}
+}
 
 
 

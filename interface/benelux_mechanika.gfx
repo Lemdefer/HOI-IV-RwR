@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_benelux_mechanika_cartinka"
+		texturefile = "gfx/interface/benelux_mechanika/benelux_mechanika_pic.dds"
+	}
+}
+

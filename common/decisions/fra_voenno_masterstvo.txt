@@ -1,0 +1,109 @@
+FRA_voennoe_masterstvo_category = {
+
+
+Voenno_masterstvo = {
+		icon = eng_trade_unions_support
+		
+		allowed = {
+			original_tag = FRA
+			
+		}
+
+		available = {
+			original_tag = FRA
+			command_power > 40
+			army_experience > 40
+		}
+
+		visible = {
+			original_tag = FRA
+		}
+
+		is_good = yes
+		cost = 25
+		priority = 1
+
+		days_remove = 30
+		days_re_enable = 10		
+		
+		complete_effect = {			
+		set_country_flag = reforma1
+		army_experience = -40
+		add_command_power = -40
+		}
+	}
+	
+Voenno_masterstvo2 = {
+		icon = eng_trade_unions_support
+		
+		available = {
+			has_country_flag = reforma1
+			command_power > 60
+			army_experience > 60
+		}
+		visible = {
+			original_tag = FRA
+		}
+
+		is_good = yes
+		cost = 25
+		priority = 1
+
+		days_remove = 30
+		days_re_enable = 10
+		
+		complete_effect = {		
+			set_country_flag = reforma2
+			add_command_power = -60
+			army_experience = -60
+			
+		}
+	}
+	
+Voenno_masterstvo3 = {
+		icon = eng_trade_unions_support
+		
+		available = {
+			has_country_flag = reforma2
+			command_power > 80
+			army_experience > 80
+		}
+		visible = {
+			original_tag = FRA
+		}
+
+		is_good = yes
+		cost = 25
+		priority = 1
+
+		days_remove = 30
+		days_re_enable = 10
+		
+		complete_effect = {		
+		add_command_power = -80
+		army_experience = -80
+		
+		}
+	}
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

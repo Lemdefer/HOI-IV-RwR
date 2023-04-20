@@ -572,21 +572,28 @@ ideas = {
 			removal_cost = -1
 									
 			modifier = {
-			political_power_factor = -0.10
-			training_time_factor = 0.05
-			experience_gain_army_unit_factor = -0.05
-			experience_loss_factor = 0.1
+			training_time_factor = 0.1
+			army_attack_factor = -0.1
+			army_org_factor = -0.1
+			army_defence_factor = -0.1
+			
+			
+#			political_power_factor = -0.10
+#			training_time_factor = 0.05
+#			experience_gain_army_unit_factor = -0.05
+#			experience_loss_factor = 0.1
 			}	
-			research_bonus = {
-				support_tech = -0.10
-				motorized_equipment = -0.10
-				armor = -0.10
-				artillery = -0.10
-				infantry_weapons = -0.10
-				naval_equipment = -0.10
-				ship_modules_tech = -0.10
-				air_equipment = -0.10
-			}
+			
+#			research_bonus = {
+#				support_tech = -0.10
+#				motorized_equipment = -0.10
+#				armor = -0.10
+#				artillery = -0.10
+#				infantry_weapons = -0.10
+#				naval_equipment = -0.10
+#				ship_modules_tech = -0.10
+#				air_equipment = -0.10
+#			}
 		}
 		
 				
@@ -1023,6 +1030,456 @@ ideas = {
 			production_speed_buildings_factor = 0.25 	
 			}	
 		}
+		
+		
+		FRA_conservator_caolition_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {			
+			drift_defence_factor = 0.05
+			}	
+		}
+		
+		
+		FRA_FOR_oslablenni_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {			
+			drift_defence_factor = 0.05
+			industrial_capacity_factory = 0.1
+			}	
+		}
+		
+		FRA_ukrepit_doktrinu_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {			
+			political_power_factor = 0.1
+			}	
+		}
+		
+		FRA_uvelichit_ryadi_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {			
+			conscription = 0.01
+			}	
+		}
+		
+		FRA_borba_s_zagovorom_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {			
+			political_power_factor = 0.05
+			offence = -0.1
+			defence = -0.1
+			army_leader_cost_factor = 0.25 			
+			}	
+		}
+		
+		FRA_NASMERT_ZA_RODINU_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {			
+			army_core_attack_factor = 0.1
+			army_core_defence_factor = 0.175
+			army_org_factor = 0.05
+			army_morale_factor = 0.1
+			supply_consumption_factor = 0.1
+			}	
+		}
+		FRA_russko_fransuzkaya_drujba_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {			
+			guarantee_cost = -0.15
+			}	
+		}
+		
+		FRA_economic_expansion_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {			
+				
+			trade_opinion_factor = 0.25
+			min_export = 0.05
+			guarantee_cost = -0.05
+			local_resources = 0.05
+			fuel_gain_factor = 0.1
+			
+			}	
+		}
+		FRA_gren_soldats_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {			
+			army_attack_factor = -0.15
+			army_defence_factor = -0.05
+			army_speed_factor = -0.1
+			army_leader_cost_factor = 0.1
+			
+			}	
+		}
+		
+		FRA_pir_rabochih_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {			
+			consumer_goods_factor = 0.1					
+			}	
+		}
+		
+		FRA_intarnational_nation_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {			
+			stability_factor = -0.05
+			production_speed_buildings_factor = 0.05 
+			production_factory_max_efficiency_factor = 0.05 
+			
+			}	
+		}
+		
+		
+		FRA_hunt_to_red_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {			
+			army_attack_factor = -0.1
+			army_defence_factor = -0.1
+			army_org_factor = -0.1
+			
+			experience_gain_army_factor = -0.15
+			command_power_gain_mult = -0.15
+			
+			}	
+		}
+		
+		FRA_national_raskol_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {			
+			stability_factor = -0.2
+			political_power_gain = -0.3
+			conscription = -0.01
+			}	
+		}
+		
+		
+		FRA_militarizated_narod_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {	
+			war_support_factor = 0.05			
+			conscription = 0.005
+			}	
+		}
+		
+		FRA_vse_v_armii_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {	
+			war_support_factor = -0.05
+			stability_factor = -0.1
+			consumer_goods_factor = 0.1	
+			production_speed_buildings_factor = -0.1	
+			industrial_capacity_factory = -0.15
+			}	
+		}
+		
+		FRA_vse_v_armii_lite_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {	
+			stability_factor = -0.05
+			consumer_goods_factor = 0.05
+			production_speed_buildings_factor = -0.05	
+			industrial_capacity_factory = -0.1	
+			}	
+		}
+		
+		
+		FRA_polnie_haos_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {
+			stability_factor = -0.1
+			war_support_factor = -0.1
+			conscription = -0.01
+			production_speed_buildings_factor = -0.2	
+			industrial_capacity_factory = -0.2	
+			}	
+		}
+		
+		FRA_polnie_haos2_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {
+			stability_factor = -0.05
+			war_support_factor = -0.05
+			conscription = -0.005
+			production_speed_buildings_factor = -0.1	
+			industrial_capacity_factory = -0.1
+			}	
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		FRA_new_poriadok_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {
+			production_speed_buildings_factor = 0.05	
+			industrial_capacity_factory = 0.05	
+			}	
+		}
+		
+		FRA_new_poriadok2_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {
+			research_speed_factor = 0.05
+			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.05	
+			industrial_capacity_factory = 0.05	
+			political_advisor_cost_factor = -0.05
+			air_advisor_cost_factor = -0.05
+			army_advisor_cost_factor = -0.05
+			naval_advisor_cost_factor = -0.05
+			navy_advisor_cost_factor = -0.05
+			}	
+		}
+		
+	
 		
 	
 		

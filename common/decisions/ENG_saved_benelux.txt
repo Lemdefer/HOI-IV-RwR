@@ -1,0 +1,56 @@
+ENG_saved_benelux = {
+
+	pridlos_bel = {
+		icon = eng_trade_unions_support
+		
+		available = {
+			
+		}
+		visible = {
+			original_tag = ENG
+		}
+
+		is_good = yes
+		cost = 25
+		priority = 1
+		fire_only_once = yes
+
+		complete_effect = {
+		random_list = {
+			65 = {}
+			35 = {
+			ENG = { add_to_faction = BEL }
+			}			
+			}
+		
+		}
+	}
+	priglos_hol = {
+		icon = eng_trade_unions_support
+		
+		available = {
+			
+		}
+		visible = {
+			original_tag = ENG
+		}
+
+		is_good = yes
+		cost = 25
+		priority = 1
+		fire_only_once = yes
+
+		complete_effect = {
+		random_list = {
+			65 = {}
+			35 = {
+			ENG = { add_to_faction = HOL }
+			}			
+			}
+		}
+	}
+
+
+
+
+}

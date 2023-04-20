@@ -2524,6 +2524,27 @@
 		}
 
 		completion_reward = {
+		
+		add_popularity = {
+			ideology = liberalisms
+			popularity = -0.03
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.03
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.03
+		}
+		add_political_power = 25
+		set_country_flag = FRA_perevorot_national_coalition_activate
+		
+		custom_effect_tooltip = coalition_tt
+		
+		set_variable = army_crysys
+		set_variable = podderjka_radikalov
+		
 			
 		}
 	}
@@ -2549,6 +2570,10 @@
 
 		completion_reward = {
 			
+			add_stability = 0.05
+			add_war_support = 0.05
+			
+			
 		}
 	}
 
@@ -2573,6 +2598,23 @@
 
 		completion_reward = {
 			
+		add_stability = -0.08
+		add_popularity = {
+			ideology = liberalisms
+			popularity = -0.03
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.03
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.03
+		}
+		add_popularity = {
+			ideology = marxisms 
+			popularity = -0.03
+		}			
 		}
 	}
 
@@ -2599,7 +2641,9 @@
 		}
 
 		completion_reward = {
-			
+		
+		add_political_power = -25
+		country_event = { days = 4 id = FRA.13 } 
 		}
 	}
 
@@ -2624,9 +2668,8 @@
 		available = {
 
 		}
-
-		completion_reward = {
-			
+		completion_reward = {		
+			country_event = { days = 4 id = FRA.14 } 
 		}
 	}
 
@@ -2653,7 +2696,7 @@
 		}
 
 		completion_reward = {
-			
+			country_event = { days = 4 id = FRA.15 } 
 		}
 	}
 
@@ -2682,8 +2725,8 @@
 
 		}
 
-		completion_reward = {
-			
+		completion_reward = {	
+		country_event = { days = 2 id = FRA.16 } 	
 		}
 	}
 
@@ -2707,11 +2750,20 @@
 		}
 
 		completion_reward = {
+		add_political_power = 20
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.04
+		}
+		add_timed_idea = {
+		idea = FRA_pir_rabochih_idea
+		days = 180
+		}
 			
 		}
 	}
 
-	#Широкая национализация
+	#Закулисный договор
 	focus = {
 		id = FRA_wide_nationalization
 		icon = GFX_focus_FRA_wide_nationalization
@@ -2731,7 +2783,14 @@
 		}
 
 		completion_reward = {
-			
+		
+		add_offsite_building = { type = industrial_complex level = 2 }
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.04
+		}
+		country_event = { days = 1 id = FRA.17 } 	
+		
 		}
 	}
 
@@ -2755,11 +2814,13 @@
 		}
 
 		completion_reward = {
+		add_political_power = -20
+		add_ideas = FRA_intarnational_nation_idea
 			
 		}
 	}
 
-	#Ослабление верхов
+	#Экспорт Аристидцизма
 	focus = {
 		id = FRA_the_weakening_of_the_tops
 		icon = GFX_focus_FRA_the_weakening_of_the_tops
@@ -2779,7 +2840,14 @@
 		}
 
 		completion_reward = {
-			
+		add_political_power = 10
+		set_global_flag = FRA_benelux_mechanikan_activate
+		
+		set_variable = { solidarnist_rabochi_bel = 0 } 
+		set_variable = { solidarnist_rabochi_hed = 0 } 
+		ENG = { country_event = { days = 1 id =  england.111 }}
+		
+		create_faction = Franse_giga_team
 		}
 	}
 
@@ -2812,6 +2880,14 @@
 		}
 
 		completion_reward = {
+		
+		add_political_power = 40
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.1
+		}
 			
 		}
 	}
@@ -2829,8 +2905,13 @@
 
 		}
 
-		completion_reward = {
-			
+		completion_reward = {	
+		add_political_power = 50
+		add_stability = -0.05
+		add_popularity = {
+		ideology = democratic
+		popularity = 0.05
+		}					
 		}
 	}
 
@@ -2854,6 +2935,14 @@
 		}
 
 		completion_reward = {
+		add_political_power = 100
+		add_stability = 0.05
+		add_ideas = FRA_conservator_caolition_idea
+		add_popularity = {
+		ideology = democratic
+		popularity = 0.1
+		}
+		
 			
 		}
 	}
@@ -2878,7 +2967,26 @@
 		}
 
 		completion_reward = {
-			
+		add_political_power = 50
+		add_stability = -0.05
+		add_ideas = FRA_FOR_oslablenni_idea
+		add_popularity = {
+		ideology = socdem
+		popularity = -0.1
+		}
+		add_popularity = {
+		ideology = libsoc
+		popularity = -0.1
+		}
+		add_popularity = {
+		ideology = marxisms
+		popularity = -0.1
+		}
+		add_popularity = {
+		ideology = communism
+		popularity = -0.1
+		}
+
 		}
 	}
 
@@ -2902,6 +3010,12 @@
 		}
 
 		completion_reward = {
+		add_political_power = 150
+		add_popularity = {
+		ideology = democratic
+		popularity = 0.05
+		}
+		add_ideas = FRA_ukrepit_doktrinu_idea
 			
 		}
 	}
@@ -2924,12 +3038,103 @@
 
 		cost = 5
 
-		available = {
-
+		available = {			
+		has_full_control_of_state = 29
+		has_full_control_of_state = 785
+		has_full_control_of_state = 18
+		has_full_control_of_state = 14
+		has_full_control_of_state = 15
 		}
 
 		completion_reward = {
-			
+		29 = {
+			set_building_level = {
+			type = bunker
+			level = 3
+				province = {
+				all_provinces = yes
+				limit_to_border = yes
+				level < 3
+				}
+			}
+		}
+		18 = {
+			set_building_level = {
+			type = bunker
+			level = 3
+				province = {
+				all_provinces = yes
+				limit_to_border = yes
+				level < 3
+				}
+			}
+		}
+		785 = {
+			set_building_level = {
+			type = bunker
+			level = 3
+				province = {
+				all_provinces = yes
+				limit_to_border = yes
+				level < 3
+				}
+			}
+		}
+		29 = {
+		set_building_level = {
+			type = bunker
+			level = 5
+				province = 11548				
+			}
+		set_building_level = {
+			type = coastal_bunker
+			level = 5
+				province =  11548 
+			}
+		}
+		15 = {
+		set_building_level = {
+			type = bunker
+			level = 5
+				province = 6449				
+			}
+		set_building_level = {
+			type = coastal_bunker
+			level = 5
+				province =  6449 
+			}
+		}
+		14 = {
+		set_building_level = {
+			type = bunker
+			level = 5
+				province = 3552				
+			}
+		set_building_level = {
+			type = coastal_bunker
+			level = 5
+				province =  3552 
+			}
+		}
+		15 = {
+		set_building_level = {
+			type = bunker
+			level = 5
+				province = 11563				
+			}
+		}
+		785 = {
+		set_building_level = {
+			type = bunker
+			level = 5
+				province = 11420				
+			}
+		set_building_level = {
+			type = coastal_bunker
+			level = 5
+				province =  11420 
+			}
+		}		
 		}
 	}
 
@@ -2953,7 +3158,13 @@
 		}
 
 		completion_reward = {
-			
+		
+		add_popularity = {
+		ideology = democratic
+		popularity = 0.1
+		}
+		add_ideas = FRA_uvelichit_ryadi_idea
+		add_stability = 0.1	
 		}
 	}
 
@@ -2977,7 +3188,16 @@
 		}
 
 		completion_reward = {
-			
+		add_popularity = {
+		ideology = fascism
+		popularity = -0.05
+		}
+		add_stability = 0.1	
+		add_political_power = 50
+		add_timed_idea = {
+				idea = FRA_borba_s_zagovorom_idea
+				days = 175
+		}	
 		}
 	}
 
@@ -3004,7 +3224,7 @@
 		}
 
 		completion_reward = {
-			
+		add_ideas = FRA_NASMERT_ZA_RODINU_idea 
 		}
 	}
 
@@ -3026,11 +3246,49 @@
 
 		cost = 5
 
-		available = {
-
+		available = {	
+		threat > 0.1		
+		country_exists = RUS
+		RUS = { is_free_or_subject_of_root = yes }
+		NOT = { RUS = { is_ally_with = ENG } }
 		}
 
 		completion_reward = {
+		
+		RUS = {  country_event = { days = 1 id = FRA.850 } }
+		
+		add_ideas = FRA_russko_fransuzkaya_drujba_idea
+		
+		
+		add_opinion_modifier = {
+			target = RUS
+			modifier = friends
+		}
+		
+		RUS = {
+		add_opinion_modifier = {
+			target = FRA
+			modifier = friends
+		}
+		}
+			
+		remove_opinion_modifier = {
+			target = RUS
+			modifier = krah_russkoi_diplomatii
+		}
+		RUS = {
+		remove_opinion_modifier = {
+			target = FRA
+			modifier = krah_russkoi_diplomatii2
+		}
+		}
+				
+		give_guarantee = RUS
+		
+		RUS = {
+		give_guarantee = FRA
+		}
+		
 			
 		}
 	}
@@ -3051,10 +3309,14 @@
 		cost = 5
 
 		available = {
+		
+		has_idea = FRA_viktory_against_hydra_pereproizvodstva_idea
 
 		}
 
 		completion_reward = {
+		
+		add_ideas = FRA_economic_expansion_idea
 			
 		}
 	}
@@ -3075,11 +3337,20 @@
 		cost = 5
 
 		available = {
+		country_exists = SPR
+		SPR = { is_free_or_subject_of_root = yes }
+		NOT = { SPR = { is_ally_with = ENG } }
 
 		}
 
 		completion_reward = {
-			
+		
+		add_political_power = 50
+		
+		add_threat = 5
+		
+		SPR = {  country_event = { days = 1 id = FRA.851 } }
+		
 		}
 	}
 
@@ -3103,7 +3374,25 @@
 		}
 
 		completion_reward = {
-			
+			create_wargoal = {
+			type = annex_everything
+			target = BEL
+			}
+			34 = {			
+			add_core_of = FRA
+			}
+			6 = {
+			add_core_of = HOL
+			}
+			295 = { add_claim_by = FRA }
+			538 = { add_claim_by = FRA }
+			718 = { add_claim_by = FRA }
+			769 = { add_claim_by = FRA }
+			768 = { add_claim_by = FRA }
+		
+		custom_effect_tooltip = belgia_dead
+		
+		set_global_flag = razdel_belgii
 		}
 	}
 
@@ -3114,13 +3403,19 @@
 		x = 34
 		y = 3
 
-		cost = 5
+		cost = 6
 
 		available = {
-
+		
 		}
 
 		completion_reward = {
+		
+		set_global_flag = national_coalition
+		add_stability = -0.1
+		add_war_support = -0.1
+		add_political_power = -50
+		
 			
 		}
 	}
@@ -3138,13 +3433,45 @@
 			focus = FRA_national_coalition_coup
 		}
 
-		cost = 5
+		cost = 4
 
 		available = {
+		NOT = { has_country_flag = paris_debosh }
 
 		}
-
+		
 		completion_reward = {
+		add_stability = 0.05
+		add_manpower = -186
+		
+		add_popularity = {
+		ideology = liberalisms 
+		popularity = -0.02
+		}
+		add_popularity = {
+		ideology = socdem 
+		popularity = -0.02
+		}
+		add_popularity = {
+		ideology = libsoc 
+		popularity = -0.02
+		}
+		add_popularity = {
+		ideology = marxisms 
+		popularity = -0.02
+		}
+		add_popularity = {
+		ideology = communism 
+		popularity = -0.02
+		}
+		add_popularity = {
+		ideology = democratic 
+		popularity = -0.02
+		}		
+		add_popularity = {
+		ideology = fascism 
+		popularity = 0.03
+		}
 			
 		}
 	}
@@ -3162,14 +3489,61 @@
 			focus = FRA_bring_the_police_into_our_ranks
 		}
 
-		cost = 5
+		cost = 4
 
 		available = {
-
+		NOT = { has_country_flag = paris_debosh }
 		}
 
 		completion_reward = {
-			
+		add_popularity = {
+		ideology = socdem 
+		popularity = -0.02
+		}
+		add_popularity = {
+		ideology = libsoc 
+		popularity = -0.02
+		}
+		add_popularity = {
+		ideology = marxisms 
+		popularity = -0.02
+		}
+		add_popularity = {
+		ideology = communism 
+		popularity = -0.02
+		}
+		add_timed_idea = {
+		idea = FRA_hunt_to_red_idea
+		days = 180
+		}
+		add_war_support = -0.05
+		custom_effect_tooltip = chistka_ot_red_tt
+		hidden_effect = {
+		random_list = {
+		10 = { FRA_jean_de_lattre_de_tassigny = { remove_unit_leader_role = yes } }
+		10 = { FRA_alphonse_juin = { remove_unit_leader_role = yes } }
+		10 = { FRA_maurice_gamelin = { remove_unit_leader_role = yes } }
+		10 = { FRA_maxime_weygand = { remove_unit_leader_role = yes } }
+		10 = { FRA_alphonse_georges = { remove_unit_leader_role = yes } }
+		10 = { FRA_antoinemariebenoit_besson = { remove_unit_leader_role = yes } }
+		10 = { FRA_philippe_leclerc = { remove_unit_leader_role = yes } }
+		10 = { FRA_henri_giraud = { remove_unit_leader_role = yes } }
+		10 = { FRA_charles_huntziger = { remove_unit_leader_role = yes } }
+		10 = { FRA_gastonhenri_billotte = { remove_unit_leader_role = yes } }
+		}
+		random_list = {
+		10 = { FRA_jean_de_lattre_de_tassigny = { remove_unit_leader_role = yes } }
+		10 = { FRA_alphonse_juin = { remove_unit_leader_role = yes } }
+		10 = { FRA_maurice_gamelin = { remove_unit_leader_role = yes } }
+		10 = { FRA_maxime_weygand = { remove_unit_leader_role = yes } }
+		10 = { FRA_alphonse_georges = { remove_unit_leader_role = yes } }
+		10 = { FRA_antoinemariebenoit_besson = { remove_unit_leader_role = yes } }
+		10 = { FRA_philippe_leclerc = { remove_unit_leader_role = yes } }
+		10 = { FRA_henri_giraud = { remove_unit_leader_role = yes } }
+		10 = { FRA_charles_huntziger = { remove_unit_leader_role = yes } }
+		10 = { FRA_gastonhenri_billotte = { remove_unit_leader_role = yes } }
+		}	
+		}			
 		}
 	}
 
@@ -3186,13 +3560,23 @@
 			focus = FRA_purge_the_army_of_socialists
 		}
 
-		cost = 5
+		cost = 7
 
 		available = {
-
+		NOT = { has_country_flag = paris_debosh }
 		}
 
 		completion_reward = {
+		add_political_power = 30
+		add_popularity = {
+		ideology = fascism 
+		popularity = 0.07
+		}
+		
+		create_intelligence_agency = {
+		name = "Comité spécial noir"
+		icon = GFX_intelligence_agency_logo_fra
+		}
 			
 		}
 	}
@@ -3212,13 +3596,36 @@
 			focus = FRA_purge_the_army_of_socialists
 		}
 
-		cost = 5
+		cost = 6
 
 		available = {
-
+		NOT = { has_country_flag = paris_debosh }
 		}
-
 		completion_reward = {
+		set_country_flag = big_table
+		
+		add_popularity = {
+		ideology = paternalism   
+		popularity = -0.1
+		}
+		
+		remove_ideas = FRA_national_raskol_idea
+		add_stability = -0.07
+		set_global_flag = military_rule_in_france
+		
+		FRA = { country_event = { days = 4 id = FRA.25 } }
+		FRA = { country_event = { days = 7 id = FRA.26 } }
+		
+		set_cosmetic_tag = FRA_hunta
+		
+		set_party_name = {
+			ideology = fascism
+			long_name = French_national_party
+			name = FNP
+		}
+		
+			
+			
 			
 		}
 	}
@@ -3236,7 +3643,7 @@
 			focus = FRA_large_army_table
 		}
 
-		cost = 5
+		cost = 6
 
 		available = {
 
@@ -3244,6 +3651,12 @@
 
 		completion_reward = {
 			
+		add_ideas = FRA_militarizated_narod_idea	
+		add_political_power = 20	
+		add_popularity = {
+		ideology = fascism 
+		popularity = 0.05
+		}		
 		}
 	}
 
@@ -3260,7 +3673,7 @@
 			focus = FRA_militarization_of_the_people
 		}
 
-		cost = 5
+		cost = 6
 
 		available = {
 
@@ -3268,6 +3681,9 @@
 
 		completion_reward = {
 			
+		add_command_power = -10	
+		army_experience = -10	
+		FRA = { country_event = { days = 1 id = FRA.29 } }	
 		}
 	}
 
@@ -3284,18 +3700,23 @@
 			focus = FRA_large_army_table
 		}
 
-		cost = 5
+		cost = 6
 
 		available = {
 
 		}
 
 		completion_reward = {
-			
+		add_popularity = {
+		ideology = fascism 
+		popularity = 0.05
+		}
+		add_stability = 0.05
+		add_war_support = 0.05
 		}
 	}
 
-	#Временная необходимость
+	#Лидер всей Франции 
 	focus = {
 		id = FRA_temporary_necessity
 		icon = GFX_focus_FRA_temporary_necessity
@@ -3315,7 +3736,12 @@
 		}
 
 		completion_reward = {
-			
+		add_popularity = {
+		ideology = fascism 
+		popularity = 0.02
+		}	
+		add_political_power = 10
+		FRA = { country_event = { days = 1 id = FRA.30 } }	
 		}
 	}
 
@@ -3332,13 +3758,21 @@
 			focus = FRA_national_coalition_coup
 		}
 
-		cost = 5
+		cost = 7
 
 		available = {
-
+		NOT = { has_country_flag = big_table }
 		}
 
-		completion_reward = {
+		completion_reward = {		
+		add_popularity = {
+		ideology = paternalism   
+		popularity = 0.03
+		}
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_political_power = 20
+		
 			
 		}
 	}
@@ -3356,18 +3790,39 @@
 			focus = FRA_expand_the_influence_of_the_right
 		}
 
-		cost = 5
+		cost = 7
 
 		available = {
-
+		NOT = { has_country_flag = big_table }
 		}
 
-		completion_reward = {
+		completion_reward = {		
+		add_stability = 0.05	
+		add_popularity = {
+		ideology = democratic    
+		popularity = -0.02
+		}
+		add_popularity = {
+		ideology = liberalisms    
+		popularity = -0.02
+		}
+		add_popularity = {
+		ideology = socdem    
+		popularity = -0.02
+		}
+		add_popularity = {
+		ideology = libsoc    
+		popularity = -0.02
+		}
+		add_manpower = -520
 			
+		FRA = { country_event = { days = 4 id = FRA.31 } }	
+		
 		}
+		
 	}
 
-	#Боевые отряды нации
+	#Национальные легионы 
 	focus = {
 		id = FRA_combat_squads_of_the_nation
 		icon = GFX_focus_FRA_combat_squads_of_the_nation
@@ -3380,14 +3835,56 @@
 			focus = FRA_attract_fascists_to_the_capital
 		}
 
-		cost = 5
+		cost = 7
 
 		available = {
-
+		NOT = { has_country_flag = big_table }
 		}
 
 		completion_reward = {
-			
+		set_global_flag = national_mobilization
+		add_war_support = 0.05
+		add_stability = -0.05
+		
+		FRA = {
+				division_template = { 
+						name = "legion nationale"
+						division_names_group = FRA_CAM_09
+						is_locked = yes
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }							
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 2 }							
+							artillery_brigade = { x = 0 y = 3 }
+							artillery_brigade = { x = 1 y = 3 }
+							artillery_brigade = { x = 2 y = 3 }
+							
+							infantry = { x = 3 y = 0 }
+							infantry = { x = 3 y = 1 }
+							infantry = { x = 3 y = 2 }							
+							artillery_brigade = { x = 3 y = 3 }
+							
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+							artillery_brigade = { x = 0 y = 1 }
+						}
+						priority = 0
+					}				
+				16 = {
+						create_unit = {
+							division = "division_template = \"legion nationale\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+							owner = FRA
+							count = 3
+						}				
+				}
+		}		
 		}
 	}
 
@@ -3406,13 +3903,47 @@
 			focus = FRA_attract_fascists_to_the_capital
 		}
 
-		cost = 5
+		cost = 6
 
 		available = {
-
+		NOT = { has_country_flag = big_table }
 		}
 
 		completion_reward = {
+		set_country_flag = paris_debosh
+		add_popularity = {
+		ideology = fascism 
+		popularity = -0.1
+		}
+		add_popularity = {
+		ideology = socdem    
+		popularity = -0.03
+		}
+		add_popularity = {
+		ideology = libsoc    
+		popularity = -0.03
+		}
+		add_popularity = {
+		ideology = democratic    
+		popularity = -0.03
+		}
+		add_popularity = {
+		ideology = liberalisms    
+		popularity = -0.03
+		}
+		
+		add_stability = -0.1
+		add_war_support = -0.1
+		add_political_power = -40
+		add_manpower = -1352
+		remove_ideas = FRA_national_raskol_idea
+		
+		
+		set_cosmetic_tag = FRA_gosudarstvo
+		
+		FRA = { country_event = { days = 4 id = FRA.32 } }	
+		FRA = { country_event = { days = 9 id = FRA.33 } }	
+		FRA = { country_event = { days = 10 id = FRA.34 } }	
 			
 		}
 	}
@@ -3430,7 +3961,7 @@
 			focus = FRA_parisian_brawl
 		}
 
-		cost = 5
+		cost = 7
 
 		available = {
 
@@ -3438,6 +3969,15 @@
 
 		completion_reward = {
 			
+		add_stability = 0.03
+		add_war_support = 0.06			
+		add_ideas = FRA_new_poriadok_idea
+			
+		set_party_name = {
+			ideology = paternalism
+			long_name = French_national_sving_party
+			name = PNS
+		}
 		}
 	}
 
@@ -3454,14 +3994,24 @@
 			focus = FRA_new_order
 		}
 
-		cost = 5
+		cost = 6
 
 		available = {
 
 		}
 
 		completion_reward = {
-			
+		add_popularity = {
+		ideology = paternalism   
+		popularity = 0.03
+		}
+		add_stability = 0.03
+		
+		swap_ideas = {
+				remove_idea = FRA_new_poriadok_idea
+				add_idea = FRA_new_poriadok2_idea
+			}
+	
 		}
 	}
 
@@ -3478,14 +4028,27 @@
 			focus = FRA_parisian_brawl
 		}
 
-		cost = 5
+		cost = 6
 
 		available = {
 
 		}
 
 		completion_reward = {
-			
+		add_stability = 0.05 
+		add_popularity = {
+		ideology = socdem    
+		popularity = -0.02
+		}
+		add_popularity = {
+		ideology = libsoc    
+		popularity = -0.02
+		}
+		add_political_power = -20
+		swap_ideas = {
+				remove_idea = FRA_polnie_haos_idea
+				add_idea = FRA_polnie_haos2_idea
+			}
 		}
 	}
 
@@ -3509,6 +4072,27 @@
 		}
 
 		completion_reward = {
+		
+		add_manpower = -14500
+		add_stability = -0.1
+		add_popularity = {
+		ideology = socdem    
+		popularity = -0.07
+		}
+		add_popularity = {
+		ideology = libsoc    
+		popularity = -0.07
+		}
+		add_popularity = {
+		ideology = democratic    
+		popularity = -0.07
+		}
+		add_popularity = {
+		ideology = liberalisms    
+		popularity = -0.07
+		}
+			
+		remove_ideas = FRA_polnie_haos2_idea
 			
 		}
 	}
@@ -3537,14 +4121,28 @@
 			focus = FRA_temporary_necessity
 		}
 
-		cost = 5
+		cost = 8
 
 		available = {
 
 		}
 
 		completion_reward = {
-			
+		add_stability = 0.1
+		add_political_power = 100
+		
+		add_popularity = {
+		ideology = socdem    
+		popularity = -1.46
+		}
+		add_popularity = {
+		ideology = libsoc    
+		popularity = -1.46
+		}
+		add_popularity = {
+		ideology = democratic    
+		popularity = -1.46
+		}	
 		}
 	}
 

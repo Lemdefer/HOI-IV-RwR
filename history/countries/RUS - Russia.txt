@@ -37,6 +37,10 @@ set_autonomy = {
 	autonomous_state = autonomy_integrated_puppet
 	freedom_level = 0.2
 }
+add_opinion_modifier  = {
+    target = FRA
+    modifier = krah_russkoi_diplomatii2
+}
 
 set_politics = {
 	ruling_party = conservatism

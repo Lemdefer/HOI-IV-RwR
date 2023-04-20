@@ -244,6 +244,9 @@ KHI = "countries/Khiva.txt"
 UDM = "countries/Udmurtia.txt"
 CHU = "countries/Chuvashia.txt"
 MEL = "countries/Mariel.txt"
+SFR = "countries/perSpain.txt"
+
+FRR = "countries/FransRevolt.txt"
 
 SCH = "countries/Sichuan.txt"
 KUO = "countries/Kuomintang.txt"

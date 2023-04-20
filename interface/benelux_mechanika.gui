@@ -1,0 +1,55 @@
+guiTypes = {
+	containerWindowType = {
+		name = "benelux_mechanika"
+                position = { x = 0 y = 0 }
+		size = { width = 100% height= 500 }		
+		iconType = {
+           name ="benelux"
+           quadTextureSprite = "GFX_benelux_mechanika_cartinka"
+           position = { x = -5 y = -20 }
+        }
+        instantTextBoxType = {
+			name ="hol_support_2"
+			position = { x = 60 y = 40 }
+			font = "hoi_24header"
+			text = "solidarost_hol"
+			format = center
+			maxHeight = 24
+		}
+		instantTextBoxType = {
+			name ="belg_support_1"
+			position = { x = 280 y = 40 }
+			font = "hoi_24header"
+			text = "solidarost_belg"
+			format = center
+			maxHeight = 24
+		}		
+		instantTextBoxType = {
+			name ="solid_belg"
+			position = { x = 280 y = 80 }
+			font = "hoi_24header"
+			text = "[?solidarnist_rabochi_bel|%Y]"
+			format = center
+			maxHeight = 24
+		}
+		instantTextBoxType = {
+			name ="solid_hol"
+			position = { x = 65 y = 80 }
+			font = "hoi_24header"
+			text = "[?solidarnist_rabochi_hed|%O]"
+			format = center
+			maxHeight = 24
+		}
+		instantTextboxType = {
+			name = "Opisanie_5"
+			position = { x = 10 y = 410 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "Opisanie_mechaniki"
+			maxWidth = 500
+			maxHeight = 20
+			format = left	
+		}
+		
+    }
+}

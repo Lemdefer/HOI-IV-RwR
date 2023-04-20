@@ -30,6 +30,7 @@
  FRA_order_and_mujestvo_idea: "Порядок и мужество"
  FRA_generation_of_heroes_idea: "Поколение героев"
  FRA_frezed_army_reforms_idea: "Замороженные реформы армии"
+ FRA_frezed_army_reforms_idea_desc: "Франция в начале 20-ых годов начала проводить необходимые перемены в армии, но по итогу так они ни к чему не привели. Наверное, ими всё же стоит заняться, ведь врагов у Парижа много, как никогда до этого..."
  FRA_new_aviabases_idea: "Новые авиабазы"
  FRA_best_intelect_idea: "Лучшие умы"
  FRA_udeshevlenie_produktion_idea: "Удешевление производства"
@@ -50,6 +51,33 @@
  FRA_perestroika_idea: "Французская перестройка"
  FRA_perestroikaend_idea: "Французская перестройка"
  FRA_obrazes_liberal_demokraty_idea: "Образец либеральной демократии"
+ 
+ FRA_ukrepit_doktrinu_idea: "Укрепить доктрину"
+ FRA_FOR_oslablenni_idea: "Ф. О. Р. Ослабленна"
+ FRA_conservator_caolition_idea: "Коалиция консерваторов в парламенте"
+ FRA_uvelichit_ryadi_idea: "Увеличить ряды"
+ FRA_borba_s_zagovorom_idea: "Борьба с военными заговорами"
+ FRA_NASMERT_ZA_RODINU_idea: "Сражаться насмерть!"
+ FRA_russko_fransuzkaya_drujba_idea: "Русско-французская дружба"
+ FRA_economic_expansion_idea: "Французская экономическая экспансия"
+ 
+ FRA_gren_soldats_idea: "Зелёные солдатишки"
+ FRA_pir_rabochih_idea: "Траты на рабочих"
+ FRA_intarnational_nation_idea: "Интернациональная держава"
+ 
+ FRA_national_raskol_idea: "Французский национальный раскол"
+ FRA_national_raskol_idea_desc: "У нас нет чёткой и стабильной власти! Боже, когда уже будет понятно кто мы и за что?"
+ 
+ 
+ FRA_hunt_to_red_idea: "Последствия охоты за красными"
+ FRA_militarizated_narod_idea: "Милитаризация народа"
+ FRA_vse_v_armii_idea: "Доктрина Рока реализована в полном объёме"
+ FRA_vse_v_armii_lite_idea: "Доктрина Рока реализована с компромиссом"
+ FRA_polnie_haos_idea: "Полный хаос"
+ FRA_polnie_haos2_idea: "Полный хаос"
+ FRA_new_poriadok_idea: "Новый порядок"
+ FRA_new_poriadok2_idea: "Новый порядок"
+
  
  FRA_rule_france_by_the_seas_1: "Правь, Франция, морями!"
  FRA_rule_france_by_the_seas_2: "Правь, Франция, морями!"

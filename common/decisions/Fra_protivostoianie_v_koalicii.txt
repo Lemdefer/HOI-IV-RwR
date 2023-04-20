@@ -1,0 +1,117 @@
+FRA_protivostoianie_coalition_category = {
+
+
+
+suport_ognenii_cresti = {
+		icon = eng_trade_unions_support
+		
+		allowed = {
+			original_tag = FRA
+		}
+
+		available = {
+			original_tag = FRA
+		}
+
+		visible = {
+			original_tag = FRA
+		}
+
+		is_good = yes
+		cost = 10
+		priority = 1
+
+		days_remove = 30
+		days_re_enable = 10		
+		
+		complete_effect = {	
+		
+		add_popularity = {
+		ideology = fascism 
+		popularity = 0.05
+		}
+			
+		}
+	}
+	
+suport_french_deistvie = {
+		icon = eng_trade_unions_support
+		
+		available = {
+			original_tag = FRA
+		}
+		visible = {
+			original_tag = FRA
+		}
+
+		is_good = yes
+		cost = 10
+		priority = 1
+
+		days_remove = 30
+		days_re_enable = 10
+		
+		complete_effect = {
+		
+		add_popularity = {
+		ideology = paternalism   
+		popularity = 0.05
+		}
+		
+		}
+	}
+	
+balans_v_coalicii_mission = {
+		icon = eng_trade_unions_support
+		
+		activation = {
+        	has_global_flag = national_coalition
+    	}
+
+		available = {
+			always = no
+		}
+
+		is_good = yes
+		priority = 1
+		fire_only_once = no
+
+		days_mission_timeout = 30
+		days_re_enable = 1
+		
+		timeout_effect = {
+		
+		if = {
+		limit = {
+		paternalism > fascism	
+		}
+		add_popularity = {
+		ideology = paternalism   
+		popularity = -0.05
+		}
+		add_popularity = {
+		ideology = fascism   
+		popularity = 0.05
+		}
+		}
+		
+		if = {
+		limit = {
+		fascism > paternalism	
+		}
+		add_popularity = {
+		ideology = paternalism   
+		popularity = 0.05
+		}
+		add_popularity = {
+		ideology = fascism   
+		popularity = -0.05
+		}
+		}
+		
+		
+				
+		}
+	}
+	
+}

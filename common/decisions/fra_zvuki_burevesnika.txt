@@ -1,0 +1,132 @@
+FRA_zvuki_burevestnika_category = {
+
+
+oficer_terror = {
+		icon = eng_trade_unions_support
+		
+		allowed = {
+			original_tag = FRA
+		}
+
+		available = {
+			original_tag = FRA
+		}
+
+		visible = {
+			original_tag = FRA
+		}
+
+		is_good = yes
+		cost = 25
+		priority = 1
+
+		days_remove = 30
+		days_re_enable = 10		
+		
+		complete_effect = {			
+		add_days_mission_timeout = {
+				mission = burevestnik_mission
+				days = 15
+			}
+		}
+	}
+	
+usilit_garnizon = {
+		icon = eng_trade_unions_support
+		
+		available = {
+			original_tag = FRA
+		}
+		visible = {
+			original_tag = FRA
+		}
+
+		is_good = yes
+		cost = 25
+		priority = 1
+
+		days_remove = 30
+		days_re_enable = 10
+		
+		complete_effect = {		
+		add_days_mission_timeout = {
+				mission = burevestnik_mission
+				days = 15
+			}		
+		}
+	}
+	
+provesti_marsh = {
+		icon = eng_trade_unions_support
+		
+		available = {
+			original_tag = FRA
+		}
+		visible = {
+			original_tag = FRA
+		}
+
+		is_good = yes
+		cost = 25
+		priority = 1
+
+		days_remove = 30
+		days_re_enable = 10
+		
+		complete_effect = {		
+		add_days_mission_timeout = {
+				mission = burevestnik_mission
+				days = 15
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+burevestnik_mission = {
+		icon = eng_trade_unions_support
+		
+		activation = {
+        	has_global_flag = national_coalition
+    	}
+
+		available = {
+			always = no
+		}
+
+		is_good = yes
+		priority = 1
+		fire_only_once = yes
+
+		days_mission_timeout = 120
+		
+		timeout_effect = {	
+		
+		set_global_flag = vozvrashenie_demokratov
+		
+		FRA = { country_event = { days = 1 id = FRA.27 } }
+				
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -161,3 +161,28 @@ country_event = {
 		add_war_support = -0.15
 	}
 }
+
+country_event = {
+	id = england.111
+	title = england.111.t
+	desc = england.111.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = england.111.a
+	}
+}
+
+country_event = {
+	id = england.112
+	title = england.112.t
+	desc = england.112.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = england.112.a
+		set_global_flag = Englan_save_benelux
+	}
+}

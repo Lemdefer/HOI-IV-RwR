@@ -7,7 +7,22 @@ FRA_RHI = {
 	color = rgb { 57 113 228 }
 	color_ui = rgb { 74 147 255 }
 }
-
+FRR_socdem_revolt = {
+	color = rgb { 255 0 0 }
+	color_ui = rgb { 255 0 0 }
+}
+FRA_hunta = {
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 128 128 128 }
+}
+FRA_gosudarstvo = {
+	color = rgb { 176 133 69 }
+	color_ui = rgb { 176 133 69 }
+}
+SFR = {
+	color = { 128 128 0 }
+	color_ui = { 128 128 0 }
+}
 =======
 ITA_communist = {
     color = rgb { 204 0 0 }

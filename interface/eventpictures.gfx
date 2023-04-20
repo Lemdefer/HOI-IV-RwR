@@ -9,6 +9,17 @@ spriteTypes = {
 		name = "GFX_news_event_saar"
 		texturefile = "gfx/event_pictures/RWR_news_event_001.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_news_event_new_paris_comunne"
+		texturefile = "gfx/event_pictures/RWR_news_event_frech_comune_revolt.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_boy_v_elsase"
+		texturefile = "gfx/event_pictures/RWR_news_event_boy_v_elsase.dds"
+	}
+	
 
 	spriteType = {
 		name = "GFX_report_event_assasult_of_London"

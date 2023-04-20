@@ -76,6 +76,10 @@ FRA = {
 	color = rgb { 57 113 228 }
 	color_ui = rgb { 74 147 255 }
 }
+FRR = {
+	color = rgb { 255 0 0  }
+	color_ui = rgb { 255 0 0 }
+}
 LUX = {
 	color = rgb { 65 175 179 }
 	color_ui = rgb { 85 228 233 }
@@ -466,6 +470,11 @@ CAM = {
 	color_ui = rgb { 100  71  150 }
 }
 
+SFR= {
+	color = rgb { 128 128 0 }
+	color_ui = rgb { 128 128 0 }
+}
+
 MAL = {
 	color = rgb { 179 48 37 }
 	color_ui = rgb { 179 48 37 }
@@ -534,8 +543,8 @@ CSA = {
 	color_ui = rgb { 186 205 219 }
 }
 D01 = {
-	color = rgb { 122 179 97 }
-	color_ui = rgb { 159 233 126 }
+	color = rgb { 128 128 0 }
+	color_ui = rgb { 128 128 0 }
 }
 D02 = {
 	color = rgb { 194 140 86 }
@@ -799,6 +808,15 @@ ANH = {
 GZH = {
 	color = rgb { 155 125 125 }
 	color_ui = rgb { 155 125 125 }
+}
+FRA_hunta = {
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 128 128 128 }
+}
+
+FRA_gosudarstvo = {
+	color = rgb { 176 133 69 }
+	color_ui = rgb { 176 133 69 }
 }
 HBI = {
 	color = rgb { 155 125 125 }

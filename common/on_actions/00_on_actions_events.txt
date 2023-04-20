@@ -52,6 +52,20 @@ on_actions = {
 		}
 	}
 	
+	on_weekly_FRA = {
+		effect = {
+		if = {
+		limit = { has_global_flag = razdel_belgii }
+		    if = {
+				limit = { FRA = { has_full_control_of_state = 6 } }
+				HOL = { transfer_state = 6 }
+			}
+		}	
+		}
+	}
+	
+	
+	
 #	on_startup = {
 #		effect = {   
 #			set_variable = { curs_lebrena = 0 } 

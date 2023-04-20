@@ -45,5 +45,104 @@ FRA_integration_category = {
 		has_country_flag = FRA_integration_activate
 	}
 }
+FRA_spain_perevorot_category = {
+	icon = GFX_decision_category_border_conflicts
+	priority = 1000
+	visible = {
+		original_tag = FRA
+		has_country_flag = FRA_spania_otkaz_activate
+	}
+}
+FRA_perevorot_national_coalition_category = {
+	icon = GFX_decision_category_border_conflicts
+	priority = 1000
+	visible = {
+		original_tag = FRA
+		has_country_flag = FRA_perevorot_national_coalition_activate
+	}
+}
+
+FRA_benelux_mechanika_category = {
+	icon = GFX_decision_category_border_conflicts
+	priority = 1000
+	scripted_gui = benelux_mechanika
+	visible = {
+	OR = {
+    original_tag = ENG
+    original_tag = FRA
+	}
+		has_global_flag = FRA_benelux_mechanikan_activate
+	}
+}
+
+FRA_protivostoianie_coalition_category = {
+	icon = GFX_decision_category_border_conflicts
+	priority = 1000
+	visible = {
+		original_tag = FRA
+		has_global_flag = national_coalition
+	}
+}
+
+
+
+FRA_doktrina_roka_category = {
+	icon = GFX_decision_category_border_conflicts
+	priority = 1000
+	visible = {
+		original_tag = FRA
+		has_global_flag = doktrina_roka
+	}
+}
+
+
+FRA_national_mobilization_category = {
+	icon = GFX_decision_category_border_conflicts
+	priority = 1000
+	visible = {
+		original_tag = FRA
+		has_global_flag = national_mobilization
+	}
+}
+
+
+
+
+
+
+
+
+
+FRA_zvuki_burevestnika_category = {
+	icon = GFX_decision_category_border_conflicts
+	priority = 1000
+	visible = {
+		original_tag = FRA
+		has_global_flag = military_rule_in_france
+	}
+}
+
+
+FRA_voennoe_masterstvo_category = {
+	icon = GFX_decision_category_border_conflicts
+	priority = 1000
+	visible = {
+		original_tag = FRA
+		has_global_flag = military_rule_in_france
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

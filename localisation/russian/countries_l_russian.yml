@@ -42,6 +42,13 @@
  RHW_DEF:0 "Рейнланд"
  RHW_ADJ:0 "Рейнландск."
  
+ 
+ 
+ SFR:0 "Фронт Освобождения Испании"
+ SFR_DEF:0 "Фронт Освобождения Испании"
+ SFR_ADJ:0 "Испанск." 
+ 
+ 
  ISR_democratic:0 "Международная зона"
  ISR_democratic_DEF:0 "Международная зона"
  ISR_neutrality:0 "Международная зона"
@@ -136,9 +143,31 @@
  FRA_democratic_ADJ:0 "Французск."
  FRA_neutrality_ADJ:0 "Французск."
  FRA_communism_ADJ:0 "Французск."
- FRA:0 "Франция"
- FRA_DEF:0 "Франция"
+ FRA:0 "Французская Республика"
+ FRA_DEF:0 "Французская Республика"
  FRA_ADJ:0 "Французск."
+ 
+ FRR:0 "Вторая Парижская Коммуна"
+ FRR_DEF:0 "Вторая Парижская Коммуна"
+ FRR_ADJ:0 "Французск."
+ FRR_socdem_revolt:0 "Вторая Парижская Коммуна"
+ FRR_socdem_revolt_DEF:0 "Вторая Парижская Коммуна"
+ FRR_socdem_revolt_ADJ:0 "Французск."
+ 
+ 
+
+ FRA_hunta:0 "Французская Хунта"
+ FRA_hunta_DEF:0 "Французская Хунта"
+ FRA_hunta_ADJ:0 "Французск."
+ 
+ FRA_gosudarstvo:0 "Французское Государство"
+ FRA_gosudarstvo_DEF:0 "Французское Государство"
+ FRA_gosudarstvo_ADJ:0 "Французск."
+ 
+ 
+ 
+ 
+ 
  LUX_fascism:0 "Герцогство Люксембург"
  LUX_fascism_DEF:0 "Герцогство Люксембург"
  LUX_democratic:0 "Люксембург"
