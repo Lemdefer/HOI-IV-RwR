@@ -35,6 +35,14 @@ FIN = "countries/Finland.txt"
 IRE = "countries/Ireland.txt"
 HUN = "countries/Hungary.txt"
 AFG = "countries/Afghanistan.txt"
+
+
+
+
+
+HWA = "countries/Hanoi administration.txt"
+FIS = "countries/Frenko indo kitai.txt"
+
 ARG = "countries/Argentina.txt"
 AST = "countries/Australia.txt"
 BHU = "countries/Bhutan.txt"

@@ -1256,6 +1256,8 @@ country_event = {
 	
 	option = {
 		name = FRA.25.a
+		add_political_power = -30
+		add_stability = -0.04		
 	}
 }
 
@@ -1269,8 +1271,170 @@ country_event = {
 	
 	option = {
 		name = FRA.26.a
+		add_stability = -0.07
+		add_manpower = -1
+		
+		add_popularity = {
+		ideology = paternalism   
+		popularity = -0.04
+		}
+		add_popularity = {
+		ideology = fascism   
+		popularity = -0.15
+		}		
+		hidden_effect = {		
+		FRA = { country_event = { days = 7 id = FRA.255 } }			
+		}
+	}
+	option = {
+		name = FRA.26.b
+		add_stability = -0.03
+		add_political_power = -10
+		add_popularity = {
+		ideology = fascism   
+		popularity = -0.05
+		}
+	}
+	option = {
+		name = FRA.26.c
+		add_stability = 0.01
+		add_political_power = -30
+		add_popularity = {
+		ideology = paternalism   
+		popularity = 0.02
+		}	
+	}
+	option = {
+		name = FRA.26.e
+		add_stability = 0.03
+		add_political_power = -50
+		add_popularity = {
+		ideology = paternalism   
+		popularity = 0.02
+		}	
+		add_popularity = {
+		ideology = fascism   
+		popularity = 0.02
+		}
+		hidden_effect = {
+		random_list = {
+		40 = {		
+		FRA = { country_event = { days = 7 id = FRA.256 } }			
+		}
+		50 = {
+		FRA = { country_event = { days = 7 id = FRA.257 } }			
+		}
+		10 = {		
+		FRA = { country_event = { days = 7 id = FRA.258 } }			
+		}		
+		}
+		}
+	}	
+}
+
+# МЕСТЬ ШАРЛЕНКОВ!
+country_event = {
+	id = FRA.255
+	title = FRA.255.t
+	desc = FRA.255.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.255.a	
+		add_manpower = -1557
+		add_political_power = -40
+		add_stability = -0.07
+		add_popularity = {
+		ideology = paternalism   
+		popularity = -0.04
+		}
 	}
 }
+#«Обиды прошлого остаются в прошлом»
+country_event = {
+	id = FRA.256
+	title = FRA.256.t
+	desc = FRA.256.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.256.a	
+		add_political_power = -10
+		add_stability = 0.03
+		add_war_support = 0.03
+	}
+	option = {
+		name = FRA.256.b
+		add_political_power = 30
+	}
+}
+#«Ожидаемое предательство Шарля!»
+country_event = {
+	id = FRA.257
+	title = FRA.257.t
+	desc = FRA.257.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.257.a	
+		add_popularity = {
+		ideology = paternalism   
+		popularity = -0.05
+		}
+		add_political_power = -20
+		add_stability = -0.04
+	}
+}
+#«Бегство Шарля в Лондон!»
+country_event = {
+	id = FRA.258
+	title = FRA.258.t
+	desc = FRA.258.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.258.a	
+		add_popularity = {
+		ideology = paternalism   
+		popularity = -0.07
+		}
+		add_political_power = -50
+		add_stability = -0.06
+		add_war_support = -0.03
+		ENG = { country_event = { days = 1 id = FRA.259 } }			
+	}
+}
+#«Полезный француз у нашего двора». 
+country_event = {
+	id = FRA.259
+	title = FRA.259.t
+	desc = FRA.259.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.259.a
+		
+		add_political_power = 20
+		add_stability = 0.03
+		add_ideas = { FRA_perebejchik_idea }			
+	}
+}
+
+
+
+
+
+
 #контр переворот лебрена
 country_event = {
 	id = FRA.27
@@ -1293,9 +1457,11 @@ country_event = {
 		long_name = French_liberals
 		name = French_liberals
 		}
-			
 		
-		
+		add_timed_idea = {
+		idea = FRA_black_september_idea
+		days = 365
+		}	
 	}
 }
 
@@ -1668,6 +1834,373 @@ country_event = {
 		name = FRA.41.a
 	}
 }
+
+
+#«Пересмотр государственной доктрины». 
+country_event = {
+	id = FRA.42
+	title = FRA.42.t
+	desc = FRA.42.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.42.a
+		add_political_power = 10
+		add_ideas = { FRA_national_defens_idea }	
+	}
+	option = {
+		name = FRA.42.b
+		add_political_power = -20
+		add_ideas = { FRA_forced_idustryalsiation_idea }
+	}
+}
+
+
+
+#«Судьба Индокитая».
+country_event = {
+	id = FRA.43
+	title = FRA.43.t
+	desc = FRA.43.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.43.a
+		add_political_power = -25
+		add_stability = 0.05
+		create_dynamic_country = {
+		original_tag = HWA
+		copy_tag = FRA
+		add_political_power = 100
+		transfer_state = 286
+		transfer_state = 741
+		transfer_state = 670
+		transfer_state = 671
+		}
+		hidden_effect = {
+		HWA = {
+		set_capital = {state = 671}
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_popularities = {
+			democratic = 100
+		}
+			set_cosmetic_tag = HWA_F 		
+		}		
+		puppet = HWA
+		}
+		
+	
+	}
+	option = {
+		name = FRA.43.b
+		add_stability = -0.03
+		add_war_support = -0.03
+		
+		release_puppet = VIN
+		release_puppet = LAO
+		release_puppet = CAM
+		
+	}
+	option = {
+		name = FRA.43.c
+		add_political_power = 10
+		add_stability = -0.03
+		create_dynamic_country = {
+		original_tag = FIS
+		copy_tag = FRA
+		add_political_power = 100
+		transfer_state = 286
+		transfer_state = 741
+		transfer_state = 670
+		transfer_state = 671
+		}
+		hidden_effect = {
+		FIS = {
+		set_capital = {state = 670}
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_popularities = {
+			democratic = 100
+		}
+			set_cosmetic_tag = FIS_F 		
+		}		
+		puppet = FIS
+		}
+	}
+	option = {
+		name = FRA.43.e
+		
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = -0.05
+			286 = {
+				add_resistance = 7
+			}
+			741 = {
+				add_resistance = 7
+			}
+			670 = {
+				add_resistance = 7
+			}
+			671 = {
+				add_resistance = 7
+			}
+	}
+}
+
+
+
+
+#«Франция предлагает дружбу!».
+country_event = {
+	id = FRA.44
+	title = FRA.44.t
+	desc = FRA.44.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.44.a
+		
+		
+		
+		add_political_power = 20
+		add_stability = -0.05
+		add_ideas = { FRA_frendship_with_spain_idea }
+		FRA = {
+		add_ideas = { FRA_frendship_with_spain_idea }		
+		diplomatic_relation = {
+		country = SPR
+		relation = non_aggression_pact
+		active = yes
+		}
+		diplomatic_relation = {
+		country = SPR
+		relation = military_access
+		active = yes
+		}
+		diplomatic_relation = {
+		country = SPR
+		relation = docking_rights
+		active = yes
+		}		
+		}
+		SPR = {
+		add_ideas = { FRA_frendship_with_spain_idea }		
+		diplomatic_relation = {
+		country = FRA
+		relation = non_aggression_pact
+		active = yes
+		}
+		diplomatic_relation = {
+		country = FRA
+		relation = military_access
+		active = yes
+		}
+		diplomatic_relation = {
+		country = FRA
+		relation = docking_rights
+		active = yes
+		}		
+		}
+
+
+		FRA = {  country_event = { days = 1 id = FRA.45 } }	
+	}
+	option = {
+		name = FRA.44.b
+		
+		
+		
+		add_political_power = 10
+		add_stability = 0.03
+		FRA = {	
+		diplomatic_relation = {
+		country = SPR
+		relation = non_aggression_pact
+		active = yes
+		}
+		diplomatic_relation = {
+		country = SPR
+		relation = military_access
+		active = yes
+		}
+		diplomatic_relation = {
+		country = SPR
+		relation = docking_rights
+		active = yes
+		}		
+		}
+		SPR = {
+		diplomatic_relation = {
+		country = FRA
+		relation = non_aggression_pact
+		active = yes
+		}
+		diplomatic_relation = {
+		country = FRA
+		relation = military_access
+		active = yes
+		}
+		diplomatic_relation = {
+		country = FRA
+		relation = docking_rights
+		active = yes
+		}		
+		}
+		
+			FRA = {  country_event = { days = 1 id = FRA.46 } }	
+		
+	}
+	option = {
+		name = FRA.44.c
+		
+		add_political_power = -10
+		
+		
+		FRA = {  country_event = { days = 1 id = FRA.47 } }	
+		
+	}
+}
+
+
+
+
+
+
+#«Испания согласна на всё!». 
+country_event = {
+	id = FRA.45
+	title = FRA.45.t
+	desc = FRA.45.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.45.a
+			FRA = {
+		add_opinion_modifier = {
+			target = SPR
+			modifier = ispa_sol_vse
+		}
+		}
+		SPR = {
+		add_opinion_modifier = {
+			target = FRA
+			modifier = ispa_sol_vse
+		}		
+		}
+		add_political_power = 5
+		
+		
+	}
+}
+
+#«Испания согласилась на дружбу». 
+country_event = {
+	id = FRA.46
+	title = FRA.46.t
+	desc = FRA.46.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.46.a
+			FRA = {
+		add_opinion_modifier = {
+			target = SPR
+			modifier = ispa_sol_ne_vse
+		}
+		}
+		SPR = {
+		add_opinion_modifier = {
+			target = FRA
+			modifier = ispa_sol_ne_vse
+		}		
+		}
+		
+		
+	}
+}
+
+#«Испания отвергает наше предложение!». 
+country_event = {
+	id = FRA.47
+	title = FRA.47.t
+	desc = FRA.47.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.47.a
+			FRA = {
+		add_opinion_modifier = {
+			target = SPR
+			modifier = ispa_ne_sol_vse
+		}
+		}
+		SPR = {
+		add_opinion_modifier = {
+			target = FRA
+			modifier = ispa_ne_sol_vse
+		}		
+		}
+		
+		add_political_power = -10
+		
+	}
+}
+
+
+
+
+
+#«Судьба Французской Африки».
+country_event = {
+	id = FRA.48
+	title = FRA.48.t
+	desc = FRA.48.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.48.a	
+	}
+	option = {
+		name = FRA.48.b
+	}
+	option = {
+		name = FRA.48.c
+	}
+	option = {
+		name = FRA.48.e
+	}
+}
+
+
+
+
+
+
+
 
 
 

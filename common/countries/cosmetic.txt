@@ -12,12 +12,20 @@ FRR_socdem_revolt = {
 	color_ui = rgb { 255 0 0 }
 }
 FRA_hunta = {
-	color = rgb { 128 128 128 }
-	color_ui = rgb { 128 128 128 }
+	color = rgb { 110 110 128 }
+	color_ui = rgb { 110 110 128 }
 }
 FRA_gosudarstvo = {
-	color = rgb { 176 133 69 }
-	color_ui = rgb { 176 133 69 }
+	color = rgb { 4 90 155 }
+	color_ui = rgb { 4 90 155 }
+}
+HWA_F = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
+FIS_F = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
 }
 SFR = {
 	color = { 128 128 0 }

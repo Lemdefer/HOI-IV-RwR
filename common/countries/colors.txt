@@ -14,6 +14,15 @@ HBI = {
 	color = rgb { 130 135 140 }
 	color_ui = rgb { 130 135 140 }
 }
+HWA = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
+
+FIS = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
 
 SHX = {
 	color = rgb { 110 85 85 }

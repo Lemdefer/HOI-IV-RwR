@@ -218,7 +218,8 @@ news_event = {
     }
 	
 	option = {
-		name = news.11.a
+		name = news.11.a	
+	#	add_political_power = 25
 	}
 }
 

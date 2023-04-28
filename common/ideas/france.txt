@@ -1480,7 +1480,133 @@ ideas = {
 		}
 		
 	
+	
+	
+	
+	
+	
+		FRA_national_defens_idea = { 
+
+			#picture = 
 		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {
+			production_speed_bunker_factor = 0.1
+			production_speed_coastal_bunker_factor = 0.1				
+			army_defence_factor = 0.1
+			army_leader_cost_factor = -0.1 
+			military_leader_cost_factor = -0.1
+			}	
+		}
+		
+		
+		FRA_forced_idustryalsiation_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {
+			production_speed_industrial_complex_factor = 0.1
+			production_speed_arms_factory_factor = 0.1
+			production_speed_rail_way_factor = 0.1
+			research_speed_factor = 0.1
+			}	
+		}
+		
+		FRA_frendship_with_spain_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05	
+				industrial_capacity_factory = 0.05	
+				#trade_cost_for_target_factor = -0.1
+
+			}
+			targeted_modifier = {
+			tag = SPR
+			trade_cost_for_target_factor = -0.1
+			}
+			targeted_modifier = {
+			tag = FRA
+			trade_cost_for_target_factor = -0.1
+			}
+		}
+		
+		FRA_perebejchik_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+						
+				targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.05
+				}
+				
+		}
+		
+		
+		FRA_black_september_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {				
+				stability_factor = -0.15
+				war_support_factor = -0.1
+				political_power_factor = -0.1				
+			}	
+		}
+		
+
 	
 		
 		

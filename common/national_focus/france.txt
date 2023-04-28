@@ -697,15 +697,30 @@
 		x = 14
 		y = 0
 
-		cost = 5
+		cost = 7
 
 		available = {
+		has_country_flag = vibory_finished
 
 		}
 
 		completion_reward = {
-			
+		add_political_power = 40
+		add_stability = 0.05
+		
+		ENG = {
+		add_opinion_modifier = {
+			target = FRA
+			modifier = vtoraya_imperia_mira2
 		}
+		}
+		RUS = {
+		add_opinion_modifier = {
+			target = FRA
+			modifier = vtoraya_imperia_mira1
+		}		
+		}
+	}
 	}
 
 	#Пересмотр нашей доктрины
@@ -727,9 +742,21 @@
 
 		}
 
-		completion_reward = {
+		completion_reward = {			
+			FRA = { country_event = { days = 4 id = FRA.42 } }
+			add_political_power = 20
+			
+			if = {
+				limit = { has_government = liberalisms }
+				complete_national_focus = FRA_pressure_on_reiland			
+			}
+			if = {
+				limit = { has_government = democratic }
+				complete_national_focus = FRA_spanish_colleagues			
+			}
 			
 		}
+		
 	}
 
 	#Последствие Йебенского восстания
@@ -745,13 +772,29 @@
 			focus = FRA_revisiting_our_doctrine
 		}
 
-		cost = 5
+		cost = 8
 
 		available = {
-
+			has_country_flag = yeben_vosstanie
 		}
 
 		completion_reward = {
+			add_political_power = 10
+			286 = {
+				add_compliance = 7
+			}
+			741 = {
+				add_compliance = 7
+			}
+			670 = {
+				add_compliance = 7
+			}
+			671 = {
+				add_compliance = 7
+			}
+			FRA = { country_event = { days = 4 id = FRA.43} }
+			
+			
 			
 		}
 	}
@@ -769,13 +812,34 @@
 			focus = FRA_revisiting_our_doctrine
 		}
 
-		cost = 5
+		cost = 3
 
 		available = {
 
 		}
 
 		completion_reward = {
+		if = {
+				limit = { has_government = liberalisms }
+					set_autonomy = {
+					target = RHI
+					autonomy_state = autonomy_dominion
+					freedom_level = 0.5
+					}
+			}
+		else = {
+			add_manpower = 20000
+			add_political_power = -40
+			add_equipment_to_stockpile = {type = infantry_equipment_0 amount = -2000}
+			set_autonomy = {
+				target = RHI
+				autonomy_state = autonomy_integrated_puppet
+				end_wars = no
+				end_civil_wars = no
+			}
+		}
+		
+		
 			
 		}
 	}
@@ -793,13 +857,39 @@
 			focus = FRA_revisiting_our_doctrine
 		}
 
-		cost = 5
+		cost = 3
 
 		available = {
 
 		}
 
 		completion_reward = {
+		
+		if = {
+				limit = { has_government = democratic }			
+			}
+		else = {
+		add_political_power = 20	
+		FRA = {
+		add_opinion_modifier = {
+			target = SPR
+			modifier = frenko_spanish_friendship
+		}
+		}
+		SPR = {
+		add_opinion_modifier = {
+			target = FRA
+			modifier = frenko_spanish_friendship
+		}		
+		}
+		SPR = {
+			country_event = { days = 1 id = FRA.44 }	
+		}
+		}
+		
+		
+		
+		
 			
 		}
 	}
@@ -824,6 +914,32 @@
 		}
 
 		completion_reward = {
+			
+			if = {
+				limit = { has_government = socdem  }	
+#другой ивент, потом пропишут
+				
+			}
+			else = {
+				country_event = { days = 1 id = FRA.48 }	
+			
+			
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			
 		}
 	}

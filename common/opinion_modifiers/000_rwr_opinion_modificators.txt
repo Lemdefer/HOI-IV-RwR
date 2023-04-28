@@ -13,31 +13,25 @@ opinion_modifiers = {
 	}	 
 	military_presence_before_referendum = {
 		value = -5
-	}
-	
+	}	
 	supported_us_in_hard_times = {
 		value = 20
-	}
-	
+	}	
 	not_supported_us_in_hard_times = {
 		value = -10
-	}
-	
+	}	
 	vipolnenii_obeshania = {
 		value = 15
-	}
-	
+	}	
 	friends = {
 		value = 35
 	}
-	
 	krah_russkoi_diplomatii = {	
 		value = -20
 	}
 	krah_russkoi_diplomatii2 = {	
 		value = -25
-	}
-	
+	}	
 	itogi_madridskogo_congressa1 = {	
 		value = 50
 	}
@@ -50,4 +44,47 @@ opinion_modifiers = {
 	ne_davim_na_ispaniu = {	
 		value = 25
 	}
+	
+	
+	vtoraya_imperia_mira1 = {	
+		value = -10
+	}
+	vtoraya_imperia_mira2 = {	
+		value = -25
+	}
+	
+	
+	
+	frenko_spanish_friendship = {	
+		value = 25
+	}
+	
+	ispa_sol_vse = {	
+		value = 20
+	}
+	ispa_sol_ne_vse = {	
+		value = 10
+	}
+	ispa_ne_sol_vse = {	
+		value = -10
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
