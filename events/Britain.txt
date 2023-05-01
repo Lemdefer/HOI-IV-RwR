@@ -3,6 +3,7 @@
 ###########################
 
 add_namespace = england
+add_namespace = england_news
 
 country_event = { # Кризис
 	id = england.1
@@ -65,6 +66,7 @@ country_event = { # Победа вайфу
 	
 	option = {
 		name = england.3.a
+		add_political_power = 75
 		add_popularity = {
             ideology = fascism
             popularity = 0.2
@@ -118,7 +120,7 @@ country_event = { # Штурм Лондона
 	
 	option = {
 		name = england.6.a
-		add_political_power = -75
+		add_political_power = -50
 		add_stability = -0.1
 		add_manpower = -200
 	}
@@ -162,27 +164,86 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = england.111
-	title = england.111.t
-	desc = england.111.d
+	#######################################################################################################################################################
+	### Путь скромных ценителей социал-монархизма #########################################################################################################
+	#######################################################################################################################################################
+	
+country_event = { #
+	id = england.8
+	title = england.8.t
+	desc = england.8.d
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = england.111.a
+		name = england.8.a
 	}
 }
 
-country_event = {
-	id = england.112
-	title = england.112.t
-	desc = england.112.d
+country_event = { #
+	id = england.9
+	title = england.9.t
+	desc = england.9.d
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = england.112.a
-		set_global_flag = Englan_save_benelux
+		name = england.9.a
+		add_ideas = extensive_conscription
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+	option = {
+		name = england.9.b
+		add_ideas = service_by_requirement
+		add_stability = -0.05
+		add_war_support = -0.05
+	}
+}
+
+country_event = { #
+	id = england.10
+	title = england.10.t
+	desc = england.10.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = england.10.a
+		hidden_effect = {
+			set_country_tag = federation
+		}
+	}
+	option = {
+		name = england.10.b
+		hidden_effect = {
+			set_country_tag = empire
+		}
+	}
+}
+	
+###
+
+news_event = { # Победа фашистов
+    id = england_news.1
+	title = { text = england_news.1.t }
+	desc = { text = england_news.1.d }
+	major = yes
+	
+	picture = GFX_report_event_fascist_victory_eng
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = england_news.1.a
+		trigger = {
+		    tag = ENG
+		}
+	}
+	option = {
+		name = arabian_news.1.b
+		trigger = {
+		    NOT = { tag = ENG }
+		}
 	}
 }

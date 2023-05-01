@@ -806,6 +806,209 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_ENG_Fascism_theory.dds"
 	}
 	
+	### Britain (Paternalism)
+
+	SpriteType = {
+		name = "GFX_focus_ENG_George_path"
+		texturefile = "gfx/interface/goals/focus_ENG_George_path.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_new_police_order"
+		texturefile = "gfx/interface/goals/focus_ENG_new_police_order.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_dispersal_ofthe_facsists_unions"
+		texturefile = "gfx/interface/goals/focus_ENG_dispersal_ofthe_facsists_unions.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_fight_the_all_radicals"
+		texturefile = "gfx/interface/goals/focus_ENG_fight_the_all_radicals.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_agreement_with_socialists"
+		texturefile = "gfx/interface/goals/focus_ENG_agreement_with_socialists.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_note_of_protest"
+		texturefile = "gfx/interface/goals/focus_ENG_note_of_protest.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_hardwork_of_MI6"
+		texturefile = "gfx/interface/goals/focus_ENG_hardwork_of_MI6.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_undercover_conspiracy"
+		texturefile = "gfx/interface/goals/focus_ENG_undercover_conspiracy.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_revolt_of_one_chad"
+		texturefile = "gfx/interface/goals/focus_ENG_revolt_of_one_chad.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_holy_flame_operation"
+		texturefile = "gfx/interface/goals/focus_ENG_holy_flame_operation.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_help_peasants"
+		texturefile = "gfx/interface/goals/focus_ENG_help_peasants.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_search_workers_compromise"
+		texturefile = "gfx/interface/goals/focus_ENG_search_workers_compromise.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_trade_unions_congress"
+		texturefile = "gfx/interface/goals/focus_ENG_trade_unions_congress.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_royal_social_package"
+		texturefile = "gfx/interface/goals/focus_ENG_royal_social_package.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_extending_taxes"
+		texturefile = "gfx/interface/goals/focus_ENG_extending_taxes.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_full_nationalization_of_railways"
+		texturefile = "gfx/interface/goals/focus_ENG_full_nationalization_of_railways.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_royal_economic_union"
+		texturefile = "gfx/interface/goals/focus_ENG_royal_economic_union.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_bank_support"
+		texturefile = "gfx/interface/goals/focus_ENG_bank_support.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_buying_up_unprofitable_enterprises"
+		texturefile = "gfx/interface/goals/focus_ENG_buying_up_unprofitable_enterprises.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_industrial_retooling"
+		texturefile = "gfx/interface/goals/focus_ENG_industrial_retooling.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_support_small_business"
+		texturefile = "gfx/interface/goals/focus_ENG_support_small_business.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_cooperating_of_british_factories"
+		texturefile = "gfx/interface/goals/focus_ENG_cooperating_of_british_factories.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_cancellation_of_radical_measures"
+		texturefile = "gfx/interface/goals/focus_ENG_cancellation_of_radical_measures.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_cut_the_gordian_knot"
+		texturefile = "gfx/interface/goals/focus_ENG_cut_the_gordian_knot.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_ideological_mobilization"
+		texturefile = "gfx/interface/goals/focus_ENG_ideological_mobilization.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_new_volunteers_wave"
+		texturefile = "gfx/interface/goals/focus_ENG_new_volunteers_wave.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_rule_by_the_seas"
+		texturefile = "gfx/interface/goals/focus_ENG_rule_by_the_seas.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_empire_federation"
+		texturefile = "gfx/interface/goals/focus_ENG_empire_federation.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_fate_of_India"
+		texturefile = "gfx/interface/goals/focus_ENG_fate_of_India.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_long_evening_in_Ottawa"
+		texturefile = "gfx/interface/goals/focus_ENG_long_evening_in_Ottawa.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_old_good_empire"
+		texturefile = "gfx/interface/goals/focus_ENG_old_good_empire.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_big_indians_purge"
+		texturefile = "gfx/interface/goals/focus_ENG_big_indians_purge.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_plan_Rugged_Britain"
+		texturefile = "gfx/interface/goals/focus_ENG_plan_Rugged_Britain.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_British_Japanase_pact"
+		texturefile = "gfx/interface/goals/focus_ENG_British_Japanase_pact.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_necessary_relations_with_Italy"
+		texturefile = "gfx/interface/goals/focus_ENG_necessary_relations_with_Italy.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_crush_arabian_rebels"
+		texturefile = "gfx/interface/goals/focus_ENG_crush_arabian_rebels.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_revision_of_asian_borders"
+		texturefile = "gfx/interface/goals/focus_ENG_revision_of_asian_borders.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_defend_native_Britain"
+		texturefile = "gfx/interface/goals/focus_ENG_defend_native_Britain.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_Hiroshimas_delegation"
+		texturefile = "gfx/interface/goals/focus_ENG_Hiroshimas_delegation.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_saved_by_God"
+		texturefile = "gfx/interface/goals/focus_ENG_saved_by_God.png"
+	}
+
+
 	    ### Japan
 		
 	SpriteType = { 

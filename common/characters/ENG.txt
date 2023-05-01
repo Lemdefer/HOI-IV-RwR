@@ -26,4 +26,19 @@ characters={
 			id=-1
 		}
 	}
+
+	ENG_Eduard_Wood = {
+		name = ENG_Eduard_Wood
+
+		advisor = {
+			slot = political_advisor
+			traits = { indian_rebels_destroyer }
+			available = {
+				hidden_trigger = {
+					has_country_flag = Eduard_Wood
+				}
+				custom_trigger_tooltip = ENG_Eduard_Wood_trigger_tt
+			}
+		}
+	}
 }

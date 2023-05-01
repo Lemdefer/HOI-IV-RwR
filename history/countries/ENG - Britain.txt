@@ -238,6 +238,8 @@ create_country_leader = {
 	}
 }
 
+recruit_character = ENG_Eduard_Wood
+
 create_field_marshal = {
 	name = "Alan Brooke" # Aristocrat
 	id = 997

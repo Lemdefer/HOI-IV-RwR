@@ -45,8 +45,32 @@ ideas = {
 				conscription_factor = -0.5
 				local_resources_factor = -0.2
 			}
+		}
 
+		ENG_Depression_timed = {
 
+			picture = ENG_Depression_1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			    stability_factor = -0.3
+				consumer_goods_factor = 0.5
+				conscription_factor = -0.5
+				local_resources_factor = -0.2
+			}
+
+			on_remove = {
+				add_timed_idea = { idea = ENG_Depression_2 days = 350 }
+			}
 		}
 		
 		ENG_Depression_2 = { 
@@ -529,11 +553,11 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.05
-				local_resources_factor = 0.2
+				local_resources_factor = 0.3
 			}
 		}
 		
-		ENG_resources_por = { 
+		ENG_mi6 = { 
 
 			picture = chi_army_corruption
 		
@@ -548,8 +572,167 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				operative_slot = 2
+			}
+		}
+		
+		ENG_undercover_conspiracy_idea = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				custom_modifier_tooltip = ENG_undercover_conspiracy_idea_tt
+			}
+		}
+		
+		ENG_strengthening_of_regime = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly_factor = 0.008
+				war_support_factor = 0.008
+			}
+		}
+		
+		ENG_ideological_mobilization_idea = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.25
+			}
+		}
+		
+		ENG_empire_federation_idea = { 
+
+			picture = chi_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.10
+				non_core_manpower = 0.10
+				required_garrison_factor = -0.1
+			}
+		}
+
+		ENG_royal_social_pack_idea = {
+
+			picture = chi_army_corruption
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		ENG_extending_taxes_idea = {
+
+			picture = chi_army_corruption
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
 				consumer_goods_factor = -0.05
-				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+
+		ENG_royal_economic_union_idea = {
+
+			picture = chi_army_corruption
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.025
+				industrial_capacity_factory = 0.05
+				research_speed_factor 0.02
+			}
+		}
+
+		ENG_cooperating_of_british_factories_idea = {
+
+			picture = chi_army_corruption
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.025
+				industrial_capacity_factory = 0.05
+				research_speed_factor 0.02
 			}
 		}
 	}

@@ -57,26 +57,6 @@ country_event = { # Италия отказалась
 	}
 }
 
-country_event = { # Индия отделяется
-    id = england_foreign.4
-	title = england_foreign.4.t
-	desc = england_foreign.4.d
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = england_foreign.4.a
-		end_puppet = RAJ
-		RAJ = {
-			leave_faction = yes
-			drop_cosmetic_tag = yes
-			hidden_effect = {
-			    country_event = { id = indostan.1 days = 20 }
-			}
-		}
-	}
-}
-
 country_event = { # Запрос к Португалии (фаш.)
 	id = england_foreign.5
 	title = england_foreign.5.t
@@ -189,13 +169,14 @@ country_event = { # Лондонский диктат
 	id = england_foreign.11
 	title = england_foreign.11.t
 	desc = england_foreign.11.d
+	picture = GFX_report_event_generic_sign_treaty1
 	
 	is_triggered_only = yes
 	
 	option = { # Да
 		name = england_foreign.11.a
 		ENG = {
-			country_event = { id = england_foreign.10 days = 2 }
+			country_event = { id = england_foreign.12 days = 1 }
 		}
 		ai_chance = {
 		    factor = 0
@@ -214,9 +195,9 @@ country_event = { # Лондонский диктат
 		}
 	}
 	option = { # Нет
-		name = england_foreign.11.a
+		name = england_foreign.11.b
 		ENG = { 
-		    country_event = { id = england_foreign.11 days = 2 } 
+		    country_event = { id = england_foreign.13 days = 1 } 
 		}
 		ai_chance = {
 		    factor = 0
@@ -257,7 +238,7 @@ country_event = { #Испания согласилась
 			ITA = { give_guarantee = SPR }
 		}
 		169 = { set_demilitarized_zone = yes }
-		173 = { set_demilitarized_zone = yes }
+		838 = { set_demilitarized_zone = yes }
 		290 = { set_demilitarized_zone = yes }
 	}
 }
@@ -266,14 +247,246 @@ country_event = { # Испания отказалась
 	id = england_foreign.13
 	title = england_foreign.13.t
 	desc = england_foreign.13.d
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = england_foreign.13.a
 		declare_war_on = {
             target = SPR
             type = puppet_wargoal_focus
         }
+	}
+}
+
+country_event = {
+	id = england_foreign.14
+	title = england_foreign.14.t
+	desc = england_foreign.14.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = england_foreign.14.a
+		ENG = {
+			annex_country = {
+				target = PREV
+				transfer_troops = yes
+			}
+		}
+	}
+
+	option = {
+		name = england_foreign.14.b
+
+		end_puppet = ENG
+
+		ENG = {
+			end_puppet = RAJ
+			declare_war_on = {
+				target = PREV
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = {
+	id = england_foreign.15
+	title = england_foreign.15.t
+	desc = england_foreign.15.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = england_foreign.15.a
+		ENG = {
+			annex_country = {
+				target = PREV
+				transfer_troops = yes
+			}
+		}
+	}
+
+	option = {
+		name = england_foreign.15.b
+
+		end_puppet = ENG
+
+		ENG = {
+			end_puppet = CAN
+			declare_war_on = {
+				target = PREV
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = {
+	id = england_foreign.16
+	title = england_foreign.16.t
+	desc = england_foreign.16.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = england_foreign.16.a
+		add_tech_bonus = {
+			bonus = 0.2
+			uses = 1
+			category = electronics
+		}
+		ENG = {
+			add_tech_bonus = {
+				bonus = 0.2
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+
+	option = {
+		name = england_foreign.16.b
+	}
+}
+
+country_event = {
+	id = england_foreign.17
+	title = england_foreign.17.t
+	desc = england_foreign.17.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = england_foreign.17.a
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 2
+			category = naval_equipment
+		}
+		ENG = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = naval_equipment
+			}
+		}
+	}
+
+	option = {
+		name = england_foreign.17.b
+	}
+}
+
+country_event = {
+	id = england_foreign.18
+	title = england_foreign.18.t
+	desc = england_foreign.18.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = england_foreign.18.a
+		add_tech_bonus = {
+			bonus = 0.3
+			uses = 2
+			category = air_equipment
+		}
+		ENG = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 2
+				category = air_equipment
+			}
+		}
+	}
+
+	option = {
+		name = england_foreign.18.b
+	}
+}
+
+country_event = {
+	id = england_foreign.19
+	title = england_foreign.19.t
+	desc = england_foreign.19.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = england_foreign.19.a
+		add_tech_bonus = {
+			bonus = 0.2
+			uses = 2
+			category = infantry_weapons
+		}
+		ENG = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+
+	option = {
+		name = england_foreign.19.b
+	}
+}
+
+country_event = {
+	id = england_foreign.20
+	title = england_foreign.20.t
+	desc = england_foreign.20.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = england_foreign.20.a
+		add_tech_bonus = {
+			bonus = 0.2
+			uses = 2
+			category = artillery
+		}
+		ENG = {
+			add_tech_bonus = {
+				bonus = 0.2
+				uses = 3
+				category = artillery
+			}
+		}
+	}
+
+	option = {
+		name = england_foreign.20.b
+	}
+}
+
+country_event = {
+	id = england_foreign.21
+	title = england_foreign.21.t
+	desc = england_foreign.21.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = england_foreign.21.a
+		add_tech_bonus = {
+			bonus = 0.35
+			uses = 1
+			category = nuclear
+		}
+		ENG = {
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = nuclear
+			}
+		}
+	}
+
+	option = {
+		name = england_foreign.21.b
 	}
 }
