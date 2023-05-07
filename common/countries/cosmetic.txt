@@ -20,8 +20,8 @@ FRA_gosudarstvo = {
 	color_ui = rgb { 4 90 155 }
 }
 KDD_wosstanie = {
-	color = rgb { 255 0 0 }
-	color_ui = rgb { 255 0 0 }
+	color = rgb { 20 7 7 }
+	color_ui = rgb { 20 7 7 }
 }
 FRT_F = {
 	color = rgb { 57 113 228 }
@@ -58,6 +58,10 @@ OFI_F = {
 RRR_F = {
 	color = rgb { 125 13 24 }
 	color_ui = rgb { 125 13 24 }
+}
+RRR_D = {
+	color = rgb { 246 179 45 }
+	color_ui = rgb { 246 179 45 }
 }
 SFR = {
 	color = { 128 128 0 }
