@@ -53,7 +53,334 @@ FRA_war_spec_operations_category = {
 	}
 }
 
+FRA_stroika_magino_category = {
+	FRA_bild_magino = {
+		activation = {
+        	has_global_flag = stroika_magino
+    	}
+		available = {
+			always = no
+		}
+		icon = GFX_decision_border_war
+		is_good = yes
+		days_mission_timeout = 180
+    	selectable_mission = no
+		cost = 0
+		modifier = {
+			civilian_factory_use = 5
+		}
+	
+		fire_only_once = yes
+		visible = {
+			has_global_flag = stroika_magino
+		}	
+		complete_effect = {			
+		}
+		timeout_effect = {
+		
+		28 = {
+		add_building_construction = {
+		type = bunker
+		level = 5
+		instant_build = yes
+		province = {
+			all_provinces = yes
+			limit_to_border = yes
+			limit_to_victory_point > 1
+		}
+		}
+		}
+	
+		}
+	}
+}
 
+FRA_stroika_linii_roka_category = {
+	FRA_stroika_linii_roka = {
+		activation = {
+        	has_global_flag = stroika_linii_roka
+    	}
+		available = {
+			always = no
+		}
+		icon = GFX_decision_border_war
+		is_good = yes
+		days_mission_timeout = 150
+    	selectable_mission = no
+		cost = 0
+		modifier = {
+			civilian_factory_use = 5
+		}
+	
+		fire_only_once = yes
+		visible = {
+			has_global_flag = stroika_linii_roka
+		}	
+		complete_effect = {			
+		}
+		timeout_effect = {
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 678
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 6529
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 9503
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 549
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 3558
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 11560
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 3423
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 11494
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 3547
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 587
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 3444
+		}
+
+		28 = {
+		add_building_construction = {
+		type = bunker
+		level = 2
+		instant_build = yes
+		province = {
+			all_provinces = yes
+			limit_to_border = yes
+			limit_to_victory_point > 1
+		}
+		}
+		}
+
+		
+		}
+	}
+}
+
+
+
+
+
+
+
+FRA_stroika_mak_magon_category = {
+	FRA_bild_mak_magon = {
+		activation = {
+        	has_global_flag = stroika_mak_magon
+    	}
+		available = {
+			always = no
+		}
+		icon = GFX_decision_border_war
+		is_good = yes
+		days_mission_timeout = 210
+    	selectable_mission = no
+		cost = 0
+		modifier = {
+			civilian_factory_use = 7
+		}
+	
+		fire_only_once = yes
+		visible = {
+			has_global_flag = stroika_mak_magon
+		}	
+		complete_effect = {			
+		}
+		timeout_effect = {
+		add_building_construction = {
+			type = bunker
+			level = 4
+			instant_build = yes
+			province = 678
+		}
+		add_building_construction = {
+			type = bunker
+			level = 4
+			instant_build = yes
+			province = 6529
+		}
+		add_building_construction = {
+			type = bunker
+			level = 4
+			instant_build = yes
+			province = 9503
+		}
+		add_building_construction = {
+			type = bunker
+			level = 4
+			instant_build = yes
+			province = 549
+		}
+		add_building_construction = {
+			type = bunker
+			level = 4
+			instant_build = yes
+			province = 3558
+		}
+		add_building_construction = {
+			type = bunker
+			level = 4
+			instant_build = yes
+			province = 11560
+		}
+		add_building_construction = {
+			type = bunker
+			level = 4
+			instant_build = yes
+			province = 3423
+		}
+		add_building_construction = {
+			type = bunker
+			level = 4
+			instant_build = yes
+			province = 11494
+		}
+		add_building_construction = {
+			type = bunker
+			level = 4
+			instant_build = yes
+			province = 3547
+		}
+		add_building_construction = {
+			type = bunker
+			level = 4
+			instant_build = yes
+			province = 587
+		}
+		add_building_construction = {
+			type = bunker
+			level = 4
+			instant_build = yes
+			province = 3444
+		}	
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+FRA_mass_mobilization_category = {
+	
+	mobilization_junoshei = {
+		icon = eng_trade_unions_support		
+		allowed = {
+			
+		}
+		available = {
+			
+			has_war = yes
+		}
+		visible = {
+			
+		}
+		is_good = yes
+		cost = 100
+		priority = 1
+		fire_only_once = yes		
+		complete_effect = {			
+			add_stability = -0.1
+		}
+	}
+	mobilization_zavodov_severa = {
+		icon = eng_trade_unions_support		
+		allowed = {
+		
+		}
+		available = {
+			
+			has_war = yes
+		}
+		visible = {
+			
+		}
+		is_good = yes
+		cost = 100
+		priority = 1
+		fire_only_once = yes		
+		complete_effect = {			
+		add_stability = -0.1
+		}
+	}
+	mobilization_colonian_jiteli = {
+		icon = eng_trade_unions_support		
+		allowed = {
+			
+		}
+		available = {
+			
+			has_war = yes
+		}
+		visible = {
+			
+		}
+		is_good = yes
+		cost = 100
+		priority = 1
+		fire_only_once = yes		
+		complete_effect = {			
+		add_stability = -0.1
+		}
+	}
+	
+	
+	
+	
+}
 
 
 FRA_doktrina_roka_category = {	

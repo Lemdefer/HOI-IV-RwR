@@ -804,7 +804,185 @@ country_event = {
 				modifier = vipolnenii_obeshania
 								}
 		
-			}				
+	}				
+}
+
+
+
+
+#«Французы хотят поговорить»
+country_event = {
+	id = russia.503
+	title = russia.503.t
+	desc = russia.503.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.503.a	
+		
+		add_political_power = 10
+		
+		add_opinion_modifier = {
+				target = FRA
+				modifier = conferetion_in_petrograd
+		}
+		
+		FRA = {
+		country_event = { days = 7 id = FRA.58 }	
+		}
+		
 	}
+	option = {
+		name = russia.503.b
+		
+		add_political_power = -40
+		
+		add_opinion_modifier = {
+				target = FRA
+				modifier = no_conferetion_in_petrograd
+		}
+		
+		
+		FRA = {
+		country_event = { days = 3 id = FRA.59 }	
+		}
+		
+		
+	}
+}
+
+#«Предложения Франции»)
+country_event = {
+	id = russia.504
+	title = russia.504.t
+	desc = russia.504.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.504.a	
+		
+		add_political_power = 20
+		add_stability = 0.05
+		
+			if = {
+			limit = { has_government = liberalisms }
+			add_popularity = {
+			ideology = liberalisms
+			popularity = 0.05
+			}
+			}
+			if = {
+			limit = { has_government = democratic }
+			add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+			}
+			}
+			if = {
+			limit = { has_government = fascism }
+			add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+			}
+			}
+			if = {
+			limit = { has_government = paternalism }
+			add_popularity = {
+			ideology = paternalism
+			popularity = 0.05
+			}
+			}
+			if = {
+			limit = { has_government = socdem }
+			add_popularity = {
+			ideology = socdem
+			popularity = 0.05
+			}
+			}
+			if = {
+			limit = { has_government = neutrality }
+			add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+			}
+			}
+			add_opinion_modifier = {
+				target = FRA
+				modifier = udachnya_conferentsia
+			}
+
+		
+			FRA = {
+			country_event = { days = 4 id = FRA.60 }	
+			}
+		
+		
+	}
+	option = {
+		name = russia.504.b
+		
+		add_political_power = -40
+		add_stability = -0.05
+			if = {
+			limit = { has_government = liberalisms }
+			add_popularity = {
+			ideology = liberalisms
+			popularity = -0.03
+			}
+			}
+			if = {
+			limit = { has_government = democratic }
+			add_popularity = {
+			ideology = democratic
+			popularity = -0.03
+			}
+			}
+			if = {
+			limit = { has_government = fascism }
+			add_popularity = {
+			ideology = fascism
+			popularity = -0.03
+			}
+			}
+			if = {
+			limit = { has_government = paternalism }
+			add_popularity = {
+			ideology = paternalism
+			popularity = -0.03
+			}
+			}
+			if = {
+			limit = { has_government = socdem }
+			add_popularity = {
+			ideology = socdem
+			popularity = -0.03
+			}
+			}
+			if = {
+			limit = { has_government = neutrality }
+			add_popularity = {
+			ideology = neutrality
+			popularity = -0.03
+			}
+			}
+		
+			add_opinion_modifier = {
+				target = FRA
+				modifier = provalnaya_conferentsia
+			}
+		
+		
+		
+		
+		FRA = {
+			country_event = { days = 4 id = FRA.61 }	
+			}
+	}
+}
+
 
 

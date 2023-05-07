@@ -109,6 +109,43 @@ FRA_national_mobilization_category = {
 
 
 
+FRA_mass_mobilization_category = {
+	icon = GFX_decision_category_border_conflicts
+	priority = 1000
+	visible = {
+		original_tag = FRA
+		has_country_flag = mass_mobilization_redhenia
+	}
+}
+
+
+FRA_stroika_magino_category = {
+	icon = GFX_decision_category_border_conflicts
+	priority = 1000
+	visible = {
+		original_tag = FRA
+		has_global_flag = stroika_magino
+	}
+}
+
+FRA_stroika_mak_magon_category = {
+	icon = GFX_decision_category_border_conflicts
+	priority = 1000
+	visible = {
+		original_tag = FRA
+		has_global_flag = stroika_mak_magon
+	}
+}
+
+FRA_stroika_linii_roka_category = {
+	icon = GFX_decision_category_border_conflicts
+	priority = 1000
+	visible = {
+		original_tag = FRA
+		has_global_flag = stroika_linii_roka
+	}
+}
+
 
 
 

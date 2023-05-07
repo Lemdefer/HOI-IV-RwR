@@ -289,3 +289,44 @@ ENG_Alliance_Economic = {
     }
 	
 }
+
+
+
+
+
+
+
+
+
+ENG_help_afrian_vosstanie = {
+	
+	
+	otpravit_orujie = {
+		icon = eng_trade_unions_support
+
+		available = {
+			
+		}
+
+		is_good = yes
+
+		cost = 50
+
+		priority = 1
+
+		fire_only_once = yes
+
+		visible = {
+			always = yes					
+		}
+		
+		days_remove = 90
+		
+		complete_effect = {
+		
+			
+			
+		}
+	}
+	
+}

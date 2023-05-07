@@ -37,8 +37,15 @@ HUN = "countries/Hungary.txt"
 AFG = "countries/Afghanistan.txt"
 
 
+KDD = "countries/volniBereg.txt"
+FRT = "countries/frenchtunisg.txt"
+FRL = "countries/frenchaljir.txt"
+FRM = "countries/frenchmaroko.txt"
+FRW = "countries/frenchwestafrica.txt"
+FRE = "countries/frenchsentralafrica.txt"
+OFI = "countries/osvoboditeliIndii.txt"
 
-
+RRR = "countries/rajrevolutionreich.txt"
 
 HWA = "countries/Hanoi administration.txt"
 FIS = "countries/Frenko indo kitai.txt"
