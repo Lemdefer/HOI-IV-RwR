@@ -13,6 +13,84 @@ characters={
 			id=-1
 		}
 	}
+	
+	FRA_Dumergg ={ 
+		name = FRA_Dumergg
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_dumerg"
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	FRA_raimod ={ 
+		name = FRA_raimod
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_raimond"
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	FRA_cuf ={ 
+		name = FRA_cuf
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_raimond"
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	FRA_brian ={ 
+		name = FRA_brian
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_brian"
+			}
+		}
+		country_leader = {
+			ideology = socialism   
+			traits = {}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	FRA_edouard_daladier={
 		name=FRA_edouard_daladier

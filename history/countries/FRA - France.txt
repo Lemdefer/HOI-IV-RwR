@@ -15,13 +15,14 @@ set_research_slots = 3
 set_stability = 0.5
 
 set_popularities = {
-	socdem = 19
-	marxisms = 3
-	libsoc = 16
-	liberalisms = 38
+	socdem = 5
+	marxisms = 4
+	libsoc = 6
+	neutrality = 36
+	liberalisms = 24
 	democratic = 12
 	communism = 8
-	fascism = 4
+	fascism = 5
 }
 
 add_ideas = {
@@ -44,13 +45,69 @@ set_autonomy = {
 set_party_name = {
     ideology = fascism
     long_name = Fire_kresti
-    name = Fire_kresti
+    name = Fire_krest
 }
 set_party_name = {
     ideology = paternalism
     long_name = French_action
-    name = French_action
+    name = French_actio
 }
+
+
+
+set_party_name = {
+    ideology = democratic 
+    long_name = French_democratic
+    name = French_democrati
+}
+set_party_name = {
+    ideology = liberalisms 
+    long_name = French_liberalisms
+    name = French_liberalism
+}
+set_party_name = {
+    ideology = socdem 
+    long_name = French_socdem
+    name = French_socde
+}
+set_party_name = {
+    ideology = libsoc 
+    long_name = French_libsoc
+    name = French_libso
+}
+set_party_name = {
+    ideology = marxisms 
+    long_name = French_marxisms
+    name = French_marxism
+}
+set_party_name = {
+    ideology = communism 
+    long_name = French_communism
+    name = French_communis
+}
+set_party_name = {
+    ideology = strasserism 
+    long_name = French_strasserism
+    name = French_strasseris
+}
+set_party_name = {
+    ideology = neutrality 
+    long_name = French_neutrality
+    name = French_neutralit
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -268,22 +325,11 @@ set_convoys = 300
 
 
 set_politics = {
-	ruling_party = liberalisms
-	last_election = "1932.5.1"
+	ruling_party = neutrality
+	last_election = "1925.5.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
-set_popularities = {
-	democratic = 14
-	liberalisms = 45
-	socdem = 14
-	libsoc = 8
-	marxism = 6
-	communism = 4
-	fascism = 9
-}
-
-
 
 give_guarantee = RHI
 give_guarantee = SIA
@@ -291,11 +337,11 @@ give_guarantee = HAI
 give_guarantee = ISR
 
 create_country_leader = {
-	name = "Raymond Poincaré"
-	desc = ""
-	picture = "Raymond_Poincare.dds"
+	name = "FRA_Dumergg"
+	desc = "FRA_Dumergg_DESC"
+	picture = "GFX_portrait_dumerg"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = oligarchism
 	traits = {
 	}
 }

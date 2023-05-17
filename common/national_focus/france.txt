@@ -25,6 +25,7 @@
 
 		available = {
 			has_idea = generic_the_great_depression_1
+			has_country_flag = economic_drevo_open
 		}
 
 		completion_reward = {
@@ -915,36 +916,28 @@
 
 		completion_reward = {
 			
+			add_political_power = 10
+			
 			if = {
 				limit = { has_government = socdem  }	
-#другой ивент, потом пропишут
-				
+				country_event = { days = 4 id = FRA.49 }				
 			}
 			else = {
-				country_event = { days = 1 id = FRA.48 }	
-			
-			
+				if = {
+				limit = { has_government = fascism  }	
+				country_event = { days = 4 id = FRA.482 }	
+				}
+				else = {				
+				country_event = { days = 4 id = FRA.48 }	
+				}				
 			}
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+		
 			
 			
 		}
 	}
 
-	#Докутрина Последней Обороны
+	#План «Dernière chance»
 	focus = {
 		id = FRA_dokutrina_of_the_last_defense
 		icon = GFX_focus_FRA_dokutrina_of_the_last_defense
@@ -974,6 +967,47 @@
 
 		completion_reward = {
 			
+			
+		set_country_flag = mass_mobilization_redhenia	
+				
+			add_stability = 0.03
+			
+			if = {
+			limit = { has_government = liberalisms }
+			add_popularity = {
+			ideology = liberalisms
+			popularity = 0.03
+			}
+			}
+			if = {
+			limit = { has_government = democratic }
+			add_popularity = {
+			ideology = democratic
+			popularity = 0.03
+			}
+			}
+			if = {
+			limit = { has_government = fascism }
+			add_popularity = {
+			ideology = fascism
+			popularity = 0.03
+			}
+			}
+			if = {
+			limit = { has_government = paternalism }
+			add_popularity = {
+			ideology = paternalism
+			popularity = 0.03
+			}
+			}
+			if = {
+			limit = { has_government = socdem }
+			add_popularity = {
+			ideology = socdem
+			popularity = 0.03
+			}
+			}	
+			
 		}
 	}
 
@@ -997,6 +1031,17 @@
 		}
 
 		completion_reward = {
+			add_political_power = 10
+			
+			if = {
+			limit = { has_government = paternalism }
+			country_event = { days = 4 id = FRA.56 }	
+			}
+			else = {
+			country_event = { days = 4 id = FRA.57 }	
+			}
+			
+			
 			
 		}
 	}
@@ -1021,7 +1066,22 @@
 		}
 
 		completion_reward = {
-			
+		
+		
+		
+		add_political_power = 20
+		
+		
+		RUS = {
+		country_event = { days = 1 id = russia.503 }	
+		}
+		
+		
+		if = {
+		limit = {NOT = {country_exists = RAJ }}
+		complete_national_focus = FRA_indian_front
+		}
+		
 		}
 	}
 
@@ -1045,6 +1105,28 @@
 		}
 
 		completion_reward = {
+		
+		add_timed_idea = {
+		idea = FRA_alp_defence_idea
+		days = 80	
+		}
+		
+		
+		
+		735 = {
+		add_building_construction = {
+		type = bunker
+		level = 2
+		instant_build = yes
+		province = {
+			all_provinces = yes
+			limit_to_border = yes
+			limit_to_victory_point > 1
+		}
+		}
+		}
+		
+		
 			
 		}
 	}
@@ -1070,6 +1152,12 @@
 
 		completion_reward = {
 			
+		add_political_power = -10
+		add_stability = 0.02
+		
+		RAJ = { country_event = { days = 40 id = FRA.63 }	}
+			
+			
 		}
 	}
 
@@ -1093,6 +1181,12 @@
 		}
 
 		completion_reward = {
+		
+		add_political_power = 10
+		
+		
+		LUX = { country_event = { days = 3 id = FRA.67 }}
+		
 			
 		}
 	}
@@ -1117,6 +1211,11 @@
 		}
 
 		completion_reward = {
+		
+		add_political_power = 20
+		add_ideas =  FRA_african_opora_idea 
+		add_manpower = 150000
+		
 			
 		}
 	}
@@ -1147,6 +1246,15 @@
 		}
 
 		completion_reward = {
+		
+		add_political_power = 10 
+		add_stability = 0.1
+		add_war_support = 0.1
+		
+		
+		add_ideas =  FRA_SURVIVED_idea 
+		
+		country_event = { days = 3 id = FRA.69 }
 			
 		}
 	}
@@ -2636,7 +2744,7 @@
 		cost = 5
 
 		available = {
-
+			has_country_flag = perevorot_briana
 		}
 
 		completion_reward = {
@@ -2964,6 +3072,9 @@
 		ENG = { country_event = { days = 1 id =  england.111 }}
 		
 		create_faction = Franse_giga_team
+		
+		complete_national_focus = FRA_meeting_in_luxembourg
+		
 		}
 	}
 

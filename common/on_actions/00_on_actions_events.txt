@@ -24,7 +24,21 @@ on_actions = {
 						date < 1928.8.7
 					}
 				}
-				country_event = { days = 1 id = great_depression.2 }
+				country_event = { days = 1 id = FRA.909  }
+			}
+		}
+	}
+	
+	on_daily_FRA = {
+	    effect = {
+		    if = {
+				limit = {
+					and = {
+						date > 1928.6.5
+						date < 1928.6.6
+					}
+				}
+				country_event = { days = 1 id = FRA.900  }
 			}
 		}
 	}
@@ -38,7 +52,7 @@ on_actions = {
 						date < 1928.9.12
 					}
 				}
-				FRA = { country_event = { days = 1 id = FRA.800 } }
+				FRA = { country_event = { days = 1 id = FRA.909 } }
 			}
 		}
 	}

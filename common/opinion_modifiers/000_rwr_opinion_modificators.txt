@@ -72,19 +72,31 @@ opinion_modifiers = {
 	
 	
 	
+	conferetion_in_petrograd = {	
+		value = 10
+	}
+	
+	no_conferetion_in_petrograd = {	
+		value = -20
+	}
 	
 	
+	udachnya_conferentsia = {	
+		value = 10
+	}
+	
+	provalnaya_conferentsia = {	
+		value = -40
+	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	zloy_luzemburg1 = {	
+		value = -50
+	}
+	 
+	zloy_luzemburg2 = {	
+		value = -40
+	}
 	
 	
 }

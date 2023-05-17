@@ -89,12 +89,23 @@
  
  
  
+ FRA_otcup_ot_afriki_idea: "Откуп от Африки"
+ FRA_Russian_friendship_idea: "Русско-Французское сотрудничество"
+ FRA_alp_defence_idea: "Альпийская стройка"
+ 
+ FRA_Vliyanie_na_luxemborg_idea: "Влияние Франции"
+ FRA_Vliyanie_na_luxemborg_idea_desc: "После того, как Рейнское Содружество стало полностью зависимо от Франции, мы также начали чувствовать её влияние. И теперь в Люксембург неустанно идут инвестиции из Парижа, а также <<рекомендации>>, как стоит себя вести. Хорошо ли такое положение дел или нет, но от этого не деться..."
+ FRA_French_investor_idea: "Французские инвесторы"
+ FRA_african_opora_idea: "Африканская опора"
+ FRA_SURVIVED_idea: "Франция переживёт!"
+ 
+ FRA_Prizrak_kommunizma_idea: "Призрак коммунизма"
+ FRA_prezident_clown_idea: "Безалаберный президент"
+ socdem_drift: "Поддержка социал-демократов"
+ FRA_zabastovka_jeleznodorojikov_idea: "Забастовка железнодорожников"
+ FRA_zabastovka_idea: "Всефранцузская забастовка"
  
  
- 
- 
- 
-
  
  FRA_rule_france_by_the_seas_1: "Правь, Франция, морями!"
  FRA_rule_france_by_the_seas_2: "Правь, Франция, морями!"

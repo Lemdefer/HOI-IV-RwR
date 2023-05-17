@@ -18,6 +18,45 @@ spriteTypes = {
 	}
 
 
+
+
+	spriteType = {
+		name = "GFX_portrait_raimond"
+		texturefile = "gfx/leaders/FRA/Raymond_Poincare.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_dumerg"
+		texturefile = "gfx/leaders/FRA/dumergg.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_lebren"
+		texturefile = "gfx/leaders/FRA/leader_unknown_female.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_koalition_upravlenia"
+		texturefile = "gfx/leaders/FRA/kollektiv.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_dddumer"
+		texturefile = "gfx/leaders/FRA/leader_unknown_female.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_brian"
+		texturefile = "gfx/leaders/FRA/brian.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_morras"
+		texturefile = "gfx/leaders/FRA/leader_unknown_female.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_rok"
+		texturefile = "gfx/leaders/FRA/leader_unknown_female.dds"
+	}
+
+
+
+
+
 	### GER
 
 	spriteType = {

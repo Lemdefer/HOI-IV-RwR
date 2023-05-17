@@ -1,0 +1,70 @@
+on_actions = {
+	on_declare_war = {
+    effect = {
+        if = {
+            limit = {
+                tag = ENG
+                FROM = { tag = FRA }
+            }
+			FRA = {
+			country_event = { days = 1 id = FRA.62 }
+			}			
+        }
+    }
+}
+
+on_capitulation = {
+    effect = { 
+		 if = {
+            limit = {
+                tag = RAJ
+                FROM = { tag = RRR }
+            }
+			
+			RRR = {
+			annex_country = {
+			target = RAJ
+			transfer_troops = yes
+				}
+			set_cosmetic_tag = RRR_D
+			set_truce = {
+			target = ENG
+			days = 90
+			}
+			white_peace = {
+			tag = ENG
+			message = my_peace_tt
+			}
+			430 = { transfer_state_to = RRR }
+			
+			640 = { transfer_state_to = ENG }
+			288 = { transfer_state_to = ENG }
+			release = PAK
+			}
+			
+			
+			release = PAK
+			430 = { transfer_state_to = RRR }
+			640 = { transfer_state_to = ENG }
+			288 = { transfer_state_to = ENG }
+			
+
+			
+        }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+		

@@ -2182,18 +2182,3353 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = FRA.48.a	
+		name = FRA.48.a			
+		add_manpower = -4547
+		add_political_power = -40
+		add_stability = 0.07				
+		772 = {	add_compliance = 15	}
+		539 = {	add_compliance = 15	}
+		773 = {	add_compliance = 15	}
+		660 = {	add_compliance = 15	}
+		774 = {	add_compliance = 15	}
+		775 = {	add_compliance = 15	}
+		515 = {	add_compliance = 15	}
+		514 = {	add_compliance = 15	}
+		782 = {	add_compliance = 15	}
+		786 = {	add_compliance = 15	}
+		776 = {	add_compliance = 15	}
+		777 = {	add_compliance = 15	}
+		781 = {	add_compliance = 15	}
+		778 = {	add_compliance = 15	}
+		556 = {	add_compliance = 15	}
+		779 = {	add_compliance = 15	}
+		780 = {	add_compliance = 15	}
+		272 = {	add_compliance = 15	}
+		557 = {	add_compliance = 15	}
+		268 = {	add_compliance = 15	}
+		708 = {	add_compliance = 15	}
+		543 = {	add_compliance = 15	}
+		706 = {	add_compliance = 15	}
+		665 = {	add_compliance = 15	}
+		458 = {	add_compliance = 15	}
+		513 = {	add_compliance = 15	}
+		460 = {	add_compliance = 15	}
+		459 = {	add_compliance = 15	}
+		461 = {	add_compliance = 15	}
+		462 = {	add_compliance = 15	}	
+		random_list = {
+		70 = {
+		if = {
+		limit = { has_government = democratic  }	
+		country_event = { days = 4 id = FRA.5011 }	
+		}
+		else = {
+		country_event = { days = 4 id = FRA.50 }	
+		}
+		
+		}
+		30 = {
+		#ничего не произойдет
+		}		
+		}				
 	}
 	option = {
-		name = FRA.48.b
+		name = FRA.48.b		
+		add_stability = -0.08
+		772 = {	add_compliance = 5	}
+		539 = {	add_compliance = 5	}
+		773 = {	add_compliance = 5	}
+		660 = {	add_compliance = 5	}
+		774 = {	add_compliance = 5	}
+		775 = {	add_compliance = 5	}
+		515 = {	add_compliance = 5	}
+		514 = {	add_compliance = 5	}
+		782 = {	add_compliance = 5	}
+		786 = {	add_compliance = 5	}
+		776 = {	add_compliance = 5	}
+		777 = {	add_compliance = 5	}
+		781 = {	add_compliance = 5	}
+		778 = {	add_compliance = 5	}
+		556 = {	add_compliance = 5	}
+		779 = {	add_compliance = 5	}
+		780 = {	add_compliance = 5	}
+		272 = {	add_compliance = 5	}
+		557 = {	add_compliance = 5	}
+		268 = {	add_compliance = 5	}
+		708 = {	add_compliance = 5	}
+		543 = {	add_compliance = 5	}
+		706 = {	add_compliance = 5	}
+		665 = {	add_compliance = 5	}
+		458 = {	add_compliance = 5	}
+		513 = {	add_compliance = 5	}
+		460 = {	add_compliance = 5	}
+		459 = {	add_compliance = 5	}
+		461 = {	add_compliance = 5	}
+		462 = {	add_compliance = 5	}	
+		
+		772 = {	add_resistance = -10}
+		539 = {	add_resistance = -10}
+		773 = {	add_resistance = -10}
+		660 = {	add_resistance = -10}
+		774 = {	add_resistance = -10}
+		775 = {	add_resistance = -10}
+		515 = {	add_resistance = -10}
+		514 = {	add_resistance = -10}
+		782 = {	add_resistance = -10}
+		786 = {	add_resistance = -10}
+		776 = {	add_resistance = -10}
+		777 = {	add_resistance = -10}
+		781 = {	add_resistance = -10}
+		778 = {	add_resistance = -10}
+		556 = {	add_resistance = -10}
+		779 = {	add_resistance = -10}
+		780 = {	add_resistance = -10}
+		272 = {	add_resistance = -10}
+		557 = {	add_resistance = -10}
+		268 = {	add_resistance = -10}
+		708 = {	add_resistance = -10}
+		543 = {	add_resistance = -10}
+		706 = {	add_resistance = -10}
+		665 = {	add_resistance = -10}
+		458 = {	add_resistance = -10}
+		513 = {	add_resistance = -10}
+		460 = {	add_resistance = -10}
+		459 = {	add_resistance = -10}
+		461 = {	add_resistance = -10}
+		462 = {	add_resistance = -10}	
+		
+		459 = {	add_core_of = FRA }	
+		513 = {	add_core_of = FRA }	
+		460 = {	add_core_of = FRA }		
 	}
 	option = {
 		name = FRA.48.c
+		
+		add_political_power = -20
+		add_stability = -0.03
+		772 = {	add_compliance = 5	}
+		539 = {	add_compliance = 5	}
+		773 = {	add_compliance = 5	}
+		660 = {	add_compliance = 5	}
+		774 = {	add_compliance = 5	}
+		775 = {	add_compliance = 5	}
+		515 = {	add_compliance = 5	}
+		514 = {	add_compliance = 5	}
+		782 = {	add_compliance = 5	}
+		786 = {	add_compliance = 5	}
+		776 = {	add_compliance = 5	}
+		777 = {	add_compliance = 5	}
+		781 = {	add_compliance = 5	}
+		778 = {	add_compliance = 5	}
+		556 = {	add_compliance = 5	}
+		779 = {	add_compliance = 5	}
+		780 = {	add_compliance = 5	}
+		272 = {	add_compliance = 5	}
+		557 = {	add_compliance = 5	}
+		268 = {	add_compliance = 5	}
+		708 = {	add_compliance = 5	}
+		543 = {	add_compliance = 5	}
+		706 = {	add_compliance = 5	}
+		665 = {	add_compliance = 5	}
+		458 = {	add_compliance = 5	}
+		513 = {	add_compliance = 5	}
+		460 = {	add_compliance = 5	}
+		459 = {	add_compliance = 5	}
+		461 = {	add_compliance = 5	}
+		462 = {	add_compliance = 5	}	
+		
+		772 = {	add_resistance = -5	}
+		539 = {	add_resistance = -5	}
+		773 = {	add_resistance = -5	}
+		660 = {	add_resistance = -5	}
+		774 = {	add_resistance = -5	}
+		775 = {	add_resistance = -5	}
+		515 = {	add_resistance = -5	}
+		514 = {	add_resistance = -5	}
+		782 = {	add_resistance = -5	}
+		786 = {	add_resistance = -5	}
+		776 = {	add_resistance = -5	}
+		777 = {	add_resistance = -5	}
+		781 = {	add_resistance = -5	}
+		778 = {	add_resistance = -5	}
+		556 = {	add_resistance = -5	}
+		779 = {	add_resistance = -5	}
+		780 = {	add_resistance = -5	}
+		272 = {	add_resistance = -5	}
+		557 = {	add_resistance = -5	}
+		268 = {	add_resistance = -5	}
+		708 = {	add_resistance = -5	}
+		543 = {	add_resistance = -5	}
+		706 = {	add_resistance = -5	}
+		665 = {	add_resistance = -5	}
+		458 = {	add_resistance = -5	}
+		513 = {	add_resistance = -5	}
+		460 = {	add_resistance = -5	}
+		459 = {	add_resistance = -5	}
+		461 = {	add_resistance = -5	}
+		462 = {	add_resistance = -5	}	
+		
+		random_list = {
+		40 = {
+		country_event = { days = 4 id = FRA.51 }	
+		}
+		60 = {
+		#ничего не произойдет
+		}		
+		}
+		
 	}
 	option = {
 		name = FRA.48.e
+		
+		
+		772 = {	add_compliance = -8	}
+		539 = {	add_compliance = -8 }
+		773 = {	add_compliance = -8	}
+		660 = {	add_compliance = -8	}
+		774 = {	add_compliance = -8	}
+		775 = {	add_compliance = -8	}
+		515 = {	add_compliance = -8	}
+		514 = {	add_compliance = -8	}
+		782 = {	add_compliance = -8	}
+		786 = {	add_compliance = -8	}
+		776 = {	add_compliance = -8	}
+		777 = {	add_compliance = -8	}
+		781 = {	add_compliance = -8	}
+		778 = {	add_compliance = -8	}
+		556 = {	add_compliance = -8	}
+		779 = {	add_compliance = -8	}
+		780 = {	add_compliance = -8	}
+		272 = {	add_compliance = -8	}
+		557 = {	add_compliance = -8	}
+		268 = {	add_compliance = -8	}
+		708 = {	add_compliance = -8	}
+		543 = {	add_compliance = -8	}
+		706 = {	add_compliance = -8	}
+		665 = {	add_compliance = -8	}
+		458 = {	add_compliance = -8	}
+		513 = {	add_compliance = -8 }
+		460 = {	add_compliance = -8 }
+		459 = {	add_compliance = -8	}
+		461 = {	add_compliance = -8	}
+		462 = {	add_compliance = -8	}	
+		
+		772 = {	add_resistance = 5	}
+		539 = {	add_resistance = 5	}
+		773 = {	add_resistance = 5	}
+		660 = {	add_resistance = 5	}
+		774 = {	add_resistance = 5	}
+		775 = {	add_resistance = 5	}
+		515 = {	add_resistance = 5	}
+		514 = {	add_resistance = 5	}
+		782 = {	add_resistance = 5	}
+		786 = {	add_resistance = 5	}
+		776 = {	add_resistance = 5	}
+		777 = {	add_resistance = 5	}
+		781 = {	add_resistance = 5	}
+		778 = {	add_resistance = 5	}
+		556 = {	add_resistance = 5	}
+		779 = {	add_resistance = 5	}
+		780 = {	add_resistance = 5	}
+		272 = {	add_resistance = 5	}
+		557 = {	add_resistance = 5	}
+		268 = {	add_resistance = 5	}
+		708 = {	add_resistance = 5	}
+		543 = {	add_resistance = 5	}
+		706 = {	add_resistance = 5	}
+		665 = {	add_resistance = 5	}
+		458 = {	add_resistance = 5	}
+		513 = {	add_resistance = 5	}
+		460 = {	add_resistance = 5	}
+		459 = {	add_resistance = 5	}
+		461 = {	add_resistance = 5	}
+		462 = {	add_resistance = 5	}	
+		
+		
+		
 	}
 }
+
+
+
+#«Судьба Французской Африки».  то же самое но для морраса
+country_event = {
+	id = FRA.482
+	title = FRA.482.t
+	desc = FRA.482.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.482.a
+		add_manpower = -4547
+		add_political_power = -40
+		add_stability = 0.07				
+		772 = {	add_compliance = 15	}
+		539 = {	add_compliance = 15	}
+		773 = {	add_compliance = 15	}
+		660 = {	add_compliance = 15	}
+		774 = {	add_compliance = 15	}
+		775 = {	add_compliance = 15	}
+		515 = {	add_compliance = 15	}
+		514 = {	add_compliance = 15	}
+		782 = {	add_compliance = 15	}
+		786 = {	add_compliance = 15	}
+		776 = {	add_compliance = 15	}
+		777 = {	add_compliance = 15	}
+		781 = {	add_compliance = 15	}
+		778 = {	add_compliance = 15	}
+		556 = {	add_compliance = 15	}
+		779 = {	add_compliance = 15	}
+		780 = {	add_compliance = 15	}
+		272 = {	add_compliance = 15	}
+		557 = {	add_compliance = 15	}
+		268 = {	add_compliance = 15	}
+		708 = {	add_compliance = 15	}
+		543 = {	add_compliance = 15	}
+		706 = {	add_compliance = 15	}
+		665 = {	add_compliance = 15	}
+		458 = {	add_compliance = 15	}
+		513 = {	add_compliance = 15	}
+		460 = {	add_compliance = 15	}
+		459 = {	add_compliance = 15	}
+		461 = {	add_compliance = 15	}
+		462 = {	add_compliance = 15	}	
+		random_list = {
+		70 = {
+		if = {
+		limit = { has_government = democratic  }	
+		country_event = { days = 4 id = FRA.5011 }	
+		}
+		else = {
+		country_event = { days = 4 id = FRA.50 }	
+		}
+		
+		}
+		30 = {
+		#ничего не произойдет
+		}		
+		}		
+	}
+	option = {
+		name = FRA.482.c
+		
+			add_political_power = -20
+		add_stability = -0.03
+		772 = {	add_compliance = 5	}
+		539 = {	add_compliance = 5	}
+		773 = {	add_compliance = 5	}
+		660 = {	add_compliance = 5	}
+		774 = {	add_compliance = 5	}
+		775 = {	add_compliance = 5	}
+		515 = {	add_compliance = 5	}
+		514 = {	add_compliance = 5	}
+		782 = {	add_compliance = 5	}
+		786 = {	add_compliance = 5	}
+		776 = {	add_compliance = 5	}
+		777 = {	add_compliance = 5	}
+		781 = {	add_compliance = 5	}
+		778 = {	add_compliance = 5	}
+		556 = {	add_compliance = 5	}
+		779 = {	add_compliance = 5	}
+		780 = {	add_compliance = 5	}
+		272 = {	add_compliance = 5	}
+		557 = {	add_compliance = 5	}
+		268 = {	add_compliance = 5	}
+		708 = {	add_compliance = 5	}
+		543 = {	add_compliance = 5	}
+		706 = {	add_compliance = 5	}
+		665 = {	add_compliance = 5	}
+		458 = {	add_compliance = 5	}
+		513 = {	add_compliance = 5	}
+		460 = {	add_compliance = 5	}
+		459 = {	add_compliance = 5	}
+		461 = {	add_compliance = 5	}
+		462 = {	add_compliance = 5	}	
+		
+		772 = {	add_resistance = -5	}
+		539 = {	add_resistance = -5	}
+		773 = {	add_resistance = -5	}
+		660 = {	add_resistance = -5	}
+		774 = {	add_resistance = -5	}
+		775 = {	add_resistance = -5	}
+		515 = {	add_resistance = -5	}
+		514 = {	add_resistance = -5	}
+		782 = {	add_resistance = -5	}
+		786 = {	add_resistance = -5	}
+		776 = {	add_resistance = -5	}
+		777 = {	add_resistance = -5	}
+		781 = {	add_resistance = -5	}
+		778 = {	add_resistance = -5	}
+		556 = {	add_resistance = -5	}
+		779 = {	add_resistance = -5	}
+		780 = {	add_resistance = -5	}
+		272 = {	add_resistance = -5	}
+		557 = {	add_resistance = -5	}
+		268 = {	add_resistance = -5	}
+		708 = {	add_resistance = -5	}
+		543 = {	add_resistance = -5	}
+		706 = {	add_resistance = -5	}
+		665 = {	add_resistance = -5	}
+		458 = {	add_resistance = -5	}
+		513 = {	add_resistance = -5	}
+		460 = {	add_resistance = -5	}
+		459 = {	add_resistance = -5	}
+		461 = {	add_resistance = -5	}
+		462 = {	add_resistance = -5	}	
+		
+		random_list = {
+		40 = {
+		country_event = { days = 4 id = FRA.51 }	
+		}
+		60 = {
+		#ничего не произойдет
+		}		
+		}
+	}
+	option = {
+		name = FRA.482.e
+		
+		772 = {	add_compliance = -8	}
+		539 = {	add_compliance = -8 }
+		773 = {	add_compliance = -8	}
+		660 = {	add_compliance = -8	}
+		774 = {	add_compliance = -8	}
+		775 = {	add_compliance = -8	}
+		515 = {	add_compliance = -8	}
+		514 = {	add_compliance = -8	}
+		782 = {	add_compliance = -8	}
+		786 = {	add_compliance = -8	}
+		776 = {	add_compliance = -8	}
+		777 = {	add_compliance = -8	}
+		781 = {	add_compliance = -8	}
+		778 = {	add_compliance = -8	}
+		556 = {	add_compliance = -8	}
+		779 = {	add_compliance = -8	}
+		780 = {	add_compliance = -8	}
+		272 = {	add_compliance = -8	}
+		557 = {	add_compliance = -8	}
+		268 = {	add_compliance = -8	}
+		708 = {	add_compliance = -8	}
+		543 = {	add_compliance = -8	}
+		706 = {	add_compliance = -8	}
+		665 = {	add_compliance = -8	}
+		458 = {	add_compliance = -8	}
+		513 = {	add_compliance = -8 }
+		460 = {	add_compliance = -8 }
+		459 = {	add_compliance = -8	}
+		461 = {	add_compliance = -8	}
+		462 = {	add_compliance = -8	}	
+		
+		772 = {	add_resistance = 5	}
+		539 = {	add_resistance = 5	}
+		773 = {	add_resistance = 5	}
+		660 = {	add_resistance = 5	}
+		774 = {	add_resistance = 5	}
+		775 = {	add_resistance = 5	}
+		515 = {	add_resistance = 5	}
+		514 = {	add_resistance = 5	}
+		782 = {	add_resistance = 5	}
+		786 = {	add_resistance = 5	}
+		776 = {	add_resistance = 5	}
+		777 = {	add_resistance = 5	}
+		781 = {	add_resistance = 5	}
+		778 = {	add_resistance = 5	}
+		556 = {	add_resistance = 5	}
+		779 = {	add_resistance = 5	}
+		780 = {	add_resistance = 5	}
+		272 = {	add_resistance = 5	}
+		557 = {	add_resistance = 5	}
+		268 = {	add_resistance = 5	}
+		708 = {	add_resistance = 5	}
+		543 = {	add_resistance = 5	}
+		706 = {	add_resistance = 5	}
+		665 = {	add_resistance = 5	}
+		458 = {	add_resistance = 5	}
+		513 = {	add_resistance = 5	}
+		460 = {	add_resistance = 5	}
+		459 = {	add_resistance = 5	}
+		461 = {	add_resistance = 5	}
+		462 = {	add_resistance = 5	}	
+		
+		
+		
+		
+		
+	}
+}
+
+#Экспорт человечности на чёрный континент
+country_event = {
+	id = FRA.49
+	title = FRA.49.t
+	desc = FRA.49.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.49.a	
+		
+		add_stability = 0.03
+		add_political_power = 25
+		772 = {	add_compliance = 5	}
+		539 = {	add_compliance = 5	}
+		773 = {	add_compliance = 5	}
+		660 = {	add_compliance = 5	}
+		774 = {	add_compliance = 5	}
+		775 = {	add_compliance = 5	}
+		515 = {	add_compliance = 5	}
+		514 = {	add_compliance = 5	}
+		782 = {	add_compliance = 5	}
+		786 = {	add_compliance = 5	}
+		776 = {	add_compliance = 5	}
+		777 = {	add_compliance = 5	}
+		781 = {	add_compliance = 5	}
+		778 = {	add_compliance = 5	}
+		556 = {	add_compliance = 5	}
+		779 = {	add_compliance = 5	}
+		780 = {	add_compliance = 5	}
+		272 = {	add_compliance = 5	}
+		557 = {	add_compliance = 5	}
+		268 = {	add_compliance = 5	}
+		708 = {	add_compliance = 5	}
+		543 = {	add_compliance = 5	}
+		706 = {	add_compliance = 5	}
+		665 = {	add_compliance = 5	}
+		458 = {	add_compliance = 5	}
+		513 = {	add_compliance = 5	}
+		460 = {	add_compliance = 5	}
+		459 = {	add_compliance = 5	}
+		461 = {	add_compliance = 5	}
+		462 = {	add_compliance = 5	}	
+		
+		772 = {	add_resistance = -5	}
+		539 = {	add_resistance = -5	}
+		773 = {	add_resistance = -5	}
+		660 = {	add_resistance = -5	}
+		774 = {	add_resistance = -5	}
+		775 = {	add_resistance = -5	}
+		515 = {	add_resistance = -5	}
+		514 = {	add_resistance = -5	}
+		782 = {	add_resistance = -5	}
+		786 = {	add_resistance = -5	}
+		776 = {	add_resistance = -5	}
+		777 = {	add_resistance = -5	}
+		781 = {	add_resistance = -5	}
+		778 = {	add_resistance = -5	}
+		556 = {	add_resistance = -5	}
+		779 = {	add_resistance = -5	}
+		780 = {	add_resistance = -5	}
+		272 = {	add_resistance = -5	}
+		557 = {	add_resistance = -5	}
+		268 = {	add_resistance = -5	}
+		708 = {	add_resistance = -5	}
+		543 = {	add_resistance = -5	}
+		706 = {	add_resistance = -5	}
+		665 = {	add_resistance = -5	}
+		458 = {	add_resistance = -5	}
+		513 = {	add_resistance = -5	}
+		460 = {	add_resistance = -5	}
+		459 = {	add_resistance = -5	}
+		461 = {	add_resistance = -5	}
+		462 = {	add_resistance = -5	}				
+	}
+	option = {
+		name = FRA.49.b
+		add_stability = 0.05
+		add_political_power = -20
+				
+		create_dynamic_country = {
+		original_tag = FRT
+		copy_tag = FRA
+		transfer_state = 665
+		transfer_state = 458
+		}
+		hidden_effect = {
+		FRT = {
+		set_capital = {state = 458}
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_popularities = {
+			democratic = 100
+		}
+		set_cosmetic_tag = FRT_F 		
+		}		
+		puppet = FRT
+		}
+		
+		create_dynamic_country = {
+		original_tag = FRL
+		copy_tag = FRA
+		transfer_state = 459
+		transfer_state = 460
+		transfer_state = 513
+		transfer_state = 514
+		}
+		hidden_effect = {
+		FRL = {
+		set_capital = {state = 459}
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_popularities = {
+			democratic = 100
+		}
+		set_cosmetic_tag = FRL_F 		
+		}		
+		puppet = FRL
+		}
+		
+		create_dynamic_country = {
+		original_tag = FRM
+		copy_tag = FRA
+		transfer_state = 461
+		transfer_state = 462
+		}
+		hidden_effect = {
+		FRM = {
+		set_capital = {state = 461}
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_popularities = {
+			democratic = 100
+		}
+		set_cosmetic_tag = FRM_F 		
+		}		
+		puppet = FRM
+		}
+		
+		create_dynamic_country = {
+		original_tag = FRW
+		copy_tag = FRA
+		transfer_state = 780
+		transfer_state = 786
+		transfer_state = 557
+		transfer_state = 272
+		transfer_state = 556
+		transfer_state = 782
+		transfer_state = 779
+		transfer_state = 778
+		transfer_state = 781
+		transfer_state = 776
+		transfer_state = 777
+		transfer_state = 515
+		}
+		hidden_effect = {
+		FRW = {
+		set_capital = {state = 780}
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_popularities = {
+			democratic = 100
+		}
+		set_cosmetic_tag = FRW_F 		
+		}		
+		puppet = FRW
+		}
+		
+		create_dynamic_country = {
+		original_tag = FRE
+		copy_tag = FRA
+		transfer_state = 775
+		transfer_state = 539
+		transfer_state = 772
+		transfer_state = 773
+		transfer_state = 660
+		transfer_state = 774
+		}
+		hidden_effect = {
+		FRE = {
+		set_capital = {state = 539}
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_popularities = {
+			democratic = 100
+		}
+		set_cosmetic_tag = FRE_F 		
+		}		
+		puppet = FRE
+		}	
+	}
+	option = {
+		name = FRA.49.c
+		
+		add_political_power = -40
+		
+		create_dynamic_country = {
+		original_tag = FRW
+		copy_tag = FRA
+		transfer_state = 780
+		transfer_state = 786
+		transfer_state = 557
+		transfer_state = 272
+		transfer_state = 556
+		transfer_state = 782
+		transfer_state = 779
+		transfer_state = 778
+		transfer_state = 781
+		transfer_state = 776
+		transfer_state = 777
+		transfer_state = 515
+		}
+		hidden_effect = {
+		FRW = {
+		set_capital = {state = 780}
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_popularities = {
+			democratic = 100
+		}
+		set_cosmetic_tag = FRW_F 		
+		}		
+		puppet = FRW
+		}
+		
+		create_dynamic_country = {
+		original_tag = FRE
+		copy_tag = FRA
+		transfer_state = 775
+		transfer_state = 539
+		transfer_state = 772
+		transfer_state = 773
+		transfer_state = 660
+		transfer_state = 774
+		}
+		hidden_effect = {
+		FRE = {
+		set_capital = {state = 539}
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_popularities = {
+			democratic = 100
+		}
+		set_cosmetic_tag = FRE_F 		
+		}		
+		puppet = FRE
+		}
+		
+		772 = {	add_compliance = 5	}
+		539 = {	add_compliance = 5	}
+		773 = {	add_compliance = 5	}
+		660 = {	add_compliance = 5	}
+		774 = {	add_compliance = 5	}
+		775 = {	add_compliance = 5	}
+		515 = {	add_compliance = 5	}
+		514 = {	add_compliance = 5	}
+		782 = {	add_compliance = 5	}
+		786 = {	add_compliance = 5	}
+		776 = {	add_compliance = 5	}
+		777 = {	add_compliance = 5	}
+		781 = {	add_compliance = 5	}
+		778 = {	add_compliance = 5	}
+		556 = {	add_compliance = 5	}
+		779 = {	add_compliance = 5	}
+		780 = {	add_compliance = 5	}
+		272 = {	add_compliance = 5	}
+		557 = {	add_compliance = 5	}
+		268 = {	add_compliance = 5	}
+		708 = {	add_compliance = 5	}
+		543 = {	add_compliance = 5	}
+		706 = {	add_compliance = 5	}
+		665 = {	add_compliance = 5	}
+		458 = {	add_compliance = 5	}
+		513 = {	add_compliance = 5	}
+		460 = {	add_compliance = 5	}
+		459 = {	add_compliance = 5	}
+		461 = {	add_compliance = 5	}
+		462 = {	add_compliance = 5	}	
+		
+		772 = {	add_resistance = -5	}
+		539 = {	add_resistance = -5	}
+		773 = {	add_resistance = -5	}
+		660 = {	add_resistance = -5	}
+		774 = {	add_resistance = -5	}
+		775 = {	add_resistance = -5	}
+		515 = {	add_resistance = -5	}
+		514 = {	add_resistance = -5	}
+		782 = {	add_resistance = -5	}
+		786 = {	add_resistance = -5	}
+		776 = {	add_resistance = -5	}
+		777 = {	add_resistance = -5	}
+		781 = {	add_resistance = -5	}
+		778 = {	add_resistance = -5	}
+		556 = {	add_resistance = -5	}
+		779 = {	add_resistance = -5	}
+		780 = {	add_resistance = -5	}
+		272 = {	add_resistance = -5	}
+		557 = {	add_resistance = -5	}
+		268 = {	add_resistance = -5	}
+		708 = {	add_resistance = -5	}
+		543 = {	add_resistance = -5	}
+		706 = {	add_resistance = -5	}
+		665 = {	add_resistance = -5	}
+		458 = {	add_resistance = -5	}
+		513 = {	add_resistance = -5	}
+		460 = {	add_resistance = -5	}
+		459 = {	add_resistance = -5	}
+		461 = {	add_resistance = -5	}
+		462 = {	add_resistance = -5	}		
+	}
+}
+
+#«Африка недовольна»)
+country_event = {
+	id = FRA.50
+	title = FRA.50.t
+	desc = FRA.50.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.50.a	
+		
+		add_stability = -0.09
+		add_political_power = -28
+		
+		772 = {	add_manpower = -14300 }
+		539 = {	add_manpower = -14300 }
+		773 = {	add_manpower = -14300 }
+		660 = {	add_manpower = -14300 }
+		774 = {	add_manpower = -14300 }
+		775 = {	add_manpower = -14300 }
+		515 = {	add_manpower = -14300 }
+		514 = {	add_manpower = -14300 }
+		782 = {	add_manpower = -14300 }
+		786 = {	add_manpower = -14300 }
+		776 = {	add_manpower = -14300 }
+		777 = {	add_manpower = -14300 }
+		781 = {	add_manpower = -14300 }
+		778 = {	add_manpower = -14300 }
+		556 = {	add_manpower = -14300 }
+		779 = {	add_manpower = -14300 }
+		780 = {	add_manpower = -14300 }
+		272 = {	add_manpower = -14300 }
+		557 = {	add_manpower = -14300 }
+		268 = {	add_manpower = -14300 }
+		708 = {	add_manpower = -14300 }
+		543 = {	add_manpower = -14300 }
+		706 = {	add_manpower = -14300 }
+		665 = {	add_manpower = -14300 }
+		458 = {	add_manpower = -14300 }
+		513 = {	add_manpower = -14300 }
+		460 = {	add_manpower = -14300 }
+		459 = {	add_manpower = -14300 }
+		461 = {	add_manpower = -14300 }
+		462 = {	add_manpower = -14300 }
+			
+		539 = { set_demilitarized_zone = yes }
+		772 = { set_demilitarized_zone = yes }
+		773 = { set_demilitarized_zone = yes }
+		660 = { set_demilitarized_zone = yes }
+		774 = { set_demilitarized_zone = yes }
+		776 = { set_demilitarized_zone = yes }
+		777 = { set_demilitarized_zone = yes }
+		781 = { set_demilitarized_zone = yes }
+		778 = { set_demilitarized_zone = yes }
+		556 = { set_demilitarized_zone = yes }
+		779 = { set_demilitarized_zone = yes }
+		780 = { set_demilitarized_zone = yes }
+		272 = { set_demilitarized_zone = yes }
+		557 = { set_demilitarized_zone = yes }
+		
+		
+		random_list = {
+		60 = {country_event = { days = 21 id = FRA.52 }	}
+		30 = {country_event = { days = 21 id = FRA.53 }	}
+		10 = {country_event = { days = 21 id = FRA.54 }	}		
+		}
+			
+	}
+	option = {
+		name = FRA.50.c
+		
+			
+		add_stability = -0.1
+		add_political_power = -40
+		
+		add_timed_idea = {
+		idea =  FRA_otcup_ot_afriki_idea 
+		days = 60
+		}
+		
+	}
+}
+
+#«Африка недовольна» для думера
+country_event = {
+	id = FRA.5011
+	title = FRA.5011.t
+	desc = FRA.5011.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.5011.a	
+		add_stability = -0.09
+		add_political_power = -28
+		
+		772 = {	add_manpower = -14300 }
+		539 = {	add_manpower = -14300 }
+		773 = {	add_manpower = -14300 }
+		660 = {	add_manpower = -14300 }
+		774 = {	add_manpower = -14300 }
+		775 = {	add_manpower = -14300 }
+		515 = {	add_manpower = -14300 }
+		514 = {	add_manpower = -14300 }
+		782 = {	add_manpower = -14300 }
+		786 = {	add_manpower = -14300 }
+		776 = {	add_manpower = -14300 }
+		777 = {	add_manpower = -14300 }
+		781 = {	add_manpower = -14300 }
+		778 = {	add_manpower = -14300 }
+		556 = {	add_manpower = -14300 }
+		779 = {	add_manpower = -14300 }
+		780 = {	add_manpower = -14300 }
+		272 = {	add_manpower = -14300 }
+		557 = {	add_manpower = -14300 }
+		268 = {	add_manpower = -14300 }
+		708 = {	add_manpower = -14300 }
+		543 = {	add_manpower = -14300 }
+		706 = {	add_manpower = -14300 }
+		665 = {	add_manpower = -14300 }
+		458 = {	add_manpower = -14300 }
+		513 = {	add_manpower = -14300 }
+		460 = {	add_manpower = -14300 }
+		459 = {	add_manpower = -14300 }
+		461 = {	add_manpower = -14300 }
+		462 = {	add_manpower = -14300 }
+			
+		539 = { set_demilitarized_zone = yes }
+		772 = { set_demilitarized_zone = yes }
+		773 = { set_demilitarized_zone = yes }
+		660 = { set_demilitarized_zone = yes }
+		774 = { set_demilitarized_zone = yes }
+		776 = { set_demilitarized_zone = yes }
+		777 = { set_demilitarized_zone = yes }
+		781 = { set_demilitarized_zone = yes }
+		778 = { set_demilitarized_zone = yes }
+		556 = { set_demilitarized_zone = yes }
+		779 = { set_demilitarized_zone = yes }
+		780 = { set_demilitarized_zone = yes }
+		272 = { set_demilitarized_zone = yes }
+		557 = { set_demilitarized_zone = yes }
+		
+		
+		random_list = {
+		60 = {country_event = { days = 21 id = FRA.52 }	}
+		30 = {country_event = { days = 21 id = FRA.53 }	}
+		10 = {country_event = { days = 21 id = FRA.54 }	}		
+		}
+		
+		
+	}
+	option = {
+		name = FRA.5011.b
+		
+		add_manpower = -630
+		add_stability = -0.04
+		
+		772 = {	add_compliance = -10}
+		539 = {	add_compliance = -10}
+		773 = {	add_compliance = -10}
+		660 = {	add_compliance = -10}
+		774 = {	add_compliance = -10}
+		775 = {	add_compliance = -10}
+		515 = {	add_compliance = -10}
+		514 = {	add_compliance = -10}
+		782 = {	add_compliance = -10}
+		786 = {	add_compliance = -10}
+		776 = {	add_compliance = -10}
+		777 = {	add_compliance = -10}
+		781 = {	add_compliance = -10}
+		778 = {	add_compliance = -10}
+		556 = {	add_compliance = -10}
+		779 = {	add_compliance = -10}
+		780 = {	add_compliance = -10}
+		272 = {	add_compliance = -10}
+		557 = {	add_compliance = -10}
+		268 = {	add_compliance = -10}
+		708 = {	add_compliance = -10}
+		543 = {	add_compliance = -10}
+		706 = {	add_compliance = -10}
+		random_list = {
+		40 = {country_event = { days = 35 id = FRA.55 }	}		
+		60 = {#####	}		
+		}	
+		}
+		}
+	option = {
+		name = FRA.5011.c
+		
+		add_stability = -0.1
+		add_political_power = -40
+		
+		add_timed_idea = {
+		idea =  FRA_otcup_ot_afriki_idea 
+		days = 60
+		}
+		
+		
+		
+	}
+}
+#«Чёрная Франция»
+country_event = {
+	id = FRA.51
+	title = FRA.51.t
+	desc = FRA.51.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.51.a	
+	}
+	option = {
+		name = FRA.51.b
+	}
+	option = {
+		name = FRA.51.c
+	}
+	option = {
+		name = FRA.51.e
+	}
+}
+
+#«Чёрный континент успокоился»
+country_event = {
+	id = FRA.52
+	title = FRA.52.t
+	desc = FRA.52.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.52.a	
+		
+		772 = {	add_manpower = -22420 }
+		539 = {	add_manpower = -22420 }
+		773 = {	add_manpower = -22420 }
+		660 = {	add_manpower = -22420 }
+		774 = {	add_manpower = -22420 }
+		775 = {	add_manpower = -22420 }
+		515 = {	add_manpower = -22420 }
+		514 = {	add_manpower = -22420 }
+		782 = {	add_manpower = -22420 }
+		786 = {	add_manpower = -22420 }
+		776 = {	add_manpower = -22420 }
+		777 = {	add_manpower = -22420 }
+		781 = {	add_manpower = -22420 }
+		778 = {	add_manpower = -22420 }
+		556 = {	add_manpower = -22420 }
+		779 = {	add_manpower = -22420 }
+		780 = {	add_manpower = -22420 }
+		272 = {	add_manpower = -22420 }
+		557 = {	add_manpower = -22420 }
+		268 = {	add_manpower = -22420 }
+		708 = {	add_manpower = -22420 }
+		543 = {	add_manpower = -22420 }
+		706 = {	add_manpower = -22420 }
+		665 = {	add_manpower = -22420 }
+		458 = {	add_manpower = -22420 }
+		513 = {	add_manpower = -22420 }
+		460 = {	add_manpower = -22420 }
+		459 = {	add_manpower = -22420 }
+		461 = {	add_manpower = -22420 }
+		462 = {	add_manpower = -22420 }
+		
+		
+		add_manpower = -1260
+		add_stability = 0.02
+		
+		
+		772 = {	add_compliance = 5	}
+		539 = {	add_compliance = 5	}
+		773 = {	add_compliance = 5	}
+		660 = {	add_compliance = 5	}
+		774 = {	add_compliance = 5	}
+		775 = {	add_compliance = 5	}
+		515 = {	add_compliance = 5	}
+		514 = {	add_compliance = 5	}
+		782 = {	add_compliance = 5	}
+		786 = {	add_compliance = 5	}
+		776 = {	add_compliance = 5	}
+		777 = {	add_compliance = 5	}
+		781 = {	add_compliance = 5	}
+		778 = {	add_compliance = 5	}
+		556 = {	add_compliance = 5	}
+		779 = {	add_compliance = 5	}
+		780 = {	add_compliance = 5	}
+		272 = {	add_compliance = 5	}
+		557 = {	add_compliance = 5	}
+		268 = {	add_compliance = 5	}
+		708 = {	add_compliance = 5	}
+		543 = {	add_compliance = 5	}
+		706 = {	add_compliance = 5	}
+		665 = {	add_compliance = 5	}
+		458 = {	add_compliance = 5	}
+		513 = {	add_compliance = 5	}
+		460 = {	add_compliance = 5	}
+		459 = {	add_compliance = 5	}
+		461 = {	add_compliance = 5	}
+		462 = {	add_compliance = 5	}	
+		
+	}
+}
+
+#««Буря в Африке»
+country_event = {
+	id = FRA.53
+	title = FRA.53.t
+	desc = FRA.53.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.53.a	
+		
+		add_manpower = -4530
+		add_stability = -0.05
+		add_war_support = -0.05
+		
+		complete_national_focus = FRA_african_prop
+		
+		772 = {	add_manpower = -37173 }
+		539 = {	add_manpower = -37173 }
+		773 = {	add_manpower = -37173 }
+		660 = {	add_manpower = -37173 }
+		774 = {	add_manpower = -37173 }
+		775 = {	add_manpower = -37173 }
+		515 = {	add_manpower = -37173 }
+		514 = {	add_manpower = -37173 }
+		782 = {	add_manpower = -37173 }
+		786 = {	add_manpower = -37173 }
+		776 = {	add_manpower = -37173 }
+		777 = {	add_manpower = -37173 }
+		781 = {	add_manpower = -37173 }
+		778 = {	add_manpower = -37173 }
+		556 = {	add_manpower = -37173 }
+		779 = {	add_manpower = -37173 }
+		780 = {	add_manpower = -37173 }
+		272 = {	add_manpower = -37173 }
+		557 = {	add_manpower = -37173 }
+		268 = {	add_manpower = -37173 }
+		708 = {	add_manpower = -37173 }
+		543 = {	add_manpower = -37173 }
+		706 = {	add_manpower = -37173 }
+		665 = {	add_manpower = -37173 }
+		458 = {	add_manpower = -37173 }
+		513 = {	add_manpower = -37173 }
+		460 = {	add_manpower = -37173 }
+		459 = {	add_manpower = -37173 }
+		461 = {	add_manpower = -37173 }
+		462 = {	add_manpower = -37173 }
+		
+		
+		
+		772 = {	add_compliance = -5	}
+		539 = {	add_compliance = -5 }
+		773 = {	add_compliance = -5	}
+		660 = {	add_compliance = -5	}
+		774 = {	add_compliance = -5	}
+		775 = {	add_compliance = -5	}
+		515 = {	add_compliance = -5	}
+		514 = {	add_compliance = -5	}
+		782 = {	add_compliance = -5	}
+		786 = {	add_compliance = -5	}
+		776 = {	add_compliance = -5	}
+		777 = {	add_compliance = -5	}
+		781 = {	add_compliance = -5	}
+		778 = {	add_compliance = -5	}
+		556 = {	add_compliance = -5	}
+		779 = {	add_compliance = -5	}
+		780 = {	add_compliance = -5	}
+		272 = {	add_compliance = -5	}
+		557 = {	add_compliance = -5 }
+		268 = {	add_compliance = -5	}
+		708 = {	add_compliance = -5	}
+		543 = {	add_compliance = -5	}
+		706 = {	add_compliance = -5	}
+		665 = {	add_compliance = -5	}
+		458 = {	add_compliance = -5	}
+		513 = {	add_compliance = -5 }
+		460 = {	add_compliance = -5 }
+		459 = {	add_compliance = -5	}
+		461 = {	add_compliance = -5	}
+		462 = {	add_compliance = -5	}	
+		
+		772 = {	add_resistance = 7	}
+		539 = {	add_resistance = 7	}
+		773 = {	add_resistance = 7	}
+		660 = {	add_resistance = 7	}
+		774 = {	add_resistance = 7	}
+		775 = {	add_resistance = 7	}
+		515 = {	add_resistance = 7	}
+		514 = {	add_resistance = 7	}
+		782 = {	add_resistance = 7	}
+		786 = {	add_resistance = 7	}
+		776 = {	add_resistance = 7	}
+		777 = {	add_resistance = 7	}
+		781 = {	add_resistance = 7	}
+		778 = {	add_resistance = 7	}
+		556 = {	add_resistance = 7	}
+		779 = {	add_resistance = 7	}
+		780 = {	add_resistance = 7	}
+		272 = {	add_resistance = 7	}
+		557 = {	add_resistance = 7	}
+		268 = {	add_resistance = 7	}
+		708 = {	add_resistance = 7	}
+		543 = {	add_resistance = 7	}
+		706 = {	add_resistance = 7	}
+		665 = {	add_resistance = 7	}
+		458 = {	add_resistance = 7	}
+		513 = {	add_resistance = 7	}
+		460 = {	add_resistance = 7	}
+		459 = {	add_resistance = 7	}
+		461 = {	add_resistance = 7	}
+		462 = {	add_resistance = 7	}	
+		
+		
+		
+	}
+}
+
+#«Трагедия в Абиджане»)
+country_event = {
+	id = FRA.54
+	title = FRA.54.t
+	desc = FRA.54.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.54.a	
+		
+		add_manpower = -5200
+		add_stability = -0.08
+		add_war_support = -0.1
+		add_political_power = -100
+		
+		
+		complete_national_focus = FRA_african_prop
+		
+		
+		772 = {	add_manpower = -82540 }
+		539 = {	add_manpower = -82540 }
+		773 = {	add_manpower = -82540 }
+		660 = {	add_manpower = -82540 }
+		774 = {	add_manpower = -82540 }
+		775 = {	add_manpower = -82540 }
+		515 = {	add_manpower = -82540 }
+		514 = {	add_manpower = -82540 }
+		782 = {	add_manpower = -82540 }
+		786 = {	add_manpower = -82540 }
+		776 = {	add_manpower = -82540 }
+		777 = {	add_manpower = -82540 }
+		781 = {	add_manpower = -82540 }
+		778 = {	add_manpower = -82540 }
+		556 = {	add_manpower = -82540 }
+		779 = {	add_manpower = -82540 }
+		780 = {	add_manpower = -82540 }
+		272 = {	add_manpower = -82540 }
+		557 = {	add_manpower = -82540 }
+		268 = {	add_manpower = -82540 }
+		708 = {	add_manpower = -82540 }
+		543 = {	add_manpower = -82540 }
+		706 = {	add_manpower = -82540 }
+		665 = {	add_manpower = -82540 }
+		458 = {	add_manpower = -82540 }
+		513 = {	add_manpower = -82540 }
+		460 = {	add_manpower = -82540 }
+		459 = {	add_manpower = -82540 }
+		461 = {	add_manpower = -82540 }
+		462 = {	add_manpower = -82540 }
+				
+		772 = {	add_compliance = -10}
+		539 = {	add_compliance = -10}
+		773 = {	add_compliance = -10}
+		660 = {	add_compliance = -10}
+		774 = {	add_compliance = -10}
+		775 = {	add_compliance = -10}
+		515 = {	add_compliance = -10}
+		514 = {	add_compliance = -10}
+		782 = {	add_compliance = -10}
+		786 = {	add_compliance = -10}
+		776 = {	add_compliance = -10}
+		777 = {	add_compliance = -10}
+		781 = {	add_compliance = -10}
+		778 = {	add_compliance = -10}
+		556 = {	add_compliance = -10}
+		779 = {	add_compliance = -10}
+		780 = {	add_compliance = -10}
+		272 = {	add_compliance = -10}
+		557 = {	add_compliance = -10}
+		268 = {	add_compliance = -10}
+		708 = {	add_compliance = -10}
+		543 = {	add_compliance = -10}
+		706 = {	add_compliance = -10}
+		665 = {	add_compliance = -10}
+		458 = {	add_compliance = -10}
+		513 = {	add_compliance = -10}
+		460 = {	add_compliance = -10}
+		459 = {	add_compliance = -10}
+		461 = {	add_compliance = -10}
+		462 = {	add_compliance = -10}	
+		
+		772 = {	add_resistance = 15}
+		539 = {	add_resistance = 15}
+		773 = {	add_resistance = 15}
+		660 = {	add_resistance = 15}
+		774 = {	add_resistance = 15}
+		775 = {	add_resistance = 15}
+		515 = {	add_resistance = 15}
+		514 = {	add_resistance = 15}
+		782 = {	add_resistance = 15}
+		786 = {	add_resistance = 15}
+		776 = {	add_resistance = 15}
+		777 = {	add_resistance = 15}
+		781 = {	add_resistance = 15}
+		778 = {	add_resistance = 15}
+		556 = {	add_resistance = 15}
+		779 = {	add_resistance = 15}
+		780 = {	add_resistance = 15}
+		272 = {	add_resistance = 15}
+		557 = {	add_resistance = 15}
+		268 = {	add_resistance = 15}
+		708 = {	add_resistance = 15}
+		543 = {	add_resistance = 15}
+		706 = {	add_resistance = 15}
+		665 = {	add_resistance = 15}
+		458 = {	add_resistance = 15}
+		513 = {	add_resistance = 15}
+		460 = {	add_resistance = 15}
+		459 = {	add_resistance = 15}
+		461 = {	add_resistance = 15}
+		462 = {	add_resistance = 15}	
+		
+		
+		set_global_flag = afrianskoe_wosstanie
+	
+		
+		create_dynamic_country = {
+			original_tag = KDD
+			copy_tag = FRA
+			transfer_state = 779
+		}
+		KDD = {
+				division_template = { 
+						name = "afican freedom boys"
+						division_names_group = KDD_CAM_01
+						is_locked = yes
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }							
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 2 }							
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 1 y = 3 }
+							infantry = { x = 2 y = 3 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+						priority = 0
+					}
+				779 = {
+				
+						create_unit = {
+							division = "division_template = \"afican freedom boys\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+							owner = KDD
+							count = 10
+						}					
+				}
+				
+				set_cosmetic_tag = KDD_wosstanie				
+				
+		}
+				
+				
+		KDD = {
+			declare_war_on = {
+			target = FRA
+			type = annex_everything
+			}
+		}
+}
+}
+
+#«Безмолвное недовольство в Африке»)
+country_event = {
+	id = FRA.55
+	title = FRA.55.t
+	desc = FRA.55.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.55.a	
+		
+		add_political_power = 20
+		add_stability = -0.04
+		
+		complete_national_focus = FRA_african_prop
+		
+		772 = {	add_compliance = 3}
+		539 = {	add_compliance = 3}
+		773 = {	add_compliance = 3}
+		660 = {	add_compliance = 3}
+		774 = {	add_compliance = 3}
+		775 = {	add_compliance = 3}
+		515 = {	add_compliance = 3}
+		514 = {	add_compliance = 3}
+		782 = {	add_compliance = 3}
+		786 = {	add_compliance = 3}
+		776 = {	add_compliance = 3}
+		777 = {	add_compliance = 3}
+		781 = {	add_compliance = 3}
+		778 = {	add_compliance = 3}
+		556 = {	add_compliance = 3}
+		779 = {	add_compliance = 3}
+		780 = {	add_compliance = 3}
+		272 = {	add_compliance = 3}
+		557 = {	add_compliance = 3}
+		268 = {	add_compliance = 3}
+		708 = {	add_compliance = 3}
+		543 = {	add_compliance = 3}
+		706 = {	add_compliance = 3}
+		665 = {	add_compliance = 3}
+		458 = {	add_compliance = 3}
+		513 = {	add_compliance = 3}
+		460 = {	add_compliance = 3}
+		459 = {	add_compliance = 3}
+		461 = {	add_compliance = 3}
+		462 = {	add_compliance = 3}
+		
+		772 = {	add_resistance = -3}
+		539 = {	add_resistance = -3}
+		773 = {	add_resistance = -3}
+		660 = {	add_resistance = -3}
+		774 = {	add_resistance = -3}
+		775 = {	add_resistance = -3}
+		515 = {	add_resistance = -3}
+		514 = {	add_resistance = -3}
+		782 = {	add_resistance = -3}
+		786 = {	add_resistance = -3}
+		776 = {	add_resistance = -3}
+		777 = {	add_resistance = -3}
+		781 = {	add_resistance = -3}
+		778 = {	add_resistance = -3}
+		556 = {	add_resistance = -3}
+		779 = {	add_resistance = -3}
+		780 = {	add_resistance = -3}
+		272 = {	add_resistance = -3}
+		557 = {	add_resistance = -3}
+		268 = {	add_resistance = -3}
+		708 = {	add_resistance = -3}
+		543 = {	add_resistance = -3}
+		706 = {	add_resistance = -3}
+		665 = {	add_resistance = -3}
+		458 = {	add_resistance = -3}
+		513 = {	add_resistance = -3}
+		460 = {	add_resistance = -3}
+		459 = {	add_resistance = -3}
+		461 = {	add_resistance = -3}
+		462 = {	add_resistance = -3}
+			
+		
+	}
+}
+
+
+
+#«Мажино или Мак-Магон». для РОКА
+country_event = {
+	id = FRA.56
+	title = FRA.56.t
+	desc = FRA.56.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.56.a
+		add_political_power = 10
+		add_war_support = 0.03
+
+		set_global_flag = stroika_magino
+	}
+	
+	option = {
+		name = FRA.56.b	
+		
+		add_political_power = -10
+		add_war_support = 0.05
+
+		set_global_flag = stroika_mak_magon	
+	}
+	
+	
+	option = {
+		name = FRA.56.c		
+		
+		add_political_power = -10
+		add_war_support = 0.03
+		add_stability = 0.03
+		
+		set_global_flag = stroika_linii_roka
+		
+	}
+	
+	
+	
+}
+
+
+#«Мажино или Мак-Магон». 
+country_event = {
+	id = FRA.57
+	title = FRA.57.t
+	desc = FRA.57.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.57.a	
+
+		add_political_power = 10
+		add_war_support = 0.03
+
+		set_global_flag = stroika_magino		
+	}
+	
+	option = {
+		name = FRA.57.b	
+
+		add_political_power = -10
+		add_war_support = 0.05
+
+		set_global_flag = stroika_mak_magon			
+	}
+}
+
+
+#«Что мы предложим России?»
+country_event = {
+	id = FRA.58
+	title = FRA.58.t
+	desc = FRA.58.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.58.a	
+		
+		add_political_power = 10
+
+
+		RUS = {
+		country_event = { days = 4 id = russia.504 }	
+		}
+
+		
+	}
+}
+
+
+#«Русские слишком большого самомнения о себе!)
+country_event = {
+	id = FRA.59
+	title = FRA.59.t
+	desc = FRA.59.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.59.a		
+	}
+	
+	option = {
+		name = FRA.59.b	
+	}
+}
+
+
+
+#"Успех в Петрограде!"
+country_event = {
+	id = FRA.60
+	title = FRA.60.t
+	desc = FRA.60.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.60.a		
+	
+	set_global_flag = obratitsya_k_rossii
+	
+	remove_opinion_modifier = {
+		target = RUS
+		modifier = krah_russkoi_diplomatii
+	}
+	RUS = {
+	remove_opinion_modifier = {
+		target = FRA
+		modifier = krah_russkoi_diplomatii2
+	}
+	}
+	
+		add_ideas = { FRA_Russian_friendship_idea }
+	
+	
+	add_political_power = 20
+
+			if = {
+			limit = { has_government = liberalisms }
+			add_popularity = {
+			ideology = liberalisms
+			popularity = -0.03
+			}
+			}
+			if = {
+			limit = { has_government = democratic }
+			add_popularity = {
+			ideology = democratic
+			popularity = -0.03
+			}
+			}
+			if = {
+			limit = { has_government = fascism }
+			add_popularity = {
+			ideology = fascism
+			popularity = -0.03
+			}
+			}
+			if = {
+			limit = { has_government = paternalism }
+			add_popularity = {
+			ideology = paternalism
+			popularity = -0.03
+			}
+			}
+			if = {
+			limit = { has_government = socdem }
+			add_popularity = {
+			ideology = socdem
+			popularity = -0.03
+			}
+			}
+
+	}
+	
+}
+
+
+
+# "Пропал Петроградской конфренеции"
+country_event = {
+	id = FRA.61
+	title = FRA.61.t
+	desc = FRA.61.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.61.a		
+	}
+	
+	option = {
+		name = FRA.61.b	
+	}
+}
+
+
+
+# "Обратиться к России"
+country_event = {
+	id = FRA.62
+	title = FRA.62.t
+	desc = FRA.62.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.62.a		
+	}
+}
+
+
+##«Явное вмешательство»
+country_event = {
+	id = FRA.63
+	title = FRA.63.t
+	desc = FRA.63.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.63.a	
+		
+		add_stability = 0.05
+		add_political_power = -20
+		add_manpower = -1350
+		if = {
+			limit = { has_government = liberalisms }
+			add_popularity = {
+			ideology = liberalisms
+			popularity = -0.05
+			}
+			}
+			if = {
+			limit = { has_government = democratic }
+			add_popularity = {
+			ideology = democratic
+			popularity = -0.05
+			}
+			}
+			if = {
+			limit = { has_government = fascism }
+			add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+			}
+			}
+			if = {
+			limit = { has_government = paternalism }
+			add_popularity = {
+			ideology = paternalism
+			popularity = -0.05
+			}
+			}
+			if = {
+			limit = { has_government = socdem }
+			add_popularity = {
+			ideology = socdem
+			popularity = -0.05
+			}
+			}
+		
+		if = {
+		limit = { has_war_with = FRA }
+		random_list = {
+		60 = {
+		RAJ = { country_event = { days = 20 id = FRA.64 }}
+		}
+		40 = {
+		#######
+		}
+		}
+		}		
+	}
+	option = {
+		name = FRA.63.b	
+		
+		add_political_power = 40
+		add_stability = -0.1
+		
+		if = {
+			limit = { has_government = liberalisms }
+			add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+			}
+			}
+			if = {
+			limit = { has_government = democratic }
+			add_popularity = {
+			ideology = democratic
+			popularity = 0.02
+			}
+			}
+			if = {
+			limit = { has_government = fascism }
+			add_popularity = {
+			ideology = fascism
+			popularity = 0.02
+			}
+			}
+			if = {
+			limit = { has_government = paternalism }
+			add_popularity = {
+			ideology = paternalism
+			popularity = 0.02
+			}
+			}
+			if = {
+			limit = { has_government = socdem }
+			add_popularity = {
+			ideology = socdem
+			popularity = 0.02
+			}
+			}
+		
+		if = {
+		limit = { has_war_with = FRA }
+		RAJ = { country_event = { days = 30 id = FRA.65 }}
+		}		
+	}
+}
+
+
+
+## «Бунт радикалов»
+country_event = {
+	id = FRA.64
+	title = FRA.64.t
+	desc = FRA.64.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.64.a		
+		
+		add_stability = -0.12
+		add_war_support = -0.1
+		
+		RAJ = { country_event = { days = 3 id = FRA.66 }}
+		
+		create_dynamic_country = {
+			original_tag = OFI
+			copy_tag = RAJ
+			transfer_state = 430
+			transfer_state = 431
+			transfer_state = 426
+			transfer_state = 423
+			
+		}
+		OFI = {
+				division_template = { 
+						name = "osvoboditeli indii"
+						division_names_group = OFI_CAM_01
+						is_locked = yes
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }							
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 2 }							
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 1 y = 3 }
+							infantry = { x = 2 y = 3 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+						priority = 0
+					}
+				431 = {
+				
+						create_unit = {
+							division = "division_template = \"osvoboditeli indii\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+							owner = OFI
+							count = 5
+						}					
+				}
+				
+				set_cosmetic_tag = OFI_F		
+		}	
+		OFI = {
+			declare_war_on = {
+			target = RAJ
+			type = annex_everything
+			}
+		}	
+		
+	}
+}
+
+
+## «Индийская революция!»
+country_event = {
+	id = FRA.65
+	title = FRA.65.t
+	desc = FRA.65.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.65.a	
+		add_stability = -0.2
+		add_war_support = -0.12
+		add_political_power = -59
+		
+		set_global_flag = india_revot
+
+
+
+		create_dynamic_country = {
+			original_tag = RRR
+			copy_tag = RAJ
+			transfer_state = 430
+			transfer_state = 431
+			transfer_state = 426
+			transfer_state = 423
+			transfer_state = 424
+			transfer_state = 427
+			transfer_state = 436
+			transfer_state = 432
+		}
+		RRR = {
+				division_template = { 
+						name = "osvoboditeli indii"
+						division_names_group = RRR_CAM_01
+						is_locked = yes
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }							
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 2 }							
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 1 y = 3 }
+							infantry = { x = 2 y = 3 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+						priority = 0
+					}
+				431 = {
+				
+						create_unit = {
+							division = "division_template = \"osvoboditeli indii\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+							owner = RRR
+							count = 20
+						}					
+				}
+				
+				set_cosmetic_tag = RRR_F		
+		}	
+		RRR = {
+			declare_war_on = {
+			target = RAJ
+			type = annex_everything
+			}
+		}
+			
+		RRR = { change_tag_from = RAJ }
+		
+
+	}
+	option = {
+		name = FRA.65.b	
+		add_stability = -0.2
+		add_war_support = -0.12
+		add_political_power = -59
+		
+		set_global_flag = india_revot22121
+
+		create_dynamic_country = {
+			original_tag = RRR
+			copy_tag = RAJ
+			transfer_state = 430
+			transfer_state = 431
+			transfer_state = 426
+			transfer_state = 423
+			transfer_state = 424
+			transfer_state = 427
+			transfer_state = 436
+			transfer_state = 432
+		}
+		RRR = {
+				division_template = { 
+						name = "osvoboditeli indii"
+						division_names_group = RRR_CAM_01
+						is_locked = yes
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }							
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 2 }							
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 1 y = 3 }
+							infantry = { x = 2 y = 3 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+						priority = 0
+					}
+				431 = {
+				
+						create_unit = {
+							division = "division_template = \"osvoboditeli indii\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+							owner = RRR
+							count = 20
+						}					
+				}
+				
+				set_cosmetic_tag = RRR_F		
+		}	
+		RRR = {
+			declare_war_on = {
+			target = RAJ
+			type = annex_everything
+			}
+		}		
+	}
+}
+
+
+
+
+
+
+
+## «Мятеж в Индии»
+country_event = {
+	id = FRA.66
+	title = FRA.66.t
+	desc = FRA.66.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.66.a		
+	}
+}
+
+
+
+## "Последнее слово Парижа".
+country_event = {
+	id = FRA.67
+	title = FRA.67.t
+	desc = FRA.67.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.67.a
+		add_political_power = 50
+		add_stability = -0.1
+		add_war_support = -0.4
+			if = {
+			limit = { has_government = liberalisms }
+			add_popularity = {
+			ideology = liberalisms
+			popularity = -0.15
+			}
+			}
+			if = {
+			limit = { has_government = democratic }
+			add_popularity = {
+			ideology = democratic
+			popularity = -0.15
+			}
+			}
+			if = {
+			limit = { has_government = fascism }
+			add_popularity = {
+			ideology = fascism
+			popularity = -0.15
+			}
+			}
+			if = {
+			limit = { has_government = paternalism }
+			add_popularity = {
+			ideology = paternalism
+			popularity = -0.15
+			}
+			}
+			if = {
+			limit = { has_government = socdem }
+			add_popularity = {
+			ideology = socdem
+			popularity = -0.15
+			}
+			}
+
+		LUX = {
+		add_timed_idea = {
+		idea = FRA_French_investor_idea
+		days = 210	
+		}		
+		}
+		FRA = {
+		puppet = LUX
+		}
+
+		
+	}
+	option = {
+		name = FRA.67.b	
+		
+		add_political_power = 20
+		add_stability = 0.05
+		
+		add_opinion_modifier = {
+			target = FRA
+			modifier = zloy_luzemburg1
+		}
+	    add_opinion_modifier = {
+			target = RHI
+			modifier = zloy_luzemburg2
+		}
+			
+		send_embargo = FRA
+		send_embargo = RHI
+		
+		FRA = { country_event = { days = 4 id = FRA.68 }}
+	}
+}
+
+## "Люксембургский кризис". 	
+country_event = {
+	id = FRA.68
+	title = FRA.68.t
+	desc = FRA.68.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.68.a		
+	}
+}
+
+
+## Франция переживёт!
+country_event = {
+	id = FRA.69
+	title = FRA.69.t
+	desc = FRA.69.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.69.a		
+	}
+}
+
+
+
+
+
+  
+ ###########################################   ФРАНЦУЗСКИЕ ВЫБОРЫ      #####################################
+  
+
+
+#«Штиль в преддверии перемен».
+country_event = {
+	id = FRA.900
+	title = FRA.900.t
+	desc = FRA.900.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.900.a
+		add_political_power = -20
+		add_stability = -0.03
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.02
+		}		
+		FRA = { country_event = { days = 15 id = FRA.901 }}			
+	}
+}
+#Аксьон Франсез
+country_event = {
+	id = FRA.901
+	title = FRA.901.t
+	desc = FRA.901.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.901.a
+		
+		add_political_power = -10
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.02
+		}		
+		FRA = { country_event = { days = 15 id = FRA.902 }}				
+	}
+}
+#Лик истинной демократии
+country_event = {
+	id = FRA.902
+	title = FRA.902.t
+	desc = FRA.902.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.902.a
+		add_political_power = 10
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+		}
+
+		FRA = { country_event = { days = 10 id = FRA.906 }}	
+		
+	}
+	option = {
+		name = FRA.902.b
+		add_political_power = -20
+		random_list = {
+			40 = {
+			FRA = { country_event = { days = 1 id = FRA.903 }}						
+			}
+			40 = {
+			FRA = { country_event = { days = 1 id = FRA.904 }}			
+			}
+			20 = {
+			FRA = { country_event = { days = 1 id = FRA.905 }}			
+			}
+		}
+		
+		FRA = { country_event = { days = 10 id = FRA.906 }}	
+		
+	}
+}
+#Грязное бельё Думерга
+country_event = {
+	id = FRA.903
+	title = FRA.903.t
+	desc = FRA.903.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.903.a
+		
+		custom_effect_tooltip = eto_budet_imet_posledstvia
+		add_political_power = 5
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.02
+		}
+		
+		set_country_flag = belio_dumberda
+		
+		
+
+
+		
+	}
+}
+#«Чистая жизнь Гастона
+country_event = {
+	id = FRA.904
+	title = FRA.904.t
+	desc = FRA.904.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.904.a
+		add_popularity = {
+			ideology = liberalisms
+			popularity = -0.01
+		}
+		add_political_power = -10
+	}
+}
+#Последствия грязной игры
+country_event = {
+	id = FRA.905
+	title = FRA.905.t
+	desc = FRA.905.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.905.a
+		
+		add_popularity = {
+			ideology = liberalisms
+			popularity = -0.05
+		}
+		add_political_power = -20		
+	}
+}
+#На руинах Интернационала»
+country_event = {
+	id = FRA.906
+	title = FRA.906.t
+	desc = FRA.906.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.906.a
+		
+		add_political_power = -10
+		add_stability = -0.02
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.02
+		}		
+		FRA = { country_event = { days = 5 id = FRA.906 }}		
+	}
+}
+#Голос Поля Думера
+country_event = {
+	id = FRA.907
+	title = FRA.907.t
+	desc = FRA.907.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.907.a
+		add_political_power = -10
+		add_stability = -0.02
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.02
+		}
+		FRA = { country_event = { days = 10 id = FRA.908 }}		
+	}
+	option = {
+		name = FRA.907.b	
+		add_political_power = -20
+		add_stability = -0.05
+		add_war_support = -0.02
+			add_popularity = {
+			ideology = democratic
+			popularity = 0.04
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.05
+		}
+		custom_effect_tooltip = eto_budet_imet_posledstvia
+		set_country_flag = party_otvernulas_ot_prezidenta
+		FRA = { country_event = { days = 10 id = FRA.908 }}		
+	}
+	option = {
+		name = FRA.907.c	
+		add_political_power = 5
+		add_stability = 0.02
+		FRA = { country_event = { days = 10 id = FRA.908 }}		
+	}
+}
+#Марсельская речь
+country_event = {
+	id = FRA.908
+	title = FRA.908.t
+	desc = FRA.908.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.908.a
+		add_political_power = -10
+		add_stability = -0.02
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.02
+		}
+	}
+	option = {
+		name = FRA.908.b
+		add_political_power = -20
+		add_stability = -0.04
+		
+		add_timed_idea = {
+		idea = FRA_prezident_clown_idea
+		days = 50
+		}
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.02
+		}		
+	}
+	option = {
+		name = FRA.908.c	
+		add_political_power = -20
+		add_stability = -0.04				
+		add_timed_idea = {
+		idea = FRA_prezident_clown_idea
+		days = 50
+		}
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.02
+		}		
+	}
+}
+#Крах экономики!
+country_event = {
+	id = FRA.909
+	title = FRA.909.t
+	desc = FRA.909.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.909.a	
+		add_ideas = generic_the_great_depression_1
+		set_country_flag = economic_drevo_open
+		add_political_power = -80
+		add_stability = -0.1			
+		FRA = { country_event = { days = 5 id = FRA.910 }}				
+	}
+}
+#Великая Депрессия вмешалась в политику
+country_event = {
+	id = FRA.910
+	title = FRA.910.t
+	desc = FRA.910.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.910.a	
+		add_political_power = -20
+		add_stability = -0.07
+		add_war_support = -0.05
+		FRA = { country_event = { days = 5 id = FRA.911 }}				
+	}
+}
+#Красный Парижский съезд
+country_event = {
+	id = FRA.911
+	title = FRA.911.t
+	desc = FRA.911.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.911.a	
+		add_political_power = -20
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = libsoc
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = marxisms
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.02
+		}
+		FRA = { country_event = { days = 5 id = FRA.912 }}	
+	}
+}
+#Париж между двух огней
+country_event = {
+	id = FRA.912
+	title = FRA.912.t
+	desc = FRA.912.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.912.a
+		add_political_power = -10
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.02
+		}
+		add_stability = -0.02
+		FRA = { country_event = { days = 10 id = FRA.913 }}	
+	}
+	option = {
+		name = FRA.912.b	
+		add_political_power = -40
+		add_stability = -0.04
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.05
+		}
+		FRA = { country_event = { days = 10 id = FRA.913 }}	
+	}
+	option = {
+		name = FRA.912.c		
+		add_political_power = -35
+		add_stability = -0.04
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.05
+		}
+		FRA = { country_event = { days = 10 id = FRA.913 }}	
+	}
+}
+#«Ветераны и военные против президента!
+country_event = {
+	id = FRA.913
+	title = FRA.913.t
+	desc = FRA.913.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.913.a	
+		add_political_power = -10
+		add_popularity = {
+			ideology = paternalism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.02
+		}
+		FRA = { country_event = { days = 10 id = FRA.914 }}	
+	}
+	option = {
+		name = FRA.913.b		
+		add_political_power = -40
+		add_stability = -0.05
+		add_popularity = {
+			ideology = paternalism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.04
+		}
+		
+		
+		set_country_flag = oficers_support_rock
+		
+		
+		custom_effect_tooltip = eto_budet_imet_posledstvia
+		FRA = { country_event = { days = 10 id = FRA.914 }}	
+	}
+	option = {
+		name = FRA.913.c		
+		add_popularity = {
+			ideology = paternalism
+			popularity = -0.2
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.02
+		}
+		FRA = { country_event = { days = 10 id = FRA.914 }}			
+	}
+}
+#Аббревиатура месяца – ФОР!
+country_event = {
+	id = FRA.914
+	title = FRA.914.t
+	desc = FRA.914.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.914.a
+		set_party_name = {
+			ideology = socdem 
+			long_name = French_FOOR
+			name = French_sFOOR
+		}
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.15
+		}
+		add_popularity = {
+			ideology = libsoc
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = marxisms
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+		add_timed_idea = {
+		idea = FRA_Prizrak_kommunizma_idea
+		days = 90	
+		}
+		
+		FRA = { country_event = { days = 18 id = FRA.919 }}		
+		
+		if = {
+		limit = { has_country_flag = belio_dumberda }
+		FRA = { country_event = { days = 2 id = FRA.915 }}		
+		}
+		
+		if = {
+			limit = { has_country_flag = party_otvernulas_ot_prezidenta }	
+				FRA = { country_event = { days = 4 id = FRA.917 }}		
+		}
+		else = {
+				FRA = { country_event = { days = 4 id = FRA.916 }}		
+		}
+		
+		
+		if = {
+			limit = { has_country_flag = oficers_support_rock }	
+				FRA = { country_event = { days = 10 id = FRA.918 }}		
+		}
+
+		
+	}
+}
+#Долгожданная атака по Думбергу
+country_event = {
+	id = FRA.915
+	title = FRA.915.t
+	desc = FRA.915.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.915.a
+		set_global_flag = dumerg_skandal		
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.07
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.03
+		}
+		add_stability = -0.03
+		add_war_support = -0.03
+	}
+}
+#Парижская Справедливость усиливает давление
+country_event = {
+	id = FRA.916
+	title = FRA.916.t
+	desc = FRA.916.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.916.a
+		add_political_power = -10
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.03
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.03
+		}	
+	}
+}
+#«Парижская Справедливость отвернулась от президента». 
+country_event = {
+	id = FRA.917
+	title = FRA.917.t
+	desc = FRA.917.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.917.a	
+		add_political_power = -40
+		add_stability = -0.05	
+		add_popularity = {
+			ideology = neutrality
+			popularity = -1
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.07
+		}		
+	}
+}
+#Огненные Кресты расширяются
+country_event = {
+	id = FRA.918
+	title = FRA.918.t
+	desc = FRA.918.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.918.a
+		add_stability = -0.02
+		add_war_support = 0.04
+		add_popularity = {
+			ideology = paternalism
+			popularity = 0.05
+		}	
+	}
+}
+#Забастовка железнодорожников
+country_event = {
+	id = FRA.919
+	title = FRA.919.t
+	desc = FRA.919.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.919.a
+		add_stability = -0.02
+		add_political_power = -10
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.04
+		}
+		add_timed_idea = {
+		idea = FRA_zabastovka_jeleznodorojikov_idea
+		days = 90	
+		}
+		FRA = { country_event = { days = 10 id = FRA.920 }}				
+	}
+	option = {
+		name = FRA.919.b
+		add_stability = 0.02
+		add_political_power = -60
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.02
+		}	
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.02
+		}
+		FRA = { country_event = { days = 10 id = FRA.920 }}				
+	}
+	option = {
+		name = FRA.919.c
+		add_stability = -0.05
+		add_war_support = -0.02
+		add_political_power = -20
+		add_manpower = -1240
+		add_popularity = {
+			ideology = socdem
+			popularity = -0.03
+		}	
+		add_popularity = {
+			ideology = paternalism
+			popularity = 0.03
+		}
+		FRA = { country_event = { days = 10 id = FRA.920 }}						
+	}
+
+}
+#«Кретейский сговор?
+country_event = {
+	id = FRA.920
+	title = FRA.920.t
+	desc = FRA.920.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.920.a
+		add_political_power = 20
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.04
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.03
+		}
+		set_global_flag = sdelka_S_dumerom
+		FRA = { country_event = { days = 2 id = FRA.921 }}		
+		FRA = { country_event = { days = 13 id = FRA.924 }}			
+	}	
+	option = {
+		name = FRA.920.b	
+		add_political_power = -10
+		add_popularity = {
+			ideology = liberalisms
+			popularity = -0.02
+		}	
+		FRA = { country_event = { days = 2 id = FRA.921 }}	
+		
+		FRA = { country_event = { days = 9 id = FRA.923 }}	
+		
+	}
+	option = {
+		name = FRA.920.c	
+		add_political_power = -30
+		add_popularity = {
+			ideology = liberalisms
+			popularity = -0.04
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.02
+		}
+		FRA = { country_event = { days = 2 id = FRA.921 }}	
+		FRA = { country_event = { days = 17 id = FRA.925 }}		
+	}
+}
+#Последняя авантюра президента»
+country_event = {
+	id = FRA.921
+	title = FRA.921.t
+	desc = FRA.921.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.921.a	
+		add_stability = -0.03
+		add_war_support = -0.03
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.01
+		}		
+		FRA = { country_event = { days = 3 id = FRA.922 }}		
+	}
+}
+#Кресты и потенциальный союзник
+country_event = {
+	id = FRA.922
+	title = FRA.922.t
+	desc = FRA.922.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.922.a
+		add_political_power = -20
+		add_popularity = {
+			ideology = paternalism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.02
+		}
+	}
+	option = {
+		name = FRA.922.b	
+		add_political_power = 10
+		add_popularity = {
+			ideology = paternalism
+			popularity = -0.02
+		}
+	}
+}
+#Дьявольский союз?
+country_event = {
+	id = FRA.923
+	title = FRA.923.t
+	desc = FRA.923.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.923.a		
+		add_political_power = -20
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.04
+		}
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.03
+		}
+		set_global_flag = sdelka_S_diavolom
+		FRA = { country_event = { days = 4 id = FRA.924 }}		
+	}
+	option = {
+		name = FRA.923.b	
+		add_political_power = -40
+		add_popularity = {
+			ideology = liberalisms
+			popularity = -0.02
+		}
+		FRA = { country_event = { days = 4 id = FRA.925 }}				
+	}
+}
+#Отставка Думерга
+country_event = {
+	id = FRA.924
+	title = FRA.924.t
+	desc = FRA.924.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.924.a		
+		add_stability = -0.03
+		add_political_power = 30
+		add_popularity = {
+			ideology = neutrality
+			popularity = -1
+		}
+		set_party_name = {
+			ideology = neutrality 
+			long_name = French_neut
+			name = French_neu
+		}
+		kill_country_leader = yes
+		set_global_flag = french_impichment
+		
+		
+		if = {
+		limit = { socdem > 0.18 }
+		FRA = { country_event = { days = 10 id = FRA.929 }}		
+		}
+		else = {
+		FRA = { country_event = { days = 10 id = FRA.928 }}		
+		}
+		
+		
+		
+		
+		if = {
+		limit = { set_global_flag = sdelka_S_dumerom }
+		create_country_leader = {
+			name = "FRA_raimod"
+			desc = "FRA_raimod"
+			picture = "GFX_portrait_raimond"
+			expire = "1965.1.1"
+			ideology = oligarchism
+			traits = {
+			}
+		}
+			FRA = { country_event = { days = 5 id = FRA.926 }}					
+		}		
+		if = {
+		limit = { has_global_flag = sdelka_S_diavolom }
+		create_country_leader = {
+			name = "FRA_cuf"
+			desc = "FRA_cuf"
+			picture = "GFX_portrait_koalition_upravlenia"
+			expire = "1965.1.1"
+			ideology = oligarchism
+			traits = {
+			}
+		}
+			FRA = { country_event = { days = 5 id = FRA.927 }}					
+		}	
+	}
+}
+#Париж на баррикадах
+country_event = {
+	id = FRA.925
+	title = FRA.925.t
+	desc = FRA.925.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.925.a
+		add_stability = -0.05
+		add_political_power = -30		
+	}
+}
+#«Временно Исполняющий». (декабрь, если отставка произошла из-за сговора).
+country_event = {
+	id = FRA.926
+	title = FRA.926.t
+	desc = FRA.926.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.926.a
+		add_stability = 0.03
+		add_political_power = 20
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.01
+		}
+	}
+	option = {
+		name = FRA.926.b
+		add_stability = -0.03
+		add_political_power = -20
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.04
+		}
+	}
+	option = {
+		name = FRA.926.c
+		add_stability = -0.07
+		add_war_support = -0.03
+		add_political_power = -40
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.07
+		}		
+	}
+}
+#«Временно Исполняющий». (декабрь, если отставка произошла из-за сделки с ДА и ФОР)
+country_event = {
+	id = FRA.927
+	title = FRA.927.t
+	desc = FRA.927.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.927.a
+		add_stability = -0.05
+		add_political_power = -40
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.05
+		}		
+	}
+	option = {
+		name = FRA.927.b	
+		add_stability = -0.05
+		add_political_power = -40
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.05
+		}
+	}
+	option = {
+		name = FRA.927.c		
+		add_stability = 0.04
+		add_political_power = 30
+	}
+}
+#«Всефранцузская забастовка
+country_event = {
+	id = FRA.928
+	title = FRA.928.t
+	desc = FRA.928.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.928.a
+		add_political_power = -20
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.03
+		}
+		add_stability = -0.02		
+		remove_ideas = FRA_zabastovka_jeleznodorojikov_idea
+		add_timed_idea = {
+		idea = FRA_zabastovka_idea
+		days = 180
+		}
+	}
+	option = {
+		name = FRA.928.b	
+		add_political_power = 20
+		add_stability = -0.05
+		add_manpower = -2420
+		add_popularity = {
+			ideology = socdem
+			popularity = -0.03
+		}
+	}
+}
+#«Всефранцузская забастовка
+country_event = {
+	id = FRA.929
+	title = FRA.929.t
+	desc = FRA.929.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.929.a
+		add_political_power = -20
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.03
+		}
+		add_stability = -0.02		
+		remove_ideas = FRA_zabastovka_jeleznodorojikov_idea
+		add_timed_idea = {
+		idea = FRA_zabastovka_idea
+		days = 180
+		}		
+	}	
+	option = {
+		name = FRA.929.b
+		add_political_power = -40
+		add_stability = -0.05	
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.07
+		}
+		remove_ideas = FRA_zabastovka_jeleznodorojikov_idea
+		add_timed_idea = {
+		idea = FRA_zabastovka_idea
+		days = 180
+		}		
+		FRA = { country_event = { days = 5 id = FRA.930 }}					
+	}
+	option = {
+		name = FRA.929.c
+		add_political_power = 20
+		add_stability = -0.05
+		add_manpower = -2420
+		add_popularity = {
+			ideology = socdem
+			popularity = -0.03
+		}		
+	}
+}
+#«Переворот ФОР!»
+country_event = {
+	id = FRA.930
+	title = FRA.930.t
+	desc = FRA.930.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.930.a	
+		add_stability = -0.1
+		add_war_support = -0.1
+		add_political_power = -80
+		add_manpower = -14300
+		add_popularity = {
+			ideology = liberalisms
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = paternalism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+		set_politics = {
+			ruling_party = socdem
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+			long_name = French_FOOR
+			name = French_sFOOR
+		}
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "FRA_brian"
+			desc = "FRA_brian"
+			picture = "GFX_portrait_brian"
+			expire = "1965.1.1"
+			ideology = socialism  
+			traits = {
+			}
+		}
+		set_country_flag = perevorot_briana		
+	}
+	option = {
+		name = FRA.930.b		
+		add_stability = -0.04
+		add_war_support = -0.02
+		add_political_power = -40
+		add_manpower = -5720
+		add_popularity = {
+			ideology = socdem
+			popularity = -0.15
+		}
+		
+		FRA = { country_event = { days = 3 id = FRA.931 }}		
+		FRA = { country_event = { days = 8 id = FRA.932 }}		
+		
+	}
+}
+#«Незавидная судьба Бриана». 
+country_event = {
+	id = FRA.931
+	title = FRA.931.t
+	desc = FRA.931.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.931.a
+		add_political_power = -20	
+		add_popularity = {
+			ideology = socdem
+			popularity = -0.05
+		}
+		add_manpower = -1
+	}
+}
+#«Запрет ФОР?». 
+country_event = {
+	id = FRA.932
+	title = FRA.932.t
+	desc = FRA.932.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.932.a		
+	}
+	option = {
+		name = FRA.932.b	
+	}
+	option = {
+		name = FRA.932.c	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

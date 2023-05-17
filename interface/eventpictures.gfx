@@ -4,6 +4,16 @@ spriteTypes = {
 		name = "GFX_news_great_depression"
 		texturefile = "gfx/event_pictures/RWR_news_event_003.dds"
 	}
+	
+	
+	spriteType = {
+		name = "GFX_vosstanieVafrike"
+		texturefile = "gfx/event_pictures/RWR_vosstanieVafrike.dds"
+	}
+	
+
+	
+	
 
 	spriteType = {
 		name = "GFX_news_event_saar"

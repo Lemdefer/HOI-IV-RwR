@@ -1606,9 +1606,234 @@ ideas = {
 			}	
 		}
 		
-
-	
 		
+		FRA_otcup_ot_afriki_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {				
+				consumer_goods_factor = 0.08
+				political_power_gain = -0.2				
+			}	
+		}
+		
+		FRA_Russian_friendship_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			targeted_modifier = {
+			tag = RUS			
+			license_purchase_cost_factor = -0.2			
+			}
+			targeted_modifier = {
+			tag = FRA			
+			license_purchase_cost_factor = -0.2			
+			}
+			targeted_modifier = {
+			tag = RUS
+			trade_cost_for_target_factor = -0.1
+			}
+			targeted_modifier = {
+			tag = FRA
+			trade_cost_for_target_factor = -0.1
+			}						
+			
+		}
+		
+		
+		FRA_alp_defence_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {				
+				consumer_goods_factor = 0.1
+				political_power_gain = -0.05				
+			}	
+		}
+		
+		
+		
+		
+		FRA_Vliyanie_na_luxemborg_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {				
+				political_power_gain = -0.05		
+				stability_factor = -0.1
+				production_speed_buildings_factor = 0.05	
+				industrial_capacity_factory = 0.05					
+			}	
+		}
+		
+		
+		FRA_French_investor_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {				
+				consumer_goods_factor = -0.05	
+				production_speed_buildings_factor = 0.1				
+			}	
+		}
+		
+		FRA_african_opora_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {				
+				production_speed_buildings_factor = 0.05		
+			}	
+		}
+		
+		
+		FRA_SURVIVED_idea = { 
+
+			#picture = 
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+									
+			modifier = {				
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}	
+		}
+		
+		
+		FRA_prezident_clown_idea = { 
+			picture = FRA_Bezalaberny_prezident
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1							
+			modifier = {				
+				political_power_gain = -0.02
+				stability_factor = -0.05
+				production_speed_buildings_factor = -0.05	
+				industrial_capacity_factory = -0.05		
+			}	
+		}
+		
+		FRA_Prizrak_kommunizma_idea = { 
+			picture = FRA_Prizrak_kommunizma
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1							
+			modifier = {				
+				political_power_gain = -0.05
+				production_speed_buildings_factor = -0.05	
+				industrial_capacity_factory = -0.05		
+				socdem_drift = 0.05
+			}	
+		}
+		
+		FRA_zabastovka_jeleznodorojikov_idea = { 
+			picture = FRA_Zabastovka_zheleznodorozhnikov
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1							
+			modifier = {				
+				political_power_gain = -0.02
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.1		
+				stability_factor = -0.05
+			}	
+		}
+		
+		FRA_zabastovka_idea = { 
+			picture = FRA_Vsefrantsuzskaya_zabastovka
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1							
+			modifier = {				
+				production_speed_buildings_factor = -0.15
+				industrial_capacity_factory = -0.2
+				stability_factor = -0.15
+				political_power_gain = -0.4
+			}	
+		}
 		
 		
 

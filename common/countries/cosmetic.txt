@@ -19,6 +19,30 @@ FRA_gosudarstvo = {
 	color = rgb { 4 90 155 }
 	color_ui = rgb { 4 90 155 }
 }
+KDD_wosstanie = {
+	color = rgb { 20 7 7 }
+	color_ui = rgb { 20 7 7 }
+}
+FRT_F = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
+FRL_F = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
+FRM_F = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
+FRW_F = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
+FRE_F = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
 HWA_F = {
 	color = rgb { 57 113 228 }
 	color_ui = rgb { 74 147 255 }
@@ -26,6 +50,18 @@ HWA_F = {
 FIS_F = {
 	color = rgb { 57 113 228 }
 	color_ui = rgb { 74 147 255 }
+}
+OFI_F = {
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 125 13 24 }
+}
+RRR_F = {
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 125 13 24 }
+}
+RRR_D = {
+	color = rgb { 246 179 45 }
+	color_ui = rgb { 246 179 45 }
 }
 SFR = {
 	color = { 128 128 0 }

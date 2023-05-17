@@ -4,42 +4,50 @@ spriteTypes = {
 		name = "GFX_idea_RHI_secret_nationalisation"
 		texturefile = "gfx/interface/ideas/RHI/secret_nationalisation.png"
 	}
-
 	SpriteType = {
 		name = "GFX_idea_GER_humanitarian_disaster"
 		texturefile = "gfx/interface/ideas/GER/humanitarian_disaster.png"
 	}
-
 	SpriteType = {
 		name = "GFX_idea_FRA_secret_share_by_reiland"
 		texturefile = "gfx/interface/ideas/FRA/secret_share_by_reiland.png"
 	}
-
 	SpriteType = {
 		name = "GFX_idea_FRA_german_payments"
 		texturefile = "gfx/interface/ideas/FRA/accelerated_german_payments.png"
-	}
-	
+	}	
 	SpriteType = {
 		name = "GFX_idea_FRA_big_country_construktion"
 		texturefile = "gfx/interface/ideas/FRA/big_country_construktion.png"
-	}
-	
+	}	
 	SpriteType = {
 		name = "GFX_idea_FRA_french_tovar"
 		texturefile = "gfx/interface/ideas/FRA/french_tovar.png"
 	}
-	
 	SpriteType = {
 		name = "GFX_idea_FRA_politic_of_protection"
 		texturefile = "gfx/interface/ideas/FRA/politic_of_protection.png"
 	}
-	
 	SpriteType = {
 		name = "GFX_idea_FRA_rule_france_the_ways"
 		texturefile = "gfx/interface/ideas/FRA/rule_france_the_ways.png"
 	}
-	
+	SpriteType = {
+		name = "GFX_idea_FRA_Bezalaberny_prezident"
+		texturefile = "gfx/interface/ideas/FRA/Bezalaberny_prezident.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_FRA_Prizrak_kommunizma"
+		texturefile = "gfx/interface/ideas/FRA/Prizrak_kommunizma.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_FRA_Vsefrantsuzskaya_zabastovka"
+		texturefile = "gfx/interface/ideas/FRA/Vsefrantsuzskaya_zabastovka.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_FRA_Zabastovka_zheleznodorozhnikov"
+		texturefile = "gfx/interface/ideas/FRA/Zabastovka_zheleznodorozhnikov.png"
+	}
 	
 	
 	
