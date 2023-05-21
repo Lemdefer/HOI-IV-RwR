@@ -1,18 +1,18 @@
 technologies = {
 	
 	@1918 = 0
-	@1923 = 22
-	@1925 = 2
-	@1927 = 4
-	@1930 = 7
-	@1931 = 9
+	@1923 = 2
+	@1925 = 4
+	@1927 = 6
+	@1930 = 8
+	@1931 = 10
 	@1932 = 12
 	@1934 = 14
 	@1936 = 16
 	@1938 = 18
 
 
-	infantry_weapons = {
+	infantry_weapons = {	#Винтовка 1918
 
 		enable_equipments = {
 			infantry_equipment_0
@@ -48,7 +48,7 @@ technologies = {
 			factor = 1
 		}
 	}
-	infantry_weapons2 = {
+	infantry_weapons2 = {	#Развитие Военной Науки I
 
 		category_light_infantry = {
 			soft_attack = 0.05
@@ -103,7 +103,7 @@ technologies = {
 		}
 	}	
 	
-	improved_infantry_weapons = {
+	improved_infantry_weapons = {	#Винтовка 1931
 
 		enable_equipments = {
 			infantry_equipment_2
@@ -118,7 +118,7 @@ technologies = {
 		start_year = 1930
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1930 }
+			position = { x = 0 y = @1931 }
 		}
 		
 		categories = {
@@ -126,7 +126,7 @@ technologies = {
 		}
 		
 	}
-	improved_infantry_weapons2 = {
+	improved_infantry_weapons2 = {	#Развитие Военной Науки II
 
 		category_light_infantry = {
 			soft_attack = 0.05
@@ -158,7 +158,7 @@ technologies = {
 		start_year = 1931
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1931 }
+			position = { x = 0 y = @1932 }
 		}
 		
 		categories = {
@@ -213,7 +213,7 @@ technologies = {
 		}
 	}
 	
-	advanced_infantry_weapons = {
+	advanced_infantry_weapons = {	#Винтовка 1934
 
 		enable_equipments = {
 			infantry_equipment_3
@@ -228,7 +228,7 @@ technologies = {
 		start_year = 1934
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1932 }
+			position = { x = 0 y = @1934 }
 		}
 		
 		categories = {
@@ -709,7 +709,7 @@ technologies = {
 		}
 	}
 	
-	support_weapons = {
+	support_weapons1 = {
 
 		infantry = {
 			defense = 0.05
@@ -749,7 +749,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = support_weapons2
+			leads_to_tech = support_weapons_2
 			research_cost_coeff = 1
 		}
 
@@ -765,7 +765,7 @@ technologies = {
 		}
 	}
 	
-	support_weapons2 = {
+	support_weapons_2 = {
 
 		infantry = {
 			defense = 0.05
@@ -805,7 +805,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = support_weapons3
+			leads_to_tech = support_weapons_3
 			research_cost_coeff = 1
 		}
 
@@ -825,7 +825,7 @@ technologies = {
 		}
 	}
 	
-	support_weapons3 = {
+	support_weapons_3 = {
 
 		infantry = {
 			defense = 0.05
@@ -865,7 +865,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = support_weapons4
+			leads_to_tech = support_weapons_4
 			research_cost_coeff = 1
 		}
 		
@@ -885,7 +885,7 @@ technologies = {
 		}
 	}
 	
-	support_weapons4 = {
+	support_weapons_4 = {
 
 		infantry = {
 			defense = 0.05
@@ -939,8 +939,42 @@ technologies = {
 			factor = 1
 		}
 	}
+
+	truck = {	#Грузовик
+
+		enable_subunits = {
+			motorized
+		}
+
+		enable_equipments = {
+			truck1
+		}
+		
+		path = {
+			leads_to_tech = buffed_truck
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1927
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1927 }
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 7 y = 9 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+
+	}
 	
-	motorised_infantry = {
+	motorised_infantry = {	#Бронеавтомобили 1927
 
 		enable_subunits = {
 			motorized
@@ -980,7 +1014,7 @@ technologies = {
 		start_year = 1923
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1925 }
+			position = { x = 2 y = @1927 }
 		}
 		
 		folder = {
@@ -1102,7 +1136,37 @@ technologies = {
 		}
 	}
 
-	mechanised_infantry = {
+	buffed_truck = {	#Базовое бронирование грузовиков
+
+		enable_equipments = {
+			truck2
+		}
+		
+		path = {
+			leads_to_tech = mega_buffed_truck
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1931
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1931 }
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 7 y = 9 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+
+	}
+
+	mechanised_infantry = {	#Бронеавтомобили 1931
 
 		enable_equipments = {
 			mechanized_equipment_1
@@ -1142,7 +1206,7 @@ technologies = {
 		start_year = 1931
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1931 }
+			position = { x = 2 y = @1931 }
 		}
 		
 		categories = {
@@ -1220,8 +1284,33 @@ technologies = {
 			factor = 1
 		}
 	}
+
+	mega_buffed_truck = {	#Бронированный грузовик
+
+		enable_equipments = {
+			truck3
+		}
+
+		research_cost = 2
+		start_year = 1934
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1934 }
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 7 y = 9 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+
+	}
 	
-	mechanised_infantry2 = {
+	mechanised_infantry2 = {	#Бронеавтомобили 1934
 
 		enable_equipments = {
 			mechanized_equipment_2
@@ -1236,7 +1325,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1934 }
+			position = { x = 2 y = @1934 }
 		}
 		
 		categories = {

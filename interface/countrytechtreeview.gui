@@ -134,7 +134,7 @@ guiTypes = {
 					position = { x = 410 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1927"
+					text = "1925"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -146,7 +146,7 @@ guiTypes = {
 					position = { x = 550 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1930"
+					text = "1927"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -158,7 +158,7 @@ guiTypes = {
 					position = { x = 690 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1931"
+					text = "1930"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -170,7 +170,7 @@ guiTypes = {
 					position = { x = 830 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1932"
+					text = "1931"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -182,7 +182,7 @@ guiTypes = {
 					position = { x = 970 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1934"
+					text = "1932"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -194,7 +194,7 @@ guiTypes = {
 					position = { x = 1110 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1936"
+					text = "1934"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -206,7 +206,7 @@ guiTypes = {
 					position = { x = 1250 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1938"
+					text = "1936"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -217,7 +217,7 @@ guiTypes = {
 					position = { x = 1390 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1940"
+					text = "1938"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -228,7 +228,7 @@ guiTypes = {
 					position = { x = 1530 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1942"
+					text = "1940"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -236,10 +236,9 @@ guiTypes = {
 				}			
 
 			}
-
 				
 			gridboxtype = {
-				name = "support_weapons_tree"
+				name = "support_weapons1_tree"
 				position = { x = 140 y = 210 }
 				#size = { width = 420 height = 500 }
 				slotsize = { width = 70 height = 70 }
@@ -267,7 +266,14 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 	
-			}			
+			}	
+
+			gridboxtype = {
+				name = "truck_tree"
+				position = { x = 140 y = 600 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}	
 
 			gridboxtype = {
 				name = "motorised_infantry_tree"
@@ -356,7 +362,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1936"
+					text = "1923"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -368,7 +374,7 @@ guiTypes = {
 #					position = { x = 370 y = 50 }
 #					font = "hoi_36header"
 #					borderSize = { x = 0 y = 0}
-#					text = "1938"
+#					text = "1925"
 #					maxWidth = 170
 #					maxHeight = 32
 #					format = left
@@ -380,7 +386,7 @@ guiTypes = {
 					position = { x = 523 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1939"
+					text = "1927"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -392,7 +398,7 @@ guiTypes = {
 #					position = { x = 650 y = 50 }
 #					font = "hoi_36header"
 #					borderSize = { x = 0 y = 0}
-#					text = "1940"
+#					text = "1930"
 #					maxWidth = 170
 #					maxHeight = 32
 #					format = left
@@ -404,7 +410,7 @@ guiTypes = {
 #					position = { x = 790 y = 50 }
 #					font = "hoi_36header"
 #					borderSize = { x = 0 y = 0}
-#					text = "1941"
+#					text = "1931"
 #					maxWidth = 170
 #					maxHeight = 32
 #					format = left
@@ -416,7 +422,7 @@ guiTypes = {
 					position = { x = 943 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1942"
+					text = "1932"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -428,7 +434,7 @@ guiTypes = {
 #					position = { x = 1070 y = 50 }
 #					font = "hoi_36header"
 #					borderSize = { x = 0 y = 0}
-#					text = "1943"
+#					text = "1934"
 #					maxWidth = 170
 #					maxHeight = 32
 #					format = left
@@ -440,7 +446,7 @@ guiTypes = {
 #					position = { x = 1210 y = 50 }
 #					font = "hoi_36header"
 #					borderSize = { x = 0 y = 0}
-#					text = "1944"
+#					text = "1936"
 #					maxWidth = 170
 #					maxHeight = 32
 #					format = left
@@ -451,7 +457,7 @@ guiTypes = {
 					position = { x = 1363 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1945"
+					text = "1938"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -462,7 +468,7 @@ guiTypes = {
 #					position = { x = 1490 y = 50 }
 #					font = "hoi_36header"
 #					borderSize = { x = 0 y = 0}
-#					text = "1946"
+#					text = "1940"
 #					maxWidth = 170
 #					maxHeight = 32
 #					format = left
@@ -521,14 +527,14 @@ guiTypes = {
 				format = "LEFT"
 			}
 			gridboxtype = {
-				name = "motorised_infantry_tree"
+				name = "truck_tree"
 				position = { x = 100 y = 160 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
-				name = "basic_train_tree"
+				name = "civil_train_tree"
 				position = { x = 100 y = 1180 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"

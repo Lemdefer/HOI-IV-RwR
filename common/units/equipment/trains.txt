@@ -20,27 +20,25 @@ equipments = {
 			steel = 1
 		}
 	}
-	# regular trains
+	# Гражданский поезд
 	train_equipment_1 = {
-		year = 1910
+		year = 1918
 
 		archetype = train_equipment
 		type = {
 			train
 		}
 
-		armor_value = 0 # HP = BASE_TRAIN_HP + armor_value
-
 		priority = 10
 
-		build_cost_ic = 70
+		build_cost_ic = 80
 		resources = {
 			steel = 1
 		}
 	}
-	# cheap trains
+	#Модифицированный гражданский поезд
 	train_equipment_2 = {
-		year = 1940
+		year = 1927
 
 		archetype = train_equipment
 		parent = train_equipment_1
@@ -49,22 +47,37 @@ equipments = {
 		}
 		priority = 20
 
-		build_cost_ic = 50
+		build_cost_ic = 70
 		resources = {
 			steel = 1
 		}
 	}
-	# armored trains
+	#Ранняя бронеобшивка локомотива
 	train_equipment_3 = {
-		year = 1936
+		year = 1931
 		archetype = train_equipment
 		parent = train_equipment_1
 		type = {
 			train
 		}
-		armor_value = 250 # HP = BASE_TRAIN_HP + armor_value
+		armor_value = 100 # HP = BASE_TRAIN_HP + armor_value
 		priority = 30
-		build_cost_ic = 105
+		build_cost_ic = 80
+		resources = {
+			steel = 2
+		}
+	}
+	#Адаптированный гражданский поезд
+
+	train_equipment_4 = {
+		year = 1932
+		archetype = train_equipment
+		parent = train_equipment_1
+		type = {
+			train
+		}
+		priority = 30
+		build_cost_ic = 60
 		resources = {
 			steel = 2
 		}
