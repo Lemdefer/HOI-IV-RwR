@@ -74,7 +74,65 @@ characters={
 		}
 	}
 
-
+	FRA_rok ={ 
+		name = FRA_rok
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_rok"
+			}
+		}
+		country_leader = {
+			ideology = paternalautocracy      
+			traits = {}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	FRA_sharl ={ 
+		name = FRA_sharl
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_morras"
+			}
+		}
+		country_leader = {
+			ideology = gen_nazism     
+			traits = {}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	FRA_lebrennn ={ 
+		name = FRA_lebrennn
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_lebren"
+			}
+		}
+		country_leader = {
+			ideology = liberalism      
+			traits = {}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	FRA_dumir ={ 
+		name = FRA_dumir
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_dddumer"
+			}
+		}
+		country_leader = {
+			ideology = conservatism      
+			traits = {}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
 
 
 

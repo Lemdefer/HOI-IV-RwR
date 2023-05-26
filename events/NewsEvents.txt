@@ -371,6 +371,34 @@ news_event = {
 }
 
 
+# «Переворот правых во Франции»
+news_event = {
+	id = news.19
+	title = news.19.t
+	desc = news.19.d
+#	picture = GFX_news_great_depression
+	
+	major = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = pereveorot_nts_coalitsii
+    }
+	
+	option = {
+		name = news.19.a
+	}
+}
+
+
+
+
+
+
+
+
+
 
 
 

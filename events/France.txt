@@ -4955,7 +4955,10 @@ country_event = {
 		add_popularity = {
 			ideology = paternalism
 			popularity = 0.05
-		}	
+		}
+		
+		FRA = { country_event = { days = 10 id = FRA.922 }}		
+	
 	}
 }
 #Забастовка железнодорожников
@@ -4979,7 +4982,7 @@ country_event = {
 		idea = FRA_zabastovka_jeleznodorojikov_idea
 		days = 90	
 		}
-		FRA = { country_event = { days = 10 id = FRA.920 }}				
+		FRA = { country_event = { days = 10 id = FRA.921 }}				
 	}
 	option = {
 		name = FRA.919.b
@@ -4993,7 +4996,7 @@ country_event = {
 			ideology = neutrality
 			popularity = 0.02
 		}
-		FRA = { country_event = { days = 10 id = FRA.920 }}				
+		FRA = { country_event = { days = 10 id = FRA.921 }}				
 	}
 	option = {
 		name = FRA.919.c
@@ -5009,61 +5012,11 @@ country_event = {
 			ideology = paternalism
 			popularity = 0.03
 		}
-		FRA = { country_event = { days = 10 id = FRA.920 }}						
+		FRA = { country_event = { days = 10 id = FRA.921 }}						
 	}
 
 }
-#«Кретейский сговор?
-country_event = {
-	id = FRA.920
-	title = FRA.920.t
-	desc = FRA.920.d
-	#picture = GFX_report_event_physics_lab_01
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = FRA.920.a
-		add_political_power = 20
-		add_popularity = {
-			ideology = liberalisms
-			popularity = 0.04
-		}
-		add_popularity = {
-			ideology = democratic
-			popularity = 0.03
-		}
-		set_global_flag = sdelka_S_dumerom
-		FRA = { country_event = { days = 2 id = FRA.921 }}		
-		FRA = { country_event = { days = 13 id = FRA.924 }}			
-	}	
-	option = {
-		name = FRA.920.b	
-		add_political_power = -10
-		add_popularity = {
-			ideology = liberalisms
-			popularity = -0.02
-		}	
-		FRA = { country_event = { days = 2 id = FRA.921 }}	
-		
-		FRA = { country_event = { days = 9 id = FRA.923 }}	
-		
-	}
-	option = {
-		name = FRA.920.c	
-		add_political_power = -30
-		add_popularity = {
-			ideology = liberalisms
-			popularity = -0.04
-		}
-		add_popularity = {
-			ideology = democratic
-			popularity = 0.02
-		}
-		FRA = { country_event = { days = 2 id = FRA.921 }}	
-		FRA = { country_event = { days = 17 id = FRA.925 }}		
-	}
-}
+
 #Последняя авантюра президента»
 country_event = {
 	id = FRA.921
@@ -5075,13 +5028,26 @@ country_event = {
 	
 	option = {
 		name = FRA.921.a	
-		add_stability = -0.03
-		add_war_support = -0.03
-		add_popularity = {
-			ideology = neutrality
-			popularity = 0.01
-		}		
-		FRA = { country_event = { days = 3 id = FRA.922 }}		
+		add_stability = 0.02
+		add_political_power = 20
+		
+		FRA = { country_event = { days = 8 id = FRA.933 }}		
+	}
+	option = {
+		name = FRA.921.b				
+		add_stability = -0.02
+		add_political_power = -20
+		
+		set_country_flag = dumerg_idumer
+		FRA = { country_event = { days = 8 id = FRA.933 }}		
+	}
+	option = {
+		name = FRA.921.c		
+		add_stability = -0.04
+		add_political_power = -30	
+		
+		set_country_flag = dumerg_i_rok
+		FRA = { country_event = { days = 8 id = FRA.933 }}		
 	}
 }
 #Кресты и потенциальный союзник
@@ -5104,6 +5070,9 @@ country_event = {
 			ideology = fascism
 			popularity = 0.02
 		}
+		
+		set_global_flag = national_coalition_created
+		
 	}
 	option = {
 		name = FRA.922.b	
@@ -5114,6 +5083,768 @@ country_event = {
 		}
 	}
 }
+
+#«Импичмент!». (декабрь). 
+country_event = {
+	id = FRA.933
+	title = FRA.933.t
+	desc = FRA.933.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.933.a
+		add_stability = 0.03
+		add_war_support = 0.03
+		
+		kill_country_leader = yes
+		set_global_flag = french_impichment
+		
+		create_country_leader = {
+			name = "FRA_raimod"
+			desc = "FRA_raimod"
+			picture = "GFX_portrait_raimond"
+			expire = "1965.1.1"
+			ideology = oligarchism
+			traits = {
+			}
+		}
+		
+		FRA = { country_event = { days = 10 id = FRA.934 }}		
+		
+	}
+}
+# «Господин временно исполняющий
+country_event = {
+	id = FRA.934
+	title = FRA.934.t
+	desc = FRA.934.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.934.a
+		
+		add_stability = 0.02
+		add_political_power = 10
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+		}
+			FRA = { country_event = { days = 7 id = FRA.935 }}		
+	}
+	option = {
+		name = FRA.934.b	
+		add_stability = -0.04
+		add_political_power = -20
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.05
+		}
+			FRA = { country_event = { days = 7 id = FRA.935 }}		
+	}
+}
+#Поддержка из Бенилюкса»
+country_event = {
+	id = FRA.935
+	title = FRA.935.t
+	desc = FRA.935.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.935.a
+		add_political_power = 10
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.04
+		}	
+		
+		FRA = { country_event = { days = 7 id = FRA.936 }}		
+		
+	}
+}
+#«Предвыборная гонка» 
+country_event = {
+	id = FRA.936
+	title = FRA.936.t
+	desc = FRA.936.d
+	#picture = GFX_report_event_physics_lab_01	
+	is_triggered_only = yes	
+	option = {
+		name = FRA.936.a
+		add_political_power = 10
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.03
+		}		
+		FRA = { country_event = { days = 7 id = FRA.937 }}		
+	}
+	option = {
+		name = FRA.936.b			
+		add_political_power = -10
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.03
+		}
+		FRA = { country_event = { days = 7 id = FRA.937 }}	
+	}
+	option = {
+		name = FRA.936.c			
+		add_stability = 0.02
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.03
+		}
+		FRA = { country_event = { days = 7 id = FRA.937 }}			
+	}
+}
+#«Битва за умы избирателей»
+country_event = {
+	id = FRA.937
+	title = FRA.937.t
+	desc = FRA.937.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.937.a
+		add_stability = -0.02
+		add_political_power = 20
+		
+		
+		
+		if = {
+			limit = {
+				has_global_flag = national_coalition_created
+			}
+			if = {
+				limit = {
+					socdem < 0.25
+				}
+				if = {
+				limit = {
+					democratic < 0.25
+				}
+				if = {
+				limit = {
+					liberalisms < 0.25
+				}				
+				FRA = { country_event = { days = 5 id = FRA.938 }}	
+				}
+				}
+			}
+		}
+		else = {
+		FRA = { country_event = { days = 15 id = FRA.939 }}		
+		}
+		
+	}
+}
+#Переворот двух орлов
+country_event = {
+	id = FRA.938
+	title = FRA.938.t
+	desc = FRA.938.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.938.a
+		
+		add_stability = -0.07
+		add_political_power = -50
+		add_war_support = -0.02
+		add_manpower = -14520		
+		add_popularity = {
+			ideology = paternalism
+			popularity = 0.05
+		}	
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}	
+		set_global_flag = pereveorot_nts_coalitsii	
+		set_politics = {
+			ruling_party = paternalism
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+			long_name = French_action
+			name = French_actio
+		}
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "FRA_rok"
+			desc = "FRA_rok"
+			picture = "GFX_portrait_rok"
+			expire = "1965.1.1"
+			ideology = paternalautocracy  
+			traits = {
+			}
+		}
+		if = {
+		limit = { has_country_flag = dumerg_i_rok }
+		FRA = { country_event = { days = 15 id = FRA.943 }}		
+		}
+		else = {
+		FRA = { country_event = { days = 15 id = FRA.9444 }}		
+		}		
+	}
+}
+#«Выборы-выборы» 
+country_event = {
+	id = FRA.939
+	title = FRA.939.t
+	desc = FRA.939.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.939.a
+		
+		add_political_power = 5
+		
+		if = {
+			limit = { 
+				AND = {
+				democratic > party_popularity@socdem
+				democratic > party_popularity@liberalisms
+				}
+			}
+			FRA = { country_event = { days = 3 id = FRA.940 }}		
+		}
+		if = {
+			limit = { 
+				AND = {
+				socdem > party_popularity@democratic
+				socdem > party_popularity@liberalisms
+				}
+			}
+			FRA = { country_event = { days = 3 id = FRA.942 }}		
+		}
+		if = {
+			limit = { 
+				AND = {
+				liberalisms > party_popularity@socdem
+				liberalisms > party_popularity@democratic
+				}
+			}
+			FRA = { country_event = { days = 3 id = FRA.941 }}		
+		}	
+	}
+}
+#«Победа Поля Думера!»
+country_event = {
+	id = FRA.940
+	title = FRA.940.t
+	desc = FRA.940.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.940.a
+		add_stability = 0.02
+		add_war_support = 0.02
+		add_political_power = 10
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.02
+		}				
+		set_global_flag = victory_of_dumer
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48
+			long_name = French_democratic
+			name = French_democrati
+		}
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "FRA_dumir"
+			desc = "FRA_dumir"
+			picture = "GFX_portrait_dddumer"
+			expire = "1965.1.1"
+			ideology = conservatism  
+			traits = {
+			}
+		}		
+		if = {
+		limit = { has_country_flag = dumerg_idumer }
+		FRA = { country_event = { days = 15 id = FRA.943 }}		
+		}
+		else = {
+		FRA = { country_event = { days = 15 id = FRA.944 }}		
+		}
+	}
+}
+#Победа Лебрена!».
+country_event = {
+	id = FRA.941
+	title = FRA.941.t
+	desc = FRA.941.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.941.a	
+		add_stability = 0.05
+		add_political_power = 30
+		add_popularity = {
+			ideology = liberalisms
+			popularity = 0.03
+		}				
+		set_global_flag = victory_of_lebren
+		set_politics = {
+			ruling_party = liberalisms
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48
+			long_name = French_liberalisms
+			name = French_liberalism
+		}
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "FRA_lebrennn"
+			desc = "FRA_lebrennn"
+			picture = "GFX_portrait_lebren"
+			expire = "1965.1.1"
+			ideology = liberalism  
+			traits = {
+			}
+		}
+		FRA = { country_event = { days = 15 id = FRA.944 }}		
+	}
+}
+#«Неожиданный триумф ФОР!»
+country_event = {
+	id = FRA.942
+	title = FRA.942.t
+	desc = FRA.942.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.942.a
+		add_stability = -0.02
+		add_war_support = 0.02
+		add_political_power = 10
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.03
+		}				
+		set_global_flag = perevorot_briana
+		set_politics = {
+			ruling_party = socdem
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+			long_name = French_socdem
+			name = French_socde
+		}
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "FRA_brian"
+			desc = "FRA_brian"
+			picture = "GFX_portrait_brian"
+			expire = "1965.1.1"
+			ideology = socialism  
+			traits = {
+			}
+		}	
+		FRA = { country_event = { days = 15 id = FRA.944 }}		
+	}
+}
+#Обещанное Думергу
+country_event = {
+	id = FRA.943
+	title = FRA.943.t
+	desc = FRA.943.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.943.a
+		add_stability = -0.02
+		add_political_power = -30		
+	}
+}
+#Судьба Думерга
+country_event = {
+	id = FRA.944
+	title = FRA.944.t
+	desc = FRA.944.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.944.a
+		add_stability = 0.04
+		add_war_support = 0.04
+		add_political_power = -20		
+			if = {
+			limit = { has_government = liberalisms }
+			add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+			}
+			}
+			if = {
+			limit = { has_government = democratic }
+			add_popularity = {
+			ideology = democratic
+			popularity = 0.02
+			}
+			}
+			if = {
+			limit = { has_government = fascism }
+			add_popularity = {
+			ideology = fascism
+			popularity = 0.02
+			}
+			}
+			if = {
+			limit = { has_government = paternalism }
+			add_popularity = {
+			ideology = paternalism
+			popularity = 0.02
+			}
+			}
+			if = {
+			limit = { has_government = socdem }
+			add_popularity = {
+			ideology = socdem
+			popularity = 0.02
+			}
+			}	
+	}
+	option = {
+		name = FRA.944.b	
+		add_stability = 0.02
+		add_war_support = 0.02
+		add_political_power = 10		
+			if = {
+			limit = { has_government = liberalisms }
+			add_popularity = {
+			ideology = liberalisms
+			popularity = 0.04
+			}
+			}
+			if = {
+			limit = { has_government = democratic }
+			add_popularity = {
+			ideology = democratic
+			popularity = 0.04
+			}
+			}
+			if = {
+			limit = { has_government = fascism }
+			add_popularity = {
+			ideology = fascism
+			popularity = 0.04
+			}
+			}
+			if = {
+			limit = { has_government = paternalism }
+			add_popularity = {
+			ideology = paternalism
+			popularity = 0.04
+			}
+			}
+			if = {
+			limit = { has_government = socdem }
+			add_popularity = {
+			ideology = socdem
+			popularity = 0.04
+			}
+			}		
+	}
+	option = {
+		name = FRA.944.c		
+		add_stability = -0.02
+		add_war_support = -0.02
+		add_political_power = 30
+			if = {
+			limit = { has_government = liberalisms }
+			add_popularity = {
+			ideology = liberalisms
+			popularity = 0.06
+			}
+			}
+			if = {
+			limit = { has_government = democratic }
+			add_popularity = {
+			ideology = democratic
+			popularity = 0.06
+			}
+			}
+			if = {
+			limit = { has_government = fascism }
+			add_popularity = {
+			ideology = fascism
+			popularity = 0.06
+			}
+			}
+			if = {
+			limit = { has_government = paternalism }
+			add_popularity = {
+			ideology = paternalism
+			popularity = 0.06
+			}
+			}
+			if = {
+			limit = { has_government = socdem }
+			add_popularity = {
+			ideology = socdem
+			popularity = 0.06
+			}
+			}
+	}
+}
+#Судьба Думерга для коалиции
+country_event = {
+	id = FRA.9444
+	title = FRA.9444.t
+	desc = FRA.9444.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.9444.a
+		add_stability = 0.04
+		add_war_support = 0.04
+		add_political_power = -20		
+			if = {
+			limit = { has_government = liberalisms }
+			add_popularity = {
+			ideology = liberalisms
+			popularity = 0.02
+			}
+			}
+			if = {
+			limit = { has_government = democratic }
+			add_popularity = {
+			ideology = democratic
+			popularity = 0.02
+			}
+			}
+			if = {
+			limit = { has_government = fascism }
+			add_popularity = {
+			ideology = fascism
+			popularity = 0.02
+			}
+			}
+			if = {
+			limit = { has_government = paternalism }
+			add_popularity = {
+			ideology = paternalism
+			popularity = 0.02
+			}
+			}
+			if = {
+			limit = { has_government = socdem }
+			add_popularity = {
+			ideology = socdem
+			popularity = 0.02
+			}
+			}	
+	}
+	option = {
+		name = FRA.9444.b	
+		add_stability = 0.02
+		add_war_support = 0.02
+		add_political_power = 10		
+			if = {
+			limit = { has_government = liberalisms }
+			add_popularity = {
+			ideology = liberalisms
+			popularity = 0.04
+			}
+			}
+			if = {
+			limit = { has_government = democratic }
+			add_popularity = {
+			ideology = democratic
+			popularity = 0.04
+			}
+			}
+			if = {
+			limit = { has_government = fascism }
+			add_popularity = {
+			ideology = fascism
+			popularity = 0.04
+			}
+			}
+			if = {
+			limit = { has_government = paternalism }
+			add_popularity = {
+			ideology = paternalism
+			popularity = 0.04
+			}
+			}
+			if = {
+			limit = { has_government = socdem }
+			add_popularity = {
+			ideology = socdem
+			popularity = 0.04
+			}
+			}		
+	}
+	option = {
+		name = FRA.9444.c		
+		add_stability = -0.02
+		add_war_support = -0.02
+		add_political_power = 30
+			if = {
+			limit = { has_government = liberalisms }
+			add_popularity = {
+			ideology = liberalisms
+			popularity = 0.06
+			}
+			}
+			if = {
+			limit = { has_government = democratic }
+			add_popularity = {
+			ideology = democratic
+			popularity = 0.06
+			}
+			}
+			if = {
+			limit = { has_government = fascism }
+			add_popularity = {
+			ideology = fascism
+			popularity = 0.06
+			}
+			}
+			if = {
+			limit = { has_government = paternalism }
+			add_popularity = {
+			ideology = paternalism
+			popularity = 0.06
+			}
+			}
+			if = {
+			limit = { has_government = socdem }
+			add_popularity = {
+			ideology = socdem
+			popularity = 0.06
+			}
+			}
+	}
+	option = {
+		name = FRA.9444.e			
+		add_stability = -0.04
+		add_political_power = -40
+		add_popularity = {
+		ideology = paternalism
+		popularity = 0.05
+		}
+		add_popularity = {
+		ideology = fascism
+		popularity = 0.05
+		}	
+	}
+}
+#Парламентские выборы 1932 года
+country_event = {
+	id = FRA.945
+	title = FRA.945.t
+	desc = FRA.945.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.945.a
+		add_stability = 0.02
+		add_war_support = 0.02
+			if = {
+			limit = { has_government = liberalisms }
+			add_popularity = {
+			ideology = liberalisms
+			popularity = 0.07
+			}
+			}
+			if = {
+			limit = { has_government = democratic }
+			add_popularity = {
+			ideology = democratic
+			popularity = 0.07
+			}
+			}
+			if = {
+			limit = { has_government = fascism }
+			add_popularity = {
+			ideology = fascism
+			popularity = 0.07
+			}
+			}
+			if = {
+			limit = { has_government = paternalism }
+			add_popularity = {
+			ideology = paternalism
+			popularity = 0.07
+			}
+			}
+			if = {
+			limit = { has_government = socdem }
+			add_popularity = {
+			ideology = socdem
+			popularity = 0.07
+			}
+			}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #Дьявольский союз?
 country_event = {
 	id = FRA.923
@@ -5227,77 +5958,8 @@ country_event = {
 		add_political_power = -30		
 	}
 }
-#«Временно Исполняющий». (декабрь, если отставка произошла из-за сговора).
-country_event = {
-	id = FRA.926
-	title = FRA.926.t
-	desc = FRA.926.d
-	#picture = GFX_report_event_physics_lab_01
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = FRA.926.a
-		add_stability = 0.03
-		add_political_power = 20
-		add_popularity = {
-			ideology = liberalisms
-			popularity = 0.01
-		}
-	}
-	option = {
-		name = FRA.926.b
-		add_stability = -0.03
-		add_political_power = -20
-		add_popularity = {
-			ideology = liberalisms
-			popularity = 0.04
-		}
-	}
-	option = {
-		name = FRA.926.c
-		add_stability = -0.07
-		add_war_support = -0.03
-		add_political_power = -40
-		add_popularity = {
-			ideology = liberalisms
-			popularity = 0.07
-		}		
-	}
-}
-#«Временно Исполняющий». (декабрь, если отставка произошла из-за сделки с ДА и ФОР)
-country_event = {
-	id = FRA.927
-	title = FRA.927.t
-	desc = FRA.927.d
-	#picture = GFX_report_event_physics_lab_01
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = FRA.927.a
-		add_stability = -0.05
-		add_political_power = -40
-		add_popularity = {
-			ideology = socdem
-			popularity = 0.05
-		}		
-	}
-	option = {
-		name = FRA.927.b	
-		add_stability = -0.05
-		add_political_power = -40
-		add_popularity = {
-			ideology = liberalisms
-			popularity = 0.05
-		}
-	}
-	option = {
-		name = FRA.927.c		
-		add_stability = 0.04
-		add_political_power = 30
-	}
-}
+
+
 #«Всефранцузская забастовка
 country_event = {
 	id = FRA.928
@@ -5448,45 +6110,6 @@ country_event = {
 		
 	}
 }
-#«Незавидная судьба Бриана». 
-country_event = {
-	id = FRA.931
-	title = FRA.931.t
-	desc = FRA.931.d
-	#picture = GFX_report_event_physics_lab_01
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = FRA.931.a
-		add_political_power = -20	
-		add_popularity = {
-			ideology = socdem
-			popularity = -0.05
-		}
-		add_manpower = -1
-	}
-}
-#«Запрет ФОР?». 
-country_event = {
-	id = FRA.932
-	title = FRA.932.t
-	desc = FRA.932.d
-	#picture = GFX_report_event_physics_lab_01
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = FRA.932.a		
-	}
-	option = {
-		name = FRA.932.b	
-	}
-	option = {
-		name = FRA.932.c	
-	}
-}
-
 
 
 

@@ -189,8 +189,8 @@
  EGY_DEF:0 "Египет"
  EGY_ADJ:0 "Египетск."
  
- FRA_fascism:2 "Насьон Франсез"
- FRA_fascism_DEF:2 "Насьон Франсез"
+ FRA_fascism:2 "Французская Республиказ"
+ FRA_fascism_DEF:2 "Французская Республика"
  FRA_democratic:0 "Французская Республика"
  FRA_democratic_DEF:0 "Французская Республика"
  FRA_neutrality:0 "Французская Республика"

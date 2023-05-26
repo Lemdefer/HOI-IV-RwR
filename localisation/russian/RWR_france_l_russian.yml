@@ -365,11 +365,17 @@
  FRA_raimod: "Раймон Пуанкарe"
  FRA_brian: "Аристид Бриан"
  
+ 
+ FRA_rok: "Франсуа де ля Рок"
+ FRA_sharl: "Шарль Моррас"
+ FRA_lebrennn: "Альбер Лебрен"
+ FRA_dumir: "Поль Думер"
+ 
  perevorot_briana: "Бриан одержал победу"
+ pereveorot_nts_coalitsii: "Произошел переворот национальной коалиции"
  
- 
- 
- 
+ victory_of_lebren: "Лебрен превзошел своих соперников"
+ victory_of_dumer: "Думер выйграл выборы"
  
  
  mobilisation_mass_tt: "§GПо всей стране мобилизуются сторонники Морраса§!"

@@ -1976,7 +1976,7 @@
 		cost = 5
 
 		available = {
-
+			has_global_flag = victory_of_lebren
 		}
 
 		completion_reward = {
@@ -2744,7 +2744,7 @@
 		cost = 5
 
 		available = {
-			has_country_flag = perevorot_briana
+			has_global_flag = perevorot_briana
 		}
 
 		completion_reward = {
@@ -3129,7 +3129,7 @@
 		cost = 5
 
 		available = {
-
+			has_global_flag = victory_of_dumer
 		}
 
 		completion_reward = {	
@@ -3633,6 +3633,9 @@
 		cost = 6
 
 		available = {
+		
+		has_global_flag = pereveorot_nts_coalitsii
+		
 		
 		}
 

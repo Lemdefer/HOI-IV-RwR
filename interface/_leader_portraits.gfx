@@ -30,7 +30,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_portrait_lebren"
-		texturefile = "gfx/leaders/FRA/leader_unknown_female.dds"
+		texturefile = "gfx/leaders/FRA/Lebren.dds"
 	}
 	spriteType = {
 		name = "GFX_portrait_koalition_upravlenia"
@@ -38,7 +38,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_portrait_dddumer"
-		texturefile = "gfx/leaders/FRA/leader_unknown_female.dds"
+		texturefile = "gfx/leaders/FRA/dddddumer.dds"
 	}
 	spriteType = {
 		name = "GFX_portrait_brian"
@@ -46,11 +46,11 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_portrait_morras"
-		texturefile = "gfx/leaders/FRA/leader_unknown_female.dds"
+		texturefile = "gfx/leaders/FRA/sharl_moras.dds"
 	}
 	spriteType = {
 		name = "GFX_portrait_rok"
-		texturefile = "gfx/leaders/FRA/leader_unknown_female.dds"
+		texturefile = "gfx/leaders/FRA/Fransua_de_Lya_Rok.dds"
 	}
 
 
