@@ -45,6 +45,120 @@ equipments = {
 		}
 		fuel_consumption = 0.36
 	}
+
+	the_body_of_an_interwar_medium_airplane_equipment = {
+		year = 1933
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_strat_bomber_equipment			
+		is_buildable = no
+		type = { tactical_bomber }
+		group_by = archetype
+		sprite = medium_plane
+		air_map_icon_frame = 7
+		
+		interface_category = interface_category_air
+		
+		# Tactical bomber
+		interface_overview_category_index = 4
+		
+		air_superiority = 1
+		reliability = 0.8
+
+		naval_strike_attack = 1
+		naval_strike_targetting = 1
+		air_defence = 11
+		air_range = 1000
+		air_agility = 5
+		maximum_speed = 354
+
+		manpower = 40
+		fuel_consumption = 0.32
+		
+		build_cost_ic = 28
+		resources = {
+			aluminium = 2
+			tungsten = 3
+			rubber = 1
+		}
+	}
+
+	modified_medium_sized_airframe = {
+		year = 1933
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_strat_bomber_equipment			
+		is_buildable = no
+		type = { tactical_bomber }
+		group_by = archetype
+		sprite = medium_plane
+		air_map_icon_frame = 7
+		
+		interface_category = interface_category_air
+		
+		# Tactical bomber
+		interface_overview_category_index = 4
+		
+		air_superiority = 1
+		reliability = 0.8
+
+		naval_strike_attack = 1
+		naval_strike_targetting = 1
+		air_defence = 13
+		air_range = 1100
+		air_agility = 10
+		maximum_speed = 348
+
+		manpower = 40
+		fuel_consumption = 0.32
+		
+		build_cost_ic = 30
+		resources = {
+			aluminium = 2
+			tungsten = 3
+			rubber = 1
+		}
+	}
+
+	modified_early_medium_sized_airplane_hull = {
+		year = 1933
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_strat_bomber_equipment			
+		is_buildable = no
+		type = { tactical_bomber }
+		group_by = archetype
+		sprite = medium_plane
+		air_map_icon_frame = 7
+		
+		interface_category = interface_category_air
+		
+		# Tactical bomber
+		interface_overview_category_index = 4
+		
+		air_superiority = 1
+		reliability = 0.8
+
+		naval_strike_attack = 1
+		naval_strike_targetting = 1
+		air_defence = 15
+		air_range = 1200
+		air_agility = 15
+		maximum_speed = 342
+
+		manpower = 40
+		fuel_consumption = 0.32
+		
+		build_cost_ic = 32
+		resources = {
+			aluminium = 2
+			tungsten = 3
+			rubber = 1
+		}
+	}
 	
 	jet_tac_bomber_equipment = {
 		year = 1933

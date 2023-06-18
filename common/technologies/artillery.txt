@@ -1,31 +1,24 @@
 technologies = {
 
-	gw_artillery = {
+	development_of_interwar_cannons = {
 
+		path = {
+			leads_to_tech = early_artillery
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = increasing_the_caliber_of_artillery
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = specialization_of_artillery_for_air_defense
+			research_cost_coeff = 1
+		}
 		enable_equipments = {
-			artillery_equipment_1
+			interwar_artillery
 		}
-
-		path = {
-			leads_to_tech = interwar_artillery
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = interwar_antitank
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = interwar_antiair
-			research_cost_coeff = 1
-		}
-		enable_equipment_modules = {
-			ship_anti_air_1
-			tank_small_cannon
-			secondary_turret_small_cannon
-		}
-
 		research_cost = 1.5
 
 		folder = {
@@ -40,44 +33,15 @@ technologies = {
 
 	}
 
-	interwar_artillery = {
-
-		artillery = {
-			soft_attack = 0.1
-		}
-		artillery_brigade = {
-			soft_attack = 0.1
-		}
-		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		modern_sp_artillery_brigade= {
-			soft_attack = 0.15
-		}
-
-		enable_equipment_modules = {
-			tank_small_cannon_2
-			tank_close_support_gun
-			secondary_turret_close_support_gun
-		}
+	early_artillery = {
 
 		path = {
-			leads_to_tech = artillery1
+			leads_to_tech = shell_modernization
 			research_cost_coeff = 1
 		}
-
+		enable_equipments = {
+			early_artillery_equipment
+		}
 		research_cost = 1.5
 
 		start_year = 1924
@@ -94,22 +58,21 @@ technologies = {
 
 	}
 
-	artillery1 = {
-
-		enable_equipments = {
-			artillery_equipment_2
-		}
-
-		enable_equipment_modules = {
-			tank_medium_howitzer
-			tank_medium_cannon
-		}
+	shell_modernization = {
 
 		path = {
-			leads_to_tech = artillery2
+			leads_to_tech = main_artillery
 			research_cost_coeff = 1
 		}
-
+		artillery = {
+			soft_attack = 0.1
+		}
+		artillery_brigade = {
+			soft_attack = 0.1
+		}
+		mot_artillery_brigade = {
+			soft_attack = 0.1
+		}
 		research_cost = 1
 
 		start_year = 1927
@@ -143,32 +106,7 @@ technologies = {
 		}
 	}
 
-	artillery2 = {
-
-		artillery = {
-			soft_attack = 0.1
-		}
-		artillery_brigade = {
-			soft_attack = 0.1
-		}
-		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.1
-		}
-		modern_sp_artillery_brigade= {
-			soft_attack = 0.1
-		}
+	main_artillery = {
 
 		path = {
 			leads_to_tech = artillery3
@@ -179,7 +117,9 @@ technologies = {
 			leads_to_tech = rocket_artillery
 			research_cost_coeff = 1
 		}
-
+		enable_equipments = {
+			artillery_equipment_1
+		}
 		research_cost = 1
 
 		start_year = 1931
@@ -279,7 +219,7 @@ technologies = {
 	artillery4 = {
 
 		enable_equipments = {
-			artillery_equipment_3
+			artillery_equipment_2
 		}
 		enable_equipment_modules = {
 			tank_medium_cannon_2
@@ -571,29 +511,20 @@ technologies = {
 		}
 	}
 
-	interwar_antiair = {
-
-		enable_equipments = {
-			anti_air_equipment_1
-		}
-
-		enable_equipment_modules = {
-			ship_anti_air_2
-			tank_auto_cannon
-			tank_anti_air_cannon
-			tank_heavy_cannon
-		}
-
-		enable_building = {
-			building = anti_air_building
-			level = 5
-		}
+	specialization_of_artillery_for_air_defense = {
 
 		path = {
-			leads_to_tech = antiair1
+			leads_to_tech = billing_systems
 			research_cost_coeff = 1
 		}
 
+		enable_equipments = {
+			interwar_anti_air_equipment
+		}
+
+		enable_equipments = {
+			ship_anti_air_equipment
+		}
 		research_cost = 1.5
 
 		start_year = 1924
@@ -605,34 +536,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-
-			modifier = {
-				factor = 0.5
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
-			}
-			modifier = {
-				factor = 2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1927.1.1"
-			}
 		}
 
 		categories = {
@@ -641,23 +544,15 @@ technologies = {
 		}
 	}
 
-	antiair1 = {
-
-		anti_air = {
-			air_attack = 0.1
-		}
-		anti_air_brigade = {
-			air_attack = 0.1
-		}
-		mot_anti_air_brigade = {
-			air_attack = 0.1
-		}
-
-		tech_air_damage_factor = -0.02
+	billing_systems = {
 
 		path = {
-			leads_to_tech = antiair2
+			leads_to_tech = early_air_defense
 			research_cost_coeff = 1
+		}
+
+		anti_air = {
+			air_attack = 0.05
 		}
 
 		research_cost = 1
@@ -692,23 +587,15 @@ technologies = {
 		}
 	}
 
-	antiair2 = {
-
-		enable_equipments = {
-			anti_air_equipment_2
-		}
-
-		static_anti_air_damage_factor = 0.1
-
-		enable_equipment_modules = {
-			ship_anti_air_3
-			tank_auto_cannon_2
-			tank_anti_air_cannon_2
-		}
+	early_air_defense = {
 
 		path = {
 			leads_to_tech = antiair3
 			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			early_anti_air_equipment
 		}
 
 		research_cost = 1
@@ -852,7 +739,7 @@ technologies = {
 	antiair5 = {
 
 		enable_equipments = {
-			anti_air_equipment_3
+			anti_air_equipment_1
 		}
 
 		static_anti_air_damage_factor = 0.1
@@ -896,20 +783,14 @@ technologies = {
 		}
 	}
 
-	interwar_antitank = {
-
-		enable_equipments = {
-			anti_tank_equipment_1
-		}
-		enable_equipment_modules = {
-			tank_high_velocity_cannon
-			tank_heavy_cannon
-		}
+	increasing_the_caliber_of_artillery = {
 		path = {
-			leads_to_tech = antitank1
+			leads_to_tech = easier_targeting_of_tanks
 			research_cost_coeff = 1
 		}
-
+		enable_equipment_modules = {
+			tank_small_cannon
+		}
 		research_cost = 1.5
 
 		start_year = 1924
@@ -921,55 +802,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-
-			modifier = {
-				factor = 0.2
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
-			}
-			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = RUS
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
-			}
-			modifier = {
-				factor = 2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1927.1.1"
-			}
-			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 30
-						}
-					}
-				}
-			}
 		}
 
 		categories = {
@@ -978,50 +810,14 @@ technologies = {
 		}
 	}
 
-	antitank1 = {
-
-		anti_tank = {
-			hard_attack = 0.1
-			ap_attack = 0.2
-		}
-		anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.2
-		}
-		mot_anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.2
-		}
-		light_tank_destroyer_brigade = {
-			hard_attack = 0.15
-			ap_attack = 0.2
-		}
-		medium_tank_destroyer_brigade = {
-			hard_attack = 0.15
-			ap_attack = 0.2
-		}
-		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.15
-			ap_attack = 0.2
-		}
-		super_heavy_tank_destroyer_brigade = {
-			hard_attack = 0.15
-			ap_attack = 0.2
-		}
-		modern_tank_destroyer_brigade = {
-			hard_attack = 0.15
-			ap_attack = 0.2
-		}
-
-		enable_equipment_modules = {
-			tank_medium_cannon
-			squeezebore_adaptor
-		}
+	easier_targeting_of_tanks = {
 		path = {
-			leads_to_tech = antitank2
+			leads_to_tech = specialization_of_artillery_under_ATO
 			research_cost_coeff = 1
 		}
-
+		enable_equipment_modules = {
+			tank_small_cannon_2
+		}
 		research_cost = 1
 
 		start_year = 1927
@@ -1033,36 +829,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 30
-						}
-					}
-				}
-			}
-			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = RUS
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
-			}
-			modifier = {
-				factor = 2
-				date > "1927.1.6"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1931.1.1"
-			}
 		}
 
 		categories = {
@@ -1071,24 +837,14 @@ technologies = {
 		}
 	}
 
-	antitank2 = {
-
-		mot_anti_tank_brigade = {
-			hard_attack = 0.2
-			ap_attack = 0.2
-		}
-
-		enable_equipments = {
-			anti_tank_equipment_2
-		}
-		enable_equipment_modules = {
-			tank_heavy_cannon_2
-		}
+	specialization_of_artillery_under_ATO = {
 		path = {
 			leads_to_tech = antitank3
 			research_cost_coeff = 1
 		}
-
+		enable_equipments = {
+			anti_tank_equipment
+		}
 		research_cost = 1
 
 		start_year = 1931

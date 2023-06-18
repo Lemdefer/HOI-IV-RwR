@@ -29,7 +29,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = infantry_weapons2
+			leads_to_tech = development_of_military_science1
 			research_cost_coeff = 1
 		}		
 
@@ -48,7 +48,7 @@ technologies = {
 			factor = 1
 		}
 	}
-	infantry_weapons2 = {	#Развитие Военной Науки I
+	development_of_military_science1 = {	#Развитие Военной Науки I
 
 		category_light_infantry = {
 			soft_attack = 0.05
@@ -110,7 +110,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = improved_infantry_weapons2
+			leads_to_tech = development_of_military_science2
 			research_cost_coeff = 1
 		}		
 
@@ -126,7 +126,7 @@ technologies = {
 		}
 		
 	}
-	improved_infantry_weapons2 = {	#Развитие Военной Науки II
+	development_of_military_science2 = {	#Развитие Военной Науки II
 
 		category_light_infantry = {
 			soft_attack = 0.05

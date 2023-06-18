@@ -1,5 +1,5 @@
-# Do not change tags in here without changing every other reference to them.
-# If adding new technology, make sure they are uniquely named.
+# Не изменяйте здесь теги без изменения всех остальных ссылок на них.
+# При добавлении новых технологий убедитесь, что они имеют уникальные имена.
 
 technology_categories = {
 	light_air
@@ -9,6 +9,7 @@ technology_categories = {
 	cat_light_armor
 	cat_medium_armor
 	cat_heavy_armor
+	cat_super_heavy_armor
 	artillery
 	cat_anti_tank
 	cat_anti_air

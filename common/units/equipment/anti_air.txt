@@ -1,6 +1,6 @@
 equipments = {
 
-	anti_air_equipment = {
+	interwar_anti_air_equipment = {
 		year = 1934
 
 		is_archetype = yes
@@ -13,25 +13,21 @@ equipments = {
 		
 		interface_category = interface_category_land
 
-		#Misc Abilities
-		reliability = 0.8
+		#Различные способности
+		reliability = 0.6
 
-		#Defensive Abilities
-		defense = 4
+		#Оборонительные способности
+		defense = 2
 		breakthrough = 1
-		hardness = 0
-		armor_value = 0
+		hardness = 1
 
-		#Offensive Abilities
-		soft_attack = 3
-		hard_attack = 7
-		ap_attack = 25
-		air_attack = 19
-
-		#Space taken in convoy
-		lend_lease_cost = 3
+		#Наступательные способности
+		soft_attack = 1
+		hard_attack = 4
+		ap_attack = 15
+		air_attack = 14
 		
-		build_cost_ic = 4
+		build_cost_ic = 3
 		resources = {
 			steel = 2
 		}
@@ -39,49 +35,62 @@ equipments = {
 		
 	}
 
-	anti_air_equipment_1 = {
+	ship_anti_air_equipment = {
 		year = 1936
 
-		archetype = anti_air_equipment
+		archetype = interwar_anti_air_equipment
 		priority = 80
 		visual_level = 0
 	}
+
+	early_anti_air_equipment = {
+		year = 1936
+
+		archetype = interwar_anti_air_equipment
+		priority = 80
+		visual_level = 0
+		#Различные способности
+		reliability = 0.7
+
+		#Оборонительные способности
+		defense = 3
+		breakthrough = 1
+		hardness = 1
+
+		#Наступательные способности
+		soft_attack = 2
+		hard_attack = 5
+		ap_attack = 20
+		air_attack = 17
+
+		build_cost_ic = 4
+	}
 	
-	anti_air_equipment_2 = {
+	anti_air_equipment_1 = {
 		year = 1940
 
-		archetype = anti_air_equipment
-		parent = anti_air_equipment_1
+		archetype = interwar_anti_air_equipment
+		parent = early_anti_air_equipment
 		priority = 80
 		visual_level = 1
 		
-		soft_attack = 3.5
-		hard_attack = 11
-		ap_attack = 60
-		air_attack = 25
+		#Различные способности
+		reliability = 0.7
 
-		build_cost_ic = 5
+		#Оборонительные способности
+		defense = 3
+		breakthrough = 1
+		hardness = 1
+
+		#Наступательные способности
+		soft_attack = 2
+		hard_attack = 5
+		ap_attack = 20
+		air_attack = 17
+
+		build_cost_ic = 4
 		resources = {
 			steel = 2
-		}
-	}
-	
-	anti_air_equipment_3 = {
-		year = 1943
-
-		archetype = anti_air_equipment
-		parent = anti_air_equipment_2
-		priority = 80
-		visual_level = 2
-		
-		soft_attack = 4
-		hard_attack = 15
-		ap_attack = 88
-		air_attack = 32
-
-		build_cost_ic = 6
-		resources = {
-			steel = 3
 		}
 	}
 }

@@ -1,12 +1,12 @@
 technologies = {
 
-	basic_machine_tools = {
+	early_industrial_production = {
 	
-		production_factory_max_efficiency_factor = 0.1
-
+		repair_speed_infrastructure_factor = 0.05
+		repair_speed_industrial_complex_factor = 0.05
 		
 		path = {
-			leads_to_tech = improved_machine_tools 
+			leads_to_tech = early_machines 
 			research_cost_coeff = 1
 		}
 		
@@ -38,17 +38,12 @@ technologies = {
 	}
 
 	#Machine tools branch	
-	improved_machine_tools = {
+	early_machines = {
 	
 		production_factory_max_efficiency_factor = 0.1
 
 		path = {
-			leads_to_tech = advanced_machine_tools 
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = improved_equipment_conversion
+			leads_to_tech = modified_machine_tools 
 			research_cost_coeff = 1
 		}
 		
@@ -75,12 +70,12 @@ technologies = {
 		}
 	}
 	
-	advanced_machine_tools = {
+	modified_machine_tools = {
 	
 		production_factory_max_efficiency_factor = 0.1
 		
 		path = {
-			leads_to_tech = assembly_line_production 
+			leads_to_tech = revamped_machines 
 			research_cost_coeff = 1
 		}
 		
@@ -107,22 +102,12 @@ technologies = {
 		}
 	}
 	
-	assembly_line_production = {
+	revamped_machines = {
 	
 		production_factory_max_efficiency_factor = 0.1
 		
-		#path = {
-		#	leads_to_tech = improved_machine_tools 
-		#	research_cost_coeff = 1
-		#}
-		
 		path = {
-			leads_to_tech = flexible_line
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = streamlined_line
+			leads_to_tech = based_machines
 			research_cost_coeff = 1
 		}
 		
@@ -136,12 +121,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 15
-			
-			modifier = {
-				factor = 10
-				date > "1941.1.1"
-			}			
+			factor = 15		
 		}
 		
 		categories = {
@@ -150,7 +130,7 @@ technologies = {
 		}
 	}
 	
-	flexible_line = {
+	based_machines = {
 
 		production_factory_max_efficiency_factor = 0.1
 		line_change_production_efficiency_factor = 0.2
@@ -158,13 +138,9 @@ technologies = {
 		research_cost = 2.5
 		start_year = 1933
 		
-		XOR = {
-			streamlined_line
-		}
-		
 		folder = {
 			name = industry_folder
-			position = { x = -1 y = 10 }
+			position = { x = 0 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -173,81 +149,6 @@ technologies = {
 			modifier = {
 				factor = 10
 				date > "1943.1.1"
-			}
-		}
-		
-		categories = {
-			industry
-			cat_production
-		}
-	}
-	
-	streamlined_line = {
-
-		production_factory_max_efficiency_factor = 0.1
-		production_factory_efficiency_gain_factor = 0.1
-			
-		research_cost = 2.5
-		start_year = 1933
-		
-		XOR = {
-			flexible_line
-		}
-		
-		folder = {
-			name = industry_folder
-			position = { x = 1 y = 10 }
-		}
-		
-		ai_will_do = {
-			factor = 15
-			
-			modifier = {
-				factor = 10
-				date > "1943.1.1"
-			}
-			
-		}
-		
-		categories = {
-			industry
-			cat_production
-		}
-	}
-
-	#Conversion branch - Enabled in DoD
-	improved_equipment_conversion = {
-	
-		equipment_conversion_speed = 0.40
-
-		allow_branch = {
-			has_dlc = "Death or Dishonor"
-		}
-
-		path = {
-			leads_to_tech = advanced_equipment_conversion
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 1927
-		
-		folder = {
-			name = industry_folder
-			position = { x = 2 y = 4 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 0
-				NOT = { has_government = fascism }
 			}
 		}
 		

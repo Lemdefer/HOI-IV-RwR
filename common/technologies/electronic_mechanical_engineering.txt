@@ -1,20 +1,13 @@
 technologies = {
-	electronic_mechanical_engineering = {
 
-		# небольшое увеличение скорости исследования
-		research_speed_factor = 0.03
-		
-		path = {
-			leads_to_tech = radio 
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = mechanical_computing 
-			research_cost_coeff = 1
-		}
 
-		enable_equipment_modules = { 
-			ship_fire_control_system_0
+	lighting_design = {
+		land_night_attack = 0.05
+		naval_night_attack = 0.05
+		air_night_penalty = -0.05
+		path = {
+			leads_to_tech = universal_electrification 
+			research_cost_coeff = 1
 		}
 		
 		research_cost = 1
@@ -22,6 +15,96 @@ technologies = {
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+
+	universal_electrification = {
+		research_speed_factor = 0.01
+		production_speed_buildings_factor = 0.05
+		path = {
+			leads_to_tech = electronic_machine_construction 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1927
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+	electronic_machine_construction = {
+
+		research_speed_factor = 0.04
+		
+		path = {
+			leads_to_tech = properties_of_radio_waves 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mechanical_computing 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1931
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1937.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+
+	properties_of_radio_waves = {
+
+		research_speed_factor = 0.05
+		naval_critical_score_chance_factor = 0.02
+		naval_detection = 0.02
+		
+		path = {
+			leads_to_tech = radio 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1934
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -51,12 +134,12 @@ technologies = {
 			leads_to_tech = radio_detection 
 			research_cost_coeff = 1
 		}
-		start_year = 1927
+		start_year = 1936
 		research_cost = 1.75
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 2 }
+			position = { x = -2 y = 8 }
 		}
 		
 		enable_equipment_modules = { 
@@ -65,7 +148,7 @@ technologies = {
 
 		folder = {
 			name = support_folder
-			position = { x = 11 y = 9 } 
+			position = { x = 11 y = 11 } 
 		}
 		
 		ai_will_do = {
@@ -104,10 +187,10 @@ technologies = {
 		}
 		
 		research_cost = 1.75
-		start_year = 1931
+		start_year = 1939
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 4 }
+			position = { x = -2 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -134,14 +217,14 @@ technologies = {
 		}
 		coordination_bonus = 0.01
 		research_cost = 1.25
-		start_year = 1934
+		start_year = 1940
 		enable_equipment_modules = { 
 			ship_radar_1
 			tank_radio_2
 		}
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 6 }
+			position = { x = -2 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -188,11 +271,11 @@ technologies = {
 		}
 		
 		research_cost = 1.25
-		start_year = 1936
+		start_year = 1941
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 8 }
+			position = { x = -2 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -237,11 +320,11 @@ technologies = {
 		}
 		
 		research_cost = 1.25
-		start_year = 1939
+		start_year = 1942
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 10 }
+			position = { x = -2 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -283,11 +366,11 @@ technologies = {
 		}
 		
 		research_cost = 1.25
-		start_year = 1940
+		start_year = 1943
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 12 }
+			position = { x = -2 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -326,11 +409,11 @@ technologies = {
 		static_anti_air_hit_chance_factor = 0.2
 		
 		research_cost = 1.25
-		start_year = 1941
+		start_year = 1944
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 14 }
+			position = { x = -2 y = 20}
 		}
 		
 		ai_will_do = {
@@ -366,10 +449,10 @@ technologies = {
 		}
 		
 		research_cost = 2.5
-		
+		start_year = 1936		
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 2 }
+			position = { x = 2 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -404,11 +487,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 2.5
-		start_year = 1934
+		start_year = 1940
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 6 }
+			position = { x = 2 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -459,11 +542,11 @@ technologies = {
 		}
 		
 		research_cost = 2.5
-		start_year = 1939
+		start_year = 1940
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 10 }
+			position = { x = 2 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -508,11 +591,11 @@ technologies = {
 		}
 		
 		research_cost = 2.5
-		start_year = 1941
+		start_year = 1942
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 14 }
+			position = { x = 2 y = 20 }
 		}
 		
 		ai_will_do = {
@@ -543,13 +626,13 @@ technologies = {
 		encryption = 1
 		
 		research_cost = 1
-		start_year = 1934
+		start_year = 1940
 		allow_branch = {
 			NOT = { has_dlc = "La Resistance" }
 		}
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -588,11 +671,11 @@ technologies = {
 			NOT = { has_dlc = "La Resistance" }
 		}
 		research_cost = 1
-		start_year = 1939
+		start_year = 1942
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 10 }
+			position = { x = 0 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -631,11 +714,11 @@ technologies = {
 			NOT = { has_dlc = "La Resistance" }
 		}
 		research_cost = 1
-		start_year = 1941
+		start_year = 1944
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 14 }
+			position = { x = 0 y = 20 }
 		}
 		
 		ai_will_do = {
@@ -674,11 +757,11 @@ technologies = {
 			NOT = { has_dlc = "La Resistance" }
 		}
 		research_cost = 1.5
-		start_year = 1934
+		start_year = 1940
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 4 y = 6 }
+			position = { x = 4 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -713,11 +796,11 @@ technologies = {
 			NOT = { has_dlc = "La Resistance" }
 		}
 		research_cost = 1.5
-		start_year = 1939
+		start_year = 1942
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 4 y = 10 }
+			position = { x = 4 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -752,11 +835,11 @@ technologies = {
 			NOT = { has_dlc = "La Resistance" }
 		}
 		research_cost = 1.5
-		start_year = 1941
+		start_year = 1944
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 4 y = 14 }
+			position = { x = 4 y = 20 }
 		}
 		
 		ai_will_do = {
@@ -797,7 +880,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -838,7 +921,7 @@ technologies = {
 		}
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 8 }
+			position = { x = 0 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -880,7 +963,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 12 }
+			position = { x = 0 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -1088,7 +1171,7 @@ technologies = {
 		}
 		folder = {
 			name = air_techs_folder
-			position = { x = 2 y = 11 }
+			position = { x = 2 y = 13 }
 		}
 		
 		desc = "JET_ENGINES_SPECIAL"
@@ -1217,23 +1300,5 @@ technologies = {
 		categories = {
 			nuclear
 		}
-	}
-
-	lar_decryption_bonus_tech = {
-				
-		research_cost = 1.5 #Carrier Variant
-		start_year = 1944
-
-		# only from focus!!! #####
-		allow = {
-			always = no
-		}
-		decryption_power = 10
-
-		
-		ai_will_do = {
-			factor = 0
-		}
-		################
 	}
 }
