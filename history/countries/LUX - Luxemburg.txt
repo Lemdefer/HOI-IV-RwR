@@ -5,10 +5,10 @@ oob = "LUX_1936"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	gw_artillery = 1
+	development_of_interwar_cannons = 1
 	tech_support = 1		
 	tech_engineers = 1
-	basic_train = 1
+	civil_train = 1
 }
 if = {
 	limit = {
@@ -68,31 +68,32 @@ recruit_character = LUX_martin_karp
 	oob = "LUX_1939"
 	set_technology = {
 		tech_recon = 1
-		interwar_artillery = 1
-		interwar_antiair = 1
+		development_of_interwar_cannons = 1
+		specialization_of_artillery_for_air_defense = 1
 		
-		#doctrines
+		# #doctrines
 		air_superiority = 1
 		
 		mass_assault = 1
 		pocket_defence = 1
 		defence_in_depth = 1
 
-		#electronics
-		electronic_mechanical_engineering = 1
+		# #electronics
+		lighting_design = 1
+		universal_electrification = 1
+		electronic_machine_construction = 1
+		properties_of_radio_waves = 1
 		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
 
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
+		# #industry
+		early_industrial_production = 1
+		early_machines = 1
+		modified_machine_tools = 1
 		fuel_silos = 1
 		construction1 = 1
 		construction2 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
 	}
 	if = {
 		limit = {

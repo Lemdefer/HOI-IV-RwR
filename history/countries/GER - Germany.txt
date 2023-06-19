@@ -12,19 +12,15 @@ set_technology = {
 	tech_engineers = 1
 	tech_mountaineers = 1
 	motorised_infantry = 1
-	gw_artillery = 1
-	interwar_antiair = 1
+	development_of_interwar_cannons = 1
+	specialization_of_artillery_for_air_defense = 1
 	gwtank = 1
 	basic_light_tank = 1
-	improved_light_tank = 1
 	basic_heavy_tank = 1
-	early_fighter = 1
-	fighter1 = 1
-	early_bomber = 1
-	tactical_bomber1 = 1
-	strategic_bomber1 = 1
-	CAS1 = 1
-	naval_bomber1 = 1
+	case_of_a_small_plane_from_the_postwar_years = 1
+	case_of_a_medium_plane_from_the_postwar_years = 1
+	case_of_a_heavy_plane_from_the_postwar_years = 1
+	early_plane = 1
 	
 	mobile_warfare = 1
 	trade_interdiction = 1
@@ -50,7 +46,6 @@ if = {
 		early_battleship = 1
 		basic_battleship = 1
 		early_battlecruiser = 1
-		transport = 1
 	}
 	set_naval_oob = "GER_1936_naval"
 }

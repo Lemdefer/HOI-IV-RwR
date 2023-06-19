@@ -10,10 +10,10 @@ set_technology = {
 	infantry_weapons = 1
 	tech_support = 1		
 	tech_recon = 1
-	gw_artillery = 1
+	development_of_interwar_cannons = 1
 	gwtank = 1
-	early_fighter = 1
-	CAS1 = 1
+	case_of_a_small_plane_from_the_postwar_years = 1
+	case_of_a_heavy_plane_from_the_postwar_years = 1
 	fuel_silos = 1
 }
 
@@ -100,21 +100,20 @@ if = {
 	
 	oob = "HUN_1939"
 	set_technology = {
-		fighter1 = 1
-		early_bomber = 1
-		tactical_bomber1 = 1
+		case_of_a_small_plane_from_the_postwar_years = 1
+		case_of_a_medium_plane_from_the_postwar_years = 1
+		case_of_a_heavy_plane_from_the_postwar_years = 1
 		gwtank = 1
 		basic_light_tank = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		interwar_antiair = 1
+		development_of_interwar_cannons = 1
+		increasing_the_caliber_of_artillery = 1
+		specialization_of_artillery_for_air_defense = 1
 		tech_engineers = 1
 		tech_mountaineers = 1
 		motorised_infantry = 1
-		infantry_weapons2 = 1
 		support_weapons = 1
 
-		#doctrines
+		# #doctrines
 		air_superiority = 1
 		grand_battle_plan = 1
 		trench_warfare = 1
@@ -122,17 +121,17 @@ if = {
 		battlefleet_concentration = 1
 		convoy_sailing = 1
 
-		#electronics
-		electronic_mechanical_engineering = 1
+		# #electronics
+		lighting_design = 1
+		universal_electrification = 1
+		electronic_machine_construction = 1
+		properties_of_radio_waves = 1
 		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
 
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
+		# #industry
+		early_industrial_production = 1
+		early_machines = 1
+		modified_machine_tools = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1

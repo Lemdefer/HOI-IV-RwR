@@ -110,16 +110,14 @@ if = {
 		convoy_sailing = 1
 
 		#electronics
-		electronic_mechanical_engineering = 1
+		lighting_design = 1
+		universal_electrification = 1
+		electronic_machine_construction = 1
+		properties_of_radio_waves = 1
 		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
 
 		#industry
-		basic_machine_tools = 1
+		early_machines = 1
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		fuel_silos = 1

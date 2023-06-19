@@ -1582,7 +1582,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_subtitle_cruiser"
-					position = { x = 30 y = 185 }
+					position = { x = 30 y = 390 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1595,12 +1595,12 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "naval_subtitle_battlecruiser"
-					position = { x = 30 y = 465 }
+					name = "naval_subtitle_aircraft_carriers"
+					position = { x = 30 y = 820 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "NAVAL_TITLE_BATTLECRUISERS"
+					text = "NAVAL_TITLE_AIRCRAFTCARRIERS"
 					maxWidth = 600
 					maxHeight = 62
 					format = left
@@ -1609,12 +1609,12 @@ guiTypes = {
 				}	
 
 				instantTextBoxType = {
-					name = "naval_subtitle_battleship"
-					position = { x = 30 y = 605 }
+					name = "naval_subtitle_heavy_ship"
+					position = { x = 30 y = 675 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "NAVAL_TITLE_BATTLESHIPS"
+					text = "NAVAL_TITLE_HEAVYSHIP"
 					maxWidth = 600
 					maxHeight = 62
 					format = left
@@ -1623,12 +1623,12 @@ guiTypes = {
 				}				
 
 				instantTextBoxType = {
-					name = "naval_subtitle_carrier"
-					position = { x = 30 y = 893 }
+					name = "naval_subtitle_submarines"
+					position = { x = 30 y = 960 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "NAVAL_TITLE_CARRIERS"
+					text = "NAVAL_TITLE_SUBMARINES"
 					maxWidth = 600
 					maxHeight = 62
 					format = left

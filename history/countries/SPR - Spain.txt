@@ -22,12 +22,12 @@ if = {
 	}
 }
 
-if = {
-	limit = {
-		has_dlc = "Battle for the Bosporus"
-	}
-	set_technology = { camelry = 1 }
-}
+# if = {
+# 	limit = {
+# 		has_dlc = "Battle for the Bosporus"
+# 	}
+# 	set_technology = { camelry = 1 }
+# }
 
 if = {
 	limit = {
@@ -117,11 +117,12 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	tech_mountaineers = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	early_fighter = 1
-	early_bomber = 1
-	naval_bomber1 = 1
+	development_of_interwar_cannons = 1
+	specialization_of_artillery_for_air_defense = 1
+	case_of_a_small_plane_from_the_postwar_years = 1
+	case_of_a_medium_plane_from_the_postwar_years = 1
+	case_of_a_heavy_plane_from_the_postwar_years = 1
+	early_plane = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -133,7 +134,6 @@ if = {
 		early_heavy_cruiser = 1
 		basic_heavy_cruiser = 1
 		early_battleship = 1
-		transport = 1
 	}
 }
 if = {
@@ -269,17 +269,17 @@ set_stability = 0.5
 	load_oob = "unlock_tanks"
 	
 	set_technology = {
-		fighter1 = 1
-		CAS1 = 1
-		tactical_bomber1 = 1
+		case_of_a_small_plane_from_the_postwar_years = 1
+		case_of_a_medium_plane_from_the_postwar_years = 1
+		case_of_a_heavy_plane_from_the_postwar_years = 1
+		early_plane = 1
 		gwtank = 1
 		basic_light_tank = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
+		development_of_interwar_cannons = 1
+		increasing_the_caliber_of_artillery = 1
 		motorised_infantry = 1
-		infantry_weapons2 = 1
+		infantry_weapons = 1
 		support_weapons = 1
-		support_weapons2 = 1
 
 		#doctrines
 		air_superiority = 1
@@ -290,26 +290,21 @@ set_stability = 0.5
 		submarine_operations = 1
 
 		#electronics
-		electronic_mechanical_engineering = 1
+		lighting_design = 1
+		universal_electrification = 1
+		electronic_machine_construction = 1
+		properties_of_radio_waves = 1
 		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
 
 		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
+		early_industrial_production = 1
+		early_machines = 1
+		modified_machine_tools = 1
 		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
-		construction3 = 1
 		dispersed_industry = 1
 		dispersed_industry2 = 1
-		dispersed_industry3 = 1
 	}
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }

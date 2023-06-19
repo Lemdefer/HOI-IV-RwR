@@ -2,7 +2,6 @@ equipments = {
 
 	interwar_artillery = {
 		year = 1934
-s
 		is_archetype = yes
 		picture = archetype_artillery_equipment		
 		type = {

@@ -52,21 +52,22 @@ recruit_character = TIB_taktra_rinpoche
 	
 	oob = "TIB_1939"
 	set_technology = {
-		#doctrines
+		# #doctrines
 		air_superiority = 1
-
 		mass_assault = 1
 		pocket_defence = 1
 		defence_in_depth = 1
 
-		#electronics
-		electronic_mechanical_engineering = 1
+		# #electronics
+		lighting_design = 1
+		universal_electrification = 1
+		electronic_machine_construction = 1
+		properties_of_radio_waves = 1
 		radio = 1
-		radio_detection = 1
 
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
+		# #industry
+		early_machines = 1
+		modified_machine_tools = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1

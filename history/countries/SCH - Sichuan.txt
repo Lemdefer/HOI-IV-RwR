@@ -4,7 +4,6 @@ oob = "SCH_1928"
 
 set_technology = {
 	infantry_weapons = 1
-	
 }
 
 add_ideas = {
@@ -59,27 +58,28 @@ add_ideas = {
 	
 	oob = "SIK_1939"
 	set_technology = {
-		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
+		infantry_weapons = 1
+		tech_recon = 1
+		tech_support = 1		
+		tech_engineers = 1
+		tech_mountaineers = 1
+		motorised_infantry = 1
+		development_of_interwar_cannons = 1
+		specialization_of_artillery_for_air_defense = 1
+		gwtank = 1
+		basic_light_tank = 1
+		basic_heavy_tank = 1
+		case_of_a_small_plane_from_the_postwar_years = 1
+		case_of_a_medium_plane_from_the_postwar_years = 1
+		case_of_a_heavy_plane_from_the_postwar_years = 1
+		early_plane = 1
+		
+		mobile_warfare = 1
+		trade_interdiction = 1
+		formation_flying = 1
+		synth_oil_experiments = 1
 		fuel_silos = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+		fuel_refining = 1
 	}
 }
 

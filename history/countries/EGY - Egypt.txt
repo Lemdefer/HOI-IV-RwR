@@ -30,9 +30,9 @@ set_convoys = 20
 		tech_support = 1
 		tech_recon = 1
 		support_weapons = 1
-		gw_artillery = 1
+		development_of_interwar_cannons = 1
 
-		#doctrines
+		# #doctrines
 		air_superiority = 1
 		grand_battle_plan = 1
 		trench_warfare = 1
@@ -40,17 +40,17 @@ set_convoys = 20
 		battlefleet_concentration = 1
 		convoy_sailing = 1
 
-		#electronics
-		electronic_mechanical_engineering = 1
+		# #electronics
+		lighting_design = 1
+		universal_electrification = 1
+		electronic_machine_construction = 1
+		properties_of_radio_waves = 1
 		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
 
 		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
+		early_industrial_production = 1
+		early_machines = 1
+		modified_machine_tools = 1
 		fuel_silos = 1
 		construction1 = 1
 		construction2 = 1

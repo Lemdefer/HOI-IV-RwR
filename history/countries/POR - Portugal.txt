@@ -13,14 +13,14 @@ set_research_slots = 3
 
 set_technology = {
 	infantry_weapons = 1
-	gw_artillery = 1
-	interwar_antiair = 1
+	development_of_interwar_cannons = 1
+	specialization_of_artillery_for_air_defense = 1
 	tech_support = 1		
 	tech_engineers = 1
-	early_fighter = 1
-	early_bomber = 1
-	CAS1 = 1
-	basic_train = 1
+	case_of_a_small_plane_from_the_postwar_years = 1
+	case_of_a_medium_plane_from_the_postwar_years = 1
+	case_of_a_heavy_plane_from_the_postwar_years = 1
+	civil_train = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -28,7 +28,6 @@ if = {
 		early_submarine = 1
 		basic_submarine = 1
 		early_destroyer = 1
-		transport = 1
 	}
 }
 if = {
@@ -147,11 +146,11 @@ if = {
 		}
 	}
 	set_technology = {
-		interwar_artillery = 1
-		infantry_weapons2 = 1
+		development_of_interwar_cannons = 1
+		infantry_weapons = 1
 		support_weapons = 1
 
-		#doctrines
+		# #doctrines
 		air_superiority = 1
 		trench_warfare = 1
 		fleet_in_being = 1
@@ -160,20 +159,17 @@ if = {
 		submarine_operations = 1
 
 		#electronics
-		electronic_mechanical_engineering = 1
+		lighting_design = 1
+		universal_electrification = 1
+		electronic_machine_construction = 1
+		properties_of_radio_waves = 1
 		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
 
 		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
+		early_industrial_production = 1
+		early_machines = 1
+		modified_machine_tools = 1
 		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1

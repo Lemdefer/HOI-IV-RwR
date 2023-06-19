@@ -8,9 +8,8 @@ set_cosmetic_tag = IRQ_ENG
 set_technology = {
 	infantry_weapons = 1
 	tech_mountaineers = 1
-	gw_artillery = 1
-	early_fighter = 1
-	CAS1 = 1
+	development_of_interwar_cannons = 1
+	case_of_a_small_plane_from_the_postwar_years = 1
 	fuel_silos = 1
 }
 
@@ -64,35 +63,34 @@ recruit_character = IRQ_nuri_as_said
 	
 	oob = "IRQ_1939"
 	set_technology = {
-		early_fighter = 1
-		CAS1 = 1
-		tech_support = 1
-		tech_recon = 1
-		infantry_weapons2 = 1
+		
+		case_of_a_small_plane_from_the_postwar_years = 1
+		case_of_a_heavy_plane_from_the_postwar_years = 1
+		early_artillery = 1
+		increasing_the_caliber_of_artillery = 1
 		support_weapons = 1
-		gw_artillery = 1
+		development_of_interwar_cannons = 1
+		force_rotation = 1
+		fighter_baiting = 1
 
-		#doctrines
-		air_superiority = 1
 		grand_battle_plan = 1
 		trench_warfare = 1
 		fleet_in_being = 1
 		battlefleet_concentration = 1
-		convoy_sailing = 1
-
+		submarine_operations = 1
 
 		#electronics
-		electronic_mechanical_engineering = 1
+		lighting_design = 1
+		universal_electrification = 1
+		electronic_machine_construction = 1
+		properties_of_radio_waves = 1
 		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
 
 		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_refining = 1
+		early_industrial_production = 1
+		early_machines = 1
+		modified_machine_tools = 1
+		fuel_silos = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
