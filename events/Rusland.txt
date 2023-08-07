@@ -1,4 +1,1121 @@
+add_namespace = rus_economic
+add_namespace = rus_military
+add_namespace = rus_foreign_policy_in_east
+add_namespace = rus_trigger
 add_namespace = russia
+
+#########################ЭКОНОМИЧЕСКАЯ ВЕТКА#########################
+country_event = {
+	id = rus_economic.0
+	title = rus_economic.0.t 
+	desc = rus_economic.0.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_economic.0.a 
+		add_political_power = -100
+	}
+}
+country_event = {
+	id = rus_economic.1
+	title = rus_economic.1.t 
+	desc = rus_economic.1.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_economic.1.a 
+		add_timed_idea = {
+			idea = RUS_prohibition_of_peasant_communities
+			days = 365
+		}
+	}
+	option = {
+		name = rus_economic.1.b 
+		add_timed_idea = {
+			idea = RUS_progovernment_communities
+			days = 365
+		}
+	}
+	option = {
+		name = rus_economic.1.c 
+		add_timed_idea = {
+			idea = RUS_rampant_peasent_communities
+			days = 365
+		}
+	}
+}
+country_event = {
+	id = rus_economic.2
+	title = rus_economic.2.t 
+	desc = rus_economic.2.d 
+
+	is_triggered_only = yes
+
+	option = {
+		name = rus_economic.2.a 
+		add_timed_idea = {
+			idea = RUS_prohibition_of_trade_unions
+			days = 365
+		}
+	}
+	option = {
+		name = rus_economic.2.b
+		add_timed_idea = { 
+			idea = RUS_progovernment_trade_unions
+			days = 365
+		}
+	}
+	option = {
+		name = rus_economic.2.c 
+		add_timed_idea = { 
+			idea = RUS_rampant_trade_unions
+			days = 365
+		}
+	}
+}
+########################ВОЕННАЯ ВЕТКА########################
+country_event = {
+	id = rus_military.0
+	title = rus_military.0.t 
+	desc = rus_military.0.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_military.0.a 
+			army_experience = 50
+			add_ideas = RUS_inflating_military_budget_1
+			add_political_power = -100
+		}
+	}
+country_event = {
+	id = rus_military.1
+	title = rus_military.1.t 
+	desc = rus_military.1.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_military.1.a 
+		add_political_power = -120
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2640
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -870
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -630
+			}
+		}
+	}
+country_event = { ###Переговоры о малом кол-ве пехотки###
+	id = rus_military.2
+	title = rus_military.2.t 
+	desc = rus_military.2.d 
+
+	is_triggered_only = yes 
+
+	option = { ###Они согласились###
+		name = rus_military.2.a
+		ai_chance = {
+		    factor = 60
+			}
+		RUS = {
+			country_event = { id = rus_military.3 days = 3 }
+		}
+	}
+	option = { ###Они отказали###
+		name = rus_military.2.b 
+		ai_chance = {
+		    factor = 60
+			}
+		RUS = {
+			country_event = { id = rus_military.4 days = 3 }
+		}
+	}
+}
+country_event = { ###Малая поставка пехотки###
+	id = rus_military.3
+	title = rus_military.3.t 
+	desc = rus_military.3.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_military.3.a 
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1200
+		}
+	}
+}
+country_event = { ###Отказ от малой поставки пехотки###
+	id = rus_military.4
+	title = rus_military.4.t 
+	desc = rus_military.4.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_military.4.a 
+		add_opinion_modifier = { target = FROM modifier = small_decrease }
+		FROM = { target = ROOT modifier = small_decrease }
+	}
+}
+country_event = { ###Переговоры о большой поставке пехотки###
+
+	id = rus_military.5
+	title = rus_military.5.t 
+	desc = rus_military.5.d 
+
+	is_triggered_only = yes 
+
+	option = { ###Согласились###
+		name = rus_military.5.a 
+		ai_chance = {
+		    factor = 60
+			}
+		RUS = {
+			country_event = { id = rus_military.6 days = 3 } 
+		}
+	}
+	option = { ###Отказались###
+		name = rus_military.5.b 
+		ai_chance = {
+		    factor = 60
+			}
+		RUS = {
+			country_event = { id = rus_military.7 days = 3 } 
+		}
+	}
+}
+country_event = { ###Большая поставка пехотки###
+	id = rus_military.6
+	title = rus_military.6.t 
+	desc = rus_military.6.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_military.6.a 
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3000
+		}
+	}
+}
+country_event = { ###Отказ от большой поставки пехотки###
+	id = rus_military.7
+	title = rus_military.7.t 
+	desc = rus_military.7.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_military.7.a 
+		add_opinion_modifier = { target = FROM modifier = high_decrease }
+		FROM = { target = ROOT modifier = high_decrease }
+	}
+}
+country_event = { ###Переговоры о малом кол-ве арты###
+	id = rus_military.8
+	title = rus_military.8.t 
+	desc = rus_military.8.d 
+
+	is_triggered_only = yes 
+
+	option = { ###Они согласились###
+		name = rus_military.8.a
+		ai_chance = {
+		    factor = 60
+			}
+		RUS = {
+			country_event = { id = rus_military.9 days = 3 }
+		}
+	}
+	option = { ###Они отказали###
+		name = rus_military.8.b 
+		ai_chance = {
+		    factor = 60
+			}
+		RUS = {
+			country_event = { id = rus_military.10 days = 3 }
+		}
+	}
+}
+country_event = { ###Малая поставка арты###
+	id = rus_military.9
+	title = rus_military.9.t 
+	desc = rus_military.9.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_military.9.a 
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 300
+		}
+	}
+}
+country_event = { ###Отказ от малой поставки арты###
+	id = rus_military.10
+	title = rus_military.10.t 
+	desc = rus_military.10.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_military.10.a 
+		add_opinion_modifier = { target = FROM modifier = small_decrease }
+		FROM = { target = ROOT modifier = small_decrease }
+	}
+}
+country_event = { ###Переговоры о большой поставке арты###
+	id = rus_military.11
+	title = rus_military.11.t 
+	desc = rus_military.11.d 
+
+	is_triggered_only = yes 
+
+	option = { ###Согласились###
+		name = rus_military.11.a 
+		ai_chance = {
+		    factor = 60
+			}
+		RUS = {
+			country_event = { id = rus_military.12 days = 3 } 
+		}
+	}
+	option = { ###Отказались###
+		name = rus_military.11.b 
+		ai_chance = {
+		    factor = 60
+			}
+		RUS = {
+			country_event = { id = rus_military.13 days = 3 } 
+		}
+	}
+}
+country_event = { ###Большая поставка арты###
+	id = rus_military.12
+	title = rus_military.12.t 
+	desc = rus_military.12.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_military.12.a 
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 700
+		}
+	}
+}
+country_event = { ###Отказ от большой поставки арты###
+	id = rus_military.13
+	title = rus_military.13.t 
+	desc = rus_military.13.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_military.13.a 
+		add_opinion_modifier = { target = FROM modifier = high_decrease }
+		FROM = { target = ROOT modifier = high_decrease }
+	}
+}
+country_event = { ###Переговоры о малом кол-ве допки###
+	id = rus_military.14
+	title = rus_military.14.t 
+	desc = rus_military.14.d 
+
+	is_triggered_only = yes 
+
+	option = { ###Они согласились###
+		name = rus_military.14.a
+		ai_chance = {
+		    factor = 60
+		}
+		RUS = {
+			country_event = { id = rus_military.15 days = 3 }
+		}
+	}
+	option = { ###Они отказали###
+		name = rus_military.14.b
+		ai_chance = {
+		    factor = 60
+		} 
+		RUS = {
+			country_event = { id = rus_military.16 days = 3 }
+		}
+	}
+}
+country_event = { ###Малая поставка допки###
+	id = rus_military.15
+	title = rus_military.15.t 
+	desc = rus_military.15.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_military.15.a 
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 600
+		}
+	}
+}
+country_event = { ###Отказ от малой поставки допки###
+	id = rus_military.16
+	title = rus_military.16.t 
+	desc = rus_military.16.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_military.16.a 
+		add_opinion_modifier = { target = FROM modifier = small_decrease }
+		FROM = { target = ROOT modifier = small_decrease }
+	}
+}
+country_event = { ###Переговоры о большой поставке арты###
+	id = rus_military.17
+	title = rus_military.17.t 
+	desc = rus_military.17.d 
+
+	is_triggered_only = yes 
+
+	option = { ###Согласились###
+		name = rus_military.17.a 
+		ai_chance = {
+		    factor = 60
+			}
+		RUS = {
+			country_event = { id = rus_military.18 days = 3 } 
+		}
+	}
+	option = { ###Отказались###
+		name = rus_military.17.b 
+		ai_chance = {
+		    factor = 60
+			}
+		RUS = {
+			country_event = { id = rus_military.19 days = 3 } 
+		}
+	}
+}
+country_event = { ###Большая поставка арты###
+	id = rus_military.18
+	title = rus_military.18.t 
+	desc = rus_military.18.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_military.18.a 
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 1500
+		}
+	}
+}
+country_event = { ###Отказ от большой поставки арты###
+	id = rus_military.19
+	title = rus_military.19.t 
+	desc = rus_military.19.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_military.19.a 
+		add_opinion_modifier = { target = FROM modifier = high_decrease }
+		FROM = { target = ROOT modifier = high_decrease }
+	}
+}
+
+########################ВНЕШНЯЯ ПОЛИТИКА########################
+country_event = { 
+	id = rus_foreign_policy_in_east.0
+	title = rus_foreign_policy_in_east.0.t
+	desc = rus_foreign_policy_in_east.0.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_foreign_policy_in_east.0.a
+		add_political_power = -10
+		add_stability = 0.02
+		add_timed_idea = {
+			idea = RUS_construction_in_far_east
+			days = 40
+		}
+	}
+	option = {
+		name = rus_foreign_policy_in_east.0.b 
+		add_political_power = 10
+		add_stability = -0.02
+		hidden_effect = {
+			set_country_flag = RUS_training_trigger
+		}
+	}
+	option = {
+		name = rus_foreign_policy_in_east.0.c
+		add_political_power = -10
+		division_template = {
+				name = "Pehotnaya diviziya"
+				priority = 1
+				division_names_group = RUS_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+					infantry = { x = 0 y = 5 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+				support = {
+				}
+			}
+			408 = {
+				create_unit = {
+					division = "name = \"Dalnevostochnaya pehotnaya diviziya\" division_template = \"Pehotnaya diviziya\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}
+			}
+			408 = {
+				create_unit = {
+					division = "name = \"Dalnevostochnaya pehotnaya diviziya\" division_template = \"Pehotnaya diviziya\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}
+			}
+			409 = {
+				create_unit = {
+					division = "name = \"Dalnevostochnaya pehotnaya diviziya\" division_template = \"Pehotnaya diviziya\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}
+			}
+		}
+	option = {
+		name = rus_foreign_policy_in_east.0.e
+		add_political_power = 40
+		add_stability = 0.04
+		add_popularity = {
+				ideology = ROOT
+				popularity = 0.02
+			}
+		}
+	}
+country_event = {
+	id = rus_foreign_policy_in_east.1
+	title = rus_foreign_policy_in_east.1.t 
+	desc = rus_foreign_policy_in_east.1.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_foreign_policy_in_east.1.a 
+			add_political_power = 10
+			army_experience = 10
+			add_ideas = RUS_prepared_defense_against_japan
+		}
+	}
+country_event = {
+	id = rus_foreign_policy_in_east.2
+	title = rus_foreign_policy_in_east.2.t 
+	desc = rus_foreign_policy_in_east.2.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_foreign_policy_in_east.2.a 
+			add_political_power = -40
+			add_stability = -0.03
+		}
+	}
+country_event = {
+	id = rus_foreign_policy_in_east.3
+	title = rus_foreign_policy_in_east.3.t 
+	desc = rus_foreign_policy_in_east.3.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_foreign_policy_in_east.3.a
+		trigger = {
+			has_government = democratic ####ГНОМИКИ И ЦЕНТР ( дописать )####
+		}
+		JAP = {
+			country_event = { id = jap_foreign_policy_in_east.0 days = 4 }
+			}
+		}
+	option = {
+		name = rus_foreign_policy_in_east.3.b
+		trigger = {
+			has_government = democratic #### ЦЕНТР ( дописать )####
+			}
+		JAP = {
+			country_event = { id = jap_foreign_policy_in_east.1 days = 4 }
+			}
+		}
+	option = {
+		name = rus_foreign_policy_in_east.3.c
+		trigger = {
+			has_government = democratic #### РАДИКАЛЫ И ЦЕНТР ( дописать )####
+			}
+		JAP = {
+			country_event = { id = jap_foreign_policy_in_east.2 days = 4 }
+			}
+		}
+	}
+country_event = {
+	id = rus_foreign_policy_in_east.4
+	title = rus_foreign_policy_in_east.4.t 
+	desc = rus_foreign_policy_in_east.4.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_foreign_policy_in_east.4.a 
+			add_war_support = 0.15
+			ROOT = {
+				create_wargoal = {
+					type = topple_government
+					target = FROM
+				}
+			}
+		}
+	}
+country_event = {
+	id = rus_foreign_policy_in_east.5
+	title = rus_foreign_policy_in_east.5.t 
+	desc = rus_foreign_policy_in_east.5.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_foreign_policy_in_east.5.a 
+			add_stability = 0.05
+			PREV = {
+				transfer_state = 537
+				transfer_state = 555
+			}
+		}
+	}
+country_event = {
+	id = rus_foreign_policy_in_east.6
+	title = rus_foreign_policy_in_east.6.t 
+	desc = rus_foreign_policy_in_east.6.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_foreign_policy_in_east.6.a 
+			add_stability = 0.07
+			PREV = {
+				transfer_state = 537
+				transfer_state = 555
+				transfer_state = 745
+			}
+		}
+	}
+country_event = {
+	id = rus_foreign_policy_in_east.7
+	title = rus_foreign_policy_in_east.7.t 
+	desc = rus_foreign_policy_in_east.7.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_foreign_policy_in_east.7.a 
+			add_stability = 0.1
+			PREV = {
+				transfer_state = 537
+				transfer_state = 555
+				transfer_state = 745
+				transfer_state = 525
+				transfer_state = 527
+			}
+		}
+	}
+country_event = {
+	id = rus_foreign_policy_in_east.8
+	title = rus_foreign_policy_in_east.8.t 
+	desc = rus_foreign_policy_in_east.8.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_foreign_policy_in_east.8.a 
+			add_political_power = 50
+			add_stability = 0.02
+			diplomatic_relation = {
+						country = JAP
+						relation = non_aggression_pact
+						active = yes
+					}
+				}
+			}
+country_event = {
+	id = rus_foreign_policy_in_east.9
+	title = rus_foreign_policy_in_east.9.t 
+	desc = rus_foreign_policy_in_east.9.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = jap_foreign_policy_in_east.9.a 
+		add_political_power = -50
+	}
+}
+country_event = {
+	id = rus_foreign_policy_in_east.10
+	title = rus_foreign_policy_in_east.10.t 
+	desc = rus_foreign_policy_in_east.10.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_foreign_policy_in_east.10.a
+		JAP = {
+			country_event = { id = jap_foreign_policy_in_east.4 hours = 12 random_hours = 6 }
+		}
+	}
+	option = {
+		name = rus_foreign_policy_in_east.10.b 
+		JAP = {
+			country_event = { id = jap_foreign_policy_in_east.4 hours = 12 random_hours = 6 }
+		}
+	}
+	option = {
+		name = rus_foreign_policy_in_east.10.c 
+		JAP = {
+			country_event = { id = jap_foreign_policy_in_east.4 hours = 12 random_hours = 6 }
+		}
+	}
+}
+country_event = {
+	id = rus_foreign_policy_in_east.11
+	title = rus_foreign_policy_in_east.11.t 
+	desc = rus_foreign_policy_in_east.11.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_foreign_policy_in_east.11.a 
+		available = {
+			has_country_flag = RUS_sakhalin_trade_1
+			}
+		remove_country_flag = RUS_sakhalin_trade_1
+		add_political_power = 20
+		add_stability = 0.08
+		transfer_state = 537
+		add_state_core = 537
+		JAP = {
+			add_political_power = 100
+		}
+	}
+}
+country_event = {
+	id = rus_foreign_policy_in_east.12
+	title = rus_foreign_policy_in_east.12.t 
+	desc = rus_foreign_policy_in_east.12.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_foreign_policy_in_east.12.a 
+		available = {
+			has_country_flag = RUS_sakhalin_trade_2
+			}
+		remove_country_flag = RUS_sakhalin_trade_2
+		add_political_power = -20
+		add_stability = 0.05
+		add_timed_idea = {
+			idea = RUS_decent_sakhalin_payment
+			days = 180
+			}
+		transfer_state = 537
+		add_state_core = 537
+		JAP = {
+			add_political_power = 120
+			add_timed_idea = {
+				idea = JAP_decent_sakhalin_payment
+				days = 180
+			}
+		}
+	}
+}
+country_event = {
+	id = rus_foreign_policy_in_east.13
+	title = rus_foreign_policy_in_east.13.t 
+	desc = rus_foreign_policy_in_east.13.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_foreign_policy_in_east.13.a
+		add_political_power = -80
+		add_stability = 0.02
+		add_timed_idea = {
+			idea = RUS_excessive_sakhalin_payment
+			days = 180
+		}
+		transfer_state = 537
+		add_state_core = 537
+		JAP = {
+			add_political_power = 150
+			add_timed_idea = {
+				idea = JAP_excessive_sakhalin_payment
+				days = 180
+			}
+		}
+	}
+}
+country_event = {
+	id = rus_foreign_policy_in_east.14
+	title = rus_foreign_policy_in_east.14.t 
+	desc = rus_foreign_policy_in_east.14.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_foreign_policy_in_east.14.a
+		add_political_power = 100
+		add_stability = -0.04
+		add_state_claim = 537
+		add_opinion_modifier = { target = JAP modifier = failure_of_the_conference }
+		JAP = {
+			add_opinion_modifier = { target = RUS modifier = failure_of_the_conference }
+			}
+		}
+	}
+country_event = { 
+	id = rus_foreign_policy_in_east.15
+	title = rus_foreign_policy_in_east.15.t 
+	desc = rus_foreign_policy_in_east.15.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_foreign_policy_in_east.15.a
+		add_stability = 0.02
+		add_war_support = 0.02
+		MAN = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.04
+			}
+		}
+	}
+	option = {
+		name = rus_foreign_policy_in_east.15.b
+		add_stability = -0.02
+		add_political_power = -20
+		add_manpower = -1000
+		MAN = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.07
+			}
+		}
+	} 
+}
+country_event = {
+	id = rus_foreign_policy_in_east.16
+	title = rus_foreign_policy_in_east.16.t 
+	desc = rus_foreign_policy_in_east.16.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_foreign_policy_in_east.16.a 
+			custom_effect_tooltip = RUS_yellow_russian_revolution_tt
+			add_stability = 0.05
+			add_popularity = {
+				ideology = ROOT 
+				popularity = 0.02
+			}
+			add_political_power = 20
+			set_global_flag = east_china_war
+			hidden_effect = {
+				YRS = {	
+					transfer_state = 761
+					transfer_state = 714
+					transfer_state = 717
+					add_state_core = 761
+					add_state_core = 714
+					add_state_core = 717
+					add_state_claim = 328
+					add_state_claim = 715
+					add_state_claim = 610
+					add_state_claim = 611
+					load_oob = "YRS_revolution"
+					declare_war_on = { target = MAN type = annex_everything }
+					}
+				}
+			}
+		}
+country_event = {
+	id = rus_foreign_policy_in_east.17
+	title = rus_foreign_policy_in_east.17.t 
+	desc = rus_foreign_policy_in_east.17.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_foreign_policy_in_east.17.a 
+			custom_effect_tooltip = RUS_yellow_russian_revolt_tt
+			add_stability = 0.03
+			add_political_power = 20
+			set_global_flag = east_china_war
+			hidden_effect = {
+				YRS = {	
+					transfer_state = 761
+					transfer_state = 714
+					transfer_state = 717
+					add_state_core = 761
+					add_state_core = 714
+					add_state_core = 717
+					add_state_claim = 328
+					add_state_claim = 715
+					add_state_claim = 610
+					add_state_claim = 611
+					load_oob = "YRS_revolt"
+					declare_war_on = { target = MAN type = annex_everything }
+				}
+			}
+		}
+	}
+country_event = {
+	id = rus_foreign_policy_in_east.18
+	title = rus_foreign_policy_in_east.18.t 
+	desc = rus_foreign_policy_in_east.18.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_foreign_policy_in_east.17.a 
+			custom_effect_tooltip = RUS_fighting_in_north_tt
+			add_political_power = -10
+			set_global_flag = east_china_war
+			hidden_effect = {
+				YRS = {	
+					transfer_state = 761
+					transfer_state = 714
+					add_state_core = 761
+					add_state_core = 714
+					add_state_core = 717
+					add_state_claim = 328
+					add_state_claim = 715
+					add_state_claim = 610
+					add_state_claim = 611
+					load_oob = "YRS_fighting_in_north"
+					declare_war_on = { target = MAN type = annex_everything }
+				}
+			}
+		}
+	}
+country_event = {
+	id = rus_foreign_policy_in_east.19
+	title = rus_foreign_policy_in_east.19.t 
+	desc = rus_foreign_policy_in_east.19.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = rus_foreign_policy_in_east.19.a 
+			custom_effect_tooltip = RUS_crash_of_our_plans_tt
+			add_stability = -0.06
+			add_war_support = -0.04
+			add_political_power = -40
+			set_country_flag = RUS_crash_of_our_plans
+			hidden_effect = {
+				MAN = {
+					country_event = { id = man_yellow_russia.6 days = 4 random_days = 1 }
+				}
+			}
+		}
+	option = {
+		name = rus_foreign_policy_in_east.19.b 
+			custom_effect_tooltip = RUS_on_their_own_tt
+			add_stability = -0.02
+			add_political_power = -80
+			set_global_flag = russia_knows_no_borders
+			create_wargoal = {
+    			type = annex_everything
+    			target = MAN
+			}
+		}
+	}
+country_event = {
+	id = rus_foreign_policy_in_east.20
+	title = rus_foreign_policy_in_east.20.t 
+	desc = rus_foreign_policy_in_east.20.d 
+
+	trigger = {
+		has_global_flag = victory_of_yellow_russia
+	} 
+
+	option = {
+		name = rus_foreign_policy_in_east.20.a 
+			add_stability = 0.14
+			add_political_power = 100
+			RUS = {
+				puppet = YRS
+			}
+			hidden_effect = {
+				YRS = {
+					add_state_core = 328
+					add_state_core = 716
+					add_state_core = 715
+					add_state_core = 610
+					add_state_core = 611
+					add_state_claim = 614
+					add_state_claim = 608
+					add_state_claim = 609
+				}
+			}
+		}
+	}
+country_event = {
+	id = rus_foreign_policy_in_east.21
+	title = rus_foreign_policy_in_east.21.t 
+	desc = rus_foreign_policy_in_east.21.d 
+
+	trigger = {
+		has_global_flag = victory_of_fentiang
+	} 
+
+	option = {
+		name = rus_foreign_policy_in_east.21
+			add_stability = -0.05
+			add_war_support = -0.05
+			add_political_power = -170
+	}
+}
+country_event = {
+	id = rus_foreign_policy_in_east.22
+	title = rus_foreign_policy_in_east.22.t 
+	desc = rus_foreign_policy_in_east.22.d 
+
+	trigger = {
+		has_global_flag = victory_of_fentiang
+	} 
+
+	option = {
+		name = rus_foreign_policy_in_east.22.a
+		add_political_power = -40
+		diplomatic_relation = {
+			country = MON 
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+	option = {
+		name = rus_foreign_policy_in_east.22.b
+		add_political_power = -80
+		diplomatic_relation = {
+			country = MON 
+			relation = non_aggression_pact
+			active = yes
+		}
+		diplomatic_relation = {
+			country = MON 
+			relation = military_access
+			active = yes
+		}
+		MON = {
+			diplomatic_relation = {
+			country = RUS
+			relation = military_access
+			active = yes
+			}
+		}
+		diplomatic_relation = {
+			country = MON 
+			relation = guarantee
+			active = yes
+		}
+	}
+	option = {
+		name = rus_foreign_policy_in_east.22.c
+		add_political_power = -120
+		add_stability = -0.05
+		add_war_support = -0.03
+		RUS = {
+			puppet = MON
+		}
+	}
+	option = {
+		trigger = {
+			has_puppet = YRS
+		}
+		name = rus_foreign_policy_in_east.22.e
+		hidden_effect = {
+		YRS = {
+			transfer_state = 819
+			transfer_state = 612
+			transfer_state = 817
+			transfer_state = 330
+			transfer_state = 820
+			transfer_state = 818
+			add_state_core = 819
+			add_state_core = 612
+			add_state_core = 817
+			add_state_core = 330
+			add_state_core = 820
+			add_state_core = 818
+			}
+		}
+	}
+}
+
+country_event = {
+	id = rus_foreign_policy_in_east.23
+	title = rus_foreign_policy_in_east.23.t 
+	desc = rus_foreign_policy_in_east.23.d 
+
+	is_triggered_only = yes 
+
+	option = {
+		ai_chance = { factor = 50 }
+		name = rus_foreign_policy_in_east.23.a 
+		add_political_power = 20
+		SIK = { country_event = sik.1 days = 4 }
+		}
+	option = {
+		ai_chance = { factor = 40 }
+		name = rus_foreign_policy_in_east.23.b 
+		add_political_power = 10
+		SIK = { country_event = sik.2 days = 4 }
+		}
+	option = {
+		ai_chance = { factor = 60 }
+		name = rus_foreign_policy_in_east.23.c
+		add_political_power = -20
+		MON = {
+			add_opinion_modifier = { target = RUS modifier = agressive_actions_of_russia }
+			}
+		MAN = {
+			add_opinion_modifier = { target = RUS modifier = agressive_actions_of_russia }
+			}
+		SIK = {
+			add_opinion_modifier = { target = RUS modifier = agressive_actions_of_russia }
+			}
+		SIK = { country_event = sik.1 days = 4 }
+		}
+	}
+
 
 country_event = {
 	id = russia.1
@@ -804,185 +1921,5 @@ country_event = {
 				modifier = vipolnenii_obeshania
 								}
 		
-	}				
-}
-
-
-
-
-#«Французы хотят поговорить»
-country_event = {
-	id = russia.503
-	title = russia.503.t
-	desc = russia.503.d
-	picture = GFX_report_event_physics_lab_01
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = russia.503.a	
-		
-		add_political_power = 10
-		
-		add_opinion_modifier = {
-				target = FRA
-				modifier = conferetion_in_petrograd
-		}
-		
-		FRA = {
-		country_event = { days = 7 id = FRA.58 }	
-		}
-		
+			}				
 	}
-	option = {
-		name = russia.503.b
-		
-		add_political_power = -40
-		
-		add_opinion_modifier = {
-				target = FRA
-				modifier = no_conferetion_in_petrograd
-		}
-		
-		
-		FRA = {
-		country_event = { days = 3 id = FRA.59 }	
-		}
-		
-		
-	}
-}
-
-#«Предложения Франции»)
-country_event = {
-	id = russia.504
-	title = russia.504.t
-	desc = russia.504.d
-	picture = GFX_report_event_physics_lab_01
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = russia.504.a	
-		
-		add_political_power = 20
-		add_stability = 0.05
-		
-			if = {
-			limit = { has_government = liberalisms }
-			add_popularity = {
-			ideology = liberalisms
-			popularity = 0.05
-			}
-			}
-			if = {
-			limit = { has_government = democratic }
-			add_popularity = {
-			ideology = democratic
-			popularity = 0.05
-			}
-			}
-			if = {
-			limit = { has_government = fascism }
-			add_popularity = {
-			ideology = fascism
-			popularity = 0.05
-			}
-			}
-			if = {
-			limit = { has_government = paternalism }
-			add_popularity = {
-			ideology = paternalism
-			popularity = 0.05
-			}
-			}
-			if = {
-			limit = { has_government = socdem }
-			add_popularity = {
-			ideology = socdem
-			popularity = 0.05
-			}
-			}
-			if = {
-			limit = { has_government = neutrality }
-			add_popularity = {
-			ideology = neutrality
-			popularity = 0.05
-			}
-			}
-			add_opinion_modifier = {
-				target = FRA
-				modifier = udachnya_conferentsia
-			}
-
-		
-			FRA = {
-			country_event = { days = 4 id = FRA.60 }	
-			}
-		
-		
-	}
-	option = {
-		name = russia.504.b
-		
-		add_political_power = -40
-		add_stability = -0.05
-			if = {
-			limit = { has_government = liberalisms }
-			add_popularity = {
-			ideology = liberalisms
-			popularity = -0.03
-			}
-			}
-			if = {
-			limit = { has_government = democratic }
-			add_popularity = {
-			ideology = democratic
-			popularity = -0.03
-			}
-			}
-			if = {
-			limit = { has_government = fascism }
-			add_popularity = {
-			ideology = fascism
-			popularity = -0.03
-			}
-			}
-			if = {
-			limit = { has_government = paternalism }
-			add_popularity = {
-			ideology = paternalism
-			popularity = -0.03
-			}
-			}
-			if = {
-			limit = { has_government = socdem }
-			add_popularity = {
-			ideology = socdem
-			popularity = -0.03
-			}
-			}
-			if = {
-			limit = { has_government = neutrality }
-			add_popularity = {
-			ideology = neutrality
-			popularity = -0.03
-			}
-			}
-		
-			add_opinion_modifier = {
-				target = FRA
-				modifier = provalnaya_conferentsia
-			}
-		
-		
-		
-		
-		FRA = {
-			country_event = { days = 4 id = FRA.61 }	
-			}
-	}
-}
-
-
-
