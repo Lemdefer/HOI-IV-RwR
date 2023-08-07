@@ -8,294 +8,865 @@ focus_tree = {
 		}
 	}
 	default = no
+    ###Борьба с кризисом###
 	focus = {
-		id = TUR_focus1
-		icon = GFX_unkown
-		cost = 5
+		id = TUR_second_great_crisis
+		icon = GFX_TUR_
+		x = 5
+		y = 0
+		cost = 3
+
+		completion_reward = {
+            country_event  = { id = turkey.0 hours = 12 }
+		}
+	}
+    focus = {
+		id = TUR_reparation_congress_in_konya
+		icon = GFX_TUR_
+		x = 5
+		y = 1
+		cost = 3
+		prerequisite = { focus = TUR_second_great_crisis }
+
+		completion_reward = {
+		    country_event = { id = turkey.1 hours = 12 }
+		}
+	}
+	focus = {
+		id = TUR_increase_farmland
+		icon = GFX_TUR_
+		x = 3
+		y = 2
+		cost = 3
+		prerequisite = { focus = TUR_reparation_congress_in_konya }
+
+		completion_reward = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				}
+			add_stability = 0.05
+			add_political_power = 50
+			}
+		}
+	focus = {
+		id = TUR_immediate_industrial_recovery
+		icon = GFX_TUR_
+		x = 5
+		y = 2
+		cost = 3
+		prerequisite = { focus = TUR_reparation_congress_in_konya }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_ruined_industry_1
+				add_idea = TUR_ruined_industry_2
+			}
+			346 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			49 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			798 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_link_country_with_roads
+		icon = GFX_TUR_
+		x = 7
+		y = 2
+		cost = 3
+		prerequisite = { focus = TUR_reparation_congress_in_konya }
+
+		completion_reward = {
+        every_owned_state = {
+			add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		add_stability = 0.03
+		}
+	}
+    focus = {
+		id = TUR_first_turkish_tractor
+		icon = GFX_TUR_
+		x = 4
+		y = 3
+		cost = 3
+		prerequisite = { focus = TUR_increase_farmland }
+		prerequisite = { focus = TUR_immediate_industrial_recovery }
+
+		completion_reward = {
+			country_event = { id = turkey.2 days = 3 }
+			49 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					    type = industrial_complex
+						level = 1
+						instant_build = yes 
+						}
+					}
+			add_tech_bonus = {
+                bonus = 1
+                uses = 2
+                category = industry
+				}
+		    }
+			    hidden_effect = {
+					country_event = { id = turkey.3 days = 60 }
+				}
+			}
+	focus = {
+		id = TUR_machines_of_the_new_decade
+		icon = GFX_TUR_
 		x = 6
-		y = 0
+		y = 3
+		cost = 3
+		prerequisite = { focus = TUR_link_country_with_roads }
+		prerequisite = { focus = TUR_immediate_industrial_recovery }
+
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = TUR_ruined_industry_2
+				add_idea = TUR_ruined_industry_3
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					    type = industrial_complex
+						level = 1
+						instant_build = yes 
+					}
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					    type = industrial_complex
+						level = 1
+						instant_build = yes 
+					}
+				}
+			}
+	focus = {
+		id = TUR_give_work_to_everyone
+		icon = GFX_TUR_
+		x = 5
+		y = 4
+		cost = 3
+		prerequisite = { focus = TUR_first_turkish_tractor }
+		prerequisite = { focus = TUR_machines_of_the_new_decade }
+
+		completion_reward = {
+			add_ideas = TUR_work_for_good_of_fatherland
+			}
+		}
+    focus = {
+		id = TUR_national_revival
+		icon = GFX_TUR_
+		x = 5
+		y = 5
+		cost = 3
+		prerequisite = { focus = TUR_give_work_to_everyone }
+
+		completion_reward = {
+            remove_ideas =  TUR_ruined_industry_3
+			country_event = { id = turkey.4 hours = 12 }
+			}
+		}
+    ###Внешняя политика###
+	focus = {
+		id = TUR_rebirth_from_ruins
+		icon = GFX_TUR_
+		x = 14
+		y = 0
+		cost = 5
+
+		available = {
+			has_completed_focus = TUR_ankaras_big_project
+		}
+
+		completion_reward = {
+			country_event = { id = turkey.11 hours = 12 }
+		}
+	}
+    focus = {
+		id = TUR_enter_western_provinces
+		icon = GFX_TUR_
+		x = 14
+		y = 1
+		cost = 3
+        prerequisite = { focus = TUR_rebirth_from_ruins }
+
+		available = {
+			has_army_manpower = { size > 75000 }
+		}
+
+		completion_reward = {
+			GRE = {
+				country_event = { id = turkey.12 days = 3 }
+			}
 		}
 	}
 	focus = {
-		id = TUR_focus2
-		icon = GFX_focus_TUR_Vozrozhdenie_iz_ruin
-		cost = 5
+		id = TUR_this_is_ankara_speaking
+		icon = GFX_TUR_
 		x = 13
+		y = 2
+		cost = 5
+        prerequisite = { focus = TUR_enter_western_provinces }
+
+		available = {
+			has_owned_controlled_state = 341
+		}
+
+		completion_reward = {
+			country_event = { id = turkey.15 hours = 12 }
+		}
+	}
+	focus = {
+		id = TUR_new_radio_towers
+		icon = GFX_TUR_
+		x = 15
+		y = 2
+		cost = 5
+        prerequisite = { focus = TUR_enter_western_provinces }
+
+		available = {
+			has_owned_controlled_state = 341
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 2
+					uses = 3
+					category = electronics
+				}
+			}
+		}
+	focus = {
+		id = TUR_new_horizon_doctrine
+		icon = GFX_TUR_
+		x = 14
+		y = 3
+		cost = 5
+        prerequisite = { focus = TUR_this_is_ankara_speaking }
+		prerequisite = { focus = TUR_new_radio_towers }
+
+		completion_reward = {
+			country_event = { id = turkey.16 hours = 12 }
+		}
+	}
+	focus = {
+		id = TUR_arab_allies
+		icon = GFX_TUR_
+		x = 12
+		y = 4
+		cost = 5
+        prerequisite = { focus = TUR_new_horizon_doctrine }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			hidden_effect = {
+				PER = {
+					country_event = { id = turkey.17 days = 3 }
+				}
+			    IRQ = {
+					country_event = { id = turkey.17 days = 3 }
+				}
+				AFG = {
+					country_event = { id = turkey.17 days = 3 }
+				}
+				YEM = {
+					country_event = { id = turkey.17 days = 3 }
+				}
+				OMA = {
+					country_event = { id = turkey.17 days = 3 }
+				}
+			}
+		}
+	}
+    focus = {
+		id = TUR_fate_of_kurdistan
+		icon = GFX_TUR_
+		x = 14
+		y = 4
+		cost = 5
+        prerequisite = { focus = TUR_new_horizon_doctrine }
+
+		completion_reward = {
+			country_event = { id = turkey.22 days = 3 }
+		}
+	}
+	focus = {
+		id = TUR_bosporan_mosques
+		icon = GFX_TUR_
+		x = 16
+		y = 4
+		cost = 5
+        prerequisite = { focus = TUR_new_horizon_doctrine }
+
+		completion_reward = {
+			797 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_syrian_agreements
+		icon = GFX_TUR_
+		x = 13
+		y = 5
+		cost = 5
+        prerequisite = { focus = TUR_arab_allies }
+
+		completion_reward = {
+			FRA = {
+				country_event = { id = turkey.18 days = 4 }
+			}
+		}
+	}
+    focus = {
+		id = TUR_raise_the_banners
+		icon = GFX_TUR_
+		x = 15
+		y = 5
+		cost = 5
+        prerequisite = { focus = TUR_bosporan_mosques }
+
+		completion_reward = {
+			add_ideas = TUR_banners_under_walls_of_istanbul
+		}
+	}
+	focus = {
+		id = TUR_ready_to_fight
+		icon = GFX_TUR_
+		x = 14
+		y = 6
+		cost = 5
+        prerequisite = { focus = TUR_syrian_agreements }
+		prerequisite = { focus = TUR_fate_of_kurdistan }
+		prerequisite = { focus = TUR_raise_the_banners }
+
+		completion_reward = {
+			country_event = { id = turkey.24 hours = 12 }
+		}
+	}
+	###Милитаризация###
+    focus = {
+		id = TUR_new_era_of_militarism
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 26
 		y = 0
-		completion_reward = {
-			
+
+		available = {
+			has_completed_focus = TUR_national_revival
 		}
+		completion_reward = {
+		        add_ideas = TUR_militarism
+		        army_experience = 25
+		        navy_experience = 25
+				air_experience = 25
+		}
+
 	}
 	focus = {
-		id = TUR_focus3
-		icon = GFX_unkown
+		id = TUR_open_old_workshops
+		icon = GFX_goal_unknown
 		cost = 5
-		x = 0
+		prerequisite = { focus =  TUR_new_era_of_militarism }
+		x = 22
 		y = 1
-		relative_position_id = TUR_focus1
-		prerequisite = {
-			focus = TUR_focus1
-		}
-		completion_reward = {
-			
+            completion_reward = {
+                random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+                    add_building_construction = { 
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+                    add_building_construction = { 
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+			    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { 
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
-		id = TUR_focus4
-		icon = GFX_unkown
+		id = TUR_new_divisions
+		icon = GFX_goal_unknown
 		cost = 5
-		x = 0
+		prerequisite = { focus =  TUR_new_era_of_militarism }
+		mutually_exclusive = { focus = TUR_army_of_professionals }
+		x = 25
 		y = 1
-		relative_position_id = TUR_focus2
-		prerequisite = {
-			focus = TUR_focus2
-		}
-		completion_reward = {
-			
+        completion_reward = {
+            add_ideas = TUR_strength_is_in_number
 		}
 	}
 	focus = {
-		id = TUR_focus5
-		icon = GFX_unkown
+		id = TUR_army_of_professionals
+		icon = GFX_goal_unknown
 		cost = 5
-		x = 0
+		prerequisite = { focus =  TUR_new_era_of_militarism }
+		mutually_exclusive = { focus = TUR_new_divisions }
+		x = 27
 		y = 1
-		relative_position_id = TUR_focus3
-		prerequisite = {
-			focus = TUR_focus3
-		}
-		completion_reward = {
-			
+        completion_reward = {
+			add_ideas = TUR_strength_is_quality
 		}
 	}
 	focus = {
-		id = TUR_focus6
-		icon = GFX_unkown
+		id = TUR_cult_of_war
+		icon = GFX_goal_unknown
 		cost = 5
-		x = -2
+		prerequisite = { focus =  TUR_new_era_of_militarism }
+		x = 30
 		y = 1
-		relative_position_id = TUR_focus3
-		prerequisite = {
-			focus = TUR_focus3
-		}
-		completion_reward = {
-			
+        completion_reward = {
+			add_ideas = TUR_cult_of_war
 		}
 	}
 	focus = {
-		id = TUR_focus7
-		icon = GFX_unkown
-		cost = 5
-		x = 2
-		y = 1
-		relative_position_id = TUR_focus3
-		prerequisite = {
-			focus = TUR_focus3
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = TUR_focus8
-		icon = GFX_unkown
-		cost = 5
-		x = -1
-		y = 1
-		relative_position_id = TUR_focus4
-		prerequisite = {
-			focus = TUR_focus4
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = TUR_focus9
-		icon = GFX_unkown
-		cost = 5
-		x = 1
-		y = 1
-		relative_position_id = TUR_focus4
-		prerequisite = {
-			focus = TUR_focus4
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = TUR_focus10
-		icon = GFX_unkown
-		cost = 5
-		x = -1
-		y = 1
-		relative_position_id = TUR_focus5
-		prerequisite = {
-			focus = TUR_focus5
-		}
-		prerequisite = {
-			focus = TUR_focus6
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = TUR_focus11
-		icon = GFX_unkown
-		cost = 5
-		x = 1
-		y = 1
-		relative_position_id = TUR_focus5
-		prerequisite = {
-			focus = TUR_focus7
-		}
-		prerequisite = {
-			focus = TUR_focus5
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = TUR_focus12
-		icon = GFX_unkown
-		cost = 5
-		x = 0
+		id = TUR_all_turkish_appeal
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = { focus = TUR_open_old_workshops }
+		prerequisite = { focus = TUR_new_divisions focus = TUR_army_of_professionals }
+		prerequisite = { focus = TUR_cult_of_war }
+		prerequisite = { focus = TUR_Open_Old_workshops }
+		x = 26
 		y = 2
-		relative_position_id = TUR_focus4
-		prerequisite = {
-			focus = TUR_focus8
-		}
-		prerequisite = {
-			focus = TUR_focus9
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = TUR_focus13
-		icon = GFX_unkown
-		cost = 5
-		x = 0
-		y = 2
-		relative_position_id = TUR_focus5
-		prerequisite = {
-			focus = TUR_focus10
-		}
-		prerequisite = {
-			focus = TUR_focus11
-		}
-		completion_reward = {
-			
+        completion_reward = {
+			swap_ideas = {
+				remove_idea = civilian_economy
+				add_idea = partial_economic_mobilisation
+			}
+			swap_ideas = {
+				remove_idea = volunteer_only
+				add_idea = extensive_conscription
+			}
 		}
 	}
 	focus = {
-		id = TUR_focus14
-		icon = GFX_unkown
+		id = TUR_reviving_shipyards
+		icon = GFX_goal_unknown
 		cost = 5
-		x = -2
-		y = 1
-		relative_position_id = TUR_focus12
-		prerequisite = {
-			focus = TUR_focus12
-		}
-		completion_reward = {
-			
+		prerequisite = { focus = TUR_all_turkish_appeal }
+		x = 23
+		y = 3
+        completion_reward = {
+			347 = {
+			    add_building_construction = {
+				    type = naval_base
+				    level = 2
+				    instant_build = yes
+				    province = 6995
+					}
+				}
+			355 = {
+			    add_building_construction = {
+				    type = naval_base
+				    level = 1
+				    instant_build = yes
+				    province = 904
+					}
+				}
+			347 = {
+				add_extra_state_shared_building_slots = 1
+				    add_building_construction = {
+					type = dockyard
+                    level = 1
+                    instant_build = yes
+				}
+			355 = {
+				add_extra_state_shared_building_slots = 1
+				    add_building_construction = {
+					type = dockyard
+                    level = 1
+                    instant_build = yes
+				}
+			}
+			356 = {
+				add_extra_state_shared_building_slots = 1
+				    add_building_construction = {
+					type = dockyard
+                    level = 1
+                    instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	focus = {
-		id = TUR_focus15
-		icon = GFX_unkown
+		id = TUR_creation_of_black_sea_forge
+		icon = GFX_goal_unknown
 		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = TUR_focus12
-		prerequisite = {
-			focus = TUR_focus12
-		}
-		completion_reward = {
-			
+		prerequisite = { focus = TUR_all_turkish_appeal }
+		x = 26
+		y = 3
+            completion_reward = {
+				country_event = { id = turkey.6 hours = 18 }
 		}
 	}
 	focus = {
-		id = TUR_focus16
-		icon = GFX_unkown
+		id = TUR_german_minds
+		icon = GFX_goal_unknown
 		cost = 5
-		x = 2
-		y = 1
-		relative_position_id = TUR_focus12
-		prerequisite = {
-			focus = TUR_focus12
-		}
-		completion_reward = {
-			
+		prerequisite = { focus = TUR_creation_of_black_sea_forge }
+		x = 25
+		y = 4
+        completion_reward = {
+			add_research_slot = 1
+			add_ideas = TUR_german_minds
 		}
 	}
 	focus = {
-		id = TUR_focus17
-		icon = GFX_unkown
+		id = TUR_turkish_hands
+		icon = GFX_goal_unknown
 		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = TUR_focus13
-		prerequisite = {
-			focus = TUR_focus13
-		}
-		completion_reward = {
-			
+		prerequisite = { focus = TUR_creation_of_black_sea_forge }
+		x = 27
+		y = 4
+        completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				    add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			add_ideas = TUR_turkish_hands
 		}
 	}
 	focus = {
-		id = TUR_focus18
-		icon = GFX_unkown
+		id = TUR_air_bases_and_planes
+		icon = GFX_goal_unknown
 		cost = 5
-		x = -1
-		y = 1
-		relative_position_id = TUR_focus15
-		prerequisite = {
-			focus = TUR_focus14
+		prerequisite = { focus = TUR_all_turkish_appeal }
+		x = 29
+		y = 3
+            completion_reward = {
+				49 = {
+					add_building_construction = {
+						type = air_base
+						level = 3
+						instant_build = yes
+					}
+				}
+			    random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 		}
-		completion_reward = {
-			
+	focus = {
+		id = TUR_ankaras_big_project
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = { focus = TUR_german_minds }
+		prerequisite = { focus = TUR_turkish_hands }
+		x = 26
+		y = 5
+        completion_reward = {
+			remove_ideas = TUR_german_minds 
+			remove_ideas = TUR_turkish_hands
+			add_ideas = TUR_ankaras_big_project
+			country_event = { id = turkey.5 days = 4 }
+			country_event = { id = turkey.1111 days = 15 }
+			    49 = {
+				    add_extra_state_shared_building_slots = 4
+				    add_building_construction = {
+					    type = industrial_complex
+					    level = 2
+					    instant_build = yes
+				    }
+				    add_building_construction = {
+					    type = arms_factory
+					    level = 2
+					    instant_build = yes
+				    }
+			    }
+		    }
+		}
+	focus = {
+		id = TUR_involve_the_masters
+		icon = GFX_goal_unknown
+		cost = 05
+		prerequisite = { focus = TUR_reviving_shipyards }
+		x = 21
+		y = 4
+        completion_reward = {
+			add_research_slot = 1
+			navy_experience = 50
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cl_tech
+				category = ca_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = ss_tech
+			}
 		}
 	}
 	focus = {
-		id = TUR_focus19
-		icon = GFX_unkown
+		id = TUR_aces_in_our_sky
+		icon = GFX_goal_unknown
 		cost = 5
-		x = 1
-		y = 1
-		relative_position_id = TUR_focus15
-		prerequisite = {
-			focus = TUR_focus16
+		prerequisite = { focus = TUR_air_bases_and_planes }
+		x = 31
+		y = 4
+            completion_reward = {
+				air_experience = 50
+				add_tech_bonus = {
+				    bonus = 1.0
+				    uses = 2
+				    category = light_fighter
+				    category = cat_heavy_fighter
+			}
 		}
-		completion_reward = {
-			
+	}
+	###Турецкое Национальное Собрание###
+	focus = {
+		id = TUR_turkish_national_assembly
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 26
+		y = 7
+
+		available = { 
+			has_completed_focus = TUR_national_revival
+		}
+        completion_reward = {
+			remove_ideas = TUR_political_chaos
+			country_event = { id = turkey.7 days = 2 }
 		}
 	}
 	focus = {
-		id = TUR_focus20
-		icon = GFX_unkown
+		id = TUR_triumph_of_ottoman_fascism
+		icon = GFX_TUR_
+		cost = 0
+		x = 25
+		y = 8
+		prerequisite = { focus = TUR_turkish_national_assembly }
+
+		mutually_exclusive = { focus = TUR_victory_of_military_revaeshism }
+
+		available = {
+			always = no
+		}
+
+        completion_reward = {
+		}
+	}
+	focus = {
+		id = TUR_victory_of_military_revaeshism
+		icon = GFX_TUR_
+		cost = 0
+		x = 27
+		y = 8
+		prerequisite = { focus = TUR_turkish_national_assembly }
+		
+		mutually_exclusive = { focus = TUR_triumph_of_ottoman_fascism }
+
+		available = {
+			always = no
+		}
+
+        completion_reward = {
+		}
+	}
+	focus = {
+		id = TUR_era_of_pogroms
+		icon = GFX_TUR_
 		cost = 5
-		x = 0
-		y = 2
-		relative_position_id = TUR_focus15
-		prerequisite = {
-			focus = TUR_focus18
+		x = 24
+		y = 9
+		prerequisite = { focus = TUR_triumph_of_ottoman_fascism }
+
+        completion_reward = {
+			country_event = { id = turkey.8 hours = 12 }
 		}
-		prerequisite = {
-			focus = TUR_focus19
+	}
+	focus = {
+		id = TUR_struggle_for_empire
+		icon = GFX_TUR_
+		cost = 10
+		x = 23
+		y = 10
+		prerequisite = { focus = TUR_era_of_pogroms }
+
+        completion_reward = {
+			add_ideas = TUR_great_legacy_of_empire
 		}
-		prerequisite = {
-			focus = TUR_focus15
+	}
+	focus = {
+		id = TUR_mobilization_of_patriots
+		icon = GFX_TUR_
+		cost = 5
+		x = 26
+		y = 9
+		prerequisite = { focus = TUR_triumph_of_ottoman_fascism focus = TUR_victory_of_military_revaeshism }
+
+        completion_reward = {
+			army_experience = 30
+		    division_template = {
+				name = "Opolchenie"
+				priority = 1
+				division_names_group = TUR_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+				}
+				support = {
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Perviy Otryad Opolcheniya\" division_template = \"Opolchenie\" start_experience_factor = 0.2" 
+					owner = PREV
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Vtoroy Otryad Opolcheniya\" division_template = \"Opolchenie\" start_experience_factor = 0.2" 
+					owner = PREV
+				}
+			}
+		    random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Tretiy Otryad Opolcheniya\" division_template = \"Opolchenie\" start_experience_factor = 0.2" 
+					owner = PREV
+				}
+			}
 		}
-		completion_reward = {
-			
+	}
+	focus = {
+		id = TUR_special_guerd
+		icon = GFX_TUR_
+		cost = 5
+		x = 26
+		y = 10
+		prerequisite = { focus = TUR_mobilization_of_patriots }
+
+        completion_reward = {
+			division_template = {
+				name = "Turkish Guard"
+				priority = 2
+				division_names_group = TUR_INF_02
+				regiments = {
+					mountaineers = { x = 0 y = 0 }
+					mountaineers = { x = 0 y = 1 }
+					mountaineers = { x = 0 y = 2 }
+					mountaineers = { x = 0 y = 3 }
+					mountaineers = { x = 0 y = 4 }
+					artillery_brigade = { x = 1 y = 0 }
+				}
+				support = {
+				}
+			}
+			49 = {
+				create_unit = {
+					division = "name = \"Guard\" division_template = \"Perviy Gvardiiskiy Polk\" start_experience_factor = 0.3" 
+					owner = PREV
+				}
+			}
+			49 = {
+				create_unit = {
+					division = "name = \"Guard\" division_template = \"Vtoroy Gvardiiskiy Polk\" start_experience_factor = 0.3" 
+					owner = PREV
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_the_state_of_one_people
+		icon = GFX_TUR_
+		cost = 5
+		x = 26
+		y = 11
+		prerequisite = { focus = TUR_special_guerd }
+
+        completion_reward = {
+			country_event = { id = turkey.10 hours = 12 }
+		}
+	}
+	focus = {
+		id = TUR_era_of_terror
+		icon = GFX_TUR_
+		cost = 5
+		x = 28
+		y = 9
+		prerequisite = { focus = TUR_victory_of_military_revaeshism }
+
+        completion_reward = {
+			country_event = { id = turkey.9 hours = 12 }
+		}
+	}
+	focus = {
+		id = TUR_new_turkey
+		icon = GFX_TUR_
+		cost = 10
+		x = 29
+		y = 10
+		prerequisite = { focus = TUR_era_of_terror }
+
+        completion_reward = {
+			add_ideas = TUR_new_turkish_nation
 		}
 	}
 }
