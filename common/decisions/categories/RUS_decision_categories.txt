@@ -1,0 +1,55 @@
+RUS_purchase_of_foreign_weapons = {
+    icon = GFX_RUS_ 
+
+    allowed = {
+	    original_tag = RUS
+		}
+		
+	visible = {
+        has_completed_focus = RUS_foreign_arms_supplies
+	}
+	
+	priority = 75
+}
+RUS_special_category = {
+	icon = unknown
+
+	allowed = {
+		original_tag = RUS
+	}
+
+	visible = {
+		always = no
+	}
+
+	priority = 50
+}
+RUS_arm_supporters_in_fentiang = {
+	icon = GFX_RUS_ 
+
+	allowed = {
+		original_tag = RUS
+	}
+
+	visible = {
+		has_completed_focus = RUS_arm_supporters
+	}
+
+	priority = 80
+}
+RUS_operation_zaamurye = {
+	icon = GFX_RUS_ 
+
+	allowed = {
+		original_tag = RUS
+		NO = {
+			has_country_flag = RUS_crash_of_our_plans
+		}
+	}
+
+	visible = {
+		has_country_flag = RUS_operation_zaamurye
+	}
+
+	priority = 100
+}

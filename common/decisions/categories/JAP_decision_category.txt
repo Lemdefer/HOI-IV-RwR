@@ -1,0 +1,16 @@
+JAP_prevent_russians_from_entering_china = {
+	icon = 
+
+	priority = 80
+
+	allowed = {
+		original_tag = JAP
+		}
+	
+	visible = {
+		OR = {
+			has_global_flag = east_china_war
+			has_global_flag = russia_knows_no_borders
+			}
+		}
+	}
