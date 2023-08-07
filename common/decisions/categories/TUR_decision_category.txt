@@ -1,0 +1,14 @@
+TUR_reparations_category = {
+    icon = GFX_TUR_
+	
+	allowed = {
+	    original_tag = TUR 
+		}
+		
+	visible = {
+		has_completed_focus = TUR_reparation_congress_in_konya
+	}
+	
+	priority = 50
+
+}
