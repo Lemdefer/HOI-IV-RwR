@@ -48,7 +48,17 @@ ENG_help_afrian_vosstanie = {
 		has_global_flag = afrianskoe_wosstanie
 	}
 }
+ENG_stop_russia_in_asia = {
+	icon =
 
-
-
-
+	priority = 90
+	
+	allowed = {
+		original_tag = ENG
+		}
+	
+	visible = {
+		has_global_flag = east_china_war
+		has_global_flag = russia_knows_no_borders
+	}
+}
