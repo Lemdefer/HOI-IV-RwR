@@ -1,0 +1,1228 @@
+RUS_purchase_of_foreign_weapons = {
+
+    RUS_infantry_weapons_payment_small_FRA = {
+
+        name = RUS_infantry_weapons_payment_small_FRA
+
+        available = {
+            original_tag = RUS
+            NOT = {
+                has_country_flag = RUS_infantry_weapons_payment
+            } 
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 30
+
+        days_re_enable = 60
+
+        cost = 75
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.03
+            political_power_gain = -0.5
+            }
+
+        complete_effect = {
+            set_country_flag = RUS_infantry_weapons_payment
+            FRA = {
+                country_event = { id = rus_military.2 days = 7 }
+            }
+        }
+
+        remove_effect = {
+            remove_country_flag = RUS_infantry_weapons_payment
+        }
+    }
+
+    RUS_infantry_weapons_payment_small_USA = {
+
+        name = RUS_infantry_weapons_payment_small_USA
+
+        available = {
+            original_tag = RUS 
+            NOT = {
+                has_country_flag = RUS_infantry_weapons_payment
+            }
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 30
+
+        days_re_enable = 60
+
+        cost = 75
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.03
+            political_power_gain = -0.5
+            }
+
+        complete_effect = {
+            set_country_flag = RUS_infantry_weapons_payment
+            USA = {
+                country_event = { id = rus_military.2 days = 7 }
+            }
+        }
+
+        remove_effect = {
+        remove_country_flag = RUS_infantry_weapons_payment
+        }
+    }
+
+    RUS_infantry_weapons_payment_small_ENG = {
+
+        name = RUS_infantry_weapons_payment_small_ENG
+
+        available = {
+            original_tag = RUS 
+            NOT = {
+                has_country_flag = RUS_infantry_weapons_payment
+            } 
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 30
+
+        days_re_enable = 60
+
+        cost = 75
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.03
+            political_power_gain = -0.5
+            }
+
+        complete_effect = {
+            set_country_flag = RUS_infantry_weapons_payment
+            ENG = {
+                country_event = { id = rus_military.2 days = 7 }
+            }
+        }
+
+        remove_effect = {
+        remove_country_flag = RUS_infantry_weapons_payment
+        }
+    }
+
+    RUS_infantry_weapons_payment_big_FRA = {
+
+        name = RUS_infantry_weapons_payment_big_FRA
+
+        available = {
+            original_tag = RUS 
+            NOT = {
+                has_country_flag = RUS_infantry_weapons_payment
+            } 
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 30
+
+        days_re_enable = 60
+
+        cost = 150
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.07
+            political_power_gain = -1
+            }
+
+        complete_effect = {
+            set_country_flag = RUS_infantry_weapons_payment
+            FRA = {
+                country_event = { id = rus_military.5 days = 7 }
+            }
+        }
+
+        remove_effect = {
+        remove_country_flag = RUS_infantry_weapons_payment
+        }
+    }
+
+    RUS_infantry_weapons_payment_big_USA = {
+
+        name = RUS_infantry_weapons_payment_big_USA
+
+        available = {
+            original_tag = RUS 
+            NOT = {
+                has_country_flag = RUS_infantry_weapons_payment
+            } 
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 30
+
+        days_re_enable = 60
+
+        cost = 150
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.07
+            political_power_gain = -1
+            }
+
+        complete_effect = {
+            set_country_flag = RUS_infantry_weapons_payment
+            USA = {
+                country_event = { id = rus_military.5 days = 7 }
+            }
+        }
+
+        remove_effect = {
+        remove_country_flag = RUS_infantry_weapons_payment
+        }
+    }
+
+    RUS_infantry_weapons_payment_big_ENG = {
+
+        name = RUS_infantry_weapons_payment_big_ENG
+
+        available = {
+            original_tag = RUS 
+            NOT = {
+                has_country_flag = RUS_infantry_weapons_payment
+            } 
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 30
+
+        days_re_enable = 60
+
+        cost = 150
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.07
+            political_power_gain = -1
+            }
+        
+        complete_effect = {
+            set_country_flag = RUS_infantry_weapons_payment
+            ENG = {
+                country_event = { id = rus_military.5 days = 7 }
+            }
+        }
+
+        remove_effect = {
+        remove_country_flag = RUS_infantry_weapons_payment
+        }
+    }
+
+    RUS_artillery_weapons_payment_small_FRA = {
+
+        name = RUS_artillery_weapons_payment_small_FRA
+
+        available = {
+            original_tag = RUS 
+            NOT = {
+                has_country_flag = RUS_artillery_weapons_payment
+            } 
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 30
+
+        days_re_enable = 60
+
+        cost = 75
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.03
+            political_power_gain = -0.5
+            }
+
+        complete_effect = {
+            set_country_flag = RUS_artillery_weapons_payment
+            FRA = {
+            country_event = { id = rus_military.8 days = 7 }
+            }
+        }
+
+        remove_effect = {
+        remove_country_flag = RUS_artillery_weapons_payment
+        }
+    }
+
+    RUS_artillery_weapons_payment_small_USA = {
+
+        name = RUS_artillery_weapons_payment_small_USA
+
+        available = {
+            original_tag = RUS 
+            NOT = {
+                has_country_flag = RUS_artillery_weapons_payment
+            }
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 30
+
+        days_re_enable = 60
+
+        cost = 75
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.03
+            political_power_gain = -0.5
+            }
+
+        complete_effect = {
+            set_country_flag = RUS_artillery_weapons_payment
+            USA = {
+                country_event = { id = rus_military.8 days = 7 }
+            }
+        }
+
+        remove_effect = {
+        remove_country_flag = RUS_artillery_weapons_payment
+        }
+    }
+
+    RUS_artillery_weapons_payment_small_ENG = {
+
+        name = RUS_artillery_weapons_payment_small_ENG
+
+        available = {
+            original_tag = RUS
+            NOT = {
+                has_country_flag = RUS_artillery_weapons_payment
+            } 
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 30
+
+        days_re_enable = 60
+
+        cost = 75
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.03
+            political_power_gain = -0.5
+            }
+
+        complete_effect = {
+            set_country_flag = RUS_artillery_weapons_payment
+            ENG = {
+                country_event = { id = rus_military.8 days = 7 }
+            }
+        }
+
+        remove_effect = {
+        remove_country_flag = RUS_artillery_weapons_payment
+        }
+    }
+
+    RUS_artillery_weapons_payment_big_FRA = {
+
+        name = RUS_artillery_weapons_payment_big_FRA
+
+        available = {
+            original_tag = RUS
+            NOT = {
+                has_country_flag = RUS_artillery_weapons_payment
+            } 
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 30
+
+        days_re_enable = 60
+
+        cost = 150
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.07
+            political_power_gain = -1
+            }
+
+        complete_effect = {
+            set_country_flag = RUS_artillery_weapons_payment
+            FRA = {
+                country_event = { id = rus_military.11 days = 7 }
+            }
+        }
+
+        remove_effect = {
+        remove_country_flag = RUS_artillery_weapons_payment
+        }
+    }
+
+    RUS_artillery_weapons_payment_big_USA = {
+
+        name = RUS_artillery_weapons_payment_big_USA
+
+        available = {
+            original_tag = RUS
+            NOT = {
+                has_country_flag = RUS_artillery_weapons_payment
+            } 
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 30
+
+        days_re_enable = 60
+
+        cost = 150
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.07
+            political_power_gain = -1
+            }
+
+        complete_effect = {
+            set_country_flag = RUS_artillery_weapons_payment
+            USA = {
+                country_event = { id = rus_military.11 days = 7 }
+            }
+        }
+
+        remove_effect = {
+        remove_country_flag  = RUS_artillery_weapons_payment
+        }
+    }
+
+    RUS_artillery_weapons_payment_big_ENG = {
+
+        name = RUS_artillery_weapons_payment_big_ENG
+
+        available = {
+            original_tag = RUS 
+            NOT = {
+                has_country_flag = RUS_artillery_weapons_payment
+            }
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 30
+
+        days_re_enable = 60
+
+        cost = 150
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.07
+            political_power_gain = -1
+            }
+
+        complete_effect = {
+            set_country_flag = RUS_artillery_weapons_payment
+            ENG = {
+                country_event = { id = rus_military.11 days = 7 }
+            }
+        }
+
+        remove_effect = {
+        remove_country_flag = RUS_artillery_weapons_payment
+        }
+    }
+    RUS_support_weapons_payment_small_FRA = {
+
+        name = RUS_support_weapons_payment_small_FRA
+
+        available = {
+            original_tag = RUS 
+            NOT = {
+                has_country_flag = RUS_support_weapons_payment
+            } 
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 30
+
+        days_re_enable = 60
+
+        cost = 75
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.03
+            political_power_gain = -0.5
+            }
+
+        complete_effect = {
+            set_country_flag = RUS_support_weapons_payment
+            FRA = {
+            country_event = { id = rus_military.14 days = 7 }
+            }
+        }
+
+        remove_effect = {
+            remove_country_flag = RUS_support_weapons_payment
+        }
+    }
+
+    RUS_support_weapons_payment_small_USA = {
+
+        name = RUS_support_weapons_payment_small_USA
+
+        available = {
+            original_tag = RUS 
+            NOT = {
+                has_country_flag = RUS_support_weapons_payment
+            } 
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 30
+
+        days_re_enable = 60
+
+        cost = 75
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.03
+            political_power_gain = -0.5
+            }
+
+        complete_effect = {
+            set_country_flag = RUS_support_weapons_payment
+            USA = {
+                country_event = { id = rus_military.14 days = 7 }
+            }
+        }
+
+        remove_effect = {
+            remove_country_flag = RUS_support_weapons_payment
+        }
+    }
+
+    RUS_support_weapons_payment_small_ENG = {
+
+        name = RUS_support_weapons_payment_small_ENG
+
+        available = {
+            original_tag = RUS 
+            NOT = {
+                has_country_flag = RUS_support_weapons_payment
+            } 
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 30
+
+        days_re_enable = 60
+
+        cost = 75
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.03
+            political_power_gain = -0.5
+            }
+
+        complete_effect = {
+            set_country_flag = RUS_support_weapons_payment
+            ENG = {
+                country_event = { id = rus_military.14 days = 7 }
+            }
+        }
+
+        remove_effect = {
+            remove_country_flag = RUS_support_weapons_payment
+        }
+    }
+    RUS_support_weapons_payment_big_FRA = {
+
+        name = RUS_support_weapons_payment_big_FRA
+
+        available = {
+            original_tag = RUS
+            NOT = {
+                has_country_flag = RUS_support_weapons_payment
+            } 
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 30
+
+        days_re_enable = 60
+
+        cost = 150
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.07
+            political_power_gain = -1
+            }
+
+        complete_effect = {
+            set_country_flag = RUS_support_weapons_payment
+            FRA = {
+                country_event = { id = rus_military.17 days = 7 }
+            }
+        }
+
+        remove_effect = {
+            remove_country_flag = RUS_support_weapons_payment
+        }
+    }
+
+    RUS_support_weapons_payment_big_USA = {
+
+        name = RUS_support_weapons_payment_big_USA
+
+        available = {
+            original_tag = RUS 
+            NOT = {
+                has_country_flag = RUS_support_weapons_payment
+            }
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 30
+
+        days_re_enable = 60
+
+        cost = 150
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.07
+            political_power_gain = -1
+            }
+
+        complete_effect = {
+            set_country_flag = RUS_support_weapons_payment
+            USA = {
+                country_event = { id = rus_military.17 days = 7 }
+            }
+        }
+
+        remove_effect = {
+            remove_country_flag = RUS_support_weapons_payment
+        }
+    }
+
+    RUS_support_weapons_payment_big_ENG = {
+
+        name = RUS_support_weapons_payment_big_ENG
+
+        available = {
+            original_tag = RUS 
+            NOT = {
+                has_country_flag = RUS_support_weapons_payment
+            }
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 30
+
+        days_re_enable = 60
+
+        cost = 150
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.07
+            political_power_gain = -1
+            }
+
+        complete_effect = {
+            set_country_flag = RUS_support_weapons_payment
+            ENG = {
+                country_event = { id = rus_military.17 days = 7 }
+            }
+        }
+
+        remove_effect = {
+            remove_country_flag = RUS_support_weapons_payment
+        }
+    }
+}
+RUS_special_category = {
+
+    RUS_construction_in_far_east = {
+
+        name = RUS_test_1
+
+        icon = 
+
+        visible = no
+
+        activation = {
+			has_idea = RUS_construction_in_far_east
+		}
+
+        is_good = yes 
+
+        days_mission_timeout = 40
+
+        fire_only_once = yes 
+
+        timeout_effect = {
+            408 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11879
+						instant_build = yes
+					}
+				}
+			}
+            408 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = 957
+						instant_build = yes
+					}
+				}
+			}
+            409 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = 9604
+						instant_build = yes
+					}
+				}
+			}
+            655 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1755
+						instant_build = yes
+					}
+				}
+			}
+        }
+    }
+}
+RUS_arm_supporters_in_fentiang = {
+
+    RUS_rifles_in_hands_of_yellow_russians = {
+
+        name = RUS_rifles_in_hands_of_yellow_russians
+
+        available = {
+            original_tag = RUS 
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 7
+
+        days_re_enable = 28
+
+        cost = 20
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        remove_effect = {
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -400
+		    }
+            MAN = {
+                add_popularity = {
+                    ideology = neutrality
+                    popularity = 0.02
+                }
+            }
+        }
+    }
+    
+    RUS_equipment_due_to_amur = {
+        
+        name = RUS_equipment_due_to_amur
+
+        available = {
+            original_tag = RUS 
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 7
+
+        days_re_enable = 28
+
+        cost = 30
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        remove_effect = {
+            add_equipment_to_stockpile = {
+			    type = support_equipment
+			    amount = -300
+		    }
+            MAN = {
+                add_popularity = {
+                    ideology = neutrality
+                    popularity = 0.03
+               }
+            }
+        }
+    }
+
+    RUS_people_for_yellow_russians = {
+
+        name = RUS_people_for_yellow_russians
+
+        available = {
+            original_tag = RUS 
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 7
+
+        days_re_enable = 42
+
+        cost = 40
+
+        fire_only_once = no 
+
+        visible = {
+            NOT = {
+                has_war_with = major
+            }
+        }
+
+        remove_effect = {
+            add_manpower = -750
+            MAN = {
+                add_popularity = {
+                    ideology = neutrality
+                    popularity = 0.04
+                    }
+                }
+            }
+        }
+    }
+RUS_operation_zaamurye = {
+    RUS_start_operation_zaamurye = {
+         
+        name = RUS_operation_zaamurye
+
+        available = {
+            
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 28
+
+        cost = 0
+
+        fire_only_once = yes 
+
+        remove_effect = {
+            custom_effect_tooltip = RUS_start_operation_zaamurye_tt
+            hidden_effect = {
+                IF = {
+                    limit = {
+                       MAN = {
+                           neutrality > 0.3
+                        }
+                    }
+                    country_event = { id = rus_foreign_policy_in_east.16 days = 1 random_hours = 12 }
+                }
+                IF = {
+                    limit = {
+                        MAN = {
+                            neutrality > 0.2
+                            neutrality < 0.3
+                     }
+                    }
+                    country_event = { id = rus_foreign_policy_in_east.17 days = 1 random_hours = 12 }
+                }
+                IF = {
+                    limit = {
+                        MAN = {
+                            neutrality > 0.1
+                            neutrality < 0.2
+                        }
+                    }
+                    country_event = { id = rus_foreign_policy_in_east.18 days = 1 random_hours = 12 }
+                }
+                IF = {
+                    limit = {
+                        MAN = {
+                            neutrality < 0.1
+                            neutrality > 0
+                        }
+                    }
+                country_event = { id = rus_foreign_policy_in_east.19 days = 1 random_hours = 12 }
+                }
+                MAN = {
+                    IF = {
+                        limit = {
+                            neutrality > 0.1
+                        }
+                        country_event = { id = man_yellow_russia.3 hours = 12 random_days = 4 }
+                    }
+                }
+                MAN = {
+                    IF = {
+                        limit = {
+                            neutrality < 0.1
+                        }
+                        country_event = { id = man_yellow_russia.4 hours = 12 random_days = 4 }
+                    }
+                }
+            }
+        }
+    }
+    RUS_send_soldiers_to_cossacks = {
+        name = RUS_send_soldiers_to_cossacks
+
+        available = {
+            has_global_flag = east_china_war
+            original_tag = RUS
+        }
+
+        visible = {
+            has_global_flag = east_china_war
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 14
+
+        days_re_enable = 42
+
+        cost = 60
+
+        fire_only_once = no 
+
+        remove_effect = {
+            add_manpower = -2000
+            YRS = {
+                add_manpower = 2000
+                }
+            }
+        }
+    RUS_send_weapons_via_kvzhd = {
+        name = RUS_send_weapons_via_kvzhd
+
+        available = {
+            has_global_flag = east_china_war
+            original_tag = RUS
+        }
+
+        visible = {
+            has_global_flag = east_china_war
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 14
+
+        days_re_enable = 42
+
+        cost = 60
+
+        fire_only_once = no 
+
+        remove_effect = {
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -500
+		    }
+            YRS = {
+                add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 500
+		        }
+            }
+        }
+    }
+    RUS_send_additional_equipment = {
+        name = RUS_send_additional_equipment
+
+        available = {
+            has_global_flag = east_china_war
+            original_tag = RUS
+        }
+
+        visible = {
+            has_global_flag = east_china_war
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 14
+
+        days_re_enable = 49
+
+        cost = 75
+
+        fire_only_once = no 
+
+        remove_effect = {
+            add_equipment_to_stockpile = {
+			    type = support_equipment
+			    amount = -300
+		    }
+            YRS = {
+                add_equipment_to_stockpile = {
+			    type = support_equipment
+			    amount = 300
+		        }
+            }
+        }
+    }
+    RUS_send_military_specialists = {
+        name = RUS_send_military_specialists
+
+        available = {
+            has_global_flag = east_china_war
+            original_tag = RUS
+        }
+
+        visible = {
+            has_global_flag = east_china_war
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 14
+
+        cost = 150
+
+        fire_only_once = yes 
+
+        remove_effect = {
+            YRS = {
+                add_timed_idea = {
+                    idea = RUS_russian_specialists
+                    days = 45
+                }
+            }
+        }
+    }
+}
