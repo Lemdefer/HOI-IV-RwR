@@ -1,6 +1,599 @@
 add_namespace = turkey
 
 country_event = {
+    id = turkey.0
+	title = turkey.0.t 
+	desc = turkey.0.d 
+	picture = GFX_
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = turkey.0.a 
+		ai_chance = {
+		    factor = 100
+			}
+		}
+	}
+country_event = {
+    id = turkey.1 
+	title = turkey.1.t 
+	desc = turkey.1.d 
+	picture = GFX_ 
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = turkey.1.a 
+        ai_chance = {
+		    factor = 100
+			}
+	    unlock_decision_category_tooltip = TUR_reparations_category
+        }
+	}
+country_event = {
+    id = turkey.2 
+	title = turkey.2.t 
+	desc = turkey.2.d 
+	picture = GFX_ 
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = turkey.2.a 
+        ai_chance = {
+		    factor = 100
+			}
+		add_ideas = TUR_turkish_modern_engineering
+        }
+	}
+country_event = {
+	id = turkey.3
+	title = turkey.3.t 
+	desc = turkey.3.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.3.a 
+		    ai_chance = {
+			    factor = 100
+		    }
+		    add_stability = 0.05
+		}
+	}
+country_event = {
+	id = turkey.4
+	title = turkey.4.t 
+	desc = turkey.4.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.4.a 
+		    ai_chance = {
+			    factor = 100
+		    }
+		}
+	}
+country_event = {
+	id = turkey.5
+	title = turkey.5.t 
+	desc = turkey.5.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.5.a 
+		    ai_chance = {
+			    factor = 100
+		    }
+		swap_ideas = {
+			remove_idea = TUR_german_minds 
+			remove_idea = TUR_turkish_hands
+		    add_idea = TUR_new_turkey_new_ankara
+		}
+	}
+}
+country_event = {
+	id = turkey.6
+	title = turkey.6.t 
+	desc = turkey.6.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.6.a 
+		    ai_chance = {
+			    factor = 100
+		    }
+		}
+	}
+country_event = {
+	id = turkey.7
+	title = turkey.7.t 
+	desc = turkey.7.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.7.a 
+		    ai_chance = {
+			    factor = 100
+		    }
+		complete_national_focus = TUR_triumph_of_ottoman_fascism
+		}
+	option = {
+		name = turkey.7.b 
+		ai_chance = {
+			factor = 100
+		    }
+		complete_national_focus = TUR_victory_of_military_revaeshism 
+		set_politics = {
+				ruling_party = paternalism 
+				elections_allowed = no
+			}
+		add_popularity = {
+			ideology = paternalism
+			popularity = 0.70
+		    }
+	    }
+	}
+country_event = {
+	id = turkey.8
+	title = turkey.8.t 
+	desc = turkey.8.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.8.a 
+		    ai_chance = {
+			    factor = 100
+		    }
+		add_timed_idea = {
+				idea = TUR_era_of_pogroms
+				days = 180
+			}
+		}
+	}
+country_event = {
+	id = turkey.9
+	title = turkey.9.t 
+	desc = turkey.9.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.9.a 
+		    ai_chance = {
+			    factor = 100
+		    }
+		add_timed_idea = {
+				idea = TUR_era_of_terror
+				days = 90
+			}
+		}
+	}
+country_event = {
+	id = turkey.10
+	title = turkey.10.t 
+	desc = turkey.10.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.10.a 
+		    ai_chance = {
+			    factor = 100
+		    }
+		add_stability = 0.05
+		}
+	}
+country_event = {
+	id = turkey.11
+	title = turkey.11.t 
+	desc = turkey.11.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.11.a 
+		    ai_chance = {
+			    factor = 100
+		    }
+		}
+	}
+country_event = {
+	id = turkey.12
+	title = turkey.12.t 
+	desc = turkey.12.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.12.a 
+		    ai_chance = {
+			    factor = 40
+		    }
+		country_event = { id = turkey.13 days = 3 }
+		}
+	option = {
+	    name = turkey.12.a 
+		    ai_chance = {
+			    factor = 50
+		    }
+		country_event = { id = turkey.14 days = 3 }
+		}
+	}
+country_event = {
+	id = turkey.13
+	title = turkey.13.t 
+	desc = turkey.13.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.13.a 
+		    ai_chance = {
+			    factor = 100
+		    }
+		TUR = {
+			transfer_state = 339
+			transfer_state = 340
+			transfer_state = 797
+		    }
+		GRE = {
+			341 = { set_demilitarized_zone = yes }
+		    }
+		}
+	}
+country_event = {
+	id = turkey.14
+	title = turkey.14.t 
+	desc = turkey.14.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.14.a 
+		    ai_chance = {
+			    factor = 100
+		    }
+		TUR = {
+			create_wargoal = { type = annex_everything target = GRE }
+			}
+		}
+	}
+country_event = {
+	id = turkey.15
+	title = turkey.15.t 
+	desc = turkey.15.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.15.a 
+		    ai_chance = {
+			    factor = 100
+		    }
+		add_stability = 0.05
+		}
+	}
+	country_event = {
+	id = turkey.16
+	title = turkey.16.t 
+	desc = turkey.16.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.16.a 
+		    ai_chance = {
+			    factor = 100
+		    }
+		}
+	}
+country_event = {
+	id = turkey.17
+	title = turkey.17.t 
+	desc = turkey.17.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.17.a 
+		    ai_chance = {
+			    factor = 100
+		    }
+		add_opinion_modifier = { target = TUR modifier = large_increase }
+		ROOT = {
+		    diplomatic_relation = {
+						country = TUR
+						relation = non_aggression_pact
+						active = yes
+					}
+				}
+			}
+	option = {
+		name = turkey.17.b 
+		ai_chance = {
+			factor = 50
+		}
+        add_opinion_modifier = { target = TUR modifier = medium_decrease }
+	    }
+	}
+country_event = {
+	id = turkey.18
+	title = turkey.18.t 
+	desc = turkey.18.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.18.a 
+		    ai_chance = {
+			    factor = 100
+		    }
+	    FRA = {
+			country_event = { id = turkey.19 days = 4 }
+			}
+		}
+	}
+country_event = {
+	id = turkey.19
+	title = turkey.19.t 
+	desc = turkey.19.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.19.a 
+		    ai_chance = {
+			    factor = 100
+		    }
+		TUR = {
+			country_event = { id = turkey.20 days = 5 }
+			}
+		}
+	option = {
+		name = turkey.19.b 
+		ai_chance = {
+			factor = 20
+		}
+		TUR = {
+			country_event = { id = turkey.21 days = 5 }
+		}
+	}
+}
+country_event = {
+	id = turkey.20
+	title = turkey.20.t 
+	desc = turkey.20.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.20.a 
+		    ai_chance = {
+			    factor = 100
+		    }
+		TUR = {
+			transfer_state = 350
+			transfer_state = 344
+		    }
+		add_stability = 0.05
+		add_timed_idea = {
+			idea = TUR_timed_debt
+			days = 180
+		    }
+	    }
+    }
+country_event = {
+	id = turkey.21
+	title = turkey.21.t 
+	desc = turkey.21.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.21.a 
+		    ai_chance = {
+			    factor = 100
+		    }
+		add_opinion_modifier = { target = FRA modifier = large_decrease }
+		add_stability = -0.1
+	    }
+    }
+country_event = {
+	id = turkey.22
+	title = turkey.22.t 
+	desc = turkey.22.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.22.a 
+		    ai_chance = {
+			    factor = 60
+		    }
+		create_wargoal = { type = annex_everything target = KUR }
+	    }
+	option = {
+		name = turkey.22.b 
+		ai_chance = {
+			factor = 40
+			}
+		KUR = {
+			country_event = { id = turkey.23 days = 3 }
+		}
+	}
+}
+country_event = {
+	id = turkey.23
+	title = turkey.23.t 
+	desc = turkey.23.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.23.a 
+		    ai_chance = {
+			    factor = 60
+		    }
+		TUR = {
+			transfer_state = 352
+			transfer_state = 837
+		    }
+		}
+	option = {
+		name = turkey.23.b 
+		    ai_chance = {
+				factor = 80
+			}
+		TUR = {
+			create_wargoal = { type = annex target = KUR }
+		}
+	}
+}
+country_event = {
+	id = turkey.24
+	title = turkey.24.t 
+	desc = turkey.24.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+
+	option = {
+	    name = turkey.24.a 
+		    ai_chance = {
+			    factor = 60
+		    }
+		}
+	}
+country_event = {
+	id = turkey.1111
+	title = turkey.1111.t
+	desc = turkey.1111.d
+	picture = GFX_report_event_pervy_turetsky_tank
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.1111.a
+		ai_chance = { factor = 100 }
+                add_tech_bonus = {
+    bonus = 0.5
+    uses = 1
+    category = cat_light_armor
+	    }
+	}
+	}
+
+country_event = {
+	id = turkey.1
+	title = turkey.1.t
+	desc = turkey.1.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.1.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+#Это наш шанс!
+country_event = {
+	id = turkey.499
+	title = turkey.499.t
+	desc = turkey.499.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.499.a
+		ai_chance = { factor = 100 }
+		
+		dirty = tur_zerno
+		
+		if = {
+				limit = { NOT = { has_variable = tur_zerno } }
+				set_variable = { tur_zerno = 1 }
+			}
+			else = {
+				clear_variable = tur_zerno
+			}
+
+		
+	}
+}
+
+#Успешный рейд на зерно
+country_event = {
+	id = turkey.500
+	title = turkey.500.t
+	desc = turkey.500.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.500.a
+		ai_chance = { factor = 100 }
+		FRA = { country_event = { days = 1 id = FRA.10 } }
+		RUS = { country_event = { days = 1 id = russia.501 } }	
+		add_timed_idea = {
+    		idea = FRA_chernomorskoe_zerno_idea
+    		days = 540
+		}
+	}
+}
+#Провальный рейд на зерно
+country_event = {
+	id = turkey.501
+	title = turkey.501.t
+	desc = turkey.501.d
+	#picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.501.a
+		ai_chance = { factor = 100 }
+		FRA = { country_event = { days = 1 id = FRA.11 } }
+		RUS = { country_event = { days = 1 id = russia.502 } }	
+		
+		navy_experience = 10
+		add_political_power = -50
+		
+	}
+}
+
+country_event = {
 	id = turkey.1
 	title = turkey.1.t
 	desc = turkey.1.d
