@@ -1,0 +1,87 @@
+MAN_stop_pro_russian_rebels = {
+
+    MAN_trapping_pro_russian_peasants = {
+
+        name = MAN_trapping_pro_russian_peasants
+
+        available = {
+            original_tag = MAN 
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 7
+
+        days_re_enable = 21
+
+        cost = 10
+
+        fire_only_once = no 
+
+        remove_effect = {
+            add_popularity = {
+                ideology = neutrality
+                popularity = -0.02
+            }
+        }
+    }
+    MAN_punitive_operations_on_villages = {
+
+        name = MAN_punitive_operations_on_villages
+
+        available = {
+            original_tag = MAN 
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 7
+
+        days_re_enable = 28
+
+        cost = 30
+
+        fire_only_once = no 
+
+        remove_effect = {
+            add_stability = -0.02
+            add_popularity = {
+                ideology = neutrality
+                popularity = -0.04
+            }
+        }
+    }
+    MAN_demonstrative_executions_of_rebels = {
+
+        name = MAN_demonstrative_executions_of_rebels
+
+        available = {
+            original_tag = MAN 
+        }
+
+        icon = 
+
+        is_good = yes 
+
+        days_remove = 7
+
+        days_re_enable = 35
+
+        cost = 50
+
+        fire_only_once = no 
+
+        remove_effect = {
+            add_stability = -0.02
+            add_manpower = -40
+            add_popularity = {
+                ideology = neutrality
+                popularity = -0.06
+            }
+        }
+    }
+}

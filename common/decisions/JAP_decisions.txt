@@ -1,0 +1,102 @@
+JAP_prevent_russians_from_entering_china = {
+	JAP_send_weapon_to_fentiang = {
+		name = JAP_send_weapon_to_fentiang 
+		
+		icon = 
+		
+		is_good = yes 
+		
+		days_remove = 5
+		
+		days_re_enable = 30
+		
+		fire_only_once = no 
+		
+		cost = 65
+		
+		remove_effect = {
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -700
+		    }
+			MAN = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 700
+				}
+			}
+		}
+	}
+	JAP_send_additional_equipment = {
+		name = JAP_send_additional_equipment 
+		
+		icon = 
+		
+		is_good = yes 
+		
+		days_remove = 5
+		
+		days_re_enable = 35
+		
+		fire_only_once = no 
+		
+		cost = 80
+		
+		remove_effect = {
+			add_equipment_to_stockpile = {
+			    type = support_equipment
+			    amount = -400
+		    }
+			MAN = {
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 400
+				}
+			}
+		}
+	}
+	JAP_send_people_to_mukden = {
+		name = JAP_send_people_to_mukden
+		
+		icon = 
+		
+		is_good = yes 
+		
+		days_remove = 10
+		
+		days_re_enable = 45
+		
+		fire_only_once = no 
+		
+		cost = 75
+		
+		remove_effect = {
+			add_manpower = -2000
+			MAN = {
+				add_manpower = 2000
+				}
+			}
+		}
+	JAP_send_military_advisers = {
+		name = JAP_send_military_advisers
+		
+		icon = 
+		
+		is_good = yes 
+		
+		days_remove = 15
+		
+		fire_only_once = yes 
+		
+		cost = 100
+		
+		remove_effect = {
+			MAN = {
+				add_timed_idea = {
+					idea = JAP_military_advisers
+					days = 45
+					}
+				}
+			}
+		}
+	}
