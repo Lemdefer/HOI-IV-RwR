@@ -684,3 +684,159 @@ CHI_manchuria_castle = {
 		}
 	}
 }
+CHI_unhindered_annexation = {
+	CHI_operation_kite = {
+		name = CHI_operation_kite
+		
+		icon = 
+		
+		is_good = yes 
+		
+		days_remove = 10
+		
+		fire_only_once = yes
+		
+		remove_effect = {	
+			custom_effect_tooltip = CHI_operation_kite_tt
+			add_stability = 0.03
+			add_war_support = 0.06
+			set_country_flag = CHI_operation_kite	
+			}
+		}
+	CHI_occupation_of_hebei = {
+		name = CHI_occupation_of_hebei
+
+		available = {
+			has_country_flag = CHI_operation_kite
+			divisions_in_border_state = { 
+				size > 2
+				state = 597
+				border_state = 614
+			}
+			divisions_in_border_state = { 
+				size > 1
+				state = 607
+				border_state = 614
+			}
+		}
+
+		days_remove = 15
+
+        is_good = yes 
+
+        fire_only_once = yes 
+
+        remove_effect = {
+			add_stability = 0.05
+			add_days_mission_timeout = {
+				mission = CHI_disclosure_of_operation
+				days = 17
+			}
+			transfer_state = 614
+			country_event = { id = CHI_operation_kite.1 hours = 18 random_hours = 6 }
+		}
+	}
+	CHI_occupation_of_beijing = {
+		name = CHI_occupation_of_beijing
+
+		available = {
+			has_country_flag = CHI_operation_kite
+			614 = { controlled_by = ROOT }
+			divisions_in_border_state = { 
+				size > 4
+				state = 614
+				border_state = 608
+			}
+		}
+
+		days_remove = 15
+
+        is_good = yes 
+
+        fire_only_once = yes 
+
+        remove_effect = {
+			add_stability = 0.1
+			add_war_support = 0.08
+			add_days_mission_timeout = {
+				mission = CHI_disclosure_of_operation
+				days = 17
+			}
+			transfer_state = 608
+			country_event = { id = CHI_operation_kite.2 hours = 18 random_hours = 6 }
+		}
+	}
+	CHI_occupation_of_east_hebei = {
+		name = CHI_occupation_of_east_hebei
+
+		available = {
+			has_country_flag = CHI_operation_kite
+			608 = { controlled_by = ROOT }
+			divisions_in_border_state = { 
+				size > 4
+				state = 608
+				border_state = 609
+			}
+		}
+
+		days_remove = 15
+
+        is_good = yes 
+
+        fire_only_once = yes 
+
+        remove_effect = {
+			add_stability = 0.1
+			add_war_support = 0.15
+			add_days_mission_timeout = {
+				mission = CHI_disclosure_of_operation
+				days = 17
+			}
+			transfer_state = 609
+			country_event = { id = CHI_operation_kite.3 hours = 18 random_hours = 6 }
+			remove_country_flag = CHI_operation_kite
+		}
+	}
+	CHI_disclosure_of_operation = {
+		name = CHI_disclosure_of_operation
+
+		visible = yes
+
+        activation = {
+			has_country_flag = CHI_operation_kite
+		}
+
+		available = {
+			614 = { is_controlled_by = CHI }
+			608 = { is_controlled_by = CHI }
+			609 = { is_controlled_by = CHI }
+		}
+
+        is_good = no
+
+        days_mission_timeout = 20
+
+        fire_only_once = yes 
+
+		complete_effect = {
+			add_war_support = 0.07
+			add_political_power = 80
+			add_state_core = 608
+			add_state_core = 609
+			add_state_core = 614
+			country_event = { id = CHI_operation_kite.4 days = 2 random_hours = 12 }
+			remove_country_flag = CHI_operation_kite
+		}
+
+        timeout_effect = {
+			add_stability = -0.15
+			MAN = {
+				transfer_state = 614
+				transfer_state = 609
+				transfer_state = 608
+			}
+			country_event = { id = CHI_operation_kite.5 days = 2 random_hours = 12 }
+			remove_country_flag = CHI_operation_kite
+		}
+	}
+}
