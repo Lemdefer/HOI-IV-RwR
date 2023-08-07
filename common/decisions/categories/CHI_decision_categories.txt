@@ -25,3 +25,16 @@ CHI_manchuria_castle = {
 	    always = yes
 	}
 }
+CHI_unhindered_annexation = {
+	icon = generic_foreign_policy
+	visible = {
+		614 = { is_controlled_by = MAN }
+		608 = { is_controlled_by = MAN }
+		609 = { is_controlled_by = MAN }
+		has_country_flag = CHI_trigger_to_start_operation
+		OR = {
+			has_global_flag = east_china_war
+			has_global_flag = russia_knows_no_borders
+		}
+	}
+}
