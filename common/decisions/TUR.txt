@@ -1,3 +1,72 @@
+TUR_reparations_category = {
+
+    TUR_debt_repayment_1 = {
+
+		name = TUR_debt_repayment
+
+		available = {
+            has_idea = TUR_reparations_1
+		}
+
+		icon = TUR_
+
+		is_good = yes
+
+		days_remove = 60
+
+		cost = 0
+
+		fire_only_once = yes
+
+		visible = {
+            has_complete_focus = TUR_reparation_congress_in_konya
+		}
+
+        modifier = {
+			consumer_goods_factor = 0.05
+            stability_factor = -0.05
+		}
+
+		remove_effect = {
+            swap_ideas = {
+                remove_idea = TUR_reparations_1
+                add_idea = TUR_reparations_2
+            }
+		}
+    }
+
+    TUR_debt_repayment_2 = {
+
+		name = TUR_debt_repayment
+
+		available = {
+            has_idea = TUR_reparations_2
+		}
+
+		icon = TUR_
+
+		is_good = yes
+
+		days_remove = 60
+
+		cost = 0
+
+		fire_only_once = yes
+
+		visible = {
+            has_complete_focus = TUR_reparation_congress_in_konya
+		}
+
+        modifier = {
+            consumer_goods_factor = 0.05
+            stability_factor = -0.05
+        }
+
+		remove_effect = {
+            remove_ideas = TUR_reparations_2
+            }
+		}
+    }
 TUR_vorovat_zerno = {
 
 
@@ -39,16 +108,7 @@ TUR_vorovat_zerno = {
 		}		
 		
 	}
-
-
-
-
-
-
-
-
-
-
+	
 	TUR_ukrast_zerno = {
 
 		icon = eng_trade_unions_support
@@ -78,11 +138,4 @@ TUR_vorovat_zerno = {
 #			}
 		}
 	}
-	
-
-
 }		
-
-
-
-
