@@ -1,0 +1,171 @@
+add_namespace = jap_foreign_policy_in_east
+
+country_event = {
+    id = jap_foreign_policy_in_east.0
+    title = jap_foreign_policy_in_east.0.t 
+    desc = jap_foreign_policy_in_east.0.d 
+
+    is_triggered_only = yes
+
+    #Отказ от ультиматума
+    option = { 
+        name = jap_foreign_policy_in_east.0.a 
+        ai_chance = {
+			factor = 60
+		}
+        add_political_power = 150
+        add_war_support = 0.1
+        FROM = {
+            country_event = { id = rus_foreign_policy_in_east.4 hours = 12 random_hours = 6 }
+        }
+    }
+    #Принять ультиматум
+    option = {
+        name = jap_foreign_policy_in_east.0.b 
+        ai_chance = {
+			factor = 40
+		}
+        add_political_power = -100
+        add_stability = -0.15
+        FROM = {
+            country_event = { id = rus_foreign_policy_in_east.5 hours = 12 random_hours = 6 }
+        }
+    }
+}
+country_event = {
+    id = jap_foreign_policy_in_east.1
+    title = jap_foreign_policy_in_east.1.t 
+    desc = jap_foreign_policy_in_east.1.d 
+
+    is_triggered_only = yes
+
+    #Отказ от ультиматума
+    option = {
+        name = jap_foreign_policy_in_east.1.a 
+        ai_chance = {
+			factor = 70
+		}
+        add_political_power = 150
+        add_war_support = 0.1
+        FROM = {
+            country_event = { id = rus_foreign_policy_in_east.4 hours = 12 random_hours = 6 }
+        }
+    }
+    #Принять ультиматум
+    option = {
+        name = jap_foreign_policy_in_east.1.b 
+        ai_chance = {
+			factor = 30
+		}
+        add_political_power = -120
+        add_stability = -0.15
+        FROM = {
+            country_event = { id = rus_foreign_policy_in_east.6 hours = 12 random_hours = 6 }
+            }
+        }
+    }
+country_event = {
+    id = jap_foreign_policy_in_east.2
+    title = jap_foreign_policy_in_east.2.t 
+    desc = jap_foreign_policy_in_east.2.d 
+
+    is_triggered_only = yes
+
+    #Отказ от ультиматума
+    option = {
+        name = jap_foreign_policy_in_east.2.a 
+        ai_chance = {
+			factor = 85
+		}
+        add_political_power = 150
+        add_war_support = 0.15
+        FROM = {
+            country_event = { id = rus_foreign_policy_in_east.4 hours = 12 random_hours = 6 }
+        }
+    }
+    #Принять ультиматум
+    option = {
+        name = jap_foreign_policy_in_east.2.b 
+        ai_chance = {
+			factor = 15
+		}
+        add_political_power = -100
+        add_stability = -0.15
+        FROM = {
+            country_event = { id = rus_foreign_policy_in_east.7 hours = 12 random_hours = 6 }
+            }
+        }
+    }
+    country_event = {
+        id = jap_foreign_policy_in_east.3
+        title = jap_foreign_policy_in_east.3.t 
+        desc = jap_foreign_policy_in_east.3.d 
+
+        is_triggered_only = yes 
+
+        option = {
+            name = jap_foreign_policy_in_east.3.a 
+            ai_chance = {
+                factor = 60
+            }
+            RUS = {
+                country_event = { id = rus_foreign_policy_in_east.8 hours = 12 random_hours = 6 }
+                hidden_effect = {
+                    set_country_flag = RUS_tokyo_consent
+                }
+            }
+        }
+        option = {
+            name = jap_foreign_policy_in_east.3.b 
+            ai_chance = {
+                factor = 40
+            }
+            RUS = {
+                country_event = { id = rus_foreign_policy_in_east.9 hours = 12 random_hours = 6 }
+            }
+        }
+    }
+    country_event = {
+        id = jap_foreign_policy_in_east.4
+        title = jap_foreign_policy_in_east.4.t 
+        desc = jap_foreign_policy_in_east.4.d 
+
+        is_triggered_only = yes 
+
+        option = {
+            name = jap_foreign_policy_in_east.4.a 
+            ai_chance = {
+			    factor = 45
+		        }
+            RUS = {
+                country_event = { id = rus_foreign_policy_in_east.11 hours = 12 random_hours = 6 }
+            }
+        }
+        option = {
+            name = jap_foreign_policy_in_east.4.b
+            ai_chance = {
+			    factor = 50
+		        }
+            RUS = {
+                country_event = { id = rus_foreign_policy_in_east.12 hours = 12 random_hours = 6 }
+            }
+        }
+        option = {
+            name = jap_foreign_policy_in_east.4.c
+            ai_chance = {
+			    factor = 60
+		        }
+            RUS = {
+                country_event = { id = rus_foreign_policy_in_east.13 hours = 12 random_hours = 6 }
+            }
+        }
+        option = {
+            name = jap_foreign_policy_in_east.4.e
+            ai_chance = {
+			    factor = 50
+		        }
+            RUS = {
+                country_event = { id = rus_foreign_policy_in_east.14 hours = 12 random_hours = 6 }
+            }
+        }
+    }

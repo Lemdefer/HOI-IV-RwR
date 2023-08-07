@@ -1,0 +1,22 @@
+add_namespace = afghanistan_big_game
+
+country_event = {
+	id = afghanistan_big_game.1
+	title = afghanistan_big_game.1.t
+	desc = afghanistan_big_game.1.d 
+	
+	is_triggered_only = yes 
+
+	option = {
+		name = afghanistan_big_game.1.a 
+		diplomatic_relation = {
+			country = RUS
+			relation = non_aggression_pact
+			active = yes
+			}
+		}
+	option = {
+		name = afghanistan_big_game.1.b 
+		add_war_support = 0.10
+		}
+	}

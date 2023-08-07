@@ -1,0 +1,37 @@
+add_namespace = sik
+
+country_event = {
+    id = sik.1 
+    title = sik.1.t 
+    desc = sik.1.d 
+
+    is_triggered_only = yes 
+
+    option = {
+        ai_chance = { factor = 40 }
+        name = sik.1.a 
+        add_opinion_modifier = { target = RUS modifier = signed_agreement }
+        diplomatic_relation = {
+            country = RUS
+			relation = non_aggression_pact
+			active = yes
+            }
+        add_political_power = 10
+        hidden_effect = {
+            RUS = { 
+                country_event = { id = rus_foreign_policy_in_east.24 days = 4 }
+                }
+            }
+        }
+    option = {
+        ai_chance = { factor = 50 }
+        name = sik.1.b 
+        add_opinion_modifier = { target = RUS modifier = failure_of_negotiations }
+        add_political_power = -10
+        hidden_effect = {
+            RUS = { 
+                country_event = { id = rus_foreign_policy_in_east.25 days = 4 }
+                }
+            }
+        }
+    }

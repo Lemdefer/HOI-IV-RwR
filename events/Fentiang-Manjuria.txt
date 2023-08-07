@@ -1,0 +1,147 @@
+add_namespace = man_yellow_russia
+
+country_event = {
+    id = man_yellow_russia.1
+    title = man_yellow_russia.1.t 
+    desc = man_yellow_russia.1.d 
+
+    is_triggered_only = yes 
+
+    #Закрыть глаза#
+    option = {
+        ai_chance = { factor = 25 }
+        name = man_yellow_russia.1.a 
+            add_stability = -0.07
+            add_political_power = -10
+            add_popularity = {
+				ideology = neutrality
+				popularity = 0.08
+			}
+            set_party_name = { 
+                ideology = neutrality
+                long_name = man_yellow_russia_party_long
+                name = man_yellow_russia_party
+            }
+        }
+    #По-тихому сократить влияние#
+    option = {
+        ai_chance = { factor = 40 }
+        name = man_yellow_russia.1.b 
+            add_stability = -0.03
+            add_political_power = -40
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.06
+            }
+            set_party_name = { 
+                ideology = neutrality
+                long_name = man_yellow_russia_party_long
+                name = man_yellow_russia_party
+            }
+        }
+    #Небольшая бойня и только#
+    option = {
+        ai_chance = { factor = 30 }
+        name = man_yellow_russia.1.c
+            add_stability = 0.01
+            add_political_power = -80
+            add_manpower = -520
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.02
+            }
+            set_party_name = { 
+                ideology = neutrality
+                long_name = man_yellow_russia_party_long
+                name = man_yellow_russia_party
+            }
+        }
+    }
+country_event = {
+    id = man_yellow_russia.2
+    title = man_yellow_russia.2.t 
+    desc = man_yellow_russia.2.d 
+
+    is_triggered_only = yes 
+
+    #Ответные меры#
+    option = {
+        name = man_yellow_russia.2.a 
+            add_stability = -0.02
+            add_popularity = {
+                ideology = paternalism
+                popularity = 0.02
+            }
+            add_war_support = 0.02
+            set_country_flag = MAN_fight_against_russian_influence
+            custom_effect_tooltip = MAN_fight_against_russian_influence
+        }
+    }
+country_event = {
+    id = man_yellow_russia.3
+    title = man_yellow_russia.3.t 
+    desc = man_yellow_russia.3.d 
+
+    is_triggered_only = yes 
+
+    #Открытая агрессия#
+    option = {
+        name = man_yellow_russia.3.a 
+            add_stability = 0.05
+			add_war_support = 0.05
+			add_political_power = 20
+			add_manpower = 5000
+        }
+    }
+country_event = {
+    id = man_yellow_russia.4
+    title = man_yellow_russia.4.t 
+    desc = man_yellow_russia.4.d 
+
+    is_triggered_only = yes 
+
+    #Крах планов интервентов#
+    option = {
+        name = man_yellow_russia.4.a 
+            add_stability = 0.07
+			add_war_support = 0.1
+			add_political_power = 40
+			add_manpower = 6500
+        }
+    }
+country_event = {
+    id = man_yellow_russia.6
+    title = man_yellow_russia.6.t 
+    desc = man_yellow_russia.6.d 
+
+    is_triggered_only = yes 
+
+    #Вторжение России#
+    option = {
+        name = man_yellow_russia.6.a 
+            add_stability = 0.05
+			add_war_support = 0.15
+			add_political_power = 100
+			add_manpower = 15000
+            add_timed_idea = {
+                add_idea = MAN_stand_to_death
+                days = 60
+            }
+        }
+    }
+country_event = {
+    id = man_yellow_russia.7
+    title = man_yellow_russia.7.t 
+    desc = man_yellow_russia.7.d 
+
+    trigger = {
+        614 = { is_controlled_by = CHI }
+    }
+
+    #Независимость важнее провинций#
+    option = {
+        name = man_yellow_russia.7.a 
+            add_stability = -0.07
+            add_war_support = -0.1
+    }
+}
