@@ -1,19 +1,43 @@
 opinion_modifiers = {
 	accelerated_payments = {
 		value = 5
-	}	
+		}	
 	forced_to_fast_pay_reparations = {
 		value = -10
-	}	
+		}	
 	resisted_our_demands = {
 		value = -20
-	}
+		}
 	pressed_by_force = {
 		value = -20
-	}	 
+		}	 
 	military_presence_before_referendum = {
 		value = -5
-	}	
+		}
+	russian_preparations = {
+		value = -25
+		}
+	remember_old_enemy = {
+		value = -35
+		}
+	revision_of_relationship = {
+		value = 10
+		}
+	failure_of_the_conference = {
+		value = -35
+	}
+	dreams_of_yellow_russia = {
+		value = -10
+	}
+	actions_to_destabilize_region = {
+		value = -20
+	}
+	support_from_russia = {
+		value = 15
+	}
+	agressive_actions_of_russia = {
+		value = -20
+	}
 	supported_us_in_hard_times = {
 		value = 20
 	}	
