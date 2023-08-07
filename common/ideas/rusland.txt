@@ -3,6 +3,7 @@ ideas = {
 		RUS_illiteracy = {
 		
 			removal_cost = -1
+			
 			allowed = { always = no }
 			
 			picture = generic_manpower_bonus
@@ -22,8 +23,9 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				production_speed_buildings_factor = -0.10
+				production_speed_buildings_factor = -0.3
 				industrial_capacity_factory = -0.15
+				production_factory_max_efficiency_factor = -0.3
 			}
 		}
 	
@@ -42,6 +44,7 @@ ideas = {
 		RUS_instability_in_politics = {
 		
 			removal_cost = -1
+
 			allowed = { always = no }
 			
 			picture = generic_manpower_bonus
@@ -52,6 +55,859 @@ ideas = {
 				political_power_gain = -0.2
 			}
 		}
+
+		RUS_backward_VPK = {
+
+			removal_cost = -1
+
+			allowed = { allowed = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				industrial_capacity_factory = -0.25
+				production_factory_efficiency_gain_factor = -0.1
+				production_speed_arms_factory_factor = -0.15
+			}
+		}
+
+		RUS_russian_imperial_army = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = -0.15
+				army_attack_factor = -0.05
+				army_defence_factor = -0.1
+				stability_factor = -0.07
+			}
+		}
+
+		RUS_nascent_russian_imperial_navy = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+
+			}
+		}
+
+		RUS_nascent_russian_imperial_air_force = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+			
+			}
+		}
+	
+		RUS_grain_payments = {
+
+			removal_cost = -1
+			
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_factor = -0.1
+			}
+		}
+		RUS_benefits_for_employees = {
+
+			removal_cost = -1
+			
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				stability_factor = 0.03
+				political_power_factor = -0.05
+				industrial_capacity_factory = 0.03
+			}
+		}
+		RUS_reformed_peasant_bank = {
+
+			removal_cost = -1
+			
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				stability_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		RUS_reorganization_of_banking_system = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				political_power_factor = 0.05
+
+			}
+		}
+		RUS_zero_credit = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.05
+				stability_factor = 0.075
+			}
+		}
+		RUS_prohibition_of_peasant_communities = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = 0.15
+				consumer_goods_factor = -0.07
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		RUS_progovernment_communities = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.1
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		RUS_rampant_peasent_communities = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				stability_factor = 0.25
+				political_power_factor = -0.1
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		RUS_prohibition_of_trade_unions = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = 0.15
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		RUS_progovernment_trade_unions = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = -0.05
+			}
+		}
+		RUS_rampant_trade_unions = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				stability_factor = 0.25
+				political_power_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+		RUS_unified_state_bank = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				stability_factor = 0.1
+				political_power_factor = 0.05
+			}
+		}
+		RUS_russian_economic_revival = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		RUS_unified_village_economy_1 = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = 0.1
+			}
+		}
+		RUS_unified_village_economy_2 = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
+				stability_factor = 0.1
+			}
+		}
+		RUS_solid_bread_prices = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = -0.05	
+			}
+		}
+		RUS_large_peasant_construction_site = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.35
+				production_speed_rail_way_factor = 0.6
+				production_speed_supply_node_factor = 0.5
+			}
+		}
+		RUS_folk_handicraft_production = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+		RUS_all_russian_market = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		RUS_national_tax_idea = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = -0.05
+				political_power_factor = 0.03
+			}
+		}
+		RUS_new_theory_of_war_1 = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				stability_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		RUS_new_theory_of_war_2 = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				stability_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		RUS_inflating_military_budget_1 = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				research_speed_factor = 0.1
+				supply_consumption_factor = -0.1
+			}
+		}
+		RUS_inflating_military_budget_2 = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				research_speed_factor = 0.1
+				supply_consumption_factor = -0.1
+				promote_cost_factor = -0.5
+				land_doctrine_cost_factor = -0.1
+				air_doctrine_cost_factor = -0.1
+				naval_doctrine_cost_factor = -0.1
+				mobilization_speed = 0.1
+			}
+		}
+		RUS_reorganized_okhrana_1 = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				operative_slot = 2
+				stability_factor = -0.05
+				drift_defence_factor = 0.1
+				intelligence_agency_defense = 0.15
+			}
+		}
+		RUS_reorganized_okhrana_2 = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				operative_slot = 2
+				stability_factor = -0.05
+				drift_defence_factor = 0.25
+				intelligence_agency_defense = 0.15
+				war_support_factor = 0.15
+				enemy_operative_detection_chance_factor  = 0.15
+
+			}
+		}
+		RUS_so_for_tsar_fatherland_and_faith = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				stability_factor = 0.1
+				army_morale_factor = 0.1
+				army_org_factor = 0.05
+				army_core_defence_factor = 0.15
+			}
+		}
+		RUS_what_are_we_fighting_for = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				war_support_factor = 0.1
+				army_morale_factor = 0.1
+				army_org_factor = 0.05
+				army_core_attack_factor = 0.15
+			}
+		}
+		RUS_special_military_department = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				war_support_factor = 0.1
+				stability_factor = 0.05
+				army_morale_factor = 0.1
+				army_org_factor = 0.1
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+		}
+		RUS_new_wave_of_mobilization = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				max_command_power = 50
+				conscription = 0.1
+				stability_factor = -0.05
+			}
+		}
+		RUS_always_be_ready = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				army_core_defence_factor = 0.1
+				max_command_power = 50
+				conscription = 0.1
+				stability_factor = -0.1
+				war_support_factor = 0.05
+				decryption = 10
+				conversion_cost_civ_to_mil_factor = -0.15
+			}
+		}
+		RUS_education_of_young_patriots = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+		RUS_guards_regiments_back_in_action = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				special_forces_cap = 0.2
+				special_forces_training_time_factor = -0.05
+				experience_gain_special_forces_training_factor = 0.15
+				experience_gain_special_forces_combat_factor = 0.15
+				special_force_movement_org_loss = -0.1
+			}
+		}
+		RUS_no_step_back = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				war_support_factor = 0.2
+				stability_factor = 0.05
+				army_morale_factor = 0.1
+				army_org_factor = 0.1
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.25
+				production_speed_bunker_factor = 0.25
+			}
+		}
+		RUS_reorganized_okhrana_3 = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				operative_slot = 3
+				stability_factor = 0.05
+				drift_defence_factor = 0.25
+				intelligence_agency_defense = 0.15
+				war_support_factor = 0.15
+				enemy_operative_detection_chance_factor  = 0.2
+				own_operative_detection_chance_factor = -0.15
+				resistance_damage_to_garrison_on_our_occupied_states = 0.2
+				agency_upgrade_time = 0.1
+				production_speed_industrial_complex_factor = 0.05
+				root_out_resistance_effectiveness = -0.15
+			}
+		}
+		RUS_russian_expansion = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				war_support_factor = 0.2
+				stability_factor = 0.05
+				army_morale_factor = 0.1
+				army_org_factor = 0.1
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				command_power_factor = 0.2
+				army_breakthrough_against_major_factor = 0.2
+				army_attack_against_major_factor = 0.15
+				army_defence_against_major_factor = 0.05
+				}
+			}
+		RUS_theory_of_war_cavalry = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				stability_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.1
+			}
+			equipment_bonus = {
+				cavalry = {
+					maximum_speed = 0.1
+					max_organisation = 0.1
+					}
+				}
+			}
+		RUS_theory_of_war_tanks = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				stability_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				army_armor_defence_factor = 0.05
+				army_armor_attack_factor = 0.05
+			}
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.05
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+			}
+		RUS_SRC_in_yekaterinburg_cavalry = {
+			
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				stability_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.1
+				research_speed_factor = 0.1
+			}
+			equipment_bonus = {
+				cavalry = {
+					maximum_speed = 0.1
+					max_organisation = 0.1
+					}
+				}
+			}
+		RUS_SRC_in_yekaterinburg_tanks = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				stability_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				army_armor_defence_factor = 0.05
+				army_armor_attack_factor = 0.05
+				research_speed_factor = 0.1
+			}
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.05
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+			}
+		RUS_russian_falcons = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			research_bonus = {
+				air_equipment = 0.05
+				armor = 0.05
+				artillery = 0.05
+				}
+			}
+		RUS_russias_third_ally = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				air_training_xp_gain_factor = 0.1
+				air_doctrine_cost_factor = -0.1
+				ace_effectiveness_factor = 0.1
+			}
+
+			research_bonus = {
+				air_equipment = 0.05
+				armor = 0.05
+				artillery = 0.05
+				}
+			}
+		RUS_era_of_new_ships = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				naval_doctrine_cost_factor = -0.1
+			}
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+		}
+		RUS_updated_russian_fleet_and_army = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				army_defence_factor = 0.1
+				army_org_factor = 0.1
+				naval_defense_factor = 0.1
+				naval_doctrine_cost_factor = -0.1
+
+			}
+			research_bonus = {
+				naval_equipment = 0.1
+				}
+			}
+		RUS_construction_in_far_east = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.1
+			}
+		}
+		RUS_prepared_defense_against_japan = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.1
+				}
+			}
+		RUS_dont_repeat_tsushima = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.03
+				convoy_escort_efficiency = 0.05
+				convoy_retreat_speed = 0.05
+			}
+		}
+		RUS_decent_sakhalin_payment = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.15
+				}
+			}
+		RUS_excessive_sakhalin_payment = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_gain = -0.3
+				}
+			}
+		RUS_russian_specialists = {
+
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			picture = idea_saf_soviet_advisers
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.1
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				experience_gain_army_unit_factor = 0.15
+				}
+			}
 	
 		RUS_june_crisis_idea = {
 		
