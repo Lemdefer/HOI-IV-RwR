@@ -1,0 +1,15 @@
+MAN_stop_pro_russian_rebels = {
+
+    icon =
+
+    available = {
+        original_tag = MAN
+    }
+
+    visible = {
+        original_tag = MAN
+        has_country_flag = MAN_fight_against_russian_influence
+    }
+
+    priority = 100
+}
