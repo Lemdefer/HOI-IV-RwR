@@ -1,0 +1,2140 @@
+focus_tree = {
+	id = russland
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RUS
+		}
+	}
+	default = no
+
+    continuous_focus_position = { x = 50 y = 3000 }
+
+focus = {
+	id = RUS_return_to_politics
+	icon = GFX_rus_work
+	cost = 10
+	x = 25
+	y = 15
+	completion_reward = {
+		add_political_power = 20
+		add_stability = 0.03
+	}
+}
+######################Левая ветка######################
+focus = {
+	id = RUS_gaze_to_west
+	icon = GFX_rus_work
+	cost = 10
+	x = -12
+	y = 1
+	relative_position_id = RUS_return_to_politics
+	prerequisite = { focus = RUS_return_to_politics }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_revival_of_panslavism
+	icon = GFX_rus_work
+	cost = 10
+	x = -3
+	y = 1
+	relative_position_id = RUS_gaze_to_west
+	prerequisite = { focus = RUS_gaze_to_west }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_crisis_in_adriatic
+	icon = GFX_rus_work
+	cost = 10
+	x = -3
+	y = 1
+	relative_position_id = RUS_revival_of_panslavism
+	prerequisite = { focus = RUS_revival_of_panslavism }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_slavic_brotherhood
+	icon = GFX_rus_work
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = RUS_moderate_politics
+	prerequisite = { focus = RUS_moderate_politics }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_moderate_politics
+	icon = GFX_rus_work
+	cost = 10
+	x = -1
+	y = 1
+	relative_position_id = RUS_revival_of_panslavism
+	prerequisite = { focus = RUS_revival_of_panslavism }
+	mutually_exclusive = { focus = RUS_radicalism_of_empire }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_radicalism_of_empire
+	icon = GFX_rus_work
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = RUS_revival_of_panslavism
+	prerequisite = { focus = RUS_revival_of_panslavism }
+	mutually_exclusive = { focus = RUS_moderate_politics }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_one_god_one_tsar_one_empire
+	icon = GFX_rus_work
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = RUS_radicalism_of_empire
+	prerequisite = { focus = RUS_radicalism_of_empire }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_warsaw_promises
+	icon = GFX_rus_work
+	cost = 10
+	x = -1
+	y = 1
+	relative_position_id = RUS_slavic_brotherhood
+	prerequisite = { focus = RUS_slavic_brotherhood }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_fate_of_luzhichans
+	icon = GFX_rus_work
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = RUS_slavic_brotherhood
+	prerequisite = { focus = RUS_slavic_brotherhood }
+	prerequisite = { focus = RUS_one_god_one_tsar_one_empire }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_Berlin_rus
+	icon = GFX_rus_work
+	cost = 10
+	x = 3
+	y = 1
+	relative_position_id = RUS_slavic_brotherhood
+	prerequisite = { focus = RUS_one_god_one_tsar_one_empire }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_kiev_conference
+	icon = GFX_rus_work
+	cost = 10
+	x = 2
+	y = 1
+	relative_position_id = RUS_gaze_to_west
+	prerequisite = { focus = RUS_gaze_to_west }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_serbian_russian_delegation
+	icon = GFX_rus_work
+	cost = 10
+	x = -2
+	y = 1
+	relative_position_id = RUS_kiev_conference
+	prerequisite = { focus = RUS_kiev_conference }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_intervention_in_bohemia
+	icon = GFX_rus_work
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = RUS_kiev_conference
+	prerequisite = { focus = RUS_kiev_conference }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_bucharest_congress
+	icon = GFX_rus_work
+	cost = 10
+	x = 2
+	y = 1
+	relative_position_id = RUS_kiev_conference
+	prerequisite = { focus = RUS_kiev_conference }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_petrograd_defensive_block
+	icon = GFX_rus_work
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = RUS_intervention_in_bohemia
+	prerequisite = { focus = RUS_serbian_russian_delegation }
+	prerequisite = { focus = RUS_intervention_in_bohemia }
+	prerequisite = { focus = RUS_bucharest_congress }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_common_military_machine_of_east
+	icon = GFX_rus_work
+	cost = 10
+	x = -1
+	y = 1
+	relative_position_id = RUS_petrograd_defensive_block
+	prerequisite = { focus = RUS_petrograd_defensive_block }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_orthodox_league
+	icon = GFX_rus_work
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = RUS_petrograd_defensive_block
+	prerequisite = { focus = RUS_petrograd_defensive_block }
+	completion_reward = {
+	}
+}
+###################Средняя ветка###################
+focus = {
+	id = RUS_internal_disagreements
+	icon = GFX_rus_work
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = RUS_return_to_politics
+	prerequisite = { focus = RUS_return_to_politics }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_federalization_of_state
+	icon = GFX_rus_work
+	cost = 10
+	x = -4
+	y = 1
+	relative_position_id = RUS_internal_disagreements
+	prerequisite = { focus = RUS_internal_disagreements }
+	mutually_exclusive = { focus = RUS_empire_strikes_back }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_return_constitution_to_warsaw
+	icon = GFX_rus_work
+	cost = 10
+	x = -2
+	y = 1
+	relative_position_id = RUS_federalization_of_state
+	prerequisite = { focus = RUS_federalization_of_state }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_equivalent_ally
+	icon = GFX_rus_work
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = RUS_return_constitution_to_warsaw
+	prerequisite = { focus = RUS_return_constitution_to_warsaw }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_right_to_language
+	icon = GFX_rus_work
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = RUS_federalization_of_state
+	prerequisite = { focus = RUS_federalization_of_state }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_commonwealth_of_nations
+	icon = GFX_rus_work
+	cost = 10
+	x = 0
+	y = 2
+	relative_position_id = RUS_right_to_language
+	prerequisite = { focus = RUS_right_to_language }
+	prerequisite = { focus = RUS_equivalent_ally }
+	prerequisite = { focus = RUS_reorganization_of_provinces }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_finnish_transformation
+	icon = GFX_rus_work
+	cost = 10
+	x = 2
+	y = 1
+	relative_position_id = RUS_federalization_of_state
+	prerequisite = { focus = RUS_federalization_of_state }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_reorganization_of_provinces
+	icon = GFX_rus_work
+	cost = 10
+	x = -1
+	y = 1
+	relative_position_id = RUS_finnish_transformation
+	prerequisite = { focus = RUS_finnish_transformation }
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = RUS_empire_strikes_back
+	icon = GFX_rus_work
+	cost = 10
+	x = 4
+	y = 1
+	relative_position_id = RUS_internal_disagreements
+	prerequisite = { focus = RUS_internal_disagreements }
+	mutually_exclusive = { focus = RUS_federalization_of_state }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_crush_separatists
+	icon = GFX_rus_work
+	cost = 10
+	x = -1
+	y = 1
+	relative_position_id = RUS_empire_strikes_back
+	prerequisite = { focus = RUS_empire_strikes_back }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_triune_people
+	icon = GFX_rus_work
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = RUS_empire_strikes_back
+	prerequisite = { focus = RUS_empire_strikes_back }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_association_for_salvation_of_russia
+	icon = GFX_rus_work
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = RUS_crush_separatists
+	prerequisite = { focus = RUS_crush_separatists }
+	prerequisite = { focus = RUS_triune_people }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_great_religious_process
+	icon = GFX_rus_work
+	cost = 10
+	x = -4
+	y = 1
+	relative_position_id = RUS_association_for_salvation_of_russia
+	prerequisite = { focus = RUS_association_for_salvation_of_russia }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_crisis_of_pale_of_settlement
+	icon = GFX_rus_work
+	cost = 10
+	x = -2
+	y = 1
+	relative_position_id = RUS_association_for_salvation_of_russia
+	prerequisite = { focus = RUS_association_for_salvation_of_russia }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_simplification_of_autonomies
+	icon = GFX_rus_work
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = RUS_association_for_salvation_of_russia
+	prerequisite = { focus = RUS_association_for_salvation_of_russia }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_kazan_question
+	icon = GFX_rus_work
+	cost = 10
+	x = 2
+	y = 1
+	relative_position_id = RUS_association_for_salvation_of_russia
+	prerequisite = { focus = RUS_association_for_salvation_of_russia }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_solidarization of the nation
+	icon = GFX_rus_work
+	cost = 10
+	x = 4
+	y = 1
+	relative_position_id = RUS_association_for_salvation_of_russia
+	prerequisite = { focus = RUS_association_for_salvation_of_russia }
+	completion_reward = {
+	}
+}
+######################Правая ветка####################
+focus = {
+	id = RUS_gaze_to_east
+	icon = GFX_RUS_gaze_to_east
+	cost = 10
+	x = 17
+	y = 1
+	relative_position_id = RUS_return_to_politics
+	prerequisite = { focus = RUS_return_to_politics }
+	completion_reward = {
+		add_political_power = 10
+		add_state_claim = 537
+		add_state_claim = 555
+		hidden_effect = {
+			MON = {
+				add_opinion_modifier = { target = ROOT modifier = medium_increase }
+				}
+			add_opinion_modifier = { target = MON modifier = medium_increase }
+			MAN = {
+				add_opinion_modifier = { target = ROOT modifier = medium_increase }
+				}
+			add_opinion_modifier = { target = MAN modifier = medium_increase }
+			SIK = {
+				add_opinion_modifier = { target = ROOT modifier = medium_increase }
+				}
+			add_opinion_modifier = { target = SIK modifier = medium_increase }
+		}
+	}
+}
+focus = {
+	id = RUS_big_ambitions_of_yellow_russia
+	icon = GFX_RUS_big_ambitions_of_yellow_russia
+	cost = 8
+	x = -7
+	y = 1
+	relative_position_id = RUS_gaze_to_east
+	prerequisite = { focus = RUS_gaze_to_east }
+	mutually_exclusive = { focus = RUS_support_local_authorities }
+	completion_reward = {
+		add_stability = -0.02
+		add_political_power = 20
+		add_war_support = 0.03
+		add_opinion_modifier = { target = MON modifier = dreams_of_yellow_russia }
+		add_opinion_modifier = { target = MAN modifier = dreams_of_yellow_russia }
+		add_opinion_modifier = { target = CHI modifier = dreams_of_yellow_russia }
+		}
+	}
+focus = {
+	id = RUS_shake_up_fentian
+	icon = GFX_RUS_shake_up_fentian
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = RUS_big_ambitions_of_yellow_russia
+	prerequisite = { focus = RUS_big_ambitions_of_yellow_russia }
+	available = { 
+		country_exists = MAN
+		}
+	completion_reward = {
+		add_political_power = -20
+		add_opinion_modifier = { target = MAN modifier = actions_to_destabilize_region }
+		add_opinion_modifier = { target = JAP modifier = actions_to_destabilize_region }
+		hidden_effect = {
+			MAN = {
+				country_event = { id = man_yellow_russia.1 days = 4 random_days = 1 }
+			}
+		}
+	}
+}
+focus = {
+	id = RUS_arm_supporters
+	icon = GFX_RUS_arm_supporters
+	cost = 10
+	x = -1
+	y = 1
+	relative_position_id = RUS_shake_up_fentian
+	prerequisite = { focus = RUS_shake_up_fentian }
+	completion_reward = {
+		custom_effect_tooltip = RUS_arm_supporters_tt
+		add_political_power = -20
+		hidden_effect = {
+			MAN = {
+				country_event = { id = man_yellow_russia.2 days = 4 random_days = 1 }
+			}
+		}
+	}
+}
+focus = {
+	id = RUS_involve_our_forces
+	icon = GFX_RUS_involve_our_forces
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = RUS_shake_up_fentian
+	prerequisite = { focus = RUS_shake_up_fentian }
+	completion_reward = {
+		add_manpower = -4000
+		add_popularity = {
+			ideology = ROOT
+			popularity = 0.02
+		}
+		country_event = { id = rus_foreign_policy_in_east.15 days = 15 random_days = 3 }
+	}
+}
+focus = {
+	id = RUS_operation_zaamurye
+	icon = GFX_RUS_operation_zaamurye
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = RUS_arm_supporters
+	prerequisite = { focus = RUS_arm_supporters }
+	prerequisite = { focus = RUS_involve_our_forces }
+	completion_reward = {
+		custom_effect_tooltip = RUS_operation_zaamurye_tt
+		add_stability = 0.02
+		add_popularity = {
+			ideology = ROOT 
+			popularity = 0.02
+		}
+		set_country_flag = RUS_operation_zaamurye
+	}
+}
+focus = {
+	id = RUS_mongolian_steppes
+	icon = GFX_rus_work
+	cost = 10
+	x = 2
+	y = 1
+	relative_position_id = RUS_big_ambitions_of_yellow_russia
+	prerequisite = { focus = RUS_big_ambitions_of_yellow_russia }
+	prerequisite = { focus = RUS_support_local_authorities }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_mongolian_steppes
+	icon = GFX_RUS_mongolian_steppes
+	cost = 10
+	x = 2
+	y = 1
+	relative_position_id = RUS_big_ambitions_of_yellow_russia
+	prerequisite = { focus = RUS_big_ambitions_of_yellow_russia }
+	prerequisite = { focus = RUS_support_local_authorities}
+	completion_reward = {
+		add_opinion_modifier = {
+			target = MON modifier = small_increase 
+			}
+		add_political_power = 20
+		country_event = { id = rus_foreign_policy_in_east.22 days = 4 random_days = 1 }
+		}
+	}
+focus = {
+	id = RUS_support_local_authorities
+	icon = GFX_RUS_support_local_authorities
+	cost = 10
+	x = -3
+	y = 1
+	relative_position_id = RUS_gaze_to_east
+	prerequisite = { focus = RUS_gaze_to_east }
+	mutually_exclusive = { focus = RUS_big_ambitions_of_yellow_russia }
+	completion_reward = {
+		add_opinion_modifier = { target = MON modifier = support_from_russia }
+		add_opinion_modifier = { target = MAN modifier = support_from_russia }
+		add_opinion_modifier = { target = SIK modifier = support_from_russia }
+		add_political_power = 10
+		add_stability = 0.02
+	}
+}
+focus = {
+	id = RUS_xinjiang_politics
+	icon = GFX_RUS_xinjiang_politics
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = RUS_support_local_authorities
+	prerequisite = { focus = RUS_support_local_authorities }
+	completion_reward = {
+		add_political_power = 20
+		country_event = { id = rus_foreign_policy_in_east.23 days = 4 }
+	}
+}
+focus = {
+	id = RUS_playing_on_contradictions
+	icon = GFX_RUS_playing_on_contradictions
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = RUS_xinjiang_politics
+	prerequisite = { focus = RUS_xinjiang_politics }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_contact_beijing
+	icon = GFX_RUS_contact_beijing
+	cost = 10
+	x = -1
+	y = 1
+	relative_position_id = RUS_playing_on_contradictions
+	prerequisite = { focus = RUS_playing_on_contradictions }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_eastern_economic_zone
+	icon = GFX_RUS_eastern_economic_zone
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = RUS_playing_on_contradictions
+	prerequisite = { focus = RUS_playing_on_contradictions }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_continuation_of_big_game
+	icon = GFX_RUS_continuation_of_big_game
+	cost = 10
+	x = 3
+	y = 1
+	relative_position_id = RUS_gaze_to_east
+	prerequisite = { focus = RUS_gaze_to_east }
+	completion_reward = {
+		add_war_support = 0.05
+	}
+}
+focus = {
+	id = RUS_persian_front
+	icon = GFX_RUS_persian_front
+	cost = 10
+	x = -3
+	y = 1
+	relative_position_id = RUS_continuation_of_big_game
+	prerequisite = { focus = RUS_continuation_of_big_game }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_transfer_resources
+	icon = GFX_RUS_transfer_resources
+	cost = 10
+	x = -1
+	y = 1
+	relative_position_id = RUS_persian_front
+	prerequisite = { focus = RUS_persian_front }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_azerbaijani_dream
+	icon = GFX_RUS_azerbaijani_dream
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = RUS_persian_front
+	prerequisite = { focus = RUS_persian_front }
+	completion_reward = {
+		add_state_claim = 419
+		add_state_claim = 420
+	}
+}
+focus = {
+	id = RUS_influence_on_black_sea_straits
+	icon = GFX_RUS_influence_on_black_sea_straits
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = RUS_continuation_of_big_game
+	prerequisite = { focus = RUS_continuation_of_big_game }
+	completion_reward = {
+
+	}
+}
+focus = {
+	id = RUS_athenian_delegation
+	icon = GFX_RUS_athenian_delegation
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = RUS_influence_on_black_sea_straits
+	prerequisite = { focus = RUS_influence_on_black_sea_straits }
+	completion_reward = {
+	}
+}
+focus = {
+	id = RUS_decay_in_afghanistan
+	icon = GFX_RUS_decay_in_afghanistan
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = RUS_continuation_of_big_game
+	prerequisite = { focus = RUS_continuation_of_big_game }
+	completion_reward = {
+		AFG = {
+			country_event = { id = afghanistan_big_game.1 days = 4 random_days = 1 }
+		}
+	}
+}
+focus = {
+	id = RUS_break_into_kabul
+	icon = GFX_RUS_break_into_kabul
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = RUS_decay_in_afghanistan
+	prerequisite = { focus = RUS_decay_in_afghanistan }
+	completion_reward = {
+		add_war_support = 0.05
+		diplomatic_relation = {
+			country = AFG
+			relation = non_aggression_pact
+			active = no
+			}
+		declare_war_on = { target = AFG type = annex_everything
+		}
+	}
+}
+focus = {
+	id = RUS_old_enemy
+	icon = GFX_RUS_old_enemy
+	cost = 10
+	x = 8
+	y = 1
+	relative_position_id = RUS_gaze_to_east
+	prerequisite = { focus = RUS_gaze_to_east }
+	completion_reward = {
+		add_political_power = 10
+		add_stability = 0.03
+		add_war_support = 0.03
+			JAP = {
+				add_opinion_modifier = { target = ROOT modifier = russian_preparations }
+				}
+			add_opinion_modifier = { target = JAP modifier = remember_old_enemy }
+		hidden_effect = {
+			country_event = { id = rus_foreign_policy_in_east.0 days = 4 }
+			}
+		}
+	}
+focus = {
+	id = RUS_unexpected_twist
+	icon = GFX_RUS_unexpected_twist
+	cost = 10
+	x = -1
+	y = 1
+	relative_position_id = RUS_old_enemy
+	prerequisite = { focus = RUS_old_enemy }
+	mutually_exclusive =  { focus = RUS_eastern_squadron }
+	completion_reward = {
+		add_stability = 0.02
+		408 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+			}
+		add_opinion_modifier = { target = JAP modifier = revision_of_relationship }
+		JAP = {
+			add_opinion_modifier = { target = ROOT modifier = revision_of_relationship }
+			}	
+		}
+	}
+focus = {
+	id = RUS_manchurian_conspiracy
+	icon = GFX_RUS_manchurian_conspiracy
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = RUS_unexpected_twist
+	prerequisite = { focus = RUS_unexpected_twist }
+	completion_reward = {
+		add_political_power = 20
+		JAP = {
+			country_event = { id = jap_foreign_policy_in_east.3 days = 4 }
+		}
+	}
+}
+focus = {
+	id = RUS_sakhalin_conference
+	icon = GFX_RUS_sakhalin_conference
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = RUS_manchurian_conspiracy
+	prerequisite = { focus = RUS_manchurian_conspiracy }
+	available = { has_country_flag = RUS_tokyo_consent }
+	completion_reward = {
+		country_event = { id = rus_foreign_policy_in_east.10 hours = 12 random_hours = 6 }
+	}
+}
+focus = {
+	id = RUS_eastern_squadron
+	icon = GFX_RUS_eastern_squadron
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = RUS_old_enemy
+	prerequisite = { focus = RUS_old_enemy }
+	mutually_exclusive =  { focus = RUS_unexpected_twist }
+	completion_reward = {
+		add_war_support = 0.05
+		add_ideas = RUS_dont_repeat_tsushima
+		408 = {
+			add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+focus = {
+	id = RUS_longawaited_revenge
+	icon = GFX_RUS_longawaited_revenge
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = RUS_eastern_squadron
+	prerequisite = { focus = RUS_eastern_squadron }
+	available = {
+		date > 1933.1.1
+	}
+	completion_reward = {
+		add_political_power = 50
+		country_event = { id = rus_foreign_policy_in_east.3 days = 3 }
+		}
+	}
+
+
+
+###############################################################
+######################## ECONOMICY ############################
+###############################################################
+
+focus = {
+	id = RUS_convocation_of_economic_commission
+	icon = GFX_RUS_convocation_of_economic_commission
+	cost = 5
+	x = 10
+	y = 0
+	completion_reward = {
+		country_event = { id = rus_economic.0 days = 3 }
+		custom_effect_tooltip = RUS_convocation_of_economic_commission_tt
+		hidden_effect = {
+			add_dynamic_modifier = { modifier = RUS_great_depression }
+		}
+	}
+}
+focus = {
+	id = RUS_purchase_of_grain_by_state
+	icon = GFX_RUS_purchase_of_grain_by_state
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = RUS_convocation_of_economic_commission
+	prerequisite = { focus = RUS_convocation_of_economic_commission }
+	completion_reward = {
+		add_timed_idea = {
+    			idea = RUS_grain_payments
+    			days = 90
+			}
+		add_to_variable = { RUS_great_depression_stability_factor = 0.1 }
+		add_to_variable = { RUS_great_depression_industrial_capacity_factory = 0.05 }
+		add_to_variable = { RUS_great_depression_production_factory_max_efficiency_factor = 0.05 }
+		custom_effect_tooltip = RUS_purchase_of_grain_by_state_tt
+	}
+}
+focus = {
+	id = RUS_try_to_stop_unemployment
+	icon = GFX_RUS_try_to_stop_unemployment
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = RUS_convocation_of_economic_commission
+	prerequisite = { focus = RUS_convocation_of_economic_commission }
+	completion_reward = {
+		add_timed_idea = {
+			idea = RUS_benefits_for_employees
+			days = 90
+		}
+		add_to_variable = { RUS_great_depression_production_speed_buildings_factor = 0.1 }
+		add_to_variable = { RUS_great_depression_industrial_capacity_factory = 0.1 }
+		add_to_variable = { RUS_great_depression_production_factory_max_efficiency_factor = 0.05 }
+		custom_effect_tooltip = RUS_try_to_stop_unemployment_tt
+	}
+}
+focus = {
+	id = RUS_put_pressure_on_banking_sector
+	icon = GFX_RUS_put_pressure_on_banking_sector
+	x = 2
+	y = 1
+	cost = 5
+	relative_position_id = RUS_convocation_of_economic_commission
+	prerequisite = { focus = RUS_convocation_of_economic_commission }
+	completion_reward = { 
+		add_stability = -0.05
+		add_to_variable = { RUS_great_depression_political_power_factor = 0.1 }
+		add_to_variable = { RUS_great_depression_stability_factor = 0.05 }
+		custom_effect_tooltip = RUS_put_pressure_on_banking_sector_tt
+	}
+}
+focus = {
+	id = RUS_reorganize_Peasant_Bank
+	icon = GFX_RUS_reorganize_Peasant_Bank
+	x = 1
+	y = 1
+	cost = 5
+	relative_position_id = RUS_purchase_of_grain_by_state
+	prerequisite = { focus = RUS_purchase_of_grain_by_state }
+	prerequisite = { focus = RUS_try_to_stop_unemployment }
+	completion_reward = {
+		add_ideas = RUS_reformed_peasant_bank
+		add_to_variable = { RUS_great_depression_production_speed_buildings_factor = 0.1 }
+		add_to_variable = { RUS_great_depression_production_factory_max_efficiency_factor = 0.05 }
+		add_to_variable = { RUS_great_depression_industrial_capacity_factory = 0.1 }
+		custom_effect_tooltip = RUS_reorganize_Peasant_Bank_tt
+	}
+}
+
+focus = {
+	id = RUS_big_banking_reform
+	icon = GFX_RUS_big_banking_reform
+	x = 1
+	y = 1
+	cost = 5
+	relative_position_id = RUS_try_to_stop_unemployment
+	prerequisite = { focus = RUS_try_to_stop_unemployment }
+	prerequisite = { focus = RUS_put_pressure_on_banking_sector }
+	completion_reward = {
+		add_ideas = RUS_reorganization_of_banking_system
+		add_to_variable = { RUS_great_depression_political_power_factor = 0.05 }
+		add_to_variable = { RUS_great_depression_consumer_goods_factor = -0.05 }
+		custom_effect_tooltip = RUS_big_banking_reform_tt
+	}
+}
+focus = {
+	id = RUS_enter_zero_credit
+	icon = GFX_RUS_enter_zero_credit
+	x = -2
+	y = 1
+	cost = 5
+	relative_position_id = RUS_reorganize_Peasant_Bank
+	prerequisite = { focus = RUS_reorganize_Peasant_Bank }
+	    available = {
+		###НЕ ТОТАЛИСТ ИЛИ НЕ СНРПР###
+	    }
+	completion_reward = {
+		add_ideas = RUS_zero_credit
+	}
+}
+focus = {
+	id = RUS_question_of_peasant_associations
+	icon = GFX_RUS_question_of_peasant_associations
+	x = 0
+	y = 1
+	cost = 5
+	relative_position_id = RUS_reorganize_Peasant_Bank
+	prerequisite = { focus = RUS_reorganize_Peasant_Bank }
+	completion_reward = {
+		add_political_power = 75
+		country_event = { id = rus_economic.1 days = 3 }
+	}
+}
+focus = {
+	id = RUS_question_of_trade_unions
+	icon = GFX_RUS_question_of_trade_unions
+	x = 0
+	y = 1
+	cost = 5
+	relative_position_id = RUS_big_banking_reform
+	prerequisite = { focus = RUS_big_banking_reform }
+	completion_reward = {
+		add_political_power = 50
+		country_event = { id = rus_economic.2 days = 3 }
+	}
+}
+focus = {
+	id = RUS_unified_state_bank
+	icon = GFX_RUS_unified_state_bank
+	x = 2
+	y = 1
+	cost = 5
+	relative_position_id = RUS_big_banking_reform
+	prerequisite = { focus = RUS_big_banking_reform }
+	    available = {
+		###НЕ МОНАРХИСТ ИЛИ НЕ ЛИБЕРАЛ###
+	    }
+	completion_reward = {
+		add_political_power = 100
+		add_ideas = RUS_unified_state_bank
+	}
+}
+focus = {
+	id = RUS_economic_revival_project
+	icon = GFX_RUS_economic_revival_project
+	x = 1
+	y = 1
+	cost = 10
+	relative_position_id = RUS_question_of_peasant_associations
+	prerequisite = { focus = RUS_question_of_peasant_associations }
+	prerequisite = { focus = RUS_question_of_trade_unions }
+	completion_reward = {
+		add_ideas = RUS_russian_economic_revival
+		custom_effect_tooltip = RUS_economic_revival_project_tt
+		hidden_effect = {
+		    remove_dynamic_modifier = { modifier = RUS_great_depression }
+		}
+	}
+}
+focus = {
+	id = RUS_unified_village_economy
+	icon = GFX_RUS_unified_village_economy
+	x = -3
+	y = 1
+	cost = 10
+	relative_position_id = RUS_economic_revival_project
+	prerequisite = { focus = RUS_economic_revival_project }
+        available = {
+		###ТОЛЬКО ЭСМОН###
+	    }
+	completion_reward = {
+		add_ideas = RUS_unified_village_economy_1
+	}
+}
+focus = {
+	id = RUS_support_of_farmlands
+	icon = GFX_RUS_support_of_farmlands
+	x = -1
+	y = 1
+	cost = 5
+	relative_position_id = RUS_economic_revival_project
+	prerequisite = { focus = RUS_economic_revival_project }
+	completion_reward = {
+			if = {
+				every_owned_state = {
+					limit = {
+							has_state_category = rural #Rural Region
+				  	  }
+						is_fully_controlled_by = ROOT
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+		}
+	}
+focus = {
+	id = RUS_new_working_charter
+	icon = GFX_RUS_new_working_charter
+	x = 1
+	y = 1
+	cost = 5
+	relative_position_id = RUS_economic_revival_project
+	prerequisite = { focus = RUS_economic_revival_project }
+	completion_reward = {
+		swap_ideas = {
+				remove_idea = civilian_economy
+				add_idea = partial_economic_mobilisation
+			}
+	}
+}
+focus = {
+	id = RUS_folk_handicraft_production
+	icon = GFX_RUS_folk_handicraft_production
+	x = 3
+	y = 1
+	cost = 10
+	relative_position_id = RUS_economic_revival_project
+	prerequisite = { focus = RUS_economic_revival_project }
+	completion_reward = {
+		add_ideas = RUS_folk_handicraft_production
+	}
+}
+focus = {
+	id = RUS_development_of_mechanization_in_rural_areas
+	icon = GFX_RUS_development_of_mechanization_in_rural_areas
+	x = -1
+	y = 1
+	cost = 5
+	relative_position_id = RUS_unified_village_economy
+	prerequisite = { focus = RUS_unified_village_economy }
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = industry
+		}
+		swap_ideas = {
+			remove_idea = RUS_unified_village_economy_1
+			add_idea = RUS_unified_village_economy_2
+		}
+	}
+}
+focus = {
+	id = RUS_solid_bread_prices
+	icon = GFX_RUS_solid_bread_prices
+	x = 1
+	y = 1
+	cost = 5
+	relative_position_id = RUS_unified_village_economy
+	prerequisite = { focus = RUS_support_of_farmlands focus = RUS_unified_village_economy }
+	completion_reward = {
+		add_stability = 0.04
+		add_political_power = 100
+		add_timed_idea = {
+			idea = RUS_solid_bread_prices
+			days = 365
+		}
+	}
+}
+focus = {
+	id = RUS_national_tax
+	icon = GFX_RUS_national_tax
+	x = 1
+	y = 1
+	cost = 10
+	relative_position_id = RUS_support_of_farmlands
+	prerequisite = { focus = RUS_support_of_farmlands }
+	prerequisite = { focus = RUS_new_working_charter }
+	available = {
+		###ТОЛЬКО СНРПР###
+		}
+	completion_reward = {
+		add_timed_idea = {
+			idea = RUS_national_tax_idea
+			days = 710
+		}
+	}
+}
+focus = {
+	id = RUS_support_industrialists
+	icon = GFX_RUS_support_industrialists
+	x = 1
+	y = 1
+	cost = 5
+	relative_position_id = RUS_new_working_charter
+	prerequisite = { focus = RUS_folk_handicraft_production focus = RUS_new_working_charter }
+	completion_reward = {
+		if = {
+			every_owned_state = {
+				limit = {
+					or = {
+						has_state_category = city
+						has_state_category = large_city
+						has_state_category = metropolis
+						has_state_category = megalopolis
+						}
+					}
+				is_fully_controlled_by = ROOT
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+focus = {
+	id = RUS_all_russian_market
+	icon = GFX_RUS_all_russian_market
+	x = 1
+	y = 1
+	cost = 5
+	relative_position_id = RUS_folk_handicraft_production
+	prerequisite = { focus = RUS_folk_handicraft_production }
+	completion_reward = {
+		add_political_power = 50
+		add_timed_idea = {
+			idea = RUS_all_russian_market
+			days = 365
+		}
+	}
+}
+focus = {
+	id = RUS_large_peasant_construction_site
+	icon = GFX_RUS_large_peasant_construction_site
+	x = -1
+	y = 1
+	cost = 10
+	relative_position_id = RUS_development_of_mechanization_in_rural_areas
+	prerequisite = { focus = RUS_development_of_mechanization_in_rural_areas }
+	completion_reward = {
+		add_ideas = RUS_large_peasant_construction_site
+	}
+}
+focus = {
+	id = RUS_overcome_remnants_of_consequences
+	icon = GFX_RUS_overcome_remnants_of_consequences
+	x = 0
+	y = 1
+	cost = 10
+	relative_position_id = RUS_national_tax
+	prerequisite = { focus = RUS_solid_bread_prices }
+	prerequisite = { focus = RUS_support_industrialists }
+	available = {
+		OR = {
+			has_completed_focus =  RUS_large_peasant_construction_site 
+			has_completed_focus =  RUS_strengthen_provincial_industry 
+			}
+		}
+	completion_reward = {
+		remove_ideas = RUS_weak_industrialization
+		IF = {
+			limit = {
+			has_idea = RUS_large_peasant_construction_site
+			}
+			remove_ideas = RUS_large_peasant_construction_site
+			}
+		}
+	}
+focus = {
+	id = RUS_strengthen_provincial_industry
+	icon = GFX_RUS_strengthen_provincial_industry
+	x = 1
+	y = 1
+	cost = 10
+	relative_position_id = RUS_all_russian_market
+	prerequisite = { focus = RUS_all_russian_market }
+	completion_reward = {
+		if = {
+			every_owned_state = {
+				limit = {
+					or = {
+						has_state_category = city
+						has_state_category = large_city
+						has_state_category = metropolis
+						has_state_category = megalopolis
+						}
+					}
+				is_fully_controlled_by = ROOT
+				    add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+	}
+focus = {
+	id = RUS_military_production_reforms
+	icon = GFX_RUS_military_production_reforms
+	x = 40
+	y = 0
+	cost = 10
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = RUS_new_theory_of_war_1
+		}
+	}
+focus = {
+	id = RUS_smolensk_army_council
+	icon = GFX_RUS_smolensk_army_council
+	x = 45
+	y = 0
+	cost = 5
+	completion_reward = {
+		country_event = { id = rus_military.0 hours = 12 }
+	}
+}
+focus = {
+	id = RUS_reduce_cost_of_weapons
+	icon = GFX_RUS_reduce_cost_of_weapons
+	x = -1
+	y = 1
+	cost = 5
+	relative_position_id = RUS_military_production_reforms
+	prerequisite = { focus = RUS_military_production_reforms }
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = RUS_new_theory_of_war_1
+			add_idea = RUS_new_theory_of_war_2
+		}
+		custom_effect_tooltip = RUS_reduce_cost_of_weapons_tt
+		hidden_effect = {
+			country_event = { id = rus_military.1 days = 60 }
+		}
+	}
+}
+focus = {
+	id = RUS_foreign_arms_supplies
+	icon = GFX_RUS_foreign_arms_supplies
+	x = 1
+	y = 1
+	cost = 5
+	relative_position_id = RUS_military_production_reforms
+	prerequisite = { focus = RUS_military_production_reforms }
+	completion_reward = {
+		add_war_support = 0.05
+		custom_effect_tooltip = RUS_foreign_arms_supplies_tt
+		hidden_effect = {
+		}
+	}
+}
+focus = {
+	id = RUS_reorganization_of_okhrana
+	icon = GFX_RUS_reorganization_of_okhrana
+	x = -2
+	y = 1
+	cost = 5
+	relative_position_id = RUS_smolensk_army_council
+	prerequisite = { focus = RUS_smolensk_army_council }
+	completion_reward = {
+		create_intelligence_agency = yes
+		add_ideas = RUS_reorganized_okhrana_1
+		add_political_power = 150
+	}
+}
+focus = {
+    id = RUS_increase_in_military_schools
+	icon = GFX_RUS_increase_in_military_schools
+	x = 0
+	y = 1
+	cost = 5
+	relative_position_id = RUS_smolensk_army_council
+	prerequisite = { focus = RUS_smolensk_army_council }
+	completion_reward = {
+		army_experience = 50
+		IF = {
+			limit = {
+				has_idea = RUS_inflating_military_budget_1
+			}
+		swap_ideas = {
+			remove_idea = RUS_inflating_military_budget_1
+			add_idea = RUS_inflating_military_budget_2
+			}
+		}
+	}
+}
+focus = {
+	id = RUS_trans_ural_construction
+	icon = GFX_RUS_trans_ural_construction
+	x = 1
+	y = 1
+	cost = 5
+	relative_position_id = RUS_reduce_cost_of_weapons
+	prerequisite = { focus = RUS_reduce_cost_of_weapons }
+	prerequisite = { focus = RUS_foreign_arms_supplies }
+	completion_reward = {
+		custom_effect_tooltip = RUS_trans_ural_construction_tt
+		hidden_effect = {
+			568 = {
+					add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			570 = {
+					add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			579 = {
+					add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			329 = {
+					add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			567 = {
+					add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			566 = {
+					add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			575 = {
+					add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			654 = {
+					add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			40 = {
+					add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			569 = {
+					add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			580 = {
+					add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			653 = {
+					add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			572 = {
+					add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			573 = {
+					add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			578 = {
+				add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			571 = {
+				add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			576 = {
+				add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			516 = {
+				add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			582 = {
+				add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			403 = {
+				add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			577 = {
+				add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+			824 = {
+				add_dynamic_modifier = { modifier = RUS_support_for_trans_ural_industrialization }
+			}
+		}
+	}
+}
+focus = {
+	id = RUS_for_god_and_tsar
+	icon = GFX_RUS_for_god_and_tsar
+	x = -1
+	y = 1
+	cost = 5
+	relative_position_id = RUS_increase_in_military_schools
+	mutually_exclusive = { focus = RUS_we_are_fighting_for_truth }
+	prerequisite = { focus = RUS_increase_in_military_schools }
+	available = {
+		###НЕ ЭСМОН###
+		}
+	completion_reward = {
+		add_ideas = RUS_so_for_tsar_fatherland_and_faith
+	}
+}
+focus = {
+	id = RUS_we_are_fighting_for_truth
+	icon = GFX_RUS_we_are_fighting_for_truth
+	x = 1
+	y = 1
+	cost = 5
+	relative_position_id = RUS_increase_in_military_schools
+	mutually_exclusive = { focus = RUS_for_god_and_tsar }
+	prerequisite = { focus = RUS_increase_in_military_schools }
+	available = {
+		###НЕ СНРПР###
+		}
+	completion_reward = {
+		add_ideas = RUS_what_are_we_fighting_for
+	}
+}
+focus = {
+	id = RUS_keep_cavalry_in_army
+	icon = GFX_RUS_keep_cavalry_in_army
+	x = -3
+	y = 1
+	cost = 5
+	relative_position_id = RUS_trans_ural_construction
+	mutually_exclusive = { focus = RUS_tanks_tanks_tanks }
+	prerequisite = { focus = RUS_trans_ural_construction }
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = RUS_new_theory_of_war_2
+			add_idea = RUS_theory_of_war_cavalry
+		}
+		add_political_power = 50
+		add_war_support = 0.05
+	}
+}
+focus = {
+	id = RUS_tanks_tanks_tanks
+	icon = GFX_RUS_tanks_tanks_tanks
+	x = -1
+	y = 1
+	cost = 5
+	relative_position_id = RUS_trans_ural_construction
+	mutually_exclusive = { focus = RUS_keep_cavalry_in_army }
+	prerequisite = { focus = RUS_trans_ural_construction }
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = RUS_new_theory_of_war_2
+			add_idea = RUS_theory_of_war_tanks
+		}
+	}
+}
+focus = {
+	id = RUS_iron_monsters_in_army
+	icon = GFX_RUS_iron_monsters_in_army
+	x = 1
+	y = 1
+	cost = 10
+	relative_position_id = RUS_trans_ural_construction
+	prerequisite = { focus = RUS_trans_ural_construction }
+	completion_reward = {
+		navy_experience = 50
+		air_experience = 50
+		add_political_power = 100
+	}
+}
+focus = {
+	id = RUS_strengthen_western_borders
+	icon = GFX_RUS_strengthen_western_borders
+	x = -1
+	y = 1
+	cost = 5
+	relative_position_id = RUS_for_god_and_tsar
+	prerequisite = { focus = RUS_trans_ural_construction }
+	prerequisite = { focus = RUS_for_god_and_tsar focus = RUS_we_are_fighting_for_truth }
+	completion_reward = {
+		custom_effect_tooltip = RUS_strengthen_western_borders_tt
+		hidden_effect = {
+		188 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 3288
+						instant_build = yes
+					}
+				}
+			}
+		189 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 3337
+						instant_build = yes
+					}
+				}
+			}
+		814 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 6407
+						instant_build = yes
+					}
+				}
+			}
+		814 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 11312
+						instant_build = yes
+					}
+				}
+			}
+		97 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 3254
+						instant_build = yes
+					}
+				}
+			}
+		97 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 11386
+						instant_build = yes
+					}
+				}
+			}
+		807 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 9372
+						instant_build = yes
+					}
+				}
+			}
+		807 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 6375
+						instant_build = yes
+					}
+				}
+			}
+		807 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 6347
+						instant_build = yes
+					}
+				}
+			}
+		807 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 3295
+						instant_build = yes
+					}
+				}
+			}
+		807 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 279
+						instant_build = yes
+					}
+				}
+			}
+		86 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 11232
+						instant_build = yes
+					}
+				}
+			}
+		86 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 388
+						instant_build = yes
+					}
+				}
+			}
+		86 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 3532
+						instant_build = yes
+					}
+				}
+			}
+		86 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 3460
+						instant_build = yes
+					}
+				}
+			}
+		86 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 11558
+						instant_build = yes
+					}
+				}
+			}
+		87 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 9546
+						instant_build = yes
+					}
+				}
+			}
+		87 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 584
+						instant_build = yes
+					}
+				}
+			}
+		762 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 506
+						instant_build = yes
+					}
+				}
+			}
+		762 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 6464
+						instant_build = yes
+					}
+				}
+			}
+		10 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 4
+						province = 3544
+						instant_build = yes
+					}
+				}
+			}
+		88 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 9427
+						instant_build = yes
+					}
+				}
+			}
+		91 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11479
+						instant_build = yes
+					}
+				}
+			}
+		94 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 3392
+						instant_build = yes
+					}
+				}
+			}
+		784 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 3320
+						instant_build = yes
+					}
+				}
+			}
+		86 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 6558
+						instant_build = yes
+					}
+				}
+			}
+		11 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 6296
+						instant_build = yes
+					}
+				}
+			}
+		808 = {
+				if = {
+					limit = { is_fully_controlled_by = THIS }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 9340
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+}
+focus = {
+	id = RUS_reequipment_of_army
+	icon = GFX_RUS_reequipment_of_army
+	x = 1
+	y = 1
+	cost = 5
+	relative_position_id = RUS_for_god_and_tsar
+	prerequisite = { focus = RUS_trans_ural_construction }
+	prerequisite = { focus = RUS_for_god_and_tsar focus = RUS_we_are_fighting_for_truth }
+	completion_reward = {
+		add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = infantry_weapons
+			}
+		add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = artillery
+				category = support_tech
+			}
+		add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+		}
+	}
+focus = {
+	id = RUS_SRC_in_yekaterinburg
+	icon = GFX_RUS_SRC_in_yekaterinburg
+	x = 1
+	y = 1
+	cost = 10
+	relative_position_id = RUS_keep_cavalry_in_army
+	prerequisite = { focus = RUS_keep_cavalry_in_army focus = RUS_tanks_tanks_tanks }
+	completion_reward = {
+		add_research_slot = 1
+		IF = {
+			limit = {
+				has_idea = RUS_theory_of_war_cavalry
+			}
+			swap_ideas = {
+				remove_idea = RUS_theory_of_war_cavalry
+				add_idea = RUS_SRC_in_yekaterinburg_cavalry
+			}
+		}
+		ELSE_IF = {
+			limit = {
+				has_idea = RUS_theory_of_war_tanks
+			}
+			swap_ideas = {
+				remove_idea = RUS_theory_of_war_tanks
+				add_idea = RUS_SRC_in_yekaterinburg_tanks
+			}
+		}
+	}
+}
+focus = {
+	id = RUS_best_aviation_of_east
+	icon = GFX_RUS_best_aviation_of_east
+	x = -1
+	y = 1
+	cost = 10
+	relative_position_id = RUS_iron_monsters_in_army
+	prerequisite = { focus = RUS_iron_monsters_in_army }
+	completion_reward = {
+		add_ideas = RUS_russian_falcons
+		air_experience = 25
+	}
+}
+focus = {
+	id = RUS_new_generation_ships
+	icon = GFX_RUS_new_generation_ships
+	x = 1
+	y = 1
+	cost = 10
+	relative_position_id = RUS_iron_monsters_in_army
+	prerequisite = { focus = RUS_iron_monsters_in_army }
+	completion_reward = {
+		navy_experience = 25
+		add_ideas = RUS_era_of_new_ships
+	}
+}
+focus = {
+	id = RUS_special_military_department
+	icon = GFX_RUS_special_military_department
+	x = -1
+	y = 1
+	cost = 10
+	relative_position_id = RUS_reequipment_of_army
+	prerequisite = { focus = RUS_reequipment_of_army }
+	completion_reward = {
+		add_political_power = 100
+		IF = {
+			limit = {
+				has_idea = RUS_so_for_tsar_fatherland_and_faith
+			}
+				swap_ideas = {
+					remove_idea = RUS_so_for_tsar_fatherland_and_faith
+					add_diea = RUS_special_military_department
+				}
+			limit = {
+				has_idea = RUS_what_are_we_fighting_for
+			}
+				swap_ideas = {
+					remove_idea = RUS_what_are_we_fighting_for
+					add_idea = RUS_special_military_department
+				}
+		}
+		add_ideas = RUS_special_military_department
+	}
+}
+focus = {
+	id = RUS_new_wave_of_mobilization
+	icon = GFX_RUS_new_wave_of_mobilization
+	x = 1
+	y = 1
+	cost = 5
+	relative_position_id =RUS_reequipment_of_army
+	prerequisite = { focus = RUS_reequipment_of_army }
+	completion_reward = {
+		add_ideas = RUS_new_wave_of_mobilization
+		add_manpower = 150000
+		add_command_power = 75
+	}
+}
+focus = {
+	id = RUS_patriotism_in_schools
+	icon = GFX_RUS_patriotism_in_schools
+	x = 3
+	y = 1
+	cost = 5
+	relative_position_id = RUS_reequipment_of_army
+	prerequisite = { focus = RUS_reequipment_of_army }
+	completion_reward = {
+		add_timed_idea = {
+			idea = RUS_education_of_young_patriots
+			days = 180
+		}
+		add_political_power = 100
+	}
+}
+focus = {
+	id = RUS_specialized_troops
+	icon = GFX_RUS_specialized_troops
+	x = 5
+	y = 1
+	cost = 5
+	relative_position_id = RUS_reequipment_of_army
+	prerequisite = { focus = RUS_reequipment_of_army }
+	completion_reward = {
+		add_ideas = RUS_guards_regiments_back_in_action
+	}
+}
+focus = {
+	id = RUS_russias_third_ally
+	icon = GFX_RUS_russias_third_ally
+	x = 0
+	y = 1
+	cost = 5
+	relative_position_id = RUS_best_aviation_of_east
+	mutually_exclusive = { focus = RUS_focus_on_two_directions }
+	prerequisite = { focus = RUS_best_aviation_of_east }
+	completion_reward = {
+		195 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		swap_ideas = {
+			remove_idea = RUS_russian_falcons
+			add_idea = RUS_russias_third_ally
+		}
+	}
+}
+focus = {
+	id = RUS_focus_on_two_directions 
+	icon = GFX_RUS_focus_on_two_directions 
+	x = 0
+	y = 1
+	cost = 5
+	relative_position_id = RUS_new_generation_ships
+	mutually_exclusive = { focus = RUS_russias_third_ally }
+	prerequisite = { focus = RUS_new_generation_ships }
+	completion_reward = {
+		195 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+		swap_ideas = {
+			remove_idea = RUS_era_of_new_ships
+			add_idea = RUS_updated_russian_fleet_and_army
+		}
+	}
+}
+focus = {
+	id = RUS_newspapers_and_radio_on_guard_of_motherland
+	icon = GFX_RUS_newspapers_and_radio_on_guard_of_motherland
+	x = 0
+	y = 1
+	cost = 5
+	relative_position_id = RUS_special_military_department
+	prerequisite = { focus = RUS_special_military_department }
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = RUS_reorganized_okhrana_1
+			add_idea = RUS_reorganized_okhrana_2
+		}
+	}
+}
+focus = {
+	id = RUS_always_be_ready
+	icon = GFX_RUS_always_be_ready
+	x = 1
+	y = 1
+	cost = 5
+	relative_position_id = RUS_new_wave_of_mobilization
+	prerequisite = { focus = RUS_new_wave_of_mobilization }
+	prerequisite = { focus = RUS_patriotism_in_schools }
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = RUS_new_wave_of_mobilization
+			add_idea = RUS_always_be_ready
+		}
+		IF = {
+			limit = {
+				has_idea = partial_economic_mobilisation
+			}
+		swap_ideas = {
+			remove_idea = partial_economic_mobilisation
+			add_idea = war_economy
+			}
+		}
+		add_manpower = 300000
+
+	}
+}
+focus = {
+	id = RUS_there_is_nowhere_to_retreat
+	icon = GFX_RUS_there_is_nowhere_to_retreat
+	x = -2
+	y = 1
+	cost = 5
+	relative_position_id = RUS_newspapers_and_radio_on_guard_of_motherland
+	mutually_exclusive = { focus = RUS_ideological_war_for_minds focus = RUS_russian_world }
+	prerequisite = { focus = RUS_newspapers_and_radio_on_guard_of_motherland }
+	available = {
+		###НЕ ТОТАЛИСТ ИЛИ НЕ СНРПР###
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = RUS_special_military_department
+			add_idea = RUS_no_step_back
+		}
+	}
+}
+focus = {
+	id = RUS_ideological_war_for_minds 
+	icon = GFX_RUS_ideological_war_for_minds
+	x = 0
+	y = 1
+	cost = 5
+	relative_position_id = RUS_newspapers_and_radio_on_guard_of_motherland
+	mutually_exclusive = { focus = RUS_there_is_nowhere_to_retreat focus = RUS_russian_world }
+	prerequisite = { focus = RUS_newspapers_and_radio_on_guard_of_motherland }
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = RUS_reorganized_okhrana_2
+			add_idea = RUS_reorganized_okhrana_3
+		}
+	}
+}
+focus = {
+	id = RUS_russian_world
+	icon = GFX_RUS_russian_world
+	x = 2
+	y = 1
+	cost = 5
+	relative_position_id = RUS_newspapers_and_radio_on_guard_of_motherland
+	mutually_exclusive = { focus = RUS_there_is_nowhere_to_retreat focus = RUS_ideological_war_for_minds }
+	prerequisite = { focus = RUS_newspapers_and_radio_on_guard_of_motherland }
+	available = {
+		###НЕ ЭСМОН ИЛИ НЕ ЛИБМОН###
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = RUS_special_military_department
+			add_idea = RUS_russian_expansion
+		}
+		add_named_threat = { threat = 7.5 name = RUS_russian_expansion }
+	}
+}
+}
