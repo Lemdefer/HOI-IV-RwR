@@ -3809,6 +3809,27 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/based_machines.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_dispersed_industry_medium"
+		texturefile = "gfx/interface/technologies/dispersed_industry.dds"
+	}
+	SpriteType = {
+		name = "GFX_dispersed_industry2_medium"
+		texturefile = "gfx/interface/technologies/dispersed_industry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_dispersed_industry3_medium"
+		texturefile = "gfx/interface/technologies/dispersed_industry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_dispersed_industry4_medium"
+		texturefile = "gfx/interface/technologies/dispersed_industry4.dds"
+	}
+	SpriteType = {
+		name = "GFX_dispersed_industry5_medium"
+		texturefile = "gfx/interface/technologies/dispersed_industry5.dds"
+	}
+
 	#Электроника и машиностроение
 	SpriteType = {
 		name = "GFX_lighting_design_medium"
@@ -3836,4 +3857,135 @@ spriteTypes = {
 		name = "GFX_specialization_of_artillery_under_ATO_medium"
 		texturefile = "gfx/interface/technologies/specialization_of_artillery_under_ATO.dds"
 	}	
+
+	#Самолеты
+	SpriteType = {
+		name = "GFX_early_plane_medium"
+		texturefile = "gfx/interface/technologies/early_plane.dds"
+	}		
+
+	SpriteType = {
+		name = "GFX_case_of_a_small_plane_from_the_postwar_years_medium"
+		texturefile = "gfx/interface/technologies/case_of_a_small_plane_from_the_postwar_years.dds"
+	}
+	SpriteType = {
+		name = "GFX_modified_case_of_a_small_plane_from_the_postwar_years_medium"
+		texturefile = "gfx/interface/technologies/modified_case_of_a_small_plane_from_the_postwar_years.dds"
+	}
+	SpriteType = {
+		name = "GFX_based_light_case_medium"
+		texturefile = "gfx/interface/technologies/based_light_case.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_case_of_a_medium_plane_from_the_postwar_years_medium"
+		texturefile = "gfx/interface/technologies/case_of_a_medium_plane_from_the_postwar_years.dds"
+	}
+	SpriteType = {
+		name = "GFX_modified_case_of_a_medium_plane_from_the_postwar_years_medium"
+		texturefile = "gfx/interface/technologies/modified_case_of_a_medium_plane_from_the_postwar_years.dds"
+	}
+	SpriteType = {
+		name = "GFX_based_medium_case_medium"
+		texturefile = "gfx/interface/technologies/based_medium_case.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_case_of_a_heavy_plane_from_the_postwar_years_medium"
+		texturefile = "gfx/interface/technologies/case_of_a_heavy_plane_from_the_postwar_years.dds"
+	}
+	SpriteType = {
+		name = "GFX_modified_case_of_a_heavy_plane_from_the_postwar_years_medium"
+		texturefile = "gfx/interface/technologies/modified_case_of_a_heavy_plane_from_the_postwar_years.dds"
+	}
+	SpriteType = {
+		name = "GFX_based_heavy_case_medium"
+		texturefile = "gfx/interface/technologies/based_heavy_case.dds"
+	}
+
+	#Флот
+	SpriteType = {
+		name = "GFX_early_destroyer_medium"
+		texturefile = "gfx/interface/technologies/early_destroyer.dds"
+	}
+	SpriteType = {
+		name = "GFX_basic_destroyer_medium"
+		texturefile = "gfx/interface/technologies/basic_destroyer.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_destroyer_medium"
+		texturefile = "gfx/interface/technologies/improved_destroyer.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_destroyer_medium"
+		texturefile = "gfx/interface/technologies/advanced_destroyer.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_early_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/early_light_cruiser.dds"
+	}
+	SpriteType = {
+		name = "GFX_basic_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/basic_light_cruiser.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/improved_light_cruiser.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/advanced_light_cruiser.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_early_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/early_heavy_cruiser.dds"
+	}
+	SpriteType = {
+		name = "GFX_basic_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/basic_heavy_cruiser.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/improved_heavy_cruiser.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/advanced_heavy_cruiser.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_early_carrier_medium"
+		texturefile = "gfx/interface/technologies/early_carrier.dds"
+	}
+	SpriteType = {
+		name = "GFX_basic_carrier_medium"
+		texturefile = "gfx/interface/technologies/basic_carrier.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_carrier_medium"
+		texturefile = "gfx/interface/technologies/improved_carrier.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_carrier_medium"
+		texturefile = "gfx/interface/technologies/advanced_carrier.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_early_submarine_medium"
+		texturefile = "gfx/interface/technologies/early_submarine.dds"
+	}
+	SpriteType = {
+		name = "GFX_basic_submarine_medium"
+		texturefile = "gfx/interface/technologies/basic_submarine.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_submarine_medium"
+		texturefile = "gfx/interface/technologies/improved_submarine.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_submarine_medium"
+		texturefile = "gfx/interface/technologies/advanced_submarine.dds"
+	}
 }
