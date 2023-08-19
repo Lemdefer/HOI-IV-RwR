@@ -41,17 +41,17 @@ add_opinion_modifier  = {
 }
 
 set_politics = {
-	ruling_party = conservatism
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	conservatism = 53
+	democratic = 53
 	liberalisms = 21
 	socdem = 8
 	libsoc = 1
-	marxism = 11
+	marxisms = 11
 	communism = 1
 	fascism = 3
 	strasserism = 0
